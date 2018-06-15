@@ -11,6 +11,7 @@ var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
+var model_module_1 = require("./models/model.module");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -22,7 +23,8 @@ var AppModule = /** @class */ (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                model_module_1.ModelModule
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
