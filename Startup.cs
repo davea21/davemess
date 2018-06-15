@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using SportsStore.Models;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 namespace SportsStore
 {
   public class Startup
@@ -29,7 +30,9 @@ namespace SportsStore
     {
             services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration
                 ["Data:Products:ConnectionString"]));
-      services.AddMvc();
+      services.AddMvc().AddJsonOptions(opts=> { opts.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Serialize;
+          opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+      });
     }
 
     public void Configure(IApplicationBuilder app,
