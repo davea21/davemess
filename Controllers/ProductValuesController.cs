@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 using System.Collections.Generic;
+using SportsStore.Models.BindingTargets;
 namespace SportsStore.Controllers
 {
     [Route("api/products")]
@@ -77,6 +78,25 @@ namespace SportsStore.Controllers
             }
             else {
                 return q;
+            }
+        }
+        [HttpPost]
+        public IActionResult CreateProduct([FromBody] ProductData pData)
+        {
+            if (ModelState.IsValid)
+            {
+                Product p = pData.Product;
+                if (p.Supplier != null && p.Supplier.SupplierId != 0)
+                {
+                    _context.Attach(p.Supplier);
+
+                }
+                _context.Add(p);
+                _context.SaveChanges();
+                return Ok(p.ProductId);
+            }
+            else {
+                return BadRequest(ModelState);
             }
         }
     }
