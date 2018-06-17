@@ -45,39 +45,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var productsUrl = "api/products";
-var suppliersUrl = "api/suppliers";
+var productsUrl = "/api/products";
+var suppliersUrl = "/api/suppliers";
 var Repository = (function () {
     function Repository(http) {
         this.http = http;
         this.filterObject = new __WEBPACK_IMPORTED_MODULE_3__configClasses_repository__["a" /* Filter */]();
         this.suppliers = [];
-        //   this.filter.category = 'soccer';
+        //this.filter.category = "soccer";
         this.filter.related = true;
         this.getProducts();
     }
     Repository.prototype.getProduct = function (id) {
         var _this = this;
         this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Get, productsUrl + "/" + id)
-            .subscribe(function (response) { _this.product = response.json(); });
+            .subscribe(function (response) { return _this.product = response; });
     };
     Repository.prototype.getProducts = function () {
         var _this = this;
-        var url = productsUrl + "?related" + this.filter.related;
+        var url = productsUrl + "?related=" + this.filter.related;
         if (this.filter.category) {
-            url += "&category=" + this.filterObject.category;
+            url += "&category=" + this.filter.category;
         }
         if (this.filter.search) {
-            url += "&search=" + this.filterObject.search;
+            url += "&search=" + this.filter.search;
         }
-        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Get, url).subscribe(function (response) { _this.products = response; });
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Get, url)
+            .subscribe(function (response) { return _this.products = response; });
     };
-    ;
     Repository.prototype.getSuppliers = function () {
         var _this = this;
-        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Get, suppliersUrl).subscribe(function (response) { _this.suppliers = response; });
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Get, suppliersUrl)
+            .subscribe(function (response) { return _this.suppliers = response; });
     };
-    ;
     Repository.prototype.createProduct = function (prod) {
         var _this = this;
         var data = {
@@ -106,12 +106,58 @@ var Repository = (function () {
             }
         });
     };
+    Repository.prototype.replaceProduct = function (prod) {
+        var _this = this;
+        var data = {
+            name: prod.name, category: prod.category,
+            description: prod.description, price: prod.price,
+            supplier: prod.supplier ? prod.supplier.supplierId : 0
+        };
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Put, productsUrl + "/" + prod.productId, data)
+            .subscribe(function (response) { return _this.getProducts(); });
+    };
+    Repository.prototype.replaceSupplier = function (supp) {
+        var _this = this;
+        var data = {
+            name: supp.name, city: supp.city, state: supp.state
+        };
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Put, suppliersUrl + "/" + supp.supplierId, data)
+            .subscribe(function (response) { return _this.getProducts(); });
+    };
     Repository.prototype.sendRequest = function (verb, url, data) {
-        return this.http.request(new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Request */]({ method: verb, url: url, body: data
-        })).map(function (response) { return response.json(); });
+        return this.http.request(new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Request */]({
+            method: verb, url: url, body: data
+        })).map(function (response) {
+            return response.headers.get("Content-Length") != "0"
+                ? response.json() : null;
+        });
+    };
+    Repository.prototype.updateProduct = function (id, changes) {
+        var _this = this;
+        var patch = [];
+        changes.forEach(function (value, key) {
+            return patch.push({ op: "replace", path: key, value: value });
+        });
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Patch, productsUrl + "/" + id, patch)
+            .subscribe(function (response) { return _this.getProducts(); });
+    };
+    Repository.prototype.deleteProduct = function (id) {
+        var _this = this;
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Delete, productsUrl + "/" + id)
+            .subscribe(function (response) { return _this.getProducts(); });
+    };
+    Repository.prototype.deleteSupplier = function (id) {
+        var _this = this;
+        this.sendRequest(__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestMethod */].Delete, suppliersUrl + "/" + id)
+            .subscribe(function (response) {
+            _this.getProducts();
+            _this.getSuppliers();
+        });
     };
     Object.defineProperty(Repository.prototype, "filter", {
-        get: function () { return this.filterObject; },
+        get: function () {
+            return this.filterObject;
+        },
         enumerable: true,
         configurable: true
     });
@@ -205,6 +251,29 @@ var AppComponent = (function () {
         var s = new __WEBPACK_IMPORTED_MODULE_2__models_supplier_model__["a" /* Supplier */](0, "Rocket Shoe Corp", "Boston", "MA");
         var p = new __WEBPACK_IMPORTED_MODULE_1__models_product_model__["a" /* Product */](0, "Rocket-Powered Shoes", "Running", "Set a new record", 100, s);
         this.repo.createProductAndSupplier(p, s);
+    };
+    AppComponent.prototype.replaceProduct = function () {
+        var p = this.repo.products[0];
+        p.name = "modifeid prod";
+        p.category = "modified category";
+        this.repo.replaceProduct(p);
+    };
+    AppComponent.prototype.replaceSupplier = function () {
+        var s = new __WEBPACK_IMPORTED_MODULE_2__models_supplier_model__["a" /* Supplier */](3, "Modified Supplier", "New York", "NY");
+        this.repo.replaceSupplier(s);
+    };
+    AppComponent.prototype.updateProduct = function () {
+        var changes = new Map();
+        changes.set("name", "Green Kayak");
+        changes.set("price", 300);
+        changes.set("supplier", null);
+        this.repo.updateProduct(1, changes);
+    };
+    AppComponent.prototype.deleteProduct = function () {
+        this.repo.deleteProduct(1);
+    };
+    AppComponent.prototype.deleteSupplier = function () {
+        this.repo.deleteSupplier(2);
     };
     return AppComponent;
 }());
@@ -382,7 +451,7 @@ module.exports = module.exports.toString();
 /***/ 94:
 /***/ (function(module, exports) {
 
-module.exports = "<table class=\"table table-sm table-striped\">\r\n    <tr>\r\n        <th>Name</th>\r\n        <th>Category</th>\r\n        <th>Price</th>\r\n        <th>Supplier</th>\r\n        <th>Ratings</th>\r\n    </tr>\r\n    <tr *ngFor=\"let product of products\">\r\n        <td>{{product.name}}</td>\r\n        <td>{{product.category}}</td>\r\n        <td>{{product.price}}</td>\r\n        <td>{{product.supplier?.name || 'None'}}</td>\r\n        <td>{{product.ratings?.length || 0}}</td>\r\n    </tr>\r\n</table>\r\n\r\n<button class=\"btn btn-primary m-1\" (click)=\"createProduct()\">\r\n    Create Product\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"createProductAndSupplier()\">\r\n    Create Product and Supplier\r\n</button>"
+module.exports = "<table class=\"table table-sm table-striped\">\r\n    <tr>\r\n        <th>Name</th>\r\n        <th>Category</th>\r\n        <th>Price</th>\r\n        <th>Supplier</th>\r\n        <th>Ratings</th>\r\n    </tr>\r\n    <tr *ngFor=\"let product of products\">\r\n        <td>{{product.name}}</td>\r\n        <td>{{product.category}}</td>\r\n        <td>{{product.price}}</td>\r\n        <td>{{product.supplier?.name || 'None'}}</td>\r\n        <td>{{product.ratings?.length || 0}}</td>\r\n    </tr>\r\n</table>\r\n\r\n<button class=\"btn btn-primary m-1\" (click)=\"createProduct()\">\r\n    Create Product\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"createProductAndSupplier()\">\r\n    Create Product and Supplier\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"replaceProduct()\">\r\n    Replace Product\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"replaceSupplier()\">\r\n    Replace Supplier\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"updateProduct()\">\r\n    Update Product\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"deleteProduct()\">\r\n    Delete Product\r\n</button>\r\n<button class=\"btn btn-primary m-1\" (click)=\"deleteSupplier()\">\r\n    Delete Supplier\r\n</button>"
 
 /***/ })
 

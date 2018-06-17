@@ -12,6 +12,8 @@ namespace SportsStore
         public static void SeedDatabase(DataContext context)
         {
             context.Database.Migrate();
+           
+       
             if (context.Products.Count() == 0)
             {
                 var s1 = new Supplier

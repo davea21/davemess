@@ -30,4 +30,28 @@ export class AppComponent {
             "Set a new record", 100, s);
         this.repo.createProductAndSupplier(p, s);
     }
+    replaceProduct() {
+        let p = this.repo.products[0];
+        p.name = "modifeid prod";
+        p.category = "modified category";
+        this.repo.replaceProduct(p);
+    }
+    replaceSupplier() {
+        let s = new Supplier(3, "Modified Supplier", "New York", "NY");
+        this.repo.replaceSupplier(s);
+    }
+    updateProduct() {
+        let changes = new Map<string, any>();
+        changes.set("name", "Green Kayak");
+        changes.set("price", 300);
+        changes.set("supplier", null);
+        this.repo.updateProduct(1, changes);
+    }    
+    deleteProduct() {
+        this.repo.deleteProduct(1);
+    }
+
+    deleteSupplier() {
+        this.repo.deleteSupplier(2);
+    }    
 }

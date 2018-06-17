@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using SportsStore.Models;
 using System.Collections.Generic;
 using SportsStore.Models.BindingTargets;
+using Microsoft.AspNetCore.JsonPatch;
+
 namespace SportsStore.Controllers
 {
     [Route("api/products")]
@@ -45,41 +47,47 @@ namespace SportsStore.Controllers
             }
             return product;
         }
+
         [HttpGet]
-        public IEnumerable<Product> GetProducts(string category, string search ,bool related = false)
+        public IEnumerable<Product> GetProducts(string category, string search,
+                bool related = false)
         {
-            IQueryable<Product> q = _context.Products;
+            IQueryable<Product> query = _context.Products;
+
             if (!string.IsNullOrWhiteSpace(category))
             {
                 string catLower = category.ToLower();
-                q = q.Where(a => a.Category.ToLower().Contains( catLower));
+                query = query.Where(p => p.Category.ToLower().Contains(catLower));
             }
             if (!string.IsNullOrWhiteSpace(search))
             {
-                string searchLower =search.ToLower();
-                q = q.Where(a => a.Name.ToLower().Contains(searchLower) ||a.Description.ToLower().Contains(searchLower));
+                string searchLower = search.ToLower();
+                query = query.Where(p => p.Name.ToLower().Contains(searchLower)
+                    || p.Description.ToLower().Contains(searchLower));
             }
-            if (related) {
-                q = q.Include(p => p.Supplier)
-                .Include(p => p.Ratings);
-                List<Product> data = q.ToList();
-                data.ForEach(p =>
-                {
+
+            if (related)
+            {
+                query = query.Include(p => p.Supplier).Include(p => p.Ratings);
+                List<Product> data = query.ToList();
+                data.ForEach(p => {
                     if (p.Supplier != null)
                     {
                         p.Supplier.Products = null;
                     }
                     if (p.Ratings != null)
                     {
-                        p.Ratings.ForEach(r=>r.Product = null);
+                        p.Ratings.ForEach(r => r.Product = null);
                     }
                 });
                 return data;
             }
-            else {
-                return q;
+            else
+            {
+                return query;
             }
         }
+
         [HttpPost]
         public IActionResult CreateProduct([FromBody] ProductData pData)
         {
@@ -98,6 +106,60 @@ namespace SportsStore.Controllers
             else {
                 return BadRequest(ModelState);
             }
+        }
+        [HttpPut("{id}")]
+        public IActionResult ReplaceProduct(long id, [FromBody] ProductData pData)
+        {
+            if (ModelState.IsValid)
+            {
+                Product p = pData.Product;
+                p.ProductId = id;
+                if (p.Supplier != null && p.Supplier.SupplierId != 0)
+                {
+                    _context.Attach(p.Supplier);
+                  
+                }
+                _context.Update(p);
+                _context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+            }
+        [HttpPatch("{id}")]
+        public IActionResult UpdateProduct(long id,
+                [FromBody]JsonPatchDocument<ProductData> patch)
+        {
+
+            Product product = _context.Products
+                                .Include(p => p.Supplier)
+                                .First(p => p.ProductId == id);
+            ProductData pdata = new ProductData { Product = product };
+            patch.ApplyTo(pdata, ModelState);
+
+            if (ModelState.IsValid && TryValidateModel(pdata))
+            {
+
+                if (product.Supplier != null && product.Supplier.SupplierId != 0)
+                {
+                    _context.Attach(product.Supplier);
+                }
+                _context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public void DeleteProduct(long id)
+        {
+            _context.Products.Remove(new Product { ProductId = id });
+            _context.SaveChanges();
         }
     }
 }

@@ -37,5 +37,28 @@ namespace SportsStore.Controllers
                 return BadRequest(ModelState);
             }
         }
+        [HttpPut("{id}")]
+        public IActionResult ReplaceSupplier(long id,
+                [FromBody] SupplierData sdata)
+        {
+            if (ModelState.IsValid)
+            {
+                Supplier s = sdata.Supplier;
+                s.SupplierId = id;
+                context.Update(s);
+                context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+        }
+        [HttpDelete("{id}")]
+        public void DeleteSupplier(long id)
+        {
+            context.Remove(new Supplier { SupplierId = id });
+            context.SaveChanges();
+        }
     }
 }
