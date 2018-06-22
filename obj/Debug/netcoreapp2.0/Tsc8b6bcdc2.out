@@ -12,6 +12,12 @@ E:\dev\SportsStore\dist\out-tsc\app\app.component.js
 E:\dev\SportsStore\dist\out-tsc\app\app.component.js.map
 E:\dev\SportsStore\dist\out-tsc\app\models\model.module.js
 E:\dev\SportsStore\dist\out-tsc\app\models\model.module.js.map
+E:\dev\SportsStore\dist\out-tsc\app\structure\categoryFilter.component.js
+E:\dev\SportsStore\dist\out-tsc\app\structure\categoryFilter.component.js.map
+E:\dev\SportsStore\dist\out-tsc\app\structure\productTable.component.js
+E:\dev\SportsStore\dist\out-tsc\app\structure\productTable.component.js.map
+E:\dev\SportsStore\dist\out-tsc\app\structure\productDetail.component.js
+E:\dev\SportsStore\dist\out-tsc\app\structure\productDetail.component.js.map
 E:\dev\SportsStore\dist\out-tsc\app\app.module.js
 E:\dev\SportsStore\dist\out-tsc\app\app.module.js.map
 E:\dev\SportsStore\dist\out-tsc\boot.js
@@ -24,5 +30,7 @@ E:\dev\SportsStore\dist\out-tsc\polyfills.js
 E:\dev\SportsStore\dist\out-tsc\polyfills.js.map
 E:\dev\SportsStore\dist\out-tsc\test.js
 E:\dev\SportsStore\dist\out-tsc\test.js.map
+E:\dev\SportsStore\dist\out-tsc\app\app.routing.js
+E:\dev\SportsStore\dist\out-tsc\app\app.routing.js.map
 E:\dev\SportsStore\dist\out-tsc\environments\environment.prod.js
 E:\dev\SportsStore\dist\out-tsc\environments\environment.prod.js.map

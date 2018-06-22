@@ -12,19 +12,32 @@ var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var model_module_1 = require("./models/model.module");
+var categoryFilter_component_1 = require("./structure/categoryFilter.component");
+var productTable_component_1 = require("./structure/productTable.component");
+var productDetail_component_1 = require("./structure/productDetail.component");
+var router_1 = require("@angular/router");
+//import { RoutingConfig  } from "./app.routing";
+var routes = [
+    { path: "table", component: productTable_component_1.ProductTableComponent },
+    { path: "detail/:id", component: productDetail_component_1.ProductDetailComponent },
+    { path: "detail", component: productDetail_component_1.ProductDetailComponent },
+    { path: "", component: productTable_component_1.ProductTableComponent }
+];
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent, productTable_component_1.ProductTableComponent, categoryFilter_component_1.CategoryFilterComponent, productDetail_component_1.ProductDetailComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                model_module_1.ModelModule
+                model_module_1.ModelModule,
+                router_1.RouterModule.forRoot(routes, { enableTracing: true } // <-- debugging purposes only
+                )
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

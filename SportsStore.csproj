@@ -3,7 +3,11 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="ClientApp\app\app.routing.ts" />
     <None Remove="ClientApp\app\models\configClasses.repository.ts" />
+    <None Remove="ClientApp\app\structure\categoryFilter.component.ts" />
+    <None Remove="ClientApp\app\structure\productDetail.component.ts" />
+    <None Remove="ClientApp\app\structure\productTable.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
@@ -20,6 +24,10 @@
 
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\app.routing.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\configClasses.repository.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\categoryFilter.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\productDetail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\productTable.component.ts" />
   </ItemGroup>
 </Project>
