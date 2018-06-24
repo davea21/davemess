@@ -15,10 +15,28 @@ var CategoryFilterComponent = /** @class */ (function () {
     function CategoryFilterComponent(repo) {
         this.repo = repo;
     }
+    Object.defineProperty(CategoryFilterComponent.prototype, "categories", {
+        get: function () {
+            return this.repo.categories;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CategoryFilterComponent.prototype, "currentCategory", {
+        get: function () {
+            return this.repo.filter.category;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CategoryFilterComponent.prototype.setCurrentCategory = function (newCategory) {
+        this.repo.filter.category = newCategory;
+        this.repo.getProducts();
+    };
     CategoryFilterComponent = __decorate([
         core_1.Component({
-            templateUrl: "categoryFilter.component.html",
-            selector: "store-categoryfilter"
+            selector: "store-categoryfilter",
+            templateUrl: "categoryFilter.component.html"
         }),
         __metadata("design:paramtypes", [repository_1.Repository])
     ], CategoryFilterComponent);

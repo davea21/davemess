@@ -1,4 +1,4 @@
-﻿import { Component } from "@angular/core";
+import { Component } from "@angular/core";
 import { Repository } from "../models/repository";
 
 @Component({
@@ -16,7 +16,7 @@ export class PaginationComponent {
     get pages(): number[] {
         if (this.repo.products != null) {
             return Array(Math.ceil(this.repo.products.length
-                / this.repo.pagination.productsPerPage))
+                    / this.repo.pagination.productsPerPage))
                 .fill(0).map((x, i) => i + 1);
         } else {
             return [];

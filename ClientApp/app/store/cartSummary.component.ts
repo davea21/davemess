@@ -1,9 +1,9 @@
-﻿import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "cartSummary.component.html",
-    selector: "store-cartsummary"
+    selector: "store-cartsummary",
+    templateUrl: "cartSummary.component.html"
 })
 export class CartSummaryComponent {
-  
+
 }

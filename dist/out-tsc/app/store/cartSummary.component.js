@@ -12,8 +12,8 @@ var CartSummaryComponent = /** @class */ (function () {
     }
     CartSummaryComponent = __decorate([
         core_1.Component({
-            templateUrl: "cartSummary.component.html",
-            selector: "store-cartsummary"
+            selector: "store-cartsummary",
+            templateUrl: "cartSummary.component.html"
         })
     ], CartSummaryComponent);
     return CartSummaryComponent;

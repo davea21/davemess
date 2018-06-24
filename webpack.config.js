@@ -48,7 +48,7 @@ const postcssPlugins = function () {
         }
       }
     }),
-    autoprefixer(),
+    autoprefixer()
   ].concat(minimizeCss ? [cssnano(minimizeOptions)] : []);
 };
 

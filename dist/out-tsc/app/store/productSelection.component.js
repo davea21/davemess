@@ -12,8 +12,8 @@ var ProductSelectionComponent = /** @class */ (function () {
     }
     ProductSelectionComponent = __decorate([
         core_1.Component({
-            templateUrl: "productSelection.component.html",
-            selector: "store-products"
+            selector: "store-products",
+            templateUrl: "productSelection.component.html"
         })
     ], ProductSelectionComponent);
     return ProductSelectionComponent;

@@ -27,3 +27,4 @@ E:\dev\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.Views.pdb
 E:\dev\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.dll
 E:\dev\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.pdb
 E:\dev\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.csproj.CopyComplete
+E:\dev\SportsStore\obj\Debug\netcoreapp2.0\SportsStore.csprojAssemblyReference.cache
