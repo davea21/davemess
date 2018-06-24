@@ -49,8 +49,8 @@ namespace SportsStore.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Product> GetProducts(string category, string search,
-                bool related = false)
+        public IActionResult GetProducts(string category, string search,
+                bool related = false, bool metadata = false)
         {
             IQueryable<Product> query = _context.Products;
 
@@ -80,12 +80,22 @@ namespace SportsStore.Controllers
                         p.Ratings.ForEach(r => r.Product = null);
                     }
                 });
-                return data;
+                return metadata ? CreateMetadata(data) : Ok(data);
             }
             else
             {
-                return query;
+                return metadata ? CreateMetadata(query) : Ok(query);
             }
+        }
+
+        private IActionResult CreateMetadata(IEnumerable<Product> products)
+        {
+            return Ok(new
+            {
+                data = products,
+                categories = _context.Products.Select(p => p.Category)
+                    .Distinct().OrderBy(c => c)
+            });
         }
 
         [HttpPost]
@@ -161,5 +171,7 @@ namespace SportsStore.Controllers
             _context.Products.Remove(new Product { ProductId = id });
             _context.SaveChanges();
         }
+
+  
     }
 }

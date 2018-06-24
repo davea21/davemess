@@ -14,15 +14,24 @@ var repository_1 = require("../models/repository");
 var CategoryFilterComponent = /** @class */ (function () {
     function CategoryFilterComponent(repo) {
         this.repo = repo;
-        this.chessCategory = "chess";
     }
-    CategoryFilterComponent.prototype.setCategory = function (category) {
-        this.repo.filter.category = category;
-        this.repo.getProducts();
-    };
+    Object.defineProperty(CategoryFilterComponent.prototype, "categories", {
+        get: function () {
+            return this.repo.categories;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CategoryFilterComponent.prototype, "currentCategory", {
+        get: function () {
+            return this.repo.filter.category;
+        },
+        enumerable: true,
+        configurable: true
+    });
     CategoryFilterComponent = __decorate([
         core_1.Component({
-            selector: "category-filter",
+            selector: "store-categoryfilter",
             templateUrl: "categoryFilter.component.html"
         }),
         __metadata("design:paramtypes", [repository_1.Repository])

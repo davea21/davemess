@@ -19,7 +19,9 @@ var Repository = /** @class */ (function () {
     function Repository(http) {
         this.http = http;
         this.filterObject = new configClasses_repository_1.Filter();
+        this.paginationObject = new configClasses_repository_1.Pagination();
         this.suppliers = [];
+        this.categories = [];
         //this.filter.category = "soccer";
         this.filter.related = true;
         this.getProducts();
@@ -38,8 +40,13 @@ var Repository = /** @class */ (function () {
         if (this.filter.search) {
             url += "&search=" + this.filter.search;
         }
+        url += "&metadata=true";
         this.sendRequest(http_1.RequestMethod.Get, url)
-            .subscribe(function (response) { return _this.products = response; });
+            .subscribe(function (response) {
+            _this.products = response.data;
+            _this.categories = response.categories;
+            _this.pagination.currentPage = 1;
+        });
     };
     Repository.prototype.getSuppliers = function () {
         var _this = this;
@@ -125,6 +132,13 @@ var Repository = /** @class */ (function () {
     Object.defineProperty(Repository.prototype, "filter", {
         get: function () {
             return this.filterObject;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Repository.prototype, "pagination", {
+        get: function () {
+            return this.paginationObject;
         },
         enumerable: true,
         configurable: true

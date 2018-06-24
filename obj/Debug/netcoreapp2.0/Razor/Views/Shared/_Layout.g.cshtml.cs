@@ -52,7 +52,7 @@ using SportsStore;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 274, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bfedf82a56764ce3999dfd03f5dfd499", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0fe54fc4d674d939fc509c899e4e1db", async() => {
                 BeginContext(31, 156, true);
                 WriteLiteral("\r\n    <base href=\"/\" />\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>SportsStore ");
                 EndContext();
@@ -67,7 +67,7 @@ using SportsStore;
                 WriteLiteral("</title>\r\n    ");
                 EndContext();
                 BeginContext(219, 71, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4dd0428c59b44dc28541927b2be45e7f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "4b77d9a9ca484befa49fad44dff2f1db", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +101,7 @@ using SportsStore;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(301, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10ea97e353af4b3a9d3a80d26a5fb9d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "674955b819064a2c944941aaa9ac8526", async() => {
                 BeginContext(307, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
