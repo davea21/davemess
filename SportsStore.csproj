@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ClientApp\app.routing.ts" />
+    <None Remove="ClientApp\app\models\cartDetail.component.ts" />
     <None Remove="ClientApp\app\models\configClasses.repository.ts" />
     <None Remove="ClientApp\app\store\cartSummary.component.ts" />
     <None Remove="ClientApp\app\store\categoryFilter.component.ts" />
@@ -12,6 +13,7 @@
     <None Remove="ClientApp\app\store\productSelection.component.ts" />
     <None Remove="ClientApp\app\store\ratings.component.ts" />
     <None Remove="ClientApp\app\store\store.module.ts" />
+    <None Remove="Models\cart.model.ts" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
@@ -24,11 +26,14 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.1.0" />
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.0.0" />
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
-
+   <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="2.1.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\cartDetail.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\configClasses.repository.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\productSelection.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\ratings.component.ts" />
@@ -37,5 +42,6 @@
     <TypeScriptCompile Include="ClientApp\app\store\pagination.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\productList.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\store.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\cart.model.ts" />
   </ItemGroup>
 </Project>

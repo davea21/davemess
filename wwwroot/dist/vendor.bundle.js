@@ -7,9 +7,9 @@ webpackJsonp([3],[
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__ = __webpack_require__(210);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_share__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -5865,7 +5865,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(67)(module)
+        return __webpack_require__(68)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -5881,7 +5881,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(67)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(68)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -15040,9 +15040,9 @@ function transition$$1(stateChangeExpr, steps) {
 "use strict";
 
 var root_1 = __webpack_require__(15);
-var toSubscriber_1 = __webpack_require__(227);
-var observable_1 = __webpack_require__(62);
-var pipe_1 = __webpack_require__(97);
+var toSubscriber_1 = __webpack_require__(230);
+var observable_1 = __webpack_require__(63);
+var pipe_1 = __webpack_require__(101);
 /**
  * A representation of any set of values over any amount of time. This is the most basic building block
  * of RxJS.
@@ -15356,10 +15356,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(93);
-var Subscription_1 = __webpack_require__(32);
-var Observer_1 = __webpack_require__(85);
-var rxSubscriber_1 = __webpack_require__(63);
+var isFunction_1 = __webpack_require__(97);
+var Subscription_1 = __webpack_require__(33);
+var Observer_1 = __webpack_require__(89);
+var rxSubscriber_1 = __webpack_require__(64);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -15863,12 +15863,13 @@ exports.root = _root;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 16 */
+/* 16 */,
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrowserModule; });
 /* unused harmony export platformBrowser */
@@ -20462,7 +20463,6 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["e" /* Version */]
 
 
 /***/ }),
-/* 17 */,
 /* 18 */,
 /* 19 */,
 /* 20 */,
@@ -20482,10 +20482,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(3);
 var Subscriber_1 = __webpack_require__(5);
-var Subscription_1 = __webpack_require__(32);
-var ObjectUnsubscribedError_1 = __webpack_require__(90);
-var SubjectSubscription_1 = __webpack_require__(186);
-var rxSubscriber_1 = __webpack_require__(63);
+var Subscription_1 = __webpack_require__(33);
+var ObjectUnsubscribedError_1 = __webpack_require__(94);
+var SubjectSubscription_1 = __webpack_require__(189);
+var rxSubscriber_1 = __webpack_require__(64);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -20650,17 +20650,18 @@ exports.AnonymousSubject = AnonymousSubject;
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */
+/* 32 */,
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var isArray_1 = __webpack_require__(65);
-var isObject_1 = __webpack_require__(94);
-var isFunction_1 = __webpack_require__(93);
-var tryCatch_1 = __webpack_require__(228);
-var errorObject_1 = __webpack_require__(91);
-var UnsubscriptionError_1 = __webpack_require__(224);
+var isArray_1 = __webpack_require__(66);
+var isObject_1 = __webpack_require__(98);
+var isFunction_1 = __webpack_require__(97);
+var tryCatch_1 = __webpack_require__(231);
+var errorObject_1 = __webpack_require__(95);
+var UnsubscriptionError_1 = __webpack_require__(227);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -20849,7 +20850,7 @@ function flattenUnsubscriptionErrors(errors) {
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20936,8 +20937,8 @@ exports.EmptyObservable = EmptyObservable;
 
 
 /***/ }),
-/* 34 */,
-/* 35 */
+/* 35 */,
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24995,7 +24996,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["e" /* Version */]
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25153,7 +25154,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25167,9 +25168,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(36)
-var ieee754 = __webpack_require__(54)
-var isArray = __webpack_require__(55)
+var base64 = __webpack_require__(37)
+var ieee754 = __webpack_require__(55)
+var isArray = __webpack_require__(56)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -26950,7 +26951,6 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
-/* 38 */,
 /* 39 */,
 /* 40 */,
 /* 41 */,
@@ -26965,7 +26965,8 @@ function isnan (val) {
 /* 50 */,
 /* 51 */,
 /* 52 */,
-/* 53 */
+/* 53 */,
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -27044,10 +27045,10 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38).Buffer))
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -27137,7 +27138,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -27148,7 +27149,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27184,7 +27185,7 @@ exports.OuterSubscriber = OuterSubscriber;
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27195,9 +27196,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var ScalarObservable_1 = __webpack_require__(87);
-var EmptyObservable_1 = __webpack_require__(33);
-var isScheduler_1 = __webpack_require__(96);
+var ScalarObservable_1 = __webpack_require__(91);
+var EmptyObservable_1 = __webpack_require__(34);
+var isScheduler_1 = __webpack_require__(100);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -27312,12 +27313,12 @@ exports.ArrayObservable = ArrayObservable;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var map_1 = __webpack_require__(216);
+var map_1 = __webpack_require__(219);
 /**
  * Applies a given `project` function to each value emitted by the source
  * Observable, and emits the resulting values as an Observable.
@@ -27358,13 +27359,13 @@ exports.map = map;
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(60);
-var identity_1 = __webpack_require__(225);
+var mergeMap_1 = __webpack_require__(61);
+var identity_1 = __webpack_require__(228);
 /**
  * Converts a higher-order Observable into a first-order Observable which
  * concurrently delivers all values that are emitted on the inner Observables.
@@ -27417,7 +27418,7 @@ exports.mergeAll = mergeAll;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27427,8 +27428,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var subscribeToResult_1 = __webpack_require__(66);
-var OuterSubscriber_1 = __webpack_require__(56);
+var subscribeToResult_1 = __webpack_require__(67);
+var OuterSubscriber_1 = __webpack_require__(57);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -27596,7 +27597,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27640,7 +27641,7 @@ exports.$$iterator = exports.iterator;
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27672,7 +27673,7 @@ exports.$$observable = exports.observable;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27688,7 +27689,7 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27722,7 +27723,7 @@ exports.EmptyError = EmptyError;
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27731,19 +27732,19 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(15);
-var isArrayLike_1 = __webpack_require__(92);
-var isPromise_1 = __webpack_require__(95);
-var isObject_1 = __webpack_require__(94);
+var isArrayLike_1 = __webpack_require__(96);
+var isPromise_1 = __webpack_require__(99);
+var isObject_1 = __webpack_require__(98);
 var Observable_1 = __webpack_require__(3);
-var iterator_1 = __webpack_require__(61);
-var InnerSubscriber_1 = __webpack_require__(184);
-var observable_1 = __webpack_require__(62);
+var iterator_1 = __webpack_require__(62);
+var InnerSubscriber_1 = __webpack_require__(187);
+var observable_1 = __webpack_require__(63);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -27816,10 +27817,6196 @@ exports.subscribeToResult = subscribeToResult;
 
 
 /***/ }),
-/* 67 */,
 /* 68 */,
 /* 69 */,
-/* 70 */
+/* 70 */,
+/* 71 */,
+/* 72 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(17);
+/* unused harmony export AbstractControlDirective */
+/* unused harmony export AbstractFormGroupDirective */
+/* unused harmony export CheckboxControlValueAccessor */
+/* unused harmony export ControlContainer */
+/* unused harmony export NG_VALUE_ACCESSOR */
+/* unused harmony export COMPOSITION_BUFFER_MODE */
+/* unused harmony export DefaultValueAccessor */
+/* unused harmony export NgControl */
+/* unused harmony export NgControlStatus */
+/* unused harmony export NgControlStatusGroup */
+/* unused harmony export NgForm */
+/* unused harmony export NgModel */
+/* unused harmony export NgModelGroup */
+/* unused harmony export RadioControlValueAccessor */
+/* unused harmony export FormControlDirective */
+/* unused harmony export FormControlName */
+/* unused harmony export FormGroupDirective */
+/* unused harmony export FormArrayName */
+/* unused harmony export FormGroupName */
+/* unused harmony export NgSelectOption */
+/* unused harmony export SelectControlValueAccessor */
+/* unused harmony export SelectMultipleControlValueAccessor */
+/* unused harmony export CheckboxRequiredValidator */
+/* unused harmony export EmailValidator */
+/* unused harmony export MaxLengthValidator */
+/* unused harmony export MinLengthValidator */
+/* unused harmony export PatternValidator */
+/* unused harmony export RequiredValidator */
+/* unused harmony export FormBuilder */
+/* unused harmony export AbstractControl */
+/* unused harmony export FormArray */
+/* unused harmony export FormControl */
+/* unused harmony export FormGroup */
+/* unused harmony export NG_ASYNC_VALIDATORS */
+/* unused harmony export NG_VALIDATORS */
+/* unused harmony export Validators */
+/* unused harmony export VERSION */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
+/* unused harmony export ReactiveFormsModule */
+/* unused harmony export ɵba */
+/* unused harmony export ɵz */
+/* unused harmony export ɵx */
+/* unused harmony export ɵy */
+/* unused harmony export ɵa */
+/* unused harmony export ɵb */
+/* unused harmony export ɵc */
+/* unused harmony export ɵd */
+/* unused harmony export ɵe */
+/* unused harmony export ɵf */
+/* unused harmony export ɵg */
+/* unused harmony export ɵbf */
+/* unused harmony export ɵbb */
+/* unused harmony export ɵbc */
+/* unused harmony export ɵh */
+/* unused harmony export ɵi */
+/* unused harmony export ɵbd */
+/* unused harmony export ɵbe */
+/* unused harmony export ɵj */
+/* unused harmony export ɵk */
+/* unused harmony export ɵl */
+/* unused harmony export ɵn */
+/* unused harmony export ɵm */
+/* unused harmony export ɵo */
+/* unused harmony export ɵq */
+/* unused harmony export ɵp */
+/* unused harmony export ɵs */
+/* unused harmony export ɵt */
+/* unused harmony export ɵv */
+/* unused harmony export ɵu */
+/* unused harmony export ɵw */
+/* unused harmony export ɵr */
+
+/**
+ * @license Angular v4.4.7
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Base class for control directives.
+ *
+ * Only used internally in the forms module.
+ *
+ * \@stable
+ * @abstract
+ */
+var AbstractControlDirective = (function () {
+    function AbstractControlDirective() {
+    }
+    /**
+     * The {\@link FormControl}, {\@link FormGroup}, or {\@link FormArray}
+     * that backs this directive. Most properties fall through to that
+     * instance.
+     * @abstract
+     * @return {?}
+     */
+    AbstractControlDirective.prototype.control = function () { };
+    Object.defineProperty(AbstractControlDirective.prototype, "value", {
+        /**
+         * The value of the control.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.value : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "valid", {
+        /**
+         * A control is `valid` when its `status === VALID`.
+         *
+         * In order to have this status, the control must have passed all its
+         * validation checks.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.valid : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "invalid", {
+        /**
+         * A control is `invalid` when its `status === INVALID`.
+         *
+         * In order to have this status, the control must have failed
+         * at least one of its validation checks.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.invalid : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "pending", {
+        /**
+         * A control is `pending` when its `status === PENDING`.
+         *
+         * In order to have this status, the control must be in the
+         * middle of conducting a validation check.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.pending : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
+        /**
+         * A control is `disabled` when its `status === DISABLED`.
+         *
+         * Disabled controls are exempt from validation checks and
+         * are not included in the aggregate value of their ancestor
+         * controls.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.disabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
+        /**
+         * A control is `enabled` as long as its `status !== DISABLED`.
+         *
+         * In other words, it has a status of `VALID`, `INVALID`, or
+         * `PENDING`.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.enabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "errors", {
+        /**
+         * Returns any errors generated by failing validation. If there
+         * are no errors, it will return null.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.errors : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "pristine", {
+        /**
+         * A control is `pristine` if the user has not yet changed
+         * the value in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.pristine : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "dirty", {
+        /**
+         * A control is `dirty` if the user has changed the value
+         * in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.dirty : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "touched", {
+        /**
+         * A control is marked `touched` once the user has triggered
+         * a `blur` event on it.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.touched : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "untouched", {
+        /**
+         * A control is `untouched` if the user has not yet triggered
+         * a `blur` event on it.
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.untouched : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "statusChanges", {
+        /**
+         * Emits an event every time the validation status of the control
+         * is re-calculated.
+         * @return {?}
+         */
+        get: function () {
+            return this.control ? this.control.statusChanges : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "valueChanges", {
+        /**
+         * Emits an event every time the value of the control changes, in
+         * the UI or programmatically.
+         * @return {?}
+         */
+        get: function () {
+            return this.control ? this.control.valueChanges : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "path", {
+        /**
+         * Returns an array that represents the path from the top-level form
+         * to this control. Each index is the string name of the control on
+         * that level.
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Resets the form control. This means by default:
+     *
+     * * it is marked as `pristine`
+     * * it is marked as `untouched`
+     * * value is set to null
+     *
+     * For more information, see {\@link AbstractControl}.
+     * @param {?=} value
+     * @return {?}
+     */
+    AbstractControlDirective.prototype.reset = function (value) {
+        if (value === void 0) { value = undefined; }
+        if (this.control)
+            this.control.reset(value);
+    };
+    /**
+     * Returns true if the control with the given path has the error specified. Otherwise
+     * returns false.
+     *
+     * If no path is given, it checks for the error on the present control.
+     * @param {?} errorCode
+     * @param {?=} path
+     * @return {?}
+     */
+    AbstractControlDirective.prototype.hasError = function (errorCode, path) {
+        return this.control ? this.control.hasError(errorCode, path) : false;
+    };
+    /**
+     * Returns error data if the control with the given path has the error specified. Otherwise
+     * returns null or undefined.
+     *
+     * If no path is given, it checks for the error on the present control.
+     * @param {?} errorCode
+     * @param {?=} path
+     * @return {?}
+     */
+    AbstractControlDirective.prototype.getError = function (errorCode, path) {
+        return this.control ? this.control.getError(errorCode, path) : null;
+    };
+    return AbstractControlDirective;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A directive that contains multiple {\@link NgControl}s.
+ *
+ * Only used by the forms module.
+ *
+ * \@stable
+ * @abstract
+ */
+var ControlContainer = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](ControlContainer, _super);
+    function ControlContainer() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Object.defineProperty(ControlContainer.prototype, "formDirective", {
+        /**
+         * Get the form to which this container belongs.
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ControlContainer.prototype, "path", {
+        /**
+         * Get the path to this container.
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    return ControlContainer;
+}(AbstractControlDirective));
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isEmptyInputValue(value) {
+    // we don't check for string here so it also works with arrays
+    return value == null || value.length === 0;
+}
+/**
+ * Providers for validators to be used for {\@link FormControl}s in a form.
+ *
+ * Provide this using `multi: true` to add validators.
+ *
+ * \@stable
+ */
+var NG_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgValidators');
+/**
+ * Providers for asynchronous validators to be used for {\@link FormControl}s
+ * in a form.
+ *
+ * Provide this using `multi: true` to add validators.
+ *
+ * See {\@link NG_VALIDATORS} for more details.
+ *
+ * \@stable
+ */
+var NG_ASYNC_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgAsyncValidators');
+var EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
+/**
+ * Provides a set of validators used by form controls.
+ *
+ * A validator is a function that processes a {\@link FormControl} or collection of
+ * controls and returns a map of errors. A null map means that validation has passed.
+ *
+ * ### Example
+ *
+ * ```typescript
+ * var loginControl = new FormControl("", Validators.required)
+ * ```
+ *
+ * \@stable
+ */
+var Validators = (function () {
+    function Validators() {
+    }
+    /**
+     * Validator that requires controls to have a value greater than a number.
+     * @param {?} min
+     * @return {?}
+     */
+    Validators.min = function (min) {
+        return function (control) {
+            if (isEmptyInputValue(control.value) || isEmptyInputValue(min)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var /** @type {?} */ value = parseFloat(control.value);
+            // Controls with NaN values after parsing should be treated as not having a
+            // minimum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-min
+            return !isNaN(value) && value < min ? { 'min': { 'min': min, 'actual': control.value } } : null;
+        };
+    };
+    /**
+     * Validator that requires controls to have a value less than a number.
+     * @param {?} max
+     * @return {?}
+     */
+    Validators.max = function (max) {
+        return function (control) {
+            if (isEmptyInputValue(control.value) || isEmptyInputValue(max)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var /** @type {?} */ value = parseFloat(control.value);
+            // Controls with NaN values after parsing should be treated as not having a
+            // maximum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-max
+            return !isNaN(value) && value > max ? { 'max': { 'max': max, 'actual': control.value } } : null;
+        };
+    };
+    /**
+     * Validator that requires controls to have a non-empty value.
+     * @param {?} control
+     * @return {?}
+     */
+    Validators.required = function (control) {
+        return isEmptyInputValue(control.value) ? { 'required': true } : null;
+    };
+    /**
+     * Validator that requires control value to be true.
+     * @param {?} control
+     * @return {?}
+     */
+    Validators.requiredTrue = function (control) {
+        return control.value === true ? null : { 'required': true };
+    };
+    /**
+     * Validator that performs email validation.
+     * @param {?} control
+     * @return {?}
+     */
+    Validators.email = function (control) {
+        return EMAIL_REGEXP.test(control.value) ? null : { 'email': true };
+    };
+    /**
+     * Validator that requires controls to have a value of a minimum length.
+     * @param {?} minLength
+     * @return {?}
+     */
+    Validators.minLength = function (minLength) {
+        return function (control) {
+            if (isEmptyInputValue(control.value)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var /** @type {?} */ length = control.value ? control.value.length : 0;
+            return length < minLength ?
+                { 'minlength': { 'requiredLength': minLength, 'actualLength': length } } :
+                null;
+        };
+    };
+    /**
+     * Validator that requires controls to have a value of a maximum length.
+     * @param {?} maxLength
+     * @return {?}
+     */
+    Validators.maxLength = function (maxLength) {
+        return function (control) {
+            var /** @type {?} */ length = control.value ? control.value.length : 0;
+            return length > maxLength ?
+                { 'maxlength': { 'requiredLength': maxLength, 'actualLength': length } } :
+                null;
+        };
+    };
+    /**
+     * Validator that requires a control to match a regex to its value.
+     * @param {?} pattern
+     * @return {?}
+     */
+    Validators.pattern = function (pattern) {
+        if (!pattern)
+            return Validators.nullValidator;
+        var /** @type {?} */ regex;
+        var /** @type {?} */ regexStr;
+        if (typeof pattern === 'string') {
+            regexStr = "^" + pattern + "$";
+            regex = new RegExp(regexStr);
+        }
+        else {
+            regexStr = pattern.toString();
+            regex = pattern;
+        }
+        return function (control) {
+            if (isEmptyInputValue(control.value)) {
+                return null; // don't validate empty values to allow optional controls
+            }
+            var /** @type {?} */ value = control.value;
+            return regex.test(value) ? null :
+                { 'pattern': { 'requiredPattern': regexStr, 'actualValue': value } };
+        };
+    };
+    /**
+     * No-op validator.
+     * @param {?} c
+     * @return {?}
+     */
+    Validators.nullValidator = function (c) { return null; };
+    /**
+     * @param {?} validators
+     * @return {?}
+     */
+    Validators.compose = function (validators) {
+        if (!validators)
+            return null;
+        var /** @type {?} */ presentValidators = (validators.filter(isPresent));
+        if (presentValidators.length == 0)
+            return null;
+        return function (control) {
+            return _mergeErrors(_executeValidators(control, presentValidators));
+        };
+    };
+    /**
+     * @param {?} validators
+     * @return {?}
+     */
+    Validators.composeAsync = function (validators) {
+        if (!validators)
+            return null;
+        var /** @type {?} */ presentValidators = (validators.filter(isPresent));
+        if (presentValidators.length == 0)
+            return null;
+        return function (control) {
+            var /** @type {?} */ observables = _executeAsyncValidators(control, presentValidators).map(toObservable);
+            return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__["forkJoin"])(observables), _mergeErrors);
+        };
+    };
+    return Validators;
+}());
+/**
+ * @param {?} o
+ * @return {?}
+ */
+function isPresent(o) {
+    return o != null;
+}
+/**
+ * @param {?} r
+ * @return {?}
+ */
+function toObservable(r) {
+    var /** @type {?} */ obs = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["W" /* ɵisPromise */])(r) ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__["fromPromise"])(r) : r;
+    if (!(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["X" /* ɵisObservable */])(obs))) {
+        throw new Error("Expected validator to return Promise or Observable.");
+    }
+    return obs;
+}
+/**
+ * @param {?} control
+ * @param {?} validators
+ * @return {?}
+ */
+function _executeValidators(control, validators) {
+    return validators.map(function (v) { return v(control); });
+}
+/**
+ * @param {?} control
+ * @param {?} validators
+ * @return {?}
+ */
+function _executeAsyncValidators(control, validators) {
+    return validators.map(function (v) { return v(control); });
+}
+/**
+ * @param {?} arrayOfErrors
+ * @return {?}
+ */
+function _mergeErrors(arrayOfErrors) {
+    var /** @type {?} */ res = arrayOfErrors.reduce(function (res, errors) {
+        return errors != null ? Object.assign({}, /** @type {?} */ ((res)), errors) : ((res));
+    }, {});
+    return Object.keys(res).length === 0 ? null : res;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Used to provide a {\@link ControlValueAccessor} for form controls.
+ *
+ * See {\@link DefaultValueAccessor} for how to implement one.
+ * \@stable
+ */
+var NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgValueAccessor');
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var CHECKBOX_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return CheckboxControlValueAccessor; }),
+    multi: true,
+};
+/**
+ * The accessor for writing a value and listening to changes on a checkbox input element.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="checkbox" name="rememberLogin" ngModel>
+ *  ```
+ *
+ *  \@stable
+ */
+var CheckboxControlValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     */
+    function CheckboxControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    CheckboxControlValueAccessor.prototype.writeValue = function (value) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', value);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    CheckboxControlValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    CheckboxControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    CheckboxControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    return CheckboxControlValueAccessor;
+}());
+CheckboxControlValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel]',
+                host: { '(change)': 'onChange($event.target.checked)', '(blur)': 'onTouched()' },
+                providers: [CHECKBOX_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+CheckboxControlValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var DEFAULT_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return DefaultValueAccessor; }),
+    multi: true
+};
+/**
+ * We must check whether the agent is Android because composition events
+ * behave differently between iOS and Android.
+ * @return {?}
+ */
+function _isAndroid() {
+    var /** @type {?} */ userAgent = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* ɵgetDOM */])() ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* ɵgetDOM */])().getUserAgent() : '';
+    return /android (\d+)/.test(userAgent.toLowerCase());
+}
+/**
+ * Turn this mode on if you want form directives to buffer IME input until compositionend
+ * \@experimental
+ */
+var COMPOSITION_BUFFER_MODE = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('CompositionEventMode');
+/**
+ * The default accessor for writing a value and listening to changes that is used by the
+ * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="text" name="searchQuery" ngModel>
+ *  ```
+ *
+ *  \@stable
+ */
+var DefaultValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     * @param {?} _compositionMode
+     */
+    function DefaultValueAccessor(_renderer, _elementRef, _compositionMode) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._compositionMode = _compositionMode;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        /**
+         * Whether the user is creating a composition string (IME events).
+         */
+        this._composing = false;
+        if (this._compositionMode == null) {
+            this._compositionMode = !_isAndroid();
+        }
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype.writeValue = function (value) {
+        var /** @type {?} */ normalizedValue = value == null ? '' : value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype._handleInput = function (value) {
+        if (!this._compositionMode || (this._compositionMode && !this._composing)) {
+            this.onChange(value);
+        }
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype._compositionStart = function () { this._composing = true; };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    DefaultValueAccessor.prototype._compositionEnd = function (value) {
+        this._composing = false;
+        this._compositionMode && this.onChange(value);
+    };
+    return DefaultValueAccessor;
+}());
+DefaultValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]',
+                // TODO: vsavkin replace the above selector with the one below it once
+                // https://github.com/angular/angular/issues/3011 is implemented
+                // selector: '[ngModel],[formControl],[formControlName]',
+                host: {
+                    '(input)': '_handleInput($event.target.value)',
+                    '(blur)': 'onTouched()',
+                    '(compositionstart)': '_compositionStart()',
+                    '(compositionend)': '_compositionEnd($event.target.value)'
+                },
+                providers: [DEFAULT_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+DefaultValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [COMPOSITION_BUFFER_MODE,] },] },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} validator
+ * @return {?}
+ */
+function normalizeValidator(validator) {
+    if (((validator)).validate) {
+        return function (c) { return ((validator)).validate(c); };
+    }
+    else {
+        return (validator);
+    }
+}
+/**
+ * @param {?} validator
+ * @return {?}
+ */
+function normalizeAsyncValidator(validator) {
+    if (((validator)).validate) {
+        return function (c) { return ((validator)).validate(c); };
+    }
+    else {
+        return (validator);
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NUMBER_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NumberValueAccessor; }),
+    multi: true
+};
+/**
+ * The accessor for writing a number value and listening to changes that is used by the
+ * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="number" [(ngModel)]="age">
+ *  ```
+ */
+var NumberValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     */
+    function NumberValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NumberValueAccessor.prototype.writeValue = function (value) {
+        // The value needs to be normalized for IE9, otherwise it is set to 'null' when null
+        var /** @type {?} */ normalizedValue = value == null ? '' : value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NumberValueAccessor.prototype.registerOnChange = function (fn) {
+        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NumberValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    NumberValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    return NumberValueAccessor;
+}());
+NumberValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel]',
+                host: {
+                    '(change)': 'onChange($event.target.value)',
+                    '(input)': 'onChange($event.target.value)',
+                    '(blur)': 'onTouched()'
+                },
+                providers: [NUMBER_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NumberValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @return {?}
+ */
+function unimplemented() {
+    throw new Error('unimplemented');
+}
+/**
+ * A base class that all control directive extend.
+ * It binds a {\@link FormControl} object to a DOM element.
+ *
+ * Used internally by Angular forms.
+ *
+ * \@stable
+ * @abstract
+ */
+var NgControl = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControl, _super);
+    function NgControl() {
+        var _this = _super.apply(this, arguments) || this;
+        /**
+         * \@internal
+         */
+        _this._parent = null;
+        _this.name = null;
+        _this.valueAccessor = null;
+        /**
+         * \@internal
+         */
+        _this._rawValidators = [];
+        /**
+         * \@internal
+         */
+        _this._rawAsyncValidators = [];
+        return _this;
+    }
+    Object.defineProperty(NgControl.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return (unimplemented()); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgControl.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return (unimplemented()); },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @abstract
+     * @param {?} newValue
+     * @return {?}
+     */
+    NgControl.prototype.viewToModelUpdate = function (newValue) { };
+    return NgControl;
+}(AbstractControlDirective));
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var RADIO_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RadioControlValueAccessor; }),
+    multi: true
+};
+/**
+ * Internal class used by Angular to uncheck radio buttons with the matching name.
+ */
+var RadioControlRegistry = (function () {
+    function RadioControlRegistry() {
+        this._accessors = [];
+    }
+    /**
+     * @param {?} control
+     * @param {?} accessor
+     * @return {?}
+     */
+    RadioControlRegistry.prototype.add = function (control, accessor) {
+        this._accessors.push([control, accessor]);
+    };
+    /**
+     * @param {?} accessor
+     * @return {?}
+     */
+    RadioControlRegistry.prototype.remove = function (accessor) {
+        for (var /** @type {?} */ i = this._accessors.length - 1; i >= 0; --i) {
+            if (this._accessors[i][1] === accessor) {
+                this._accessors.splice(i, 1);
+                return;
+            }
+        }
+    };
+    /**
+     * @param {?} accessor
+     * @return {?}
+     */
+    RadioControlRegistry.prototype.select = function (accessor) {
+        var _this = this;
+        this._accessors.forEach(function (c) {
+            if (_this._isSameGroup(c, accessor) && c[1] !== accessor) {
+                c[1].fireUncheck(accessor.value);
+            }
+        });
+    };
+    /**
+     * @param {?} controlPair
+     * @param {?} accessor
+     * @return {?}
+     */
+    RadioControlRegistry.prototype._isSameGroup = function (controlPair, accessor) {
+        if (!controlPair[0].control)
+            return false;
+        return controlPair[0]._parent === accessor._control._parent &&
+            controlPair[1].name === accessor.name;
+    };
+    return RadioControlRegistry;
+}());
+RadioControlRegistry.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Injectable */] },
+];
+/**
+ * @nocollapse
+ */
+RadioControlRegistry.ctorParameters = function () { return []; };
+/**
+ * \@whatItDoes Writes radio control values and listens to radio control changes.
+ *
+ * Used by {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName}
+ * to keep the view synced with the {\@link FormControl} model.
+ *
+ * \@howToUse
+ *
+ * If you have imported the {\@link FormsModule} or the {\@link ReactiveFormsModule}, this
+ * value accessor will be active on any radio control that has a form directive. You do
+ * **not** need to add a special selector to activate it.
+ *
+ * ### How to use radio buttons with form directives
+ *
+ * To use radio buttons in a template-driven form, you'll want to ensure that radio buttons
+ * in the same group have the same `name` attribute.  Radio buttons with different `name`
+ * attributes do not affect each other.
+ *
+ * {\@example forms/ts/radioButtons/radio_button_example.ts region='TemplateDriven'}
+ *
+ * When using radio buttons in a reactive form, radio buttons in the same group should have the
+ * same `formControlName`. You can also add a `name` attribute, but it's optional.
+ *
+ * {\@example forms/ts/reactiveRadioButtons/reactive_radio_button_example.ts region='Reactive'}
+ *
+ *  * **npm package**: `\@angular/forms`
+ *
+ *  \@stable
+ */
+var RadioControlValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     * @param {?} _registry
+     * @param {?} _injector
+     */
+    function RadioControlValueAccessor(_renderer, _elementRef, _registry, _injector) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this._registry = _registry;
+        this._injector = _injector;
+        this.onChange = function () { };
+        this.onTouched = function () { };
+    }
+    /**
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.ngOnInit = function () {
+        this._control = this._injector.get(NgControl);
+        this._checkName();
+        this._registry.add(this._control, this);
+    };
+    /**
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.ngOnDestroy = function () { this._registry.remove(this); };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.writeValue = function (value) {
+        this._state = value === this.value;
+        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', this._state);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this._fn = fn;
+        this.onChange = function () {
+            fn(_this.value);
+            _this._registry.select(_this);
+        };
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.fireUncheck = function (value) { this.writeValue(value); };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /**
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype._checkName = function () {
+        if (this.name && this.formControlName && this.name !== this.formControlName) {
+            this._throwNameError();
+        }
+        if (!this.name && this.formControlName)
+            this.name = this.formControlName;
+    };
+    /**
+     * @return {?}
+     */
+    RadioControlValueAccessor.prototype._throwNameError = function () {
+        throw new Error("\n      If you define both a name and a formControlName attribute on your radio button, their values\n      must match. Ex: <input type=\"radio\" formControlName=\"food\" name=\"food\">\n    ");
+    };
+    return RadioControlValueAccessor;
+}());
+RadioControlValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel]',
+                host: { '(change)': 'onChange()', '(blur)': 'onTouched()' },
+                providers: [RADIO_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RadioControlValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+    { type: RadioControlRegistry, },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Injector */], },
+]; };
+RadioControlValueAccessor.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+    'formControlName': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var RANGE_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RangeValueAccessor; }),
+    multi: true
+};
+/**
+ * The accessor for writing a range value and listening to changes that is used by the
+ * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
+ *
+ *  ### Example
+ *  ```
+ *  <input type="range" [(ngModel)]="age" >
+ *  ```
+ */
+var RangeValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     */
+    function RangeValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    RangeValueAccessor.prototype.writeValue = function (value) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', parseFloat(value));
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    RangeValueAccessor.prototype.registerOnChange = function (fn) {
+        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    RangeValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    RangeValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    return RangeValueAccessor;
+}());
+RangeValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel]',
+                host: {
+                    '(change)': 'onChange($event.target.value)',
+                    '(input)': 'onChange($event.target.value)',
+                    '(blur)': 'onTouched()'
+                },
+                providers: [RANGE_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RangeValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SELECT_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return SelectControlValueAccessor; }),
+    multi: true
+};
+/**
+ * @param {?} id
+ * @param {?} value
+ * @return {?}
+ */
+function _buildValueString(id, value) {
+    if (id == null)
+        return "" + value;
+    if (value && typeof value === 'object')
+        value = 'Object';
+    return (id + ": " + value).slice(0, 50);
+}
+/**
+ * @param {?} valueString
+ * @return {?}
+ */
+function _extractId(valueString) {
+    return valueString.split(':')[0];
+}
+/**
+ * \@whatItDoes Writes values and listens to changes on a select element.
+ *
+ * Used by {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName}
+ * to keep the view synced with the {\@link FormControl} model.
+ *
+ * \@howToUse
+ *
+ * If you have imported the {\@link FormsModule} or the {\@link ReactiveFormsModule}, this
+ * value accessor will be active on any select control that has a form directive. You do
+ * **not** need to add a special selector to activate it.
+ *
+ * ### How to use select controls with form directives
+ *
+ * To use a select in a template-driven form, simply add an `ngModel` and a `name`
+ * attribute to the main `<select>` tag.
+ *
+ * If your option values are simple strings, you can bind to the normal `value` property
+ * on the option.  If your option values happen to be objects (and you'd like to save the
+ * selection in your form as an object), use `ngValue` instead:
+ *
+ * {\@example forms/ts/selectControl/select_control_example.ts region='Component'}
+ *
+ * In reactive forms, you'll also want to add your form directive (`formControlName` or
+ * `formControl`) on the main `<select>` tag. Like in the former example, you have the
+ * choice of binding to the  `value` or `ngValue` property on the select's options.
+ *
+ * {\@example forms/ts/reactiveSelectControl/reactive_select_control_example.ts region='Component'}
+ *
+ * ### Caveat: Option selection
+ *
+ * Angular uses object identity to select option. It's possible for the identities of items
+ * to change while the data does not. This can happen, for example, if the items are produced
+ * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
+ * second response will produce objects with different identities.
+ *
+ * To customize the default option comparison algorithm, `<select>` supports `compareWith` input.
+ * `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
+ * If `compareWith` is given, Angular selects option by the return value of the function.
+ *
+ * #### Syntax
+ *
+ * ```
+ * <select [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
+ *     <option *ngFor="let country of countries" [ngValue]="country">
+ *         {{country.name}}
+ *     </option>
+ * </select>
+ *
+ * compareFn(c1: Country, c2: Country): boolean {
+ *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
+ * }
+ * ```
+ *
+ * Note: We listen to the 'change' event because 'input' events aren't fired
+ * for selects in Firefox and IE:
+ * https://bugzilla.mozilla.org/show_bug.cgi?id=1024350
+ * https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4660045/
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * \@stable
+ */
+var SelectControlValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     */
+    function SelectControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        /**
+         * \@internal
+         */
+        this._optionMap = new Map();
+        /**
+         * \@internal
+         */
+        this._idCounter = 0;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        this._compareWith = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */];
+    }
+    Object.defineProperty(SelectControlValueAccessor.prototype, "compareWith", {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        set: function (fn) {
+            if (typeof fn !== 'function') {
+                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
+            }
+            this._compareWith = fn;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype.writeValue = function (value) {
+        this.value = value;
+        var /** @type {?} */ id = this._getOptionId(value);
+        if (id == null) {
+            this._renderer.setProperty(this._elementRef.nativeElement, 'selectedIndex', -1);
+        }
+        var /** @type {?} */ valueString = _buildValueString(id, value);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', valueString);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this.onChange = function (valueString) {
+            _this.value = _this._getOptionValue(valueString);
+            fn(_this.value);
+        };
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype._registerOption = function () { return (this._idCounter++).toString(); };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype._getOptionId = function (value) {
+        for (var _i = 0, _a = Array.from(this._optionMap.keys()); _i < _a.length; _i++) {
+            var id = _a[_i];
+            if (this._compareWith(this._optionMap.get(id), value))
+                return id;
+        }
+        return null;
+    };
+    /**
+     * \@internal
+     * @param {?} valueString
+     * @return {?}
+     */
+    SelectControlValueAccessor.prototype._getOptionValue = function (valueString) {
+        var /** @type {?} */ id = _extractId(valueString);
+        return this._optionMap.has(id) ? this._optionMap.get(id) : valueString;
+    };
+    return SelectControlValueAccessor;
+}());
+SelectControlValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel]',
+                host: { '(change)': 'onChange($event.target.value)', '(blur)': 'onTouched()' },
+                providers: [SELECT_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SelectControlValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+]; };
+SelectControlValueAccessor.propDecorators = {
+    'compareWith': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * \@whatItDoes Marks `<option>` as dynamic, so Angular can be notified when options change.
+ *
+ * \@howToUse
+ *
+ * See docs for {\@link SelectControlValueAccessor} for usage examples.
+ *
+ * \@stable
+ */
+var NgSelectOption = (function () {
+    /**
+     * @param {?} _element
+     * @param {?} _renderer
+     * @param {?} _select
+     */
+    function NgSelectOption(_element, _renderer, _select) {
+        this._element = _element;
+        this._renderer = _renderer;
+        this._select = _select;
+        if (this._select)
+            this.id = this._select._registerOption();
+    }
+    Object.defineProperty(NgSelectOption.prototype, "ngValue", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            if (this._select == null)
+                return;
+            this._select._optionMap.set(this.id, value);
+            this._setElementValue(_buildValueString(this.id, value));
+            this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgSelectOption.prototype, "value", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            this._setElementValue(value);
+            if (this._select)
+                this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    NgSelectOption.prototype._setElementValue = function (value) {
+        this._renderer.setProperty(this._element.nativeElement, 'value', value);
+    };
+    /**
+     * @return {?}
+     */
+    NgSelectOption.prototype.ngOnDestroy = function () {
+        if (this._select) {
+            this._select._optionMap.delete(this.id);
+            this._select.writeValue(this._select.value);
+        }
+    };
+    return NgSelectOption;
+}());
+NgSelectOption.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: 'option' },] },
+];
+/**
+ * @nocollapse
+ */
+NgSelectOption.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: SelectControlValueAccessor, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
+]; };
+NgSelectOption.propDecorators = {
+    'ngValue': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngValue',] },],
+    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['value',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SELECT_MULTIPLE_VALUE_ACCESSOR = {
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return SelectMultipleControlValueAccessor; }),
+    multi: true
+};
+/**
+ * @param {?} id
+ * @param {?} value
+ * @return {?}
+ */
+function _buildValueString$1(id, value) {
+    if (id == null)
+        return "" + value;
+    if (typeof value === 'string')
+        value = "'" + value + "'";
+    if (value && typeof value === 'object')
+        value = 'Object';
+    return (id + ": " + value).slice(0, 50);
+}
+/**
+ * @param {?} valueString
+ * @return {?}
+ */
+function _extractId$1(valueString) {
+    return valueString.split(':')[0];
+}
+/**
+ * The accessor for writing a value and listening to changes on a select element.
+ *
+ *  ### Caveat: Options selection
+ *
+ * Angular uses object identity to select options. It's possible for the identities of items
+ * to change while the data does not. This can happen, for example, if the items are produced
+ * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
+ * second response will produce objects with different identities.
+ *
+ * To customize the default option comparison algorithm, `<select multiple>` supports `compareWith`
+ * input. `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
+ * If `compareWith` is given, Angular selects options by the return value of the function.
+ *
+ * #### Syntax
+ *
+ * ```
+ * <select multiple [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
+ *     <option *ngFor="let country of countries" [ngValue]="country">
+ *         {{country.name}}
+ *     </option>
+ * </select>
+ *
+ * compareFn(c1: Country, c2: Country): boolean {
+ *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
+ * }
+ * ```
+ *
+ * \@stable
+ */
+var SelectMultipleControlValueAccessor = (function () {
+    /**
+     * @param {?} _renderer
+     * @param {?} _elementRef
+     */
+    function SelectMultipleControlValueAccessor(_renderer, _elementRef) {
+        this._renderer = _renderer;
+        this._elementRef = _elementRef;
+        /**
+         * \@internal
+         */
+        this._optionMap = new Map();
+        /**
+         * \@internal
+         */
+        this._idCounter = 0;
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+        this._compareWith = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */];
+    }
+    Object.defineProperty(SelectMultipleControlValueAccessor.prototype, "compareWith", {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        set: function (fn) {
+            if (typeof fn !== 'function') {
+                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
+            }
+            this._compareWith = fn;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype.writeValue = function (value) {
+        var _this = this;
+        this.value = value;
+        var /** @type {?} */ optionSelectedStateSetter;
+        if (Array.isArray(value)) {
+            // convert values to ids
+            var /** @type {?} */ ids_1 = value.map(function (v) { return _this._getOptionId(v); });
+            optionSelectedStateSetter = function (opt, o) { opt._setSelected(ids_1.indexOf(o.toString()) > -1); };
+        }
+        else {
+            optionSelectedStateSetter = function (opt, o) { opt._setSelected(false); };
+        }
+        this._optionMap.forEach(optionSelectedStateSetter);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype.registerOnChange = function (fn) {
+        var _this = this;
+        this.onChange = function (_) {
+            var /** @type {?} */ selected = [];
+            if (_.hasOwnProperty('selectedOptions')) {
+                var /** @type {?} */ options = _.selectedOptions;
+                for (var /** @type {?} */ i = 0; i < options.length; i++) {
+                    var /** @type {?} */ opt = options.item(i);
+                    var /** @type {?} */ val = _this._getOptionValue(opt.value);
+                    selected.push(val);
+                }
+            }
+            else {
+                var /** @type {?} */ options = (_.options);
+                for (var /** @type {?} */ i = 0; i < options.length; i++) {
+                    var /** @type {?} */ opt = options.item(i);
+                    if (opt.selected) {
+                        var /** @type {?} */ val = _this._getOptionValue(opt.value);
+                        selected.push(val);
+                    }
+                }
+            }
+            _this.value = selected;
+            fn(selected);
+        };
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype._registerOption = function (value) {
+        var /** @type {?} */ id = (this._idCounter++).toString();
+        this._optionMap.set(id, value);
+        return id;
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype._getOptionId = function (value) {
+        for (var _i = 0, _a = Array.from(this._optionMap.keys()); _i < _a.length; _i++) {
+            var id = _a[_i];
+            if (this._compareWith(/** @type {?} */ ((this._optionMap.get(id)))._value, value))
+                return id;
+        }
+        return null;
+    };
+    /**
+     * \@internal
+     * @param {?} valueString
+     * @return {?}
+     */
+    SelectMultipleControlValueAccessor.prototype._getOptionValue = function (valueString) {
+        var /** @type {?} */ id = _extractId$1(valueString);
+        return this._optionMap.has(id) ? ((this._optionMap.get(id)))._value : valueString;
+    };
+    return SelectMultipleControlValueAccessor;
+}());
+SelectMultipleControlValueAccessor.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel]',
+                host: { '(change)': 'onChange($event.target)', '(blur)': 'onTouched()' },
+                providers: [SELECT_MULTIPLE_VALUE_ACCESSOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+SelectMultipleControlValueAccessor.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+]; };
+SelectMultipleControlValueAccessor.propDecorators = {
+    'compareWith': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * Marks `<option>` as dynamic, so Angular can be notified when options change.
+ *
+ * ### Example
+ *
+ * ```
+ * <select multiple name="city" ngModel>
+ *   <option *ngFor="let c of cities" [value]="c"></option>
+ * </select>
+ * ```
+ */
+var NgSelectMultipleOption = (function () {
+    /**
+     * @param {?} _element
+     * @param {?} _renderer
+     * @param {?} _select
+     */
+    function NgSelectMultipleOption(_element, _renderer, _select) {
+        this._element = _element;
+        this._renderer = _renderer;
+        this._select = _select;
+        if (this._select) {
+            this.id = this._select._registerOption(this);
+        }
+    }
+    Object.defineProperty(NgSelectMultipleOption.prototype, "ngValue", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            if (this._select == null)
+                return;
+            this._value = value;
+            this._setElementValue(_buildValueString$1(this.id, value));
+            this._select.writeValue(this._select.value);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgSelectMultipleOption.prototype, "value", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            if (this._select) {
+                this._value = value;
+                this._setElementValue(_buildValueString$1(this.id, value));
+                this._select.writeValue(this._select.value);
+            }
+            else {
+                this._setElementValue(value);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    NgSelectMultipleOption.prototype._setElementValue = function (value) {
+        this._renderer.setProperty(this._element.nativeElement, 'value', value);
+    };
+    /**
+     * \@internal
+     * @param {?} selected
+     * @return {?}
+     */
+    NgSelectMultipleOption.prototype._setSelected = function (selected) {
+        this._renderer.setProperty(this._element.nativeElement, 'selected', selected);
+    };
+    /**
+     * @return {?}
+     */
+    NgSelectMultipleOption.prototype.ngOnDestroy = function () {
+        if (this._select) {
+            this._select._optionMap.delete(this.id);
+            this._select.writeValue(this._select.value);
+        }
+    };
+    return NgSelectMultipleOption;
+}());
+NgSelectMultipleOption.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: 'option' },] },
+];
+/**
+ * @nocollapse
+ */
+NgSelectMultipleOption.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
+    { type: SelectMultipleControlValueAccessor, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
+]; };
+NgSelectMultipleOption.propDecorators = {
+    'ngValue': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngValue',] },],
+    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['value',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} name
+ * @param {?} parent
+ * @return {?}
+ */
+function controlPath(name, parent) {
+    return ((parent.path)).concat([name]);
+}
+/**
+ * @param {?} control
+ * @param {?} dir
+ * @return {?}
+ */
+function setUpControl(control, dir) {
+    if (!control)
+        _throwError(dir, 'Cannot find control with');
+    if (!dir.valueAccessor)
+        _throwError(dir, 'No value accessor for form control with');
+    control.validator = Validators.compose([/** @type {?} */ ((control.validator)), dir.validator]);
+    control.asyncValidator = Validators.composeAsync([/** @type {?} */ ((control.asyncValidator)), dir.asyncValidator]); /** @type {?} */
+    ((dir.valueAccessor)).writeValue(control.value); /** @type {?} */
+    ((
+    // view -> model
+    dir.valueAccessor)).registerOnChange(function (newValue) {
+        dir.viewToModelUpdate(newValue);
+        control.markAsDirty();
+        control.setValue(newValue, { emitModelToViewChange: false });
+    }); /** @type {?} */
+    ((
+    // touched
+    dir.valueAccessor)).registerOnTouched(function () { return control.markAsTouched(); });
+    control.registerOnChange(function (newValue, emitModelEvent) {
+        ((
+        // control -> view
+        dir.valueAccessor)).writeValue(newValue);
+        // control -> ngModel
+        if (emitModelEvent)
+            dir.viewToModelUpdate(newValue);
+    });
+    if (((dir.valueAccessor)).setDisabledState) {
+        control.registerOnDisabledChange(function (isDisabled) { /** @type {?} */ ((((dir.valueAccessor)).setDisabledState))(isDisabled); });
+    }
+    // re-run validation when validator binding changes, e.g. minlength=3 -> minlength=4
+    dir._rawValidators.forEach(function (validator) {
+        if (((validator)).registerOnValidatorChange)
+            ((((validator)).registerOnValidatorChange))(function () { return control.updateValueAndValidity(); });
+    });
+    dir._rawAsyncValidators.forEach(function (validator) {
+        if (((validator)).registerOnValidatorChange)
+            ((((validator)).registerOnValidatorChange))(function () { return control.updateValueAndValidity(); });
+    });
+}
+/**
+ * @param {?} control
+ * @param {?} dir
+ * @return {?}
+ */
+function cleanUpControl(control, dir) {
+    ((dir.valueAccessor)).registerOnChange(function () { return _noControlError(dir); }); /** @type {?} */
+    ((dir.valueAccessor)).registerOnTouched(function () { return _noControlError(dir); });
+    dir._rawValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange) {
+            validator.registerOnValidatorChange(null);
+        }
+    });
+    dir._rawAsyncValidators.forEach(function (validator) {
+        if (validator.registerOnValidatorChange) {
+            validator.registerOnValidatorChange(null);
+        }
+    });
+    if (control)
+        control._clearChangeFns();
+}
+/**
+ * @param {?} control
+ * @param {?} dir
+ * @return {?}
+ */
+function setUpFormContainer(control, dir) {
+    if (control == null)
+        _throwError(dir, 'Cannot find control with');
+    control.validator = Validators.compose([control.validator, dir.validator]);
+    control.asyncValidator = Validators.composeAsync([control.asyncValidator, dir.asyncValidator]);
+}
+/**
+ * @param {?} dir
+ * @return {?}
+ */
+function _noControlError(dir) {
+    return _throwError(dir, 'There is no FormControl instance attached to form control element with');
+}
+/**
+ * @param {?} dir
+ * @param {?} message
+ * @return {?}
+ */
+function _throwError(dir, message) {
+    var /** @type {?} */ messageEnd;
+    if (((dir.path)).length > 1) {
+        messageEnd = "path: '" + ((dir.path)).join(' -> ') + "'";
+    }
+    else if (((dir.path))[0]) {
+        messageEnd = "name: '" + dir.path + "'";
+    }
+    else {
+        messageEnd = 'unspecified name attribute';
+    }
+    throw new Error(message + " " + messageEnd);
+}
+/**
+ * @param {?} validators
+ * @return {?}
+ */
+function composeValidators(validators) {
+    return validators != null ? Validators.compose(validators.map(normalizeValidator)) : null;
+}
+/**
+ * @param {?} validators
+ * @return {?}
+ */
+function composeAsyncValidators(validators) {
+    return validators != null ? Validators.composeAsync(validators.map(normalizeAsyncValidator)) :
+        null;
+}
+/**
+ * @param {?} changes
+ * @param {?} viewModel
+ * @return {?}
+ */
+function isPropertyUpdated(changes, viewModel) {
+    if (!changes.hasOwnProperty('model'))
+        return false;
+    var /** @type {?} */ change = changes['model'];
+    if (change.isFirstChange())
+        return true;
+    return !__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */])(viewModel, change.currentValue);
+}
+var BUILTIN_ACCESSORS = [
+    CheckboxControlValueAccessor,
+    RangeValueAccessor,
+    NumberValueAccessor,
+    SelectControlValueAccessor,
+    SelectMultipleControlValueAccessor,
+    RadioControlValueAccessor,
+];
+/**
+ * @param {?} valueAccessor
+ * @return {?}
+ */
+function isBuiltInAccessor(valueAccessor) {
+    return BUILTIN_ACCESSORS.some(function (a) { return valueAccessor.constructor === a; });
+}
+/**
+ * @param {?} dir
+ * @param {?} valueAccessors
+ * @return {?}
+ */
+function selectValueAccessor(dir, valueAccessors) {
+    if (!valueAccessors)
+        return null;
+    var /** @type {?} */ defaultAccessor = undefined;
+    var /** @type {?} */ builtinAccessor = undefined;
+    var /** @type {?} */ customAccessor = undefined;
+    valueAccessors.forEach(function (v) {
+        if (v.constructor === DefaultValueAccessor) {
+            defaultAccessor = v;
+        }
+        else if (isBuiltInAccessor(v)) {
+            if (builtinAccessor)
+                _throwError(dir, 'More than one built-in value accessor matches form control with');
+            builtinAccessor = v;
+        }
+        else {
+            if (customAccessor)
+                _throwError(dir, 'More than one custom value accessor matches form control with');
+            customAccessor = v;
+        }
+    });
+    if (customAccessor)
+        return customAccessor;
+    if (builtinAccessor)
+        return builtinAccessor;
+    if (defaultAccessor)
+        return defaultAccessor;
+    _throwError(dir, 'No valid value accessor for form control with');
+    return null;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * This is a base class for code shared between {\@link NgModelGroup} and {\@link FormGroupName}.
+ *
+ * \@stable
+ */
+var AbstractFormGroupDirective = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](AbstractFormGroupDirective, _super);
+    function AbstractFormGroupDirective() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * @return {?}
+     */
+    AbstractFormGroupDirective.prototype.ngOnInit = function () {
+        this._checkParentType(); /** @type {?} */
+        ((this.formDirective)).addFormGroup(this);
+    };
+    /**
+     * @return {?}
+     */
+    AbstractFormGroupDirective.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeFormGroup(this);
+        }
+    };
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "control", {
+        /**
+         * Get the {\@link FormGroup} backing this binding.
+         * @return {?}
+         */
+        get: function () { return ((this.formDirective)).getFormGroup(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "path", {
+        /**
+         * Get the path to this control group.
+         * @return {?}
+         */
+        get: function () { return controlPath(this.name, this._parent); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "formDirective", {
+        /**
+         * Get the {\@link Form} to which this group belongs.
+         * @return {?}
+         */
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return composeValidators(this._validators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractFormGroupDirective.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return composeAsyncValidators(this._asyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @return {?}
+     */
+    AbstractFormGroupDirective.prototype._checkParentType = function () { };
+    return AbstractFormGroupDirective;
+}(ControlContainer));
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var AbstractControlStatus = (function () {
+    /**
+     * @param {?} cd
+     */
+    function AbstractControlStatus(cd) {
+        this._cd = cd;
+    }
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassUntouched", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.untouched : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassTouched", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.touched : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPristine", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.pristine : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassDirty", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.dirty : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassValid", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.valid : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassInvalid", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.invalid : false; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPending", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._cd.control ? this._cd.control.pending : false; },
+        enumerable: true,
+        configurable: true
+    });
+    return AbstractControlStatus;
+}());
+var ngControlStatusHost = {
+    '[class.ng-untouched]': 'ngClassUntouched',
+    '[class.ng-touched]': 'ngClassTouched',
+    '[class.ng-pristine]': 'ngClassPristine',
+    '[class.ng-dirty]': 'ngClassDirty',
+    '[class.ng-valid]': 'ngClassValid',
+    '[class.ng-invalid]': 'ngClassInvalid',
+    '[class.ng-pending]': 'ngClassPending',
+};
+/**
+ * Directive automatically applied to Angular form controls that sets CSS classes
+ * based on control status. The following classes are applied as the properties
+ * become true:
+ *
+ * * ng-valid
+ * * ng-invalid
+ * * ng-pending
+ * * ng-pristine
+ * * ng-dirty
+ * * ng-untouched
+ * * ng-touched
+ *
+ * \@stable
+ */
+var NgControlStatus = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControlStatus, _super);
+    /**
+     * @param {?} cd
+     */
+    function NgControlStatus(cd) {
+        return _super.call(this, cd) || this;
+    }
+    return NgControlStatus;
+}(AbstractControlStatus));
+NgControlStatus.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControlName],[ngModel],[formControl]', host: ngControlStatusHost },] },
+];
+/**
+ * @nocollapse
+ */
+NgControlStatus.ctorParameters = function () { return [
+    { type: NgControl, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] },] },
+]; };
+/**
+ * Directive automatically applied to Angular form groups that sets CSS classes
+ * based on control status (valid/invalid/dirty/etc).
+ *
+ * \@stable
+ */
+var NgControlStatusGroup = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControlStatusGroup, _super);
+    /**
+     * @param {?} cd
+     */
+    function NgControlStatusGroup(cd) {
+        return _super.call(this, cd) || this;
+    }
+    return NgControlStatusGroup;
+}(AbstractControlStatus));
+NgControlStatusGroup.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm]',
+                host: ngControlStatusHost
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NgControlStatusGroup.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] },] },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Indicates that a FormControl is valid, i.e. that no errors exist in the input value.
+ */
+var VALID = 'VALID';
+/**
+ * Indicates that a FormControl is invalid, i.e. that an error exists in the input value.
+ */
+var INVALID = 'INVALID';
+/**
+ * Indicates that a FormControl is pending, i.e. that async validation is occurring and
+ * errors are not yet available for the input value.
+ */
+var PENDING = 'PENDING';
+/**
+ * Indicates that a FormControl is disabled, i.e. that the control is exempt from ancestor
+ * calculations of validity or value.
+ */
+var DISABLED = 'DISABLED';
+/**
+ * @param {?} control
+ * @param {?} path
+ * @param {?} delimiter
+ * @return {?}
+ */
+function _find(control, path, delimiter) {
+    if (path == null)
+        return null;
+    if (!(path instanceof Array)) {
+        path = ((path)).split(delimiter);
+    }
+    if (path instanceof Array && (path.length === 0))
+        return null;
+    return ((path)).reduce(function (v, name) {
+        if (v instanceof FormGroup) {
+            return v.controls[name] || null;
+        }
+        if (v instanceof FormArray) {
+            return v.at(/** @type {?} */ (name)) || null;
+        }
+        return null;
+    }, control);
+}
+/**
+ * @param {?=} validator
+ * @return {?}
+ */
+function coerceToValidator(validator) {
+    return Array.isArray(validator) ? composeValidators(validator) : validator || null;
+}
+/**
+ * @param {?=} asyncValidator
+ * @return {?}
+ */
+function coerceToAsyncValidator(asyncValidator) {
+    return Array.isArray(asyncValidator) ? composeAsyncValidators(asyncValidator) :
+        asyncValidator || null;
+}
+/**
+ * \@whatItDoes This is the base class for {\@link FormControl}, {\@link FormGroup}, and
+ * {\@link FormArray}.
+ *
+ * It provides some of the shared behavior that all controls and groups of controls have, like
+ * running validators, calculating status, and resetting state. It also defines the properties
+ * that are shared between all sub-classes, like `value`, `valid`, and `dirty`. It shouldn't be
+ * instantiated directly.
+ *
+ * \@stable
+ * @abstract
+ */
+var AbstractControl = (function () {
+    /**
+     * @param {?} validator
+     * @param {?} asyncValidator
+     */
+    function AbstractControl(validator, asyncValidator) {
+        this.validator = validator;
+        this.asyncValidator = asyncValidator;
+        /**
+         * \@internal
+         */
+        this._onCollectionChange = function () { };
+        this._pristine = true;
+        this._touched = false;
+        /**
+         * \@internal
+         */
+        this._onDisabledChange = [];
+    }
+    Object.defineProperty(AbstractControl.prototype, "value", {
+        /**
+         * The value of the control.
+         * @return {?}
+         */
+        get: function () { return this._value; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "parent", {
+        /**
+         * The parent control.
+         * @return {?}
+         */
+        get: function () { return this._parent; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "status", {
+        /**
+         * The validation status of the control. There are four possible
+         * validation statuses:
+         *
+         * * **VALID**:  control has passed all validation checks
+         * * **INVALID**: control has failed at least one validation check
+         * * **PENDING**: control is in the midst of conducting a validation check
+         * * **DISABLED**: control is exempt from validation checks
+         *
+         * These statuses are mutually exclusive, so a control cannot be
+         * both valid AND invalid or invalid AND disabled.
+         * @return {?}
+         */
+        get: function () { return this._status; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "valid", {
+        /**
+         * A control is `valid` when its `status === VALID`.
+         *
+         * In order to have this status, the control must have passed all its
+         * validation checks.
+         * @return {?}
+         */
+        get: function () { return this._status === VALID; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "invalid", {
+        /**
+         * A control is `invalid` when its `status === INVALID`.
+         *
+         * In order to have this status, the control must have failed
+         * at least one of its validation checks.
+         * @return {?}
+         */
+        get: function () { return this._status === INVALID; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "pending", {
+        /**
+         * A control is `pending` when its `status === PENDING`.
+         *
+         * In order to have this status, the control must be in the
+         * middle of conducting a validation check.
+         * @return {?}
+         */
+        get: function () { return this._status == PENDING; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "disabled", {
+        /**
+         * A control is `disabled` when its `status === DISABLED`.
+         *
+         * Disabled controls are exempt from validation checks and
+         * are not included in the aggregate value of their ancestor
+         * controls.
+         * @return {?}
+         */
+        get: function () { return this._status === DISABLED; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "enabled", {
+        /**
+         * A control is `enabled` as long as its `status !== DISABLED`.
+         *
+         * In other words, it has a status of `VALID`, `INVALID`, or
+         * `PENDING`.
+         * @return {?}
+         */
+        get: function () { return this._status !== DISABLED; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "errors", {
+        /**
+         * Returns any errors generated by failing validation. If there
+         * are no errors, it will return null.
+         * @return {?}
+         */
+        get: function () { return this._errors; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "pristine", {
+        /**
+         * A control is `pristine` if the user has not yet changed
+         * the value in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         * @return {?}
+         */
+        get: function () { return this._pristine; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "dirty", {
+        /**
+         * A control is `dirty` if the user has changed the value
+         * in the UI.
+         *
+         * Note that programmatic changes to a control's value will
+         * *not* mark it dirty.
+         * @return {?}
+         */
+        get: function () { return !this.pristine; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "touched", {
+        /**
+         * A control is marked `touched` once the user has triggered
+         * a `blur` event on it.
+         * @return {?}
+         */
+        get: function () { return this._touched; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "untouched", {
+        /**
+         * A control is `untouched` if the user has not yet triggered
+         * a `blur` event on it.
+         * @return {?}
+         */
+        get: function () { return !this._touched; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "valueChanges", {
+        /**
+         * Emits an event every time the value of the control changes, in
+         * the UI or programmatically.
+         * @return {?}
+         */
+        get: function () { return this._valueChanges; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControl.prototype, "statusChanges", {
+        /**
+         * Emits an event every time the validation status of the control
+         * is re-calculated.
+         * @return {?}
+         */
+        get: function () { return this._statusChanges; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Sets the synchronous validators that are active on this control.  Calling
+     * this will overwrite any existing sync validators.
+     * @param {?} newValidator
+     * @return {?}
+     */
+    AbstractControl.prototype.setValidators = function (newValidator) {
+        this.validator = coerceToValidator(newValidator);
+    };
+    /**
+     * Sets the async validators that are active on this control. Calling this
+     * will overwrite any existing async validators.
+     * @param {?} newValidator
+     * @return {?}
+     */
+    AbstractControl.prototype.setAsyncValidators = function (newValidator) {
+        this.asyncValidator = coerceToAsyncValidator(newValidator);
+    };
+    /**
+     * Empties out the sync validator list.
+     * @return {?}
+     */
+    AbstractControl.prototype.clearValidators = function () { this.validator = null; };
+    /**
+     * Empties out the async validator list.
+     * @return {?}
+     */
+    AbstractControl.prototype.clearAsyncValidators = function () { this.asyncValidator = null; };
+    /**
+     * Marks the control as `touched`.
+     *
+     * This will also mark all direct ancestors as `touched` to maintain
+     * the model.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.markAsTouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._touched = true;
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsTouched(opts);
+        }
+    };
+    /**
+     * Marks the control as `untouched`.
+     *
+     * If the control has any children, it will also mark all children as `untouched`
+     * to maintain the model, and re-calculate the `touched` status of all parent
+     * controls.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.markAsUntouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._touched = false;
+        this._forEachChild(function (control) { control.markAsUntouched({ onlySelf: true }); });
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updateTouched(opts);
+        }
+    };
+    /**
+     * Marks the control as `dirty`.
+     *
+     * This will also mark all direct ancestors as `dirty` to maintain
+     * the model.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.markAsDirty = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._pristine = false;
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsDirty(opts);
+        }
+    };
+    /**
+     * Marks the control as `pristine`.
+     *
+     * If the control has any children, it will also mark all children as `pristine`
+     * to maintain the model, and re-calculate the `pristine` status of all parent
+     * controls.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.markAsPristine = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._pristine = true;
+        this._forEachChild(function (control) { control.markAsPristine({ onlySelf: true }); });
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updatePristine(opts);
+        }
+    };
+    /**
+     * Marks the control as `pending`.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.markAsPending = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._status = PENDING;
+        if (this._parent && !opts.onlySelf) {
+            this._parent.markAsPending(opts);
+        }
+    };
+    /**
+     * Disables the control. This means the control will be exempt from validation checks and
+     * excluded from the aggregate value of any parent. Its status is `DISABLED`.
+     *
+     * If the control has children, all children will be disabled to maintain the model.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.disable = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._status = DISABLED;
+        this._errors = null;
+        this._forEachChild(function (control) { control.disable({ onlySelf: true }); });
+        this._updateValue();
+        if (opts.emitEvent !== false) {
+            this._valueChanges.emit(this._value);
+            this._statusChanges.emit(this._status);
+        }
+        this._updateAncestors(!!opts.onlySelf);
+        this._onDisabledChange.forEach(function (changeFn) { return changeFn(true); });
+    };
+    /**
+     * Enables the control. This means the control will be included in validation checks and
+     * the aggregate value of its parent. Its status is re-calculated based on its value and
+     * its validators.
+     *
+     * If the control has children, all children will be enabled.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.enable = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._status = VALID;
+        this._forEachChild(function (control) { control.enable({ onlySelf: true }); });
+        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
+        this._updateAncestors(!!opts.onlySelf);
+        this._onDisabledChange.forEach(function (changeFn) { return changeFn(false); });
+    };
+    /**
+     * @param {?} onlySelf
+     * @return {?}
+     */
+    AbstractControl.prototype._updateAncestors = function (onlySelf) {
+        if (this._parent && !onlySelf) {
+            this._parent.updateValueAndValidity();
+            this._parent._updatePristine();
+            this._parent._updateTouched();
+        }
+    };
+    /**
+     * @param {?} parent
+     * @return {?}
+     */
+    AbstractControl.prototype.setParent = function (parent) { this._parent = parent; };
+    /**
+     * Sets the value of the control. Abstract method (implemented in sub-classes).
+     * @abstract
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    AbstractControl.prototype.setValue = function (value, options) { };
+    /**
+     * Patches the value of the control. Abstract method (implemented in sub-classes).
+     * @abstract
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    AbstractControl.prototype.patchValue = function (value, options) { };
+    /**
+     * Resets the control. Abstract method (implemented in sub-classes).
+     * @abstract
+     * @param {?=} value
+     * @param {?=} options
+     * @return {?}
+     */
+    AbstractControl.prototype.reset = function (value, options) { };
+    /**
+     * Re-calculates the value and validation status of the control.
+     *
+     * By default, it will also update the value and validity of its ancestors.
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.updateValueAndValidity = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._setInitialStatus();
+        this._updateValue();
+        if (this.enabled) {
+            this._cancelExistingSubscription();
+            this._errors = this._runValidator();
+            this._status = this._calculateStatus();
+            if (this._status === VALID || this._status === PENDING) {
+                this._runAsyncValidator(opts.emitEvent);
+            }
+        }
+        if (opts.emitEvent !== false) {
+            this._valueChanges.emit(this._value);
+            this._statusChanges.emit(this._status);
+        }
+        if (this._parent && !opts.onlySelf) {
+            this._parent.updateValueAndValidity(opts);
+        }
+    };
+    /**
+     * \@internal
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype._updateTreeValidity = function (opts) {
+        if (opts === void 0) { opts = { emitEvent: true }; }
+        this._forEachChild(function (ctrl) { return ctrl._updateTreeValidity(opts); });
+        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
+    };
+    /**
+     * @return {?}
+     */
+    AbstractControl.prototype._setInitialStatus = function () { this._status = this._allControlsDisabled() ? DISABLED : VALID; };
+    /**
+     * @return {?}
+     */
+    AbstractControl.prototype._runValidator = function () {
+        return this.validator ? this.validator(this) : null;
+    };
+    /**
+     * @param {?=} emitEvent
+     * @return {?}
+     */
+    AbstractControl.prototype._runAsyncValidator = function (emitEvent) {
+        var _this = this;
+        if (this.asyncValidator) {
+            this._status = PENDING;
+            var /** @type {?} */ obs = toObservable(this.asyncValidator(this));
+            this._asyncValidationSubscription =
+                obs.subscribe(function (errors) { return _this.setErrors(errors, { emitEvent: emitEvent }); });
+        }
+    };
+    /**
+     * @return {?}
+     */
+    AbstractControl.prototype._cancelExistingSubscription = function () {
+        if (this._asyncValidationSubscription) {
+            this._asyncValidationSubscription.unsubscribe();
+        }
+    };
+    /**
+     * Sets errors on a form control.
+     *
+     * This is used when validations are run manually by the user, rather than automatically.
+     *
+     * Calling `setErrors` will also update the validity of the parent control.
+     *
+     * ### Example
+     *
+     * ```
+     * const login = new FormControl("someLogin");
+     * login.setErrors({
+     *   "notUnique": true
+     * });
+     *
+     * expect(login.valid).toEqual(false);
+     * expect(login.errors).toEqual({"notUnique": true});
+     *
+     * login.setValue("someOtherLogin");
+     *
+     * expect(login.valid).toEqual(true);
+     * ```
+     * @param {?} errors
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype.setErrors = function (errors, opts) {
+        if (opts === void 0) { opts = {}; }
+        this._errors = errors;
+        this._updateControlsErrors(opts.emitEvent !== false);
+    };
+    /**
+     * Retrieves a child control given the control's name or path.
+     *
+     * Paths can be passed in as an array or a string delimited by a dot.
+     *
+     * To get a control nested within a `person` sub-group:
+     *
+     * * `this.form.get('person.name');`
+     *
+     * -OR-
+     *
+     * * `this.form.get(['person', 'name']);`
+     * @param {?} path
+     * @return {?}
+     */
+    AbstractControl.prototype.get = function (path) { return _find(this, path, '.'); };
+    /**
+     * Returns error data if the control with the given path has the error specified. Otherwise
+     * returns null or undefined.
+     *
+     * If no path is given, it checks for the error on the present control.
+     * @param {?} errorCode
+     * @param {?=} path
+     * @return {?}
+     */
+    AbstractControl.prototype.getError = function (errorCode, path) {
+        var /** @type {?} */ control = path ? this.get(path) : this;
+        return control && control._errors ? control._errors[errorCode] : null;
+    };
+    /**
+     * Returns true if the control with the given path has the error specified. Otherwise
+     * returns false.
+     *
+     * If no path is given, it checks for the error on the present control.
+     * @param {?} errorCode
+     * @param {?=} path
+     * @return {?}
+     */
+    AbstractControl.prototype.hasError = function (errorCode, path) { return !!this.getError(errorCode, path); };
+    Object.defineProperty(AbstractControl.prototype, "root", {
+        /**
+         * Retrieves the top-level ancestor of this control.
+         * @return {?}
+         */
+        get: function () {
+            var /** @type {?} */ x = this;
+            while (x._parent) {
+                x = x._parent;
+            }
+            return x;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @param {?} emitEvent
+     * @return {?}
+     */
+    AbstractControl.prototype._updateControlsErrors = function (emitEvent) {
+        this._status = this._calculateStatus();
+        if (emitEvent) {
+            this._statusChanges.emit(this._status);
+        }
+        if (this._parent) {
+            this._parent._updateControlsErrors(emitEvent);
+        }
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    AbstractControl.prototype._initObservables = function () {
+        this._valueChanges = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        this._statusChanges = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+    };
+    /**
+     * @return {?}
+     */
+    AbstractControl.prototype._calculateStatus = function () {
+        if (this._allControlsDisabled())
+            return DISABLED;
+        if (this._errors)
+            return INVALID;
+        if (this._anyControlsHaveStatus(PENDING))
+            return PENDING;
+        if (this._anyControlsHaveStatus(INVALID))
+            return INVALID;
+        return VALID;
+    };
+    /**
+     * \@internal
+     * @abstract
+     * @return {?}
+     */
+    AbstractControl.prototype._updateValue = function () { };
+    /**
+     * \@internal
+     * @abstract
+     * @param {?} cb
+     * @return {?}
+     */
+    AbstractControl.prototype._forEachChild = function (cb) { };
+    /**
+     * \@internal
+     * @abstract
+     * @param {?} condition
+     * @return {?}
+     */
+    AbstractControl.prototype._anyControls = function (condition) { };
+    /**
+     * \@internal
+     * @abstract
+     * @return {?}
+     */
+    AbstractControl.prototype._allControlsDisabled = function () { };
+    /**
+     * \@internal
+     * @param {?} status
+     * @return {?}
+     */
+    AbstractControl.prototype._anyControlsHaveStatus = function (status) {
+        return this._anyControls(function (control) { return control.status === status; });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    AbstractControl.prototype._anyControlsDirty = function () {
+        return this._anyControls(function (control) { return control.dirty; });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    AbstractControl.prototype._anyControlsTouched = function () {
+        return this._anyControls(function (control) { return control.touched; });
+    };
+    /**
+     * \@internal
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype._updatePristine = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._pristine = !this._anyControlsDirty();
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updatePristine(opts);
+        }
+    };
+    /**
+     * \@internal
+     * @param {?=} opts
+     * @return {?}
+     */
+    AbstractControl.prototype._updateTouched = function (opts) {
+        if (opts === void 0) { opts = {}; }
+        this._touched = this._anyControlsTouched();
+        if (this._parent && !opts.onlySelf) {
+            this._parent._updateTouched(opts);
+        }
+    };
+    /**
+     * \@internal
+     * @param {?} formState
+     * @return {?}
+     */
+    AbstractControl.prototype._isBoxedValue = function (formState) {
+        return typeof formState === 'object' && formState !== null &&
+            Object.keys(formState).length === 2 && 'value' in formState && 'disabled' in formState;
+    };
+    /**
+     * \@internal
+     * @param {?} fn
+     * @return {?}
+     */
+    AbstractControl.prototype._registerOnCollectionChange = function (fn) { this._onCollectionChange = fn; };
+    return AbstractControl;
+}());
+/**
+ * \@whatItDoes Tracks the value and validation status of an individual form control.
+ *
+ * It is one of the three fundamental building blocks of Angular forms, along with
+ * {\@link FormGroup} and {\@link FormArray}.
+ *
+ * \@howToUse
+ *
+ * When instantiating a {\@link FormControl}, you can pass in an initial value as the
+ * first argument. Example:
+ *
+ * ```ts
+ * const ctrl = new FormControl('some value');
+ * console.log(ctrl.value);     // 'some value'
+ * ```
+ *
+ * You can also initialize the control with a form state object on instantiation,
+ * which includes both the value and whether or not the control is disabled.
+ * You can't use the value key without the disabled key; both are required
+ * to use this way of initialization.
+ *
+ * ```ts
+ * const ctrl = new FormControl({value: 'n/a', disabled: true});
+ * console.log(ctrl.value);     // 'n/a'
+ * console.log(ctrl.status);   // 'DISABLED'
+ * ```
+ *
+ * To include a sync validator (or an array of sync validators) with the control,
+ * pass it in as the second argument. Async validators are also supported, but
+ * have to be passed in separately as the third arg.
+ *
+ * ```ts
+ * const ctrl = new FormControl('', Validators.required);
+ * console.log(ctrl.value);     // ''
+ * console.log(ctrl.status);   // 'INVALID'
+ * ```
+ *
+ * See its superclass, {\@link AbstractControl}, for more properties and methods.
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * \@stable
+ */
+var FormControl = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControl, _super);
+    /**
+     * @param {?=} formState
+     * @param {?=} validator
+     * @param {?=} asyncValidator
+     */
+    function FormControl(formState, validator, asyncValidator) {
+        if (formState === void 0) { formState = null; }
+        var _this = _super.call(this, coerceToValidator(validator), coerceToAsyncValidator(asyncValidator)) || this;
+        /**
+         * \@internal
+         */
+        _this._onChange = [];
+        _this._applyFormState(formState);
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        _this._initObservables();
+        return _this;
+    }
+    /**
+     * Set the value of the form control to `value`.
+     *
+     * If `onlySelf` is `true`, this change will only affect the validation of this `FormControl`
+     * and not its parent component. This defaults to false.
+     *
+     * If `emitEvent` is `true`, this
+     * change will cause a `valueChanges` event on the `FormControl` to be emitted. This defaults
+     * to true (as it falls through to `updateValueAndValidity`).
+     *
+     * If `emitModelToViewChange` is `true`, the view will be notified about the new value
+     * via an `onChange` event. This is the default behavior if `emitModelToViewChange` is not
+     * specified.
+     *
+     * If `emitViewToModelChange` is `true`, an ngModelChange event will be fired to update the
+     * model.  This is the default behavior if `emitViewToModelChange` is not specified.
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormControl.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this._value = value;
+        if (this._onChange.length && options.emitModelToViewChange !== false) {
+            this._onChange.forEach(function (changeFn) { return changeFn(_this._value, options.emitViewToModelChange !== false); });
+        }
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Patches the value of a control.
+     *
+     * This function is functionally the same as {\@link FormControl#setValue} at this level.
+     * It exists for symmetry with {\@link FormGroup#patchValue} on `FormGroups` and `FormArrays`,
+     * where it does behave differently.
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormControl.prototype.patchValue = function (value, options) {
+        if (options === void 0) { options = {}; }
+        this.setValue(value, options);
+    };
+    /**
+     * Resets the form control. This means by default:
+     *
+     * * it is marked as `pristine`
+     * * it is marked as `untouched`
+     * * value is set to null
+     *
+     * You can also reset to a specific form state by passing through a standalone
+     * value or a form state object that contains both a value and a disabled state
+     * (these are the only two properties that cannot be calculated).
+     *
+     * Ex:
+     *
+     * ```ts
+     * this.control.reset('Nancy');
+     *
+     * console.log(this.control.value);  // 'Nancy'
+     * ```
+     *
+     * OR
+     *
+     * ```
+     * this.control.reset({value: 'Nancy', disabled: true});
+     *
+     * console.log(this.control.value);  // 'Nancy'
+     * console.log(this.control.status);  // 'DISABLED'
+     * ```
+     * @param {?=} formState
+     * @param {?=} options
+     * @return {?}
+     */
+    FormControl.prototype.reset = function (formState, options) {
+        if (formState === void 0) { formState = null; }
+        if (options === void 0) { options = {}; }
+        this._applyFormState(formState);
+        this.markAsPristine(options);
+        this.markAsUntouched(options);
+        this.setValue(this._value, options);
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormControl.prototype._updateValue = function () { };
+    /**
+     * \@internal
+     * @param {?} condition
+     * @return {?}
+     */
+    FormControl.prototype._anyControls = function (condition) { return false; };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormControl.prototype._allControlsDisabled = function () { return this.disabled; };
+    /**
+     * Register a listener for change events.
+     * @param {?} fn
+     * @return {?}
+     */
+    FormControl.prototype.registerOnChange = function (fn) { this._onChange.push(fn); };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormControl.prototype._clearChangeFns = function () {
+        this._onChange = [];
+        this._onDisabledChange = [];
+        this._onCollectionChange = function () { };
+    };
+    /**
+     * Register a listener for disabled events.
+     * @param {?} fn
+     * @return {?}
+     */
+    FormControl.prototype.registerOnDisabledChange = function (fn) {
+        this._onDisabledChange.push(fn);
+    };
+    /**
+     * \@internal
+     * @param {?} cb
+     * @return {?}
+     */
+    FormControl.prototype._forEachChild = function (cb) { };
+    /**
+     * @param {?} formState
+     * @return {?}
+     */
+    FormControl.prototype._applyFormState = function (formState) {
+        if (this._isBoxedValue(formState)) {
+            this._value = formState.value;
+            formState.disabled ? this.disable({ onlySelf: true, emitEvent: false }) :
+                this.enable({ onlySelf: true, emitEvent: false });
+        }
+        else {
+            this._value = formState;
+        }
+    };
+    return FormControl;
+}(AbstractControl));
+/**
+ * \@whatItDoes Tracks the value and validity state of a group of {\@link FormControl}
+ * instances.
+ *
+ * A `FormGroup` aggregates the values of each child {\@link FormControl} into one object,
+ * with each control name as the key.  It calculates its status by reducing the statuses
+ * of its children. For example, if one of the controls in a group is invalid, the entire
+ * group becomes invalid.
+ *
+ * `FormGroup` is one of the three fundamental building blocks used to define forms in Angular,
+ * along with {\@link FormControl} and {\@link FormArray}.
+ *
+ * \@howToUse
+ *
+ * When instantiating a {\@link FormGroup}, pass in a collection of child controls as the first
+ * argument. The key for each child will be the name under which it is registered.
+ *
+ * ### Example
+ *
+ * ```
+ * const form = new FormGroup({
+ *   first: new FormControl('Nancy', Validators.minLength(2)),
+ *   last: new FormControl('Drew'),
+ * });
+ *
+ * console.log(form.value);   // {first: 'Nancy', last; 'Drew'}
+ * console.log(form.status);  // 'VALID'
+ * ```
+ *
+ * You can also include group-level validators as the second arg, or group-level async
+ * validators as the third arg. These come in handy when you want to perform validation
+ * that considers the value of more than one child control.
+ *
+ * ### Example
+ *
+ * ```
+ * const form = new FormGroup({
+ *   password: new FormControl('', Validators.minLength(2)),
+ *   passwordConfirm: new FormControl('', Validators.minLength(2)),
+ * }, passwordMatchValidator);
+ *
+ *
+ * function passwordMatchValidator(g: FormGroup) {
+ *    return g.get('password').value === g.get('passwordConfirm').value
+ *       ? null : {'mismatch': true};
+ * }
+ * ```
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * \@stable
+ */
+var FormGroup = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroup, _super);
+    /**
+     * @param {?} controls
+     * @param {?=} validator
+     * @param {?=} asyncValidator
+     */
+    function FormGroup(controls, validator, asyncValidator) {
+        var _this = _super.call(this, validator || null, asyncValidator || null) || this;
+        _this.controls = controls;
+        _this._initObservables();
+        _this._setUpControls();
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        return _this;
+    }
+    /**
+     * Registers a control with the group's list of controls.
+     *
+     * This method does not update value or validity of the control, so for
+     * most cases you'll want to use {\@link FormGroup#addControl} instead.
+     * @param {?} name
+     * @param {?} control
+     * @return {?}
+     */
+    FormGroup.prototype.registerControl = function (name, control) {
+        if (this.controls[name])
+            return this.controls[name];
+        this.controls[name] = control;
+        control.setParent(this);
+        control._registerOnCollectionChange(this._onCollectionChange);
+        return control;
+    };
+    /**
+     * Add a control to this group.
+     * @param {?} name
+     * @param {?} control
+     * @return {?}
+     */
+    FormGroup.prototype.addControl = function (name, control) {
+        this.registerControl(name, control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Remove a control from this group.
+     * @param {?} name
+     * @return {?}
+     */
+    FormGroup.prototype.removeControl = function (name) {
+        if (this.controls[name])
+            this.controls[name]._registerOnCollectionChange(function () { });
+        delete (this.controls[name]);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Replace an existing control.
+     * @param {?} name
+     * @param {?} control
+     * @return {?}
+     */
+    FormGroup.prototype.setControl = function (name, control) {
+        if (this.controls[name])
+            this.controls[name]._registerOnCollectionChange(function () { });
+        delete (this.controls[name]);
+        if (control)
+            this.registerControl(name, control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Check whether there is an enabled control with the given name in the group.
+     *
+     * It will return false for disabled controls. If you'd like to check for
+     * existence in the group only, use {\@link AbstractControl#get} instead.
+     * @param {?} controlName
+     * @return {?}
+     */
+    FormGroup.prototype.contains = function (controlName) {
+        return this.controls.hasOwnProperty(controlName) && this.controls[controlName].enabled;
+    };
+    /**
+     *  Sets the value of the {\@link FormGroup}. It accepts an object that matches
+     *  the structure of the group, with control names as keys.
+     *
+     * This method performs strict checks, so it will throw an error if you try
+     * to set the value of a control that doesn't exist or if you exclude the
+     * value of a control.
+     *
+     *  ### Example
+     *
+     *  ```
+     *  const form = new FormGroup({
+     *     first: new FormControl(),
+     *     last: new FormControl()
+     *  });
+     *  console.log(form.value);   // {first: null, last: null}
+     *
+     *  form.setValue({first: 'Nancy', last: 'Drew'});
+     *  console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
+     *
+     *  ```
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormGroup.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this._checkAllValuesPresent(value);
+        Object.keys(value).forEach(function (name) {
+            _this._throwIfControlMissing(name);
+            _this.controls[name].setValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     *  Patches the value of the {\@link FormGroup}. It accepts an object with control
+     *  names as keys, and will do its best to match the values to the correct controls
+     *  in the group.
+     *
+     *  It accepts both super-sets and sub-sets of the group without throwing an error.
+     *
+     *  ### Example
+     *
+     *  ```
+     *  const form = new FormGroup({
+     *     first: new FormControl(),
+     *     last: new FormControl()
+     *  });
+     *  console.log(form.value);   // {first: null, last: null}
+     *
+     *  form.patchValue({first: 'Nancy'});
+     *  console.log(form.value);   // {first: 'Nancy', last: null}
+     *
+     *  ```
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormGroup.prototype.patchValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        Object.keys(value).forEach(function (name) {
+            if (_this.controls[name]) {
+                _this.controls[name].patchValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+            }
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Resets the {\@link FormGroup}. This means by default:
+     *
+     * * The group and all descendants are marked `pristine`
+     * * The group and all descendants are marked `untouched`
+     * * The value of all descendants will be null or null maps
+     *
+     * You can also reset to a specific form state by passing in a map of states
+     * that matches the structure of your form, with control names as keys. The state
+     * can be a standalone value or a form state object with both a value and a disabled
+     * status.
+     *
+     * ### Example
+     *
+     * ```ts
+     * this.form.reset({first: 'name', last: 'last name'});
+     *
+     * console.log(this.form.value);  // {first: 'name', last: 'last name'}
+     * ```
+     *
+     * - OR -
+     *
+     * ```
+     * this.form.reset({
+     *   first: {value: 'name', disabled: true},
+     *   last: 'last'
+     * });
+     *
+     * console.log(this.form.value);  // {first: 'name', last: 'last name'}
+     * console.log(this.form.get('first').status);  // 'DISABLED'
+     * ```
+     * @param {?=} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormGroup.prototype.reset = function (value, options) {
+        if (value === void 0) { value = {}; }
+        if (options === void 0) { options = {}; }
+        this._forEachChild(function (control, name) {
+            control.reset(value[name], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+        this._updatePristine(options);
+        this._updateTouched(options);
+    };
+    /**
+     * The aggregate value of the {\@link FormGroup}, including any disabled controls.
+     *
+     * If you'd like to include all values regardless of disabled status, use this method.
+     * Otherwise, the `value` property is the best way to get the value of the group.
+     * @return {?}
+     */
+    FormGroup.prototype.getRawValue = function () {
+        return this._reduceChildren({}, function (acc, control, name) {
+            acc[name] = control instanceof FormControl ? control.value : ((control)).getRawValue();
+            return acc;
+        });
+    };
+    /**
+     * \@internal
+     * @param {?} name
+     * @return {?}
+     */
+    FormGroup.prototype._throwIfControlMissing = function (name) {
+        if (!Object.keys(this.controls).length) {
+            throw new Error("\n        There are no form controls registered with this group yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
+        }
+        if (!this.controls[name]) {
+            throw new Error("Cannot find form control with name: " + name + ".");
+        }
+    };
+    /**
+     * \@internal
+     * @param {?} cb
+     * @return {?}
+     */
+    FormGroup.prototype._forEachChild = function (cb) {
+        var _this = this;
+        Object.keys(this.controls).forEach(function (k) { return cb(_this.controls[k], k); });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroup.prototype._setUpControls = function () {
+        var _this = this;
+        this._forEachChild(function (control) {
+            control.setParent(_this);
+            control._registerOnCollectionChange(_this._onCollectionChange);
+        });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroup.prototype._updateValue = function () { this._value = this._reduceValue(); };
+    /**
+     * \@internal
+     * @param {?} condition
+     * @return {?}
+     */
+    FormGroup.prototype._anyControls = function (condition) {
+        var _this = this;
+        var /** @type {?} */ res = false;
+        this._forEachChild(function (control, name) {
+            res = res || (_this.contains(name) && condition(control));
+        });
+        return res;
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroup.prototype._reduceValue = function () {
+        var _this = this;
+        return this._reduceChildren({}, function (acc, control, name) {
+            if (control.enabled || _this.disabled) {
+                acc[name] = control.value;
+            }
+            return acc;
+        });
+    };
+    /**
+     * \@internal
+     * @param {?} initValue
+     * @param {?} fn
+     * @return {?}
+     */
+    FormGroup.prototype._reduceChildren = function (initValue, fn) {
+        var /** @type {?} */ res = initValue;
+        this._forEachChild(function (control, name) { res = fn(res, control, name); });
+        return res;
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroup.prototype._allControlsDisabled = function () {
+        for (var _i = 0, _a = Object.keys(this.controls); _i < _a.length; _i++) {
+            var controlName = _a[_i];
+            if (this.controls[controlName].enabled) {
+                return false;
+            }
+        }
+        return Object.keys(this.controls).length > 0 || this.disabled;
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    FormGroup.prototype._checkAllValuesPresent = function (value) {
+        this._forEachChild(function (control, name) {
+            if (value[name] === undefined) {
+                throw new Error("Must supply a value for form control with name: '" + name + "'.");
+            }
+        });
+    };
+    return FormGroup;
+}(AbstractControl));
+/**
+ * \@whatItDoes Tracks the value and validity state of an array of {\@link FormControl},
+ * {\@link FormGroup} or {\@link FormArray} instances.
+ *
+ * A `FormArray` aggregates the values of each child {\@link FormControl} into an array.
+ * It calculates its status by reducing the statuses of its children. For example, if one of
+ * the controls in a `FormArray` is invalid, the entire array becomes invalid.
+ *
+ * `FormArray` is one of the three fundamental building blocks used to define forms in Angular,
+ * along with {\@link FormControl} and {\@link FormGroup}.
+ *
+ * \@howToUse
+ *
+ * When instantiating a {\@link FormArray}, pass in an array of child controls as the first
+ * argument.
+ *
+ * ### Example
+ *
+ * ```
+ * const arr = new FormArray([
+ *   new FormControl('Nancy', Validators.minLength(2)),
+ *   new FormControl('Drew'),
+ * ]);
+ *
+ * console.log(arr.value);   // ['Nancy', 'Drew']
+ * console.log(arr.status);  // 'VALID'
+ * ```
+ *
+ * You can also include array-level validators as the second arg, or array-level async
+ * validators as the third arg. These come in handy when you want to perform validation
+ * that considers the value of more than one child control.
+ *
+ * ### Adding or removing controls
+ *
+ * To change the controls in the array, use the `push`, `insert`, or `removeAt` methods
+ * in `FormArray` itself. These methods ensure the controls are properly tracked in the
+ * form's hierarchy. Do not modify the array of `AbstractControl`s used to instantiate
+ * the `FormArray` directly, as that will result in strange and unexpected behavior such
+ * as broken change detection.
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * \@stable
+ */
+var FormArray = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormArray, _super);
+    /**
+     * @param {?} controls
+     * @param {?=} validator
+     * @param {?=} asyncValidator
+     */
+    function FormArray(controls, validator, asyncValidator) {
+        var _this = _super.call(this, validator || null, asyncValidator || null) || this;
+        _this.controls = controls;
+        _this._initObservables();
+        _this._setUpControls();
+        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
+        return _this;
+    }
+    /**
+     * Get the {\@link AbstractControl} at the given `index` in the array.
+     * @param {?} index
+     * @return {?}
+     */
+    FormArray.prototype.at = function (index) { return this.controls[index]; };
+    /**
+     * Insert a new {\@link AbstractControl} at the end of the array.
+     * @param {?} control
+     * @return {?}
+     */
+    FormArray.prototype.push = function (control) {
+        this.controls.push(control);
+        this._registerControl(control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Insert a new {\@link AbstractControl} at the given `index` in the array.
+     * @param {?} index
+     * @param {?} control
+     * @return {?}
+     */
+    FormArray.prototype.insert = function (index, control) {
+        this.controls.splice(index, 0, control);
+        this._registerControl(control);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Remove the control at the given `index` in the array.
+     * @param {?} index
+     * @return {?}
+     */
+    FormArray.prototype.removeAt = function (index) {
+        if (this.controls[index])
+            this.controls[index]._registerOnCollectionChange(function () { });
+        this.controls.splice(index, 1);
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    /**
+     * Replace an existing control.
+     * @param {?} index
+     * @param {?} control
+     * @return {?}
+     */
+    FormArray.prototype.setControl = function (index, control) {
+        if (this.controls[index])
+            this.controls[index]._registerOnCollectionChange(function () { });
+        this.controls.splice(index, 1);
+        if (control) {
+            this.controls.splice(index, 0, control);
+            this._registerControl(control);
+        }
+        this.updateValueAndValidity();
+        this._onCollectionChange();
+    };
+    Object.defineProperty(FormArray.prototype, "length", {
+        /**
+         * Length of the control array.
+         * @return {?}
+         */
+        get: function () { return this.controls.length; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     *  Sets the value of the {\@link FormArray}. It accepts an array that matches
+     *  the structure of the control.
+     *
+     * This method performs strict checks, so it will throw an error if you try
+     * to set the value of a control that doesn't exist or if you exclude the
+     * value of a control.
+     *
+     *  ### Example
+     *
+     *  ```
+     *  const arr = new FormArray([
+     *     new FormControl(),
+     *     new FormControl()
+     *  ]);
+     *  console.log(arr.value);   // [null, null]
+     *
+     *  arr.setValue(['Nancy', 'Drew']);
+     *  console.log(arr.value);   // ['Nancy', 'Drew']
+     *  ```
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormArray.prototype.setValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        this._checkAllValuesPresent(value);
+        value.forEach(function (newValue, index) {
+            _this._throwIfControlMissing(index);
+            _this.at(index).setValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     *  Patches the value of the {\@link FormArray}. It accepts an array that matches the
+     *  structure of the control, and will do its best to match the values to the correct
+     *  controls in the group.
+     *
+     *  It accepts both super-sets and sub-sets of the array without throwing an error.
+     *
+     *  ### Example
+     *
+     *  ```
+     *  const arr = new FormArray([
+     *     new FormControl(),
+     *     new FormControl()
+     *  ]);
+     *  console.log(arr.value);   // [null, null]
+     *
+     *  arr.patchValue(['Nancy']);
+     *  console.log(arr.value);   // ['Nancy', null]
+     *  ```
+     * @param {?} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormArray.prototype.patchValue = function (value, options) {
+        var _this = this;
+        if (options === void 0) { options = {}; }
+        value.forEach(function (newValue, index) {
+            if (_this.at(index)) {
+                _this.at(index).patchValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
+            }
+        });
+        this.updateValueAndValidity(options);
+    };
+    /**
+     * Resets the {\@link FormArray}. This means by default:
+     *
+     * * The array and all descendants are marked `pristine`
+     * * The array and all descendants are marked `untouched`
+     * * The value of all descendants will be null or null maps
+     *
+     * You can also reset to a specific form state by passing in an array of states
+     * that matches the structure of the control. The state can be a standalone value
+     * or a form state object with both a value and a disabled status.
+     *
+     * ### Example
+     *
+     * ```ts
+     * this.arr.reset(['name', 'last name']);
+     *
+     * console.log(this.arr.value);  // ['name', 'last name']
+     * ```
+     *
+     * - OR -
+     *
+     * ```
+     * this.arr.reset([
+     *   {value: 'name', disabled: true},
+     *   'last'
+     * ]);
+     *
+     * console.log(this.arr.value);  // ['name', 'last name']
+     * console.log(this.arr.get(0).status);  // 'DISABLED'
+     * ```
+     * @param {?=} value
+     * @param {?=} options
+     * @return {?}
+     */
+    FormArray.prototype.reset = function (value, options) {
+        if (value === void 0) { value = []; }
+        if (options === void 0) { options = {}; }
+        this._forEachChild(function (control, index) {
+            control.reset(value[index], { onlySelf: true, emitEvent: options.emitEvent });
+        });
+        this.updateValueAndValidity(options);
+        this._updatePristine(options);
+        this._updateTouched(options);
+    };
+    /**
+     * The aggregate value of the array, including any disabled controls.
+     *
+     * If you'd like to include all values regardless of disabled status, use this method.
+     * Otherwise, the `value` property is the best way to get the value of the array.
+     * @return {?}
+     */
+    FormArray.prototype.getRawValue = function () {
+        return this.controls.map(function (control) {
+            return control instanceof FormControl ? control.value : ((control)).getRawValue();
+        });
+    };
+    /**
+     * \@internal
+     * @param {?} index
+     * @return {?}
+     */
+    FormArray.prototype._throwIfControlMissing = function (index) {
+        if (!this.controls.length) {
+            throw new Error("\n        There are no form controls registered with this array yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
+        }
+        if (!this.at(index)) {
+            throw new Error("Cannot find form control at index " + index);
+        }
+    };
+    /**
+     * \@internal
+     * @param {?} cb
+     * @return {?}
+     */
+    FormArray.prototype._forEachChild = function (cb) {
+        this.controls.forEach(function (control, index) { cb(control, index); });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormArray.prototype._updateValue = function () {
+        var _this = this;
+        this._value = this.controls.filter(function (control) { return control.enabled || _this.disabled; })
+            .map(function (control) { return control.value; });
+    };
+    /**
+     * \@internal
+     * @param {?} condition
+     * @return {?}
+     */
+    FormArray.prototype._anyControls = function (condition) {
+        return this.controls.some(function (control) { return control.enabled && condition(control); });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormArray.prototype._setUpControls = function () {
+        var _this = this;
+        this._forEachChild(function (control) { return _this._registerControl(control); });
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    FormArray.prototype._checkAllValuesPresent = function (value) {
+        this._forEachChild(function (control, i) {
+            if (value[i] === undefined) {
+                throw new Error("Must supply a value for form control at index: " + i + ".");
+            }
+        });
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormArray.prototype._allControlsDisabled = function () {
+        for (var _i = 0, _a = this.controls; _i < _a.length; _i++) {
+            var control = _a[_i];
+            if (control.enabled)
+                return false;
+        }
+        return this.controls.length > 0 || this.disabled;
+    };
+    /**
+     * @param {?} control
+     * @return {?}
+     */
+    FormArray.prototype._registerControl = function (control) {
+        control.setParent(this);
+        control._registerOnCollectionChange(this._onCollectionChange);
+    };
+    return FormArray;
+}(AbstractControl));
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formDirectiveProvider = {
+    provide: ControlContainer,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgForm; })
+};
+var resolvedPromise = Promise.resolve(null);
+/**
+ * \@whatItDoes Creates a top-level {\@link FormGroup} instance and binds it to a form
+ * to track aggregate form value and validation status.
+ *
+ * \@howToUse
+ *
+ * As soon as you import the `FormsModule`, this directive becomes active by default on
+ * all `<form>` tags.  You don't need to add a special selector.
+ *
+ * You can export the directive into a local template variable using `ngForm` as the key
+ * (ex: `#myForm="ngForm"`). This is optional, but useful.  Many properties from the underlying
+ * {\@link FormGroup} instance are duplicated on the directive itself, so a reference to it
+ * will give you access to the aggregate value and validity status of the form, as well as
+ * user interaction properties like `dirty` and `touched`.
+ *
+ * To register child controls with the form, you'll want to use {\@link NgModel} with a
+ * `name` attribute.  You can also use {\@link NgModelGroup} if you'd like to create
+ * sub-groups within the form.
+ *
+ * You can listen to the directive's `ngSubmit` event to be notified when the user has
+ * triggered a form submission. The `ngSubmit` event will be emitted with the original form
+ * submission event.
+ *
+ * In template driven forms, all `<form>` tags are automatically tagged as `NgForm`.
+ * If you want to import the `FormsModule` but skip its usage in some forms,
+ * for example, to use native HTML5 validation, you can add `ngNoForm` and the `<form>`
+ * tags won't create an `NgForm` directive. In reactive forms, using `ngNoForm` is
+ * unnecessary because the `<form>` tags are inert. In that case, you would
+ * refrain from using the `formGroup` directive.
+ *
+ * {\@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * * **NgModule**: `FormsModule`
+ *
+ *  \@stable
+ */
+var NgForm = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgForm, _super);
+    /**
+     * @param {?} validators
+     * @param {?} asyncValidators
+     */
+    function NgForm(validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._submitted = false;
+        _this.ngSubmit = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        _this.form =
+            new FormGroup({}, composeValidators(validators), composeAsyncValidators(asyncValidators));
+        return _this;
+    }
+    Object.defineProperty(NgForm.prototype, "submitted", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._submitted; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "formDirective", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForm.prototype, "controls", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.form.controls; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.addControl = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var /** @type {?} */ container = _this._findContainer(dir.path);
+            dir._control = (container.registerControl(dir.name, dir.control));
+            setUpControl(dir.control, dir);
+            dir.control.updateValueAndValidity({ emitEvent: false });
+        });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.getControl = function (dir) { return (this.form.get(dir.path)); };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.removeControl = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var /** @type {?} */ container = _this._findContainer(dir.path);
+            if (container) {
+                container.removeControl(dir.name);
+            }
+        });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.addFormGroup = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var /** @type {?} */ container = _this._findContainer(dir.path);
+            var /** @type {?} */ group = new FormGroup({});
+            setUpFormContainer(group, dir);
+            container.registerControl(dir.name, group);
+            group.updateValueAndValidity({ emitEvent: false });
+        });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.removeFormGroup = function (dir) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var /** @type {?} */ container = _this._findContainer(dir.path);
+            if (container) {
+                container.removeControl(dir.name);
+            }
+        });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    NgForm.prototype.getFormGroup = function (dir) { return (this.form.get(dir.path)); };
+    /**
+     * @param {?} dir
+     * @param {?} value
+     * @return {?}
+     */
+    NgForm.prototype.updateModel = function (dir, value) {
+        var _this = this;
+        resolvedPromise.then(function () {
+            var /** @type {?} */ ctrl = (_this.form.get(/** @type {?} */ ((dir.path))));
+            ctrl.setValue(value);
+        });
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NgForm.prototype.setValue = function (value) { this.control.setValue(value); };
+    /**
+     * @param {?} $event
+     * @return {?}
+     */
+    NgForm.prototype.onSubmit = function ($event) {
+        this._submitted = true;
+        this.ngSubmit.emit($event);
+        return false;
+    };
+    /**
+     * @return {?}
+     */
+    NgForm.prototype.onReset = function () { this.resetForm(); };
+    /**
+     * @param {?=} value
+     * @return {?}
+     */
+    NgForm.prototype.resetForm = function (value) {
+        if (value === void 0) { value = undefined; }
+        this.form.reset(value);
+        this._submitted = false;
+    };
+    /**
+     * \@internal
+     * @param {?} path
+     * @return {?}
+     */
+    NgForm.prototype._findContainer = function (path) {
+        path.pop();
+        return path.length ? (this.form.get(path)) : this.form;
+    };
+    return NgForm;
+}(ControlContainer));
+NgForm.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'form:not([ngNoForm]):not([formGroup]),ngForm,[ngForm]',
+                providers: [formDirectiveProvider],
+                host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
+                outputs: ['ngSubmit'],
+                exportAs: 'ngForm'
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NgForm.ctorParameters = function () { return [
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var FormErrorExamples = {
+    formControlName: "\n    <div [formGroup]=\"myGroup\">\n      <input formControlName=\"firstName\">\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       firstName: new FormControl()\n    });",
+    formGroupName: "\n    <div [formGroup]=\"myGroup\">\n       <div formGroupName=\"person\">\n          <input formControlName=\"firstName\">\n       </div>\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       person: new FormGroup({ firstName: new FormControl() })\n    });",
+    formArrayName: "\n    <div [formGroup]=\"myGroup\">\n      <div formArrayName=\"cities\">\n        <div *ngFor=\"let city of cityArray.controls; index as i\">\n          <input [formControlName]=\"i\">\n        </div>\n      </div>\n    </div>\n\n    In your class:\n\n    this.cityArray = new FormArray([new FormControl('SF')]);\n    this.myGroup = new FormGroup({\n      cities: this.cityArray\n    });",
+    ngModelGroup: "\n    <form>\n       <div ngModelGroup=\"person\">\n          <input [(ngModel)]=\"person.name\" name=\"firstName\">\n       </div>\n    </form>",
+    ngModelWithFormGroup: "\n    <div [formGroup]=\"myGroup\">\n       <input formControlName=\"firstName\">\n       <input [(ngModel)]=\"showMoreControls\" [ngModelOptions]=\"{standalone: true}\">\n    </div>\n  "
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var TemplateDrivenErrors = (function () {
+    function TemplateDrivenErrors() {
+    }
+    /**
+     * @return {?}
+     */
+    TemplateDrivenErrors.modelParentException = function () {
+        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroup directive.  Try using\n      formGroup's partner directive \"formControlName\" instead.  Example:\n\n      " + FormErrorExamples.formControlName + "\n\n      Or, if you'd like to avoid registering this form control, indicate that it's standalone in ngModelOptions:\n\n      Example:\n\n      " + FormErrorExamples.ngModelWithFormGroup);
+    };
+    /**
+     * @return {?}
+     */
+    TemplateDrivenErrors.formGroupNameException = function () {
+        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroupName or formArrayName directive.\n\n      Option 1: Use formControlName instead of ngModel (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Update ngModel's parent be ngModelGroup (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
+    };
+    /**
+     * @return {?}
+     */
+    TemplateDrivenErrors.missingNameException = function () {
+        throw new Error("If ngModel is used within a form tag, either the name attribute must be set or the form\n      control must be defined as 'standalone' in ngModelOptions.\n\n      Example 1: <input [(ngModel)]=\"person.firstName\" name=\"first\">\n      Example 2: <input [(ngModel)]=\"person.firstName\" [ngModelOptions]=\"{standalone: true}\">");
+    };
+    /**
+     * @return {?}
+     */
+    TemplateDrivenErrors.modelGroupParentException = function () {
+        throw new Error("\n      ngModelGroup cannot be used with a parent formGroup directive.\n\n      Option 1: Use formGroupName instead of ngModelGroup (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Use a regular form tag instead of the formGroup directive (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
+    };
+    return TemplateDrivenErrors;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var modelGroupProvider = {
+    provide: ControlContainer,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgModelGroup; })
+};
+/**
+ * \@whatItDoes Creates and binds a {\@link FormGroup} instance to a DOM element.
+ *
+ * \@howToUse
+ *
+ * This directive can only be used as a child of {\@link NgForm} (or in other words,
+ * within `<form>` tags).
+ *
+ * Use this directive if you'd like to create a sub-group within a form. This can
+ * come in handy if you want to validate a sub-group of your form separately from
+ * the rest of your form, or if some values in your domain model make more sense to
+ * consume together in a nested object.
+ *
+ * Pass in the name you'd like this sub-group to have and it will become the key
+ * for the sub-group in the form's full value. You can also export the directive into
+ * a local template variable using `ngModelGroup` (ex: `#myGroup="ngModelGroup"`).
+ *
+ * {\@example forms/ts/ngModelGroup/ng_model_group_example.ts region='Component'}
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * * **NgModule**: `FormsModule`
+ *
+ * \@stable
+ */
+var NgModelGroup = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgModelGroup, _super);
+    /**
+     * @param {?} parent
+     * @param {?} validators
+     * @param {?} asyncValidators
+     */
+    function NgModelGroup(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    /**
+     * \@internal
+     * @return {?}
+     */
+    NgModelGroup.prototype._checkParentType = function () {
+        if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
+            TemplateDrivenErrors.modelGroupParentException();
+        }
+    };
+    return NgModelGroup;
+}(AbstractFormGroupDirective));
+NgModelGroup.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[ngModelGroup]', providers: [modelGroupProvider], exportAs: 'ngModelGroup' },] },
+];
+/**
+ * @nocollapse
+ */
+NgModelGroup.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+]; };
+NgModelGroup.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModelGroup',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formControlBinding = {
+    provide: NgControl,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgModel; })
+};
+/**
+ * `ngModel` forces an additional change detection run when its inputs change:
+ * E.g.:
+ * ```
+ * <div>{{myModel.valid}}</div>
+ * <input [(ngModel)]="myValue" #myModel="ngModel">
+ * ```
+ * I.e. `ngModel` can export itself on the element and then be used in the template.
+ * Normally, this would result in expressions before the `input` that use the exported directive
+ * to have and old value as they have been
+ * dirty checked before. As this is a very common case for `ngModel`, we added this second change
+ * detection run.
+ *
+ * Notes:
+ * - this is just one extra run no matter how many `ngModel` have been changed.
+ * - this is a general problem when using `exportAs` for directives!
+ */
+var resolvedPromise$1 = Promise.resolve(null);
+/**
+ * \@whatItDoes Creates a {\@link FormControl} instance from a domain model and binds it
+ * to a form control element.
+ *
+ * The {\@link FormControl} instance will track the value, user interaction, and
+ * validation status of the control and keep the view synced with the model. If used
+ * within a parent form, the directive will also register itself with the form as a child
+ * control.
+ *
+ * \@howToUse
+ *
+ * This directive can be used by itself or as part of a larger form. All you need is the
+ * `ngModel` selector to activate it.
+ *
+ * It accepts a domain model as an optional {\@link Input}. If you have a one-way binding
+ * to `ngModel` with `[]` syntax, changing the value of the domain model in the component
+ * class will set the value in the view. If you have a two-way binding with `[()]` syntax
+ * (also known as 'banana-box syntax'), the value in the UI will always be synced back to
+ * the domain model in your class as well.
+ *
+ * If you wish to inspect the properties of the associated {\@link FormControl} (like
+ * validity state), you can also export the directive into a local template variable using
+ * `ngModel` as the key (ex: `#myVar="ngModel"`). You can then access the control using the
+ * directive's `control` property, but most properties you'll need (like `valid` and `dirty`)
+ * will fall through to the control anyway, so you can access them directly. You can see a
+ * full list of properties directly available in {\@link AbstractControlDirective}.
+ *
+ * The following is an example of a simple standalone control using `ngModel`:
+ *
+ * {\@example forms/ts/simpleNgModel/simple_ng_model_example.ts region='Component'}
+ *
+ * When using the `ngModel` within `<form>` tags, you'll also need to supply a `name` attribute
+ * so that the control can be registered with the parent form under that name.
+ *
+ * It's worth noting that in the context of a parent form, you often can skip one-way or
+ * two-way binding because the parent form will sync the value for you. You can access
+ * its properties by exporting it into a local template variable using `ngForm` (ex:
+ * `#f="ngForm"`). Then you can pass it where it needs to go on submit.
+ *
+ * If you do need to populate initial values into your form, using a one-way binding for
+ * `ngModel` tends to be sufficient as long as you use the exported form's value rather
+ * than the domain model's value on submit.
+ *
+ * Take a look at an example of using `ngModel` within a form:
+ *
+ * {\@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
+ *
+ * To see `ngModel` examples with different form control types, see:
+ *
+ * * Radio buttons: {\@link RadioControlValueAccessor}
+ * * Selects: {\@link SelectControlValueAccessor}
+ *
+ * **npm package**: `\@angular/forms`
+ *
+ * **NgModule**: `FormsModule`
+ *
+ *  \@stable
+ */
+var NgModel = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgModel, _super);
+    /**
+     * @param {?} parent
+     * @param {?} validators
+     * @param {?} asyncValidators
+     * @param {?} valueAccessors
+     */
+    function NgModel(parent, validators, asyncValidators, valueAccessors) {
+        var _this = _super.call(this) || this;
+        /**
+         * \@internal
+         */
+        _this._control = new FormControl();
+        /**
+         * \@internal
+         */
+        _this._registered = false;
+        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        _this._parent = parent;
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgModel.prototype.ngOnChanges = function (changes) {
+        this._checkForErrors();
+        if (!this._registered)
+            this._setUpControl();
+        if ('isDisabled' in changes) {
+            this._updateDisabled(changes);
+        }
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            this._updateValue(this.model);
+            this.viewModel = this.model;
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype.ngOnDestroy = function () { this.formDirective && this.formDirective.removeControl(this); };
+    Object.defineProperty(NgModel.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._control; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return this._parent ? controlPath(this.name, this._parent) : [this.name];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "formDirective", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgModel.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return composeAsyncValidators(this._rawAsyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} newValue
+     * @return {?}
+     */
+    NgModel.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._setUpControl = function () {
+        this._isStandalone() ? this._setUpStandalone() :
+            this.formDirective.addControl(this);
+        this._registered = true;
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._isStandalone = function () {
+        return !this._parent || !!(this.options && this.options.standalone);
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._setUpStandalone = function () {
+        setUpControl(this._control, this);
+        this._control.updateValueAndValidity({ emitEvent: false });
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._checkForErrors = function () {
+        if (!this._isStandalone()) {
+            this._checkParentType();
+        }
+        this._checkName();
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._checkParentType = function () {
+        if (!(this._parent instanceof NgModelGroup) &&
+            this._parent instanceof AbstractFormGroupDirective) {
+            TemplateDrivenErrors.formGroupNameException();
+        }
+        else if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
+            TemplateDrivenErrors.modelParentException();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgModel.prototype._checkName = function () {
+        if (this.options && this.options.name)
+            this.name = this.options.name;
+        if (!this._isStandalone() && !this.name) {
+            TemplateDrivenErrors.missingNameException();
+        }
+    };
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NgModel.prototype._updateValue = function (value) {
+        var _this = this;
+        resolvedPromise$1.then(function () { _this.control.setValue(value, { emitViewToModelChange: false }); });
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgModel.prototype._updateDisabled = function (changes) {
+        var _this = this;
+        var /** @type {?} */ disabledValue = changes['isDisabled'].currentValue;
+        var /** @type {?} */ isDisabled = disabledValue === '' || (disabledValue && disabledValue !== 'false');
+        resolvedPromise$1.then(function () {
+            if (isDisabled && !_this.control.disabled) {
+                _this.control.disable();
+            }
+            else if (!isDisabled && _this.control.disabled) {
+                _this.control.enable();
+            }
+        });
+    };
+    return NgModel;
+}(NgControl));
+NgModel.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[ngModel]:not([formControlName]):not([formControl])',
+                providers: [formControlBinding],
+                exportAs: 'ngModel'
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NgModel.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+]; };
+NgModel.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
+    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
+    'options': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModelOptions',] },],
+    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var ReactiveErrors = (function () {
+    function ReactiveErrors() {
+    }
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.controlParentException = function () {
+        throw new Error("formControlName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formControlName);
+    };
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.ngModelGroupException = function () {
+        throw new Error("formControlName cannot be used with an ngModelGroup parent. It is only compatible with parents\n       that also have a \"form\" prefix: formGroupName, formArrayName, or formGroup.\n\n       Option 1:  Update the parent to be formGroupName (reactive form strategy)\n\n        " + FormErrorExamples.formGroupName + "\n\n        Option 2: Use ngModel instead of formControlName (template-driven strategy)\n\n        " + FormErrorExamples.ngModelGroup);
+    };
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.missingFormException = function () {
+        throw new Error("formGroup expects a FormGroup instance. Please pass one in.\n\n       Example:\n\n       " + FormErrorExamples.formControlName);
+    };
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.groupParentException = function () {
+        throw new Error("formGroupName must be used with a parent formGroup directive.  You'll want to add a formGroup\n      directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formGroupName);
+    };
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.arrayParentException = function () {
+        throw new Error("formArrayName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n        Example:\n\n        " + FormErrorExamples.formArrayName);
+    };
+    /**
+     * @return {?}
+     */
+    ReactiveErrors.disabledAttrWarning = function () {
+        console.warn("\n      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true\n      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for\n      you. We recommend using this approach to avoid 'changed after checked' errors.\n       \n      Example: \n      form = new FormGroup({\n        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),\n        last: new FormControl('Drew', Validators.required)\n      });\n    ");
+    };
+    return ReactiveErrors;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formControlBinding$1 = {
+    provide: NgControl,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormControlDirective; })
+};
+/**
+ * \@whatItDoes Syncs a standalone {\@link FormControl} instance to a form control element.
+ *
+ * In other words, this directive ensures that any values written to the {\@link FormControl}
+ * instance programmatically will be written to the DOM element (model -> view). Conversely,
+ * any values written to the DOM element through user input will be reflected in the
+ * {\@link FormControl} instance (view -> model).
+ *
+ * \@howToUse
+ *
+ * Use this directive if you'd like to create and manage a {\@link FormControl} instance directly.
+ * Simply create a {\@link FormControl}, save it to your component class, and pass it into the
+ * {\@link FormControlDirective}.
+ *
+ * This directive is designed to be used as a standalone control.  Unlike {\@link FormControlName},
+ * it does not require that your {\@link FormControl} instance be part of any parent
+ * {\@link FormGroup}, and it won't be registered to any {\@link FormGroupDirective} that
+ * exists above it.
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * {\@link FormControl} instance. See a full list of available properties in
+ * {\@link AbstractControl}.
+ *
+ * **Set the value**: You can pass in an initial value when instantiating the {\@link FormControl},
+ * or you can set it programmatically later using {\@link AbstractControl#setValue setValue} or
+ * {\@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the control, you can
+ * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * {\@example forms/ts/simpleFormControl/simple_form_control_example.ts region='Component'}
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ *  \@stable
+ */
+var FormControlDirective = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControlDirective, _super);
+    /**
+     * @param {?} validators
+     * @param {?} asyncValidators
+     * @param {?} valueAccessors
+     */
+    function FormControlDirective(validators, asyncValidators, valueAccessors) {
+        var _this = _super.call(this) || this;
+        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    Object.defineProperty(FormControlDirective.prototype, "isDisabled", {
+        /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    FormControlDirective.prototype.ngOnChanges = function (changes) {
+        if (this._isControlChanged(changes)) {
+            setUpControl(this.form, this);
+            if (this.control.disabled && ((this.valueAccessor)).setDisabledState) {
+                ((((this.valueAccessor)).setDisabledState))(true);
+            }
+            this.form.updateValueAndValidity({ emitEvent: false });
+        }
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            this.form.setValue(this.model);
+            this.viewModel = this.model;
+        }
+    };
+    Object.defineProperty(FormControlDirective.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return composeAsyncValidators(this._rawAsyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlDirective.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} newValue
+     * @return {?}
+     */
+    FormControlDirective.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    FormControlDirective.prototype._isControlChanged = function (changes) {
+        return changes.hasOwnProperty('form');
+    };
+    return FormControlDirective;
+}(NgControl));
+FormControlDirective.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControl]', providers: [formControlBinding$1], exportAs: 'ngForm' },] },
+];
+/**
+ * @nocollapse
+ */
+FormControlDirective.ctorParameters = function () { return [
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+]; };
+FormControlDirective.propDecorators = {
+    'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formControl',] },],
+    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
+    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
+    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formDirectiveProvider$1 = {
+    provide: ControlContainer,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormGroupDirective; })
+};
+/**
+ * \@whatItDoes Binds an existing {\@link FormGroup} to a DOM element.
+ *
+ * \@howToUse
+ *
+ * This directive accepts an existing {\@link FormGroup} instance. It will then use this
+ * {\@link FormGroup} instance to match any child {\@link FormControl}, {\@link FormGroup},
+ * and {\@link FormArray} instances to child {\@link FormControlName}, {\@link FormGroupName},
+ * and {\@link FormArrayName} directives.
+ *
+ * **Set value**: You can set the form's initial value when instantiating the
+ * {\@link FormGroup}, or you can set it programmatically later using the {\@link FormGroup}'s
+ * {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}
+ * methods.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the form, you can subscribe
+ * to the {\@link FormGroup}'s {\@link AbstractControl#valueChanges valueChanges} event.  You can also
+ * listen to its {\@link AbstractControl#statusChanges statusChanges} event to be notified when the
+ * validation status is re-calculated.
+ *
+ * Furthermore, you can listen to the directive's `ngSubmit` event to be notified when the user has
+ * triggered a form submission. The `ngSubmit` event will be emitted with the original form
+ * submission event.
+ *
+ * ### Example
+ *
+ * In this example, we create form controls for first name and last name.
+ *
+ * {\@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
+ *
+ * **npm package**: `\@angular/forms`
+ *
+ * **NgModule**: {\@link ReactiveFormsModule}
+ *
+ *  \@stable
+ */
+var FormGroupDirective = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroupDirective, _super);
+    /**
+     * @param {?} _validators
+     * @param {?} _asyncValidators
+     */
+    function FormGroupDirective(_validators, _asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._validators = _validators;
+        _this._asyncValidators = _asyncValidators;
+        _this._submitted = false;
+        _this.directives = [];
+        _this.form = ((null));
+        _this.ngSubmit = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        return _this;
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    FormGroupDirective.prototype.ngOnChanges = function (changes) {
+        this._checkFormPresent();
+        if (changes.hasOwnProperty('form')) {
+            this._updateValidators();
+            this._updateDomValue();
+            this._updateRegistrations();
+        }
+    };
+    Object.defineProperty(FormGroupDirective.prototype, "submitted", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._submitted; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormGroupDirective.prototype, "formDirective", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormGroupDirective.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.form; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormGroupDirective.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () { return []; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.addControl = function (dir) {
+        var /** @type {?} */ ctrl = this.form.get(dir.path);
+        setUpControl(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+        this.directives.push(dir);
+        return ctrl;
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.getControl = function (dir) { return (this.form.get(dir.path)); };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.removeControl = function (dir) { remove(this.directives, dir); };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.addFormGroup = function (dir) {
+        var /** @type {?} */ ctrl = this.form.get(dir.path);
+        setUpFormContainer(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.removeFormGroup = function (dir) { };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.getFormGroup = function (dir) { return (this.form.get(dir.path)); };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.addFormArray = function (dir) {
+        var /** @type {?} */ ctrl = this.form.get(dir.path);
+        setUpFormContainer(ctrl, dir);
+        ctrl.updateValueAndValidity({ emitEvent: false });
+    };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.removeFormArray = function (dir) { };
+    /**
+     * @param {?} dir
+     * @return {?}
+     */
+    FormGroupDirective.prototype.getFormArray = function (dir) { return (this.form.get(dir.path)); };
+    /**
+     * @param {?} dir
+     * @param {?} value
+     * @return {?}
+     */
+    FormGroupDirective.prototype.updateModel = function (dir, value) {
+        var /** @type {?} */ ctrl = (this.form.get(dir.path));
+        ctrl.setValue(value);
+    };
+    /**
+     * @param {?} $event
+     * @return {?}
+     */
+    FormGroupDirective.prototype.onSubmit = function ($event) {
+        this._submitted = true;
+        this.ngSubmit.emit($event);
+        return false;
+    };
+    /**
+     * @return {?}
+     */
+    FormGroupDirective.prototype.onReset = function () { this.resetForm(); };
+    /**
+     * @param {?=} value
+     * @return {?}
+     */
+    FormGroupDirective.prototype.resetForm = function (value) {
+        if (value === void 0) { value = undefined; }
+        this.form.reset(value);
+        this._submitted = false;
+    };
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroupDirective.prototype._updateDomValue = function () {
+        var _this = this;
+        this.directives.forEach(function (dir) {
+            var /** @type {?} */ newCtrl = _this.form.get(dir.path);
+            if (dir._control !== newCtrl) {
+                cleanUpControl(dir._control, dir);
+                if (newCtrl)
+                    setUpControl(newCtrl, dir);
+                dir._control = newCtrl;
+            }
+        });
+        this.form._updateTreeValidity({ emitEvent: false });
+    };
+    /**
+     * @return {?}
+     */
+    FormGroupDirective.prototype._updateRegistrations = function () {
+        var _this = this;
+        this.form._registerOnCollectionChange(function () { return _this._updateDomValue(); });
+        if (this._oldForm)
+            this._oldForm._registerOnCollectionChange(function () { });
+        this._oldForm = this.form;
+    };
+    /**
+     * @return {?}
+     */
+    FormGroupDirective.prototype._updateValidators = function () {
+        var /** @type {?} */ sync = composeValidators(this._validators);
+        this.form.validator = Validators.compose([/** @type {?} */ ((this.form.validator)), /** @type {?} */ ((sync))]);
+        var /** @type {?} */ async = composeAsyncValidators(this._asyncValidators);
+        this.form.asyncValidator = Validators.composeAsync([/** @type {?} */ ((this.form.asyncValidator)), /** @type {?} */ ((async))]);
+    };
+    /**
+     * @return {?}
+     */
+    FormGroupDirective.prototype._checkFormPresent = function () {
+        if (!this.form) {
+            ReactiveErrors.missingFormException();
+        }
+    };
+    return FormGroupDirective;
+}(ControlContainer));
+FormGroupDirective.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[formGroup]',
+                providers: [formDirectiveProvider$1],
+                host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
+                exportAs: 'ngForm'
+            },] },
+];
+/**
+ * @nocollapse
+ */
+FormGroupDirective.ctorParameters = function () { return [
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+]; };
+FormGroupDirective.propDecorators = {
+    'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formGroup',] },],
+    'ngSubmit': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */] },],
+};
+/**
+ * @template T
+ * @param {?} list
+ * @param {?} el
+ * @return {?}
+ */
+function remove(list, el) {
+    var /** @type {?} */ index = list.indexOf(el);
+    if (index > -1) {
+        list.splice(index, 1);
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var formGroupNameProvider = {
+    provide: ControlContainer,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormGroupName; })
+};
+/**
+ * \@whatItDoes Syncs a nested {\@link FormGroup} to a DOM element.
+ *
+ * \@howToUse
+ *
+ * This directive can only be used with a parent {\@link FormGroupDirective} (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the nested {\@link FormGroup} you want to link, and
+ * will look for a {\@link FormGroup} registered with that name in the parent
+ * {\@link FormGroup} instance you passed into {\@link FormGroupDirective}.
+ *
+ * Nested form groups can come in handy when you want to validate a sub-group of a
+ * form separately from the rest or when you'd like to group the values of certain
+ * controls into their own nested object.
+ *
+ * **Access the group**: You can access the associated {\@link FormGroup} using the
+ * {\@link AbstractControl#get} method. Ex: `this.form.get('name')`.
+ *
+ * You can also access individual controls within the group using dot syntax.
+ * Ex: `this.form.get('name.first')`
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * {\@link FormGroup}. See a full list of available properties in {\@link AbstractControl}.
+ *
+ * **Set the value**: You can set an initial value for each child control when instantiating
+ * the {\@link FormGroup}, or you can set it programmatically later using
+ * {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the group, you can
+ * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * {\@example forms/ts/nestedFormGroup/nested_form_group_example.ts region='Component'}
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ * \@stable
+ */
+var FormGroupName = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroupName, _super);
+    /**
+     * @param {?} parent
+     * @param {?} validators
+     * @param {?} asyncValidators
+     */
+    function FormGroupName(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    /**
+     * \@internal
+     * @return {?}
+     */
+    FormGroupName.prototype._checkParentType = function () {
+        if (_hasInvalidParent(this._parent)) {
+            ReactiveErrors.groupParentException();
+        }
+    };
+    return FormGroupName;
+}(AbstractFormGroupDirective));
+FormGroupName.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formGroupName]', providers: [formGroupNameProvider] },] },
+];
+/**
+ * @nocollapse
+ */
+FormGroupName.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+]; };
+FormGroupName.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formGroupName',] },],
+};
+var formArrayNameProvider = {
+    provide: ControlContainer,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormArrayName; })
+};
+/**
+ * \@whatItDoes Syncs a nested {\@link FormArray} to a DOM element.
+ *
+ * \@howToUse
+ *
+ * This directive is designed to be used with a parent {\@link FormGroupDirective} (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the nested {\@link FormArray} you want to link, and
+ * will look for a {\@link FormArray} registered with that name in the parent
+ * {\@link FormGroup} instance you passed into {\@link FormGroupDirective}.
+ *
+ * Nested form arrays can come in handy when you have a group of form controls but
+ * you're not sure how many there will be. Form arrays allow you to create new
+ * form controls dynamically.
+ *
+ * **Access the array**: You can access the associated {\@link FormArray} using the
+ * {\@link AbstractControl#get} method on the parent {\@link FormGroup}.
+ * Ex: `this.form.get('cities')`.
+ *
+ * **Get the value**: the `value` property is always synced and available on the
+ * {\@link FormArray}. See a full list of available properties in {\@link AbstractControl}.
+ *
+ * **Set the value**: You can set an initial value for each child control when instantiating
+ * the {\@link FormArray}, or you can set the value programmatically later using the
+ * {\@link FormArray}'s {\@link AbstractControl#setValue} or {\@link AbstractControl#patchValue}
+ * methods.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the array, you can
+ * subscribe to the {\@link FormArray}'s {\@link AbstractControl#valueChanges} event.  You can also
+ * listen to its {\@link AbstractControl#statusChanges} event to be notified when the validation
+ * status is re-calculated.
+ *
+ * **Add new controls**: You can add new controls to the {\@link FormArray} dynamically by
+ * calling its {\@link FormArray#push} method.
+ *  Ex: `this.form.get('cities').push(new FormControl());`
+ *
+ * ### Example
+ *
+ * {\@example forms/ts/nestedFormArray/nested_form_array_example.ts region='Component'}
+ *
+ * * **npm package**: `\@angular/forms`
+ *
+ * * **NgModule**: `ReactiveFormsModule`
+ *
+ * \@stable
+ */
+var FormArrayName = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormArrayName, _super);
+    /**
+     * @param {?} parent
+     * @param {?} validators
+     * @param {?} asyncValidators
+     */
+    function FormArrayName(parent, validators, asyncValidators) {
+        var _this = _super.call(this) || this;
+        _this._parent = parent;
+        _this._validators = validators;
+        _this._asyncValidators = asyncValidators;
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    FormArrayName.prototype.ngOnInit = function () {
+        this._checkParentType(); /** @type {?} */
+        ((this.formDirective)).addFormArray(this);
+    };
+    /**
+     * @return {?}
+     */
+    FormArrayName.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeFormArray(this);
+        }
+    };
+    Object.defineProperty(FormArrayName.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return ((this.formDirective)).getFormArray(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "formDirective", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return this._parent ? (this._parent.formDirective) : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () { return controlPath(this.name, this._parent); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return composeValidators(this._validators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormArrayName.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return composeAsyncValidators(this._asyncValidators);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    FormArrayName.prototype._checkParentType = function () {
+        if (_hasInvalidParent(this._parent)) {
+            ReactiveErrors.arrayParentException();
+        }
+    };
+    return FormArrayName;
+}(ControlContainer));
+FormArrayName.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formArrayName]', providers: [formArrayNameProvider] },] },
+];
+/**
+ * @nocollapse
+ */
+FormArrayName.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+]; };
+FormArrayName.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formArrayName',] },],
+};
+/**
+ * @param {?} parent
+ * @return {?}
+ */
+function _hasInvalidParent(parent) {
+    return !(parent instanceof FormGroupName) && !(parent instanceof FormGroupDirective) &&
+        !(parent instanceof FormArrayName);
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var controlNameBinding = {
+    provide: NgControl,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormControlName; })
+};
+/**
+ * \@whatItDoes Syncs a {\@link FormControl} in an existing {\@link FormGroup} to a form control
+ * element by name.
+ *
+ * In other words, this directive ensures that any values written to the {\@link FormControl}
+ * instance programmatically will be written to the DOM element (model -> view). Conversely,
+ * any values written to the DOM element through user input will be reflected in the
+ * {\@link FormControl} instance (view -> model).
+ *
+ * \@howToUse
+ *
+ * This directive is designed to be used with a parent {\@link FormGroupDirective} (selector:
+ * `[formGroup]`).
+ *
+ * It accepts the string name of the {\@link FormControl} instance you want to
+ * link, and will look for a {\@link FormControl} registered with that name in the
+ * closest {\@link FormGroup} or {\@link FormArray} above it.
+ *
+ * **Access the control**: You can access the {\@link FormControl} associated with
+ * this directive by using the {\@link AbstractControl#get get} method.
+ * Ex: `this.form.get('first');`
+ *
+ * **Get value**: the `value` property is always synced and available on the {\@link FormControl}.
+ * See a full list of available properties in {\@link AbstractControl}.
+ *
+ *  **Set value**: You can set an initial value for the control when instantiating the
+ *  {\@link FormControl}, or you can set it programmatically later using
+ *  {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}.
+ *
+ * **Listen to value**: If you want to listen to changes in the value of the control, you can
+ * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
+ * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
+ * re-calculated.
+ *
+ * ### Example
+ *
+ * In this example, we create form controls for first name and last name.
+ *
+ * {\@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
+ *
+ * To see `formControlName` examples with different form control types, see:
+ *
+ * * Radio buttons: {\@link RadioControlValueAccessor}
+ * * Selects: {\@link SelectControlValueAccessor}
+ *
+ * **npm package**: `\@angular/forms`
+ *
+ * **NgModule**: {\@link ReactiveFormsModule}
+ *
+ *  \@stable
+ */
+var FormControlName = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControlName, _super);
+    /**
+     * @param {?} parent
+     * @param {?} validators
+     * @param {?} asyncValidators
+     * @param {?} valueAccessors
+     */
+    function FormControlName(parent, validators, asyncValidators, valueAccessors) {
+        var _this = _super.call(this) || this;
+        _this._added = false;
+        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
+        _this._parent = parent;
+        _this._rawValidators = validators || [];
+        _this._rawAsyncValidators = asyncValidators || [];
+        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
+        return _this;
+    }
+    Object.defineProperty(FormControlName.prototype, "isDisabled", {
+        /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    FormControlName.prototype.ngOnChanges = function (changes) {
+        if (!this._added)
+            this._setUpControl();
+        if (isPropertyUpdated(changes, this.viewModel)) {
+            this.viewModel = this.model;
+            this.formDirective.updateModel(this, this.model);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    FormControlName.prototype.ngOnDestroy = function () {
+        if (this.formDirective) {
+            this.formDirective.removeControl(this);
+        }
+    };
+    /**
+     * @param {?} newValue
+     * @return {?}
+     */
+    FormControlName.prototype.viewToModelUpdate = function (newValue) {
+        this.viewModel = newValue;
+        this.update.emit(newValue);
+    };
+    Object.defineProperty(FormControlName.prototype, "path", {
+        /**
+         * @return {?}
+         */
+        get: function () { return controlPath(this.name, /** @type {?} */ ((this._parent))); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "formDirective", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._parent ? this._parent.formDirective : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "validator", {
+        /**
+         * @return {?}
+         */
+        get: function () { return composeValidators(this._rawValidators); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "asyncValidator", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return ((composeAsyncValidators(this._rawAsyncValidators)));
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(FormControlName.prototype, "control", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._control; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    FormControlName.prototype._checkParentType = function () {
+        if (!(this._parent instanceof FormGroupName) &&
+            this._parent instanceof AbstractFormGroupDirective) {
+            ReactiveErrors.ngModelGroupException();
+        }
+        else if (!(this._parent instanceof FormGroupName) && !(this._parent instanceof FormGroupDirective) &&
+            !(this._parent instanceof FormArrayName)) {
+            ReactiveErrors.controlParentException();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    FormControlName.prototype._setUpControl = function () {
+        this._checkParentType();
+        this._control = this.formDirective.addControl(this);
+        if (this.control.disabled && ((this.valueAccessor)).setDisabledState) {
+            ((((this.valueAccessor)).setDisabledState))(true);
+        }
+        this._added = true;
+    };
+    return FormControlName;
+}(NgControl));
+FormControlName.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControlName]', providers: [controlNameBinding] },] },
+];
+/**
+ * @nocollapse
+ */
+FormControlName.ctorParameters = function () { return [
+    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
+    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
+]; };
+FormControlName.propDecorators = {
+    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formControlName',] },],
+    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
+    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
+    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var REQUIRED_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RequiredValidator; }),
+    multi: true
+};
+var CHECKBOX_REQUIRED_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return CheckboxRequiredValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `required` validator to any controls marked with the
+ * `required` attribute, via the {\@link NG_VALIDATORS} binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input name="fullName" ngModel required>
+ * ```
+ *
+ * \@stable
+ */
+var RequiredValidator = (function () {
+    function RequiredValidator() {
+    }
+    Object.defineProperty(RequiredValidator.prototype, "required", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._required; },
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            this._required = value != null && value !== false && "" + value !== 'false';
+            if (this._onChange)
+                this._onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    RequiredValidator.prototype.validate = function (c) {
+        return this.required ? Validators.required(c) : null;
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    RequiredValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    return RequiredValidator;
+}());
+RequiredValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: ':not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel]',
+                providers: [REQUIRED_VALIDATOR],
+                host: { '[attr.required]': 'required ? "" : null' }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RequiredValidator.ctorParameters = function () { return []; };
+RequiredValidator.propDecorators = {
+    'required': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * A Directive that adds the `required` validator to checkbox controls marked with the
+ * `required` attribute, via the {\@link NG_VALIDATORS} binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input type="checkbox" name="active" ngModel required>
+ * ```
+ *
+ * \@experimental
+ */
+var CheckboxRequiredValidator = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](CheckboxRequiredValidator, _super);
+    function CheckboxRequiredValidator() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    CheckboxRequiredValidator.prototype.validate = function (c) {
+        return this.required ? Validators.requiredTrue(c) : null;
+    };
+    return CheckboxRequiredValidator;
+}(RequiredValidator));
+CheckboxRequiredValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'input[type=checkbox][required][formControlName],input[type=checkbox][required][formControl],input[type=checkbox][required][ngModel]',
+                providers: [CHECKBOX_REQUIRED_VALIDATOR],
+                host: { '[attr.required]': 'required ? "" : null' }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+CheckboxRequiredValidator.ctorParameters = function () { return []; };
+/**
+ * Provider which adds {\@link EmailValidator} to {\@link NG_VALIDATORS}.
+ */
+var EMAIL_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return EmailValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `email` validator to controls marked with the
+ * `email` attribute, via the {\@link NG_VALIDATORS} binding.
+ *
+ * ### Example
+ *
+ * ```
+ * <input type="email" name="email" ngModel email>
+ * <input type="email" name="email" ngModel email="true">
+ * <input type="email" name="email" ngModel [email]="true">
+ * ```
+ *
+ * \@experimental
+ */
+var EmailValidator = (function () {
+    function EmailValidator() {
+    }
+    Object.defineProperty(EmailValidator.prototype, "email", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            this._enabled = value === '' || value === true || value === 'true';
+            if (this._onChange)
+                this._onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    EmailValidator.prototype.validate = function (c) {
+        return this._enabled ? Validators.email(c) : null;
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    EmailValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    return EmailValidator;
+}());
+EmailValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[email][formControlName],[email][formControl],[email][ngModel]',
+                providers: [EMAIL_VALIDATOR]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+EmailValidator.ctorParameters = function () { return []; };
+EmailValidator.propDecorators = {
+    'email': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * Provider which adds {\@link MinLengthValidator} to {\@link NG_VALIDATORS}.
+ *
+ * ## Example:
+ *
+ * {\@example common/forms/ts/validators/validators.ts region='min'}
+ */
+var MIN_LENGTH_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return MinLengthValidator; }),
+    multi: true
+};
+/**
+ * A directive which installs the {\@link MinLengthValidator} for any `formControlName`,
+ * `formControl`, or control with `ngModel` that also has a `minlength` attribute.
+ *
+ * \@stable
+ */
+var MinLengthValidator = (function () {
+    function MinLengthValidator() {
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    MinLengthValidator.prototype.ngOnChanges = function (changes) {
+        if ('minlength' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    MinLengthValidator.prototype.validate = function (c) {
+        return this.minlength == null ? null : this._validator(c);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    MinLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    /**
+     * @return {?}
+     */
+    MinLengthValidator.prototype._createValidator = function () {
+        this._validator = Validators.minLength(parseInt(this.minlength, 10));
+    };
+    return MinLengthValidator;
+}());
+MinLengthValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[minlength][formControlName],[minlength][formControl],[minlength][ngModel]',
+                providers: [MIN_LENGTH_VALIDATOR],
+                host: { '[attr.minlength]': 'minlength ? minlength : null' }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+MinLengthValidator.ctorParameters = function () { return []; };
+MinLengthValidator.propDecorators = {
+    'minlength': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * Provider which adds {\@link MaxLengthValidator} to {\@link NG_VALIDATORS}.
+ *
+ * ## Example:
+ *
+ * {\@example common/forms/ts/validators/validators.ts region='max'}
+ */
+var MAX_LENGTH_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return MaxLengthValidator; }),
+    multi: true
+};
+/**
+ * A directive which installs the {\@link MaxLengthValidator} for any `formControlName,
+ * `formControl`,
+ * or control with `ngModel` that also has a `maxlength` attribute.
+ *
+ * \@stable
+ */
+var MaxLengthValidator = (function () {
+    function MaxLengthValidator() {
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    MaxLengthValidator.prototype.ngOnChanges = function (changes) {
+        if ('maxlength' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    MaxLengthValidator.prototype.validate = function (c) {
+        return this.maxlength != null ? this._validator(c) : null;
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    MaxLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    /**
+     * @return {?}
+     */
+    MaxLengthValidator.prototype._createValidator = function () {
+        this._validator = Validators.maxLength(parseInt(this.maxlength, 10));
+    };
+    return MaxLengthValidator;
+}());
+MaxLengthValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel]',
+                providers: [MAX_LENGTH_VALIDATOR],
+                host: { '[attr.maxlength]': 'maxlength ? maxlength : null' }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+MaxLengthValidator.ctorParameters = function () { return []; };
+MaxLengthValidator.propDecorators = {
+    'maxlength': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+var PATTERN_VALIDATOR = {
+    provide: NG_VALIDATORS,
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return PatternValidator; }),
+    multi: true
+};
+/**
+ * A Directive that adds the `pattern` validator to any controls marked with the
+ * `pattern` attribute, via the {\@link NG_VALIDATORS} binding. Uses attribute value
+ * as the regex to validate Control value against.  Follows pattern attribute
+ * semantics; i.e. regex must match entire Control value.
+ *
+ * ### Example
+ *
+ * ```
+ * <input [name]="fullName" pattern="[a-zA-Z ]*" ngModel>
+ * ```
+ * \@stable
+ */
+var PatternValidator = (function () {
+    function PatternValidator() {
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    PatternValidator.prototype.ngOnChanges = function (changes) {
+        if ('pattern' in changes) {
+            this._createValidator();
+            if (this._onChange)
+                this._onChange();
+        }
+    };
+    /**
+     * @param {?} c
+     * @return {?}
+     */
+    PatternValidator.prototype.validate = function (c) { return this._validator(c); };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    PatternValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
+    /**
+     * @return {?}
+     */
+    PatternValidator.prototype._createValidator = function () { this._validator = Validators.pattern(this.pattern); };
+    return PatternValidator;
+}());
+PatternValidator.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: '[pattern][formControlName],[pattern][formControl],[pattern][ngModel]',
+                providers: [PATTERN_VALIDATOR],
+                host: { '[attr.pattern]': 'pattern ? pattern : null' }
+            },] },
+];
+/**
+ * @nocollapse
+ */
+PatternValidator.ctorParameters = function () { return []; };
+PatternValidator.propDecorators = {
+    'pattern': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Creates an {\@link AbstractControl} from a user-specified configuration.
+ *
+ * It is essentially syntactic sugar that shortens the `new FormGroup()`,
+ * `new FormControl()`, and `new FormArray()` boilerplate that can build up in larger
+ * forms.
+ *
+ * \@howToUse
+ *
+ * To use, inject `FormBuilder` into your component class. You can then call its methods
+ * directly.
+ *
+ * {\@example forms/ts/formBuilder/form_builder_example.ts region='Component'}
+ *
+ *  * **npm package**: `\@angular/forms`
+ *
+ *  * **NgModule**: {\@link ReactiveFormsModule}
+ *
+ * \@stable
+ */
+var FormBuilder = (function () {
+    function FormBuilder() {
+    }
+    /**
+     * Construct a new {\@link FormGroup} with the given map of configuration.
+     * Valid keys for the `extra` parameter map are `validator` and `asyncValidator`.
+     *
+     * See the {\@link FormGroup} constructor for more details.
+     * @param {?} controlsConfig
+     * @param {?=} extra
+     * @return {?}
+     */
+    FormBuilder.prototype.group = function (controlsConfig, extra) {
+        if (extra === void 0) { extra = null; }
+        var /** @type {?} */ controls = this._reduceControls(controlsConfig);
+        var /** @type {?} */ validator = extra != null ? extra['validator'] : null;
+        var /** @type {?} */ asyncValidator = extra != null ? extra['asyncValidator'] : null;
+        return new FormGroup(controls, validator, asyncValidator);
+    };
+    /**
+     * Construct a new {\@link FormControl} with the given `formState`,`validator`, and
+     * `asyncValidator`.
+     *
+     * `formState` can either be a standalone value for the form control or an object
+     * that contains both a value and a disabled status.
+     *
+     * @param {?} formState
+     * @param {?=} validator
+     * @param {?=} asyncValidator
+     * @return {?}
+     */
+    FormBuilder.prototype.control = function (formState, validator, asyncValidator) {
+        return new FormControl(formState, validator, asyncValidator);
+    };
+    /**
+     * Construct a {\@link FormArray} from the given `controlsConfig` array of
+     * configuration, with the given optional `validator` and `asyncValidator`.
+     * @param {?} controlsConfig
+     * @param {?=} validator
+     * @param {?=} asyncValidator
+     * @return {?}
+     */
+    FormBuilder.prototype.array = function (controlsConfig, validator, asyncValidator) {
+        var _this = this;
+        var /** @type {?} */ controls = controlsConfig.map(function (c) { return _this._createControl(c); });
+        return new FormArray(controls, validator, asyncValidator);
+    };
+    /**
+     * \@internal
+     * @param {?} controlsConfig
+     * @return {?}
+     */
+    FormBuilder.prototype._reduceControls = function (controlsConfig) {
+        var _this = this;
+        var /** @type {?} */ controls = {};
+        Object.keys(controlsConfig).forEach(function (controlName) {
+            controls[controlName] = _this._createControl(controlsConfig[controlName]);
+        });
+        return controls;
+    };
+    /**
+     * \@internal
+     * @param {?} controlConfig
+     * @return {?}
+     */
+    FormBuilder.prototype._createControl = function (controlConfig) {
+        if (controlConfig instanceof FormControl || controlConfig instanceof FormGroup ||
+            controlConfig instanceof FormArray) {
+            return controlConfig;
+        }
+        else if (Array.isArray(controlConfig)) {
+            var /** @type {?} */ value = controlConfig[0];
+            var /** @type {?} */ validator = controlConfig.length > 1 ? controlConfig[1] : null;
+            var /** @type {?} */ asyncValidator = controlConfig.length > 2 ? controlConfig[2] : null;
+            return this.control(value, validator, asyncValidator);
+        }
+        else {
+            return this.control(controlConfig);
+        }
+    };
+    return FormBuilder;
+}());
+FormBuilder.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Injectable */] },
+];
+/**
+ * @nocollapse
+ */
+FormBuilder.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the common package.
+ */
+/**
+ * \@stable
+ */
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["e" /* Version */]('4.4.7');
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Adds `novalidate` attribute to all forms by default.
+ *
+ * `novalidate` is used to disable browser's native form validation.
+ *
+ * If you want to use native validation with Angular forms, just add `ngNativeValidate` attribute:
+ *
+ * ```
+ * <form ngNativeValidate></form>
+ * ```
+ *
+ * \@experimental
+ */
+var NgNoValidate = (function () {
+    function NgNoValidate() {
+    }
+    return NgNoValidate;
+}());
+NgNoValidate.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
+                selector: 'form:not([ngNoForm]):not([ngNativeValidate])',
+                host: { 'novalidate': '' },
+            },] },
+];
+/**
+ * @nocollapse
+ */
+NgNoValidate.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var SHARED_FORM_DIRECTIVES = [
+    NgNoValidate,
+    NgSelectOption,
+    NgSelectMultipleOption,
+    DefaultValueAccessor,
+    NumberValueAccessor,
+    RangeValueAccessor,
+    CheckboxControlValueAccessor,
+    SelectControlValueAccessor,
+    SelectMultipleControlValueAccessor,
+    RadioControlValueAccessor,
+    NgControlStatus,
+    NgControlStatusGroup,
+    RequiredValidator,
+    MinLengthValidator,
+    MaxLengthValidator,
+    PatternValidator,
+    CheckboxRequiredValidator,
+    EmailValidator,
+];
+var TEMPLATE_DRIVEN_DIRECTIVES = [NgModel, NgModelGroup, NgForm];
+var REACTIVE_DRIVEN_DIRECTIVES = [FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName];
+/**
+ * Internal module used for sharing directives between FormsModule and ReactiveFormsModule
+ */
+var InternalFormsSharedModule = (function () {
+    function InternalFormsSharedModule() {
+    }
+    return InternalFormsSharedModule;
+}());
+InternalFormsSharedModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
+                declarations: SHARED_FORM_DIRECTIVES,
+                exports: SHARED_FORM_DIRECTIVES,
+            },] },
+];
+/**
+ * @nocollapse
+ */
+InternalFormsSharedModule.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * The ng module for forms.
+ * \@stable
+ */
+var FormsModule = (function () {
+    function FormsModule() {
+    }
+    return FormsModule;
+}());
+FormsModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
+                declarations: TEMPLATE_DRIVEN_DIRECTIVES,
+                providers: [RadioControlRegistry],
+                exports: [InternalFormsSharedModule, TEMPLATE_DRIVEN_DIRECTIVES]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+FormsModule.ctorParameters = function () { return []; };
+/**
+ * The ng module for reactive forms.
+ * \@stable
+ */
+var ReactiveFormsModule = (function () {
+    function ReactiveFormsModule() {
+    }
+    return ReactiveFormsModule;
+}());
+ReactiveFormsModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
+                declarations: [REACTIVE_DRIVEN_DIRECTIVES],
+                providers: [FormBuilder, RadioControlRegistry],
+                exports: [InternalFormsSharedModule, REACTIVE_DRIVEN_DIRECTIVES]
+            },] },
+];
+/**
+ * @nocollapse
+ */
+ReactiveFormsModule.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * This module is used for handling user input, by defining and building a {@link FormGroup} that
+ * consists of {@link FormControl} objects, and mapping them onto the DOM. {@link FormControl}
+ * objects can then be used to read information from the form DOM elements.
+ *
+ * Forms providers are not included in default providers; you must import these providers
+ * explicitly.
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the forms package.
+ */
+// This file only reexports content of the `src` folder. Keep it that way.
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27827,7 +34014,7 @@ exports.subscribeToResult = subscribeToResult;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(17);
 /* unused harmony export BrowserXhr */
 /* unused harmony export JSONPBackend */
 /* unused harmony export JSONPConnection */
@@ -30046,10 +36233,6395 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["e" /* Version */]
 
 
 /***/ }),
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
+/* 74 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
+/* unused harmony export RouterLink */
+/* unused harmony export RouterLinkWithHref */
+/* unused harmony export RouterLinkActive */
+/* unused harmony export RouterOutlet */
+/* unused harmony export GuardsCheckEnd */
+/* unused harmony export GuardsCheckStart */
+/* unused harmony export NavigationCancel */
+/* unused harmony export NavigationEnd */
+/* unused harmony export NavigationError */
+/* unused harmony export NavigationStart */
+/* unused harmony export ResolveEnd */
+/* unused harmony export ResolveStart */
+/* unused harmony export RouteConfigLoadEnd */
+/* unused harmony export RouteConfigLoadStart */
+/* unused harmony export RoutesRecognized */
+/* unused harmony export RouteReuseStrategy */
+/* unused harmony export Router */
+/* unused harmony export ROUTES */
+/* unused harmony export ROUTER_CONFIGURATION */
+/* unused harmony export ROUTER_INITIALIZER */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RouterModule; });
+/* unused harmony export provideRoutes */
+/* unused harmony export ChildrenOutletContexts */
+/* unused harmony export OutletContext */
+/* unused harmony export NoPreloading */
+/* unused harmony export PreloadAllModules */
+/* unused harmony export PreloadingStrategy */
+/* unused harmony export RouterPreloader */
+/* unused harmony export ActivatedRoute */
+/* unused harmony export ActivatedRouteSnapshot */
+/* unused harmony export RouterState */
+/* unused harmony export RouterStateSnapshot */
+/* unused harmony export PRIMARY_OUTLET */
+/* unused harmony export convertToParamMap */
+/* unused harmony export UrlHandlingStrategy */
+/* unused harmony export DefaultUrlSerializer */
+/* unused harmony export UrlSegment */
+/* unused harmony export UrlSegmentGroup */
+/* unused harmony export UrlSerializer */
+/* unused harmony export UrlTree */
+/* unused harmony export VERSION */
+/* unused harmony export ɵROUTER_PROVIDERS */
+/* unused harmony export ɵflatten */
+/* unused harmony export ɵa */
+/* unused harmony export ɵg */
+/* unused harmony export ɵh */
+/* unused harmony export ɵi */
+/* unused harmony export ɵd */
+/* unused harmony export ɵc */
+/* unused harmony export ɵj */
+/* unused harmony export ɵf */
+/* unused harmony export ɵb */
+/* unused harmony export ɵe */
+/* unused harmony export ɵk */
+/* unused harmony export ɵl */
+
+/**
+ * @license Angular v4.4.7
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Represents an event triggered when a navigation starts.
+ *
+ * \@stable
+ */
+var NavigationStart = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     */
+    function NavigationStart(id, url) {
+        this.id = id;
+        this.url = url;
+    }
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    NavigationStart.prototype.toString = function () { return "NavigationStart(id: " + this.id + ", url: '" + this.url + "')"; };
+    return NavigationStart;
+}());
+/**
+ * \@whatItDoes Represents an event triggered when a navigation ends successfully.
+ *
+ * \@stable
+ */
+var NavigationEnd = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     */
+    function NavigationEnd(id, url, urlAfterRedirects) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+    }
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    NavigationEnd.prototype.toString = function () {
+        return "NavigationEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "')";
+    };
+    return NavigationEnd;
+}());
+/**
+ * \@whatItDoes Represents an event triggered when a navigation is canceled.
+ *
+ * \@stable
+ */
+var NavigationCancel = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} reason
+     */
+    function NavigationCancel(id, url, reason) {
+        this.id = id;
+        this.url = url;
+        this.reason = reason;
+    }
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    NavigationCancel.prototype.toString = function () { return "NavigationCancel(id: " + this.id + ", url: '" + this.url + "')"; };
+    return NavigationCancel;
+}());
+/**
+ * \@whatItDoes Represents an event triggered when a navigation fails due to an unexpected error.
+ *
+ * \@stable
+ */
+var NavigationError = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} error
+     */
+    function NavigationError(id, url, error) {
+        this.id = id;
+        this.url = url;
+        this.error = error;
+    }
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    NavigationError.prototype.toString = function () {
+        return "NavigationError(id: " + this.id + ", url: '" + this.url + "', error: " + this.error + ")";
+    };
+    return NavigationError;
+}());
+/**
+ * \@whatItDoes Represents an event triggered when routes are recognized.
+ *
+ * \@stable
+ */
+var RoutesRecognized = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     * @param {?} state
+     */
+    function RoutesRecognized(id, url, urlAfterRedirects, state) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+        this.state = state;
+    }
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    RoutesRecognized.prototype.toString = function () {
+        return "RoutesRecognized(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return RoutesRecognized;
+}());
+/**
+ * \@whatItDoes Represents an event triggered before lazy loading a route config.
+ *
+ * \@experimental
+ */
+var RouteConfigLoadStart = (function () {
+    /**
+     * @param {?} route
+     */
+    function RouteConfigLoadStart(route) {
+        this.route = route;
+    }
+    /**
+     * @return {?}
+     */
+    RouteConfigLoadStart.prototype.toString = function () { return "RouteConfigLoadStart(path: " + this.route.path + ")"; };
+    return RouteConfigLoadStart;
+}());
+/**
+ * \@whatItDoes Represents an event triggered when a route has been lazy loaded.
+ *
+ * \@experimental
+ */
+var RouteConfigLoadEnd = (function () {
+    /**
+     * @param {?} route
+     */
+    function RouteConfigLoadEnd(route) {
+        this.route = route;
+    }
+    /**
+     * @return {?}
+     */
+    RouteConfigLoadEnd.prototype.toString = function () { return "RouteConfigLoadEnd(path: " + this.route.path + ")"; };
+    return RouteConfigLoadEnd;
+}());
+/**
+ * \@whatItDoes Represents the start of the Guard phase of routing.
+ *
+ * \@experimental
+ */
+var GuardsCheckStart = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     * @param {?} state
+     */
+    function GuardsCheckStart(id, url, urlAfterRedirects, state) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+        this.state = state;
+    }
+    /**
+     * @return {?}
+     */
+    GuardsCheckStart.prototype.toString = function () {
+        return "GuardsCheckStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return GuardsCheckStart;
+}());
+/**
+ * \@whatItDoes Represents the end of the Guard phase of routing.
+ *
+ * \@experimental
+ */
+var GuardsCheckEnd = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     * @param {?} state
+     * @param {?} shouldActivate
+     */
+    function GuardsCheckEnd(id, url, urlAfterRedirects, state, shouldActivate) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+        this.state = state;
+        this.shouldActivate = shouldActivate;
+    }
+    /**
+     * @return {?}
+     */
+    GuardsCheckEnd.prototype.toString = function () {
+        return "GuardsCheckEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ", shouldActivate: " + this.shouldActivate + ")";
+    };
+    return GuardsCheckEnd;
+}());
+/**
+ * \@whatItDoes Represents the start of the Resolve phase of routing. The timing of this
+ * event may change, thus it's experimental. In the current iteration it will run
+ * in the "resolve" phase whether there's things to resolve or not. In the future this
+ * behavior may change to only run when there are things to be resolved.
+ *
+ * \@experimental
+ */
+var ResolveStart = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     * @param {?} state
+     */
+    function ResolveStart(id, url, urlAfterRedirects, state) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+        this.state = state;
+    }
+    /**
+     * @return {?}
+     */
+    ResolveStart.prototype.toString = function () {
+        return "ResolveStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return ResolveStart;
+}());
+/**
+ * \@whatItDoes Represents the end of the Resolve phase of routing. See note on
+ * {\@link ResolveStart} for use of this experimental API.
+ *
+ * \@experimental
+ */
+var ResolveEnd = (function () {
+    /**
+     * @param {?} id
+     * @param {?} url
+     * @param {?} urlAfterRedirects
+     * @param {?} state
+     */
+    function ResolveEnd(id, url, urlAfterRedirects, state) {
+        this.id = id;
+        this.url = url;
+        this.urlAfterRedirects = urlAfterRedirects;
+        this.state = state;
+    }
+    /**
+     * @return {?}
+     */
+    ResolveEnd.prototype.toString = function () {
+        return "ResolveEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
+    };
+    return ResolveEnd;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Name of the primary outlet.
+ *
+ * \@stable
+ */
+var PRIMARY_OUTLET = 'primary';
+var ParamsAsMap = (function () {
+    /**
+     * @param {?} params
+     */
+    function ParamsAsMap(params) {
+        this.params = params || {};
+    }
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    ParamsAsMap.prototype.has = function (name) { return this.params.hasOwnProperty(name); };
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    ParamsAsMap.prototype.get = function (name) {
+        if (this.has(name)) {
+            var /** @type {?} */ v = this.params[name];
+            return Array.isArray(v) ? v[0] : v;
+        }
+        return null;
+    };
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    ParamsAsMap.prototype.getAll = function (name) {
+        if (this.has(name)) {
+            var /** @type {?} */ v = this.params[name];
+            return Array.isArray(v) ? v : [v];
+        }
+        return [];
+    };
+    Object.defineProperty(ParamsAsMap.prototype, "keys", {
+        /**
+         * @return {?}
+         */
+        get: function () { return Object.keys(this.params); },
+        enumerable: true,
+        configurable: true
+    });
+    return ParamsAsMap;
+}());
+/**
+ * Convert a {\@link Params} instance to a {\@link ParamMap}.
+ *
+ * \@stable
+ * @param {?} params
+ * @return {?}
+ */
+function convertToParamMap(params) {
+    return new ParamsAsMap(params);
+}
+var NAVIGATION_CANCELING_ERROR = 'ngNavigationCancelingError';
+/**
+ * @param {?} message
+ * @return {?}
+ */
+function navigationCancelingError(message) {
+    var /** @type {?} */ error = Error('NavigationCancelingError: ' + message);
+    ((error))[NAVIGATION_CANCELING_ERROR] = true;
+    return error;
+}
+/**
+ * @param {?} error
+ * @return {?}
+ */
+function isNavigationCancelingError(error) {
+    return ((error))[NAVIGATION_CANCELING_ERROR];
+}
+/**
+ * @param {?} segments
+ * @param {?} segmentGroup
+ * @param {?} route
+ * @return {?}
+ */
+function defaultUrlMatcher(segments, segmentGroup, route) {
+    var /** @type {?} */ parts = ((route.path)).split('/');
+    if (parts.length > segments.length) {
+        // The actual URL is shorter than the config, no match
+        return null;
+    }
+    if (route.pathMatch === 'full' &&
+        (segmentGroup.hasChildren() || parts.length < segments.length)) {
+        // The config is longer than the actual URL but we are looking for a full match, return null
+        return null;
+    }
+    var /** @type {?} */ posParams = {};
+    // Check each config part against the actual URL
+    for (var /** @type {?} */ index = 0; index < parts.length; index++) {
+        var /** @type {?} */ part = parts[index];
+        var /** @type {?} */ segment = segments[index];
+        var /** @type {?} */ isParameter = part.startsWith(':');
+        if (isParameter) {
+            posParams[part.substring(1)] = segment;
+        }
+        else if (part !== segment.path) {
+            // The actual URL part does not match the config, no match
+            return null;
+        }
+    }
+    return { consumed: segments.slice(0, parts.length), posParams: posParams };
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var LoadedRouterConfig = (function () {
+    /**
+     * @param {?} routes
+     * @param {?} module
+     */
+    function LoadedRouterConfig(routes, module) {
+        this.routes = routes;
+        this.module = module;
+    }
+    return LoadedRouterConfig;
+}());
+/**
+ * @param {?} config
+ * @param {?=} parentPath
+ * @return {?}
+ */
+function validateConfig(config, parentPath) {
+    if (parentPath === void 0) { parentPath = ''; }
+    // forEach doesn't iterate undefined values
+    for (var /** @type {?} */ i = 0; i < config.length; i++) {
+        var /** @type {?} */ route = config[i];
+        var /** @type {?} */ fullPath = getFullPath(parentPath, route);
+        validateNode(route, fullPath);
+    }
+}
+/**
+ * @param {?} route
+ * @param {?} fullPath
+ * @return {?}
+ */
+function validateNode(route, fullPath) {
+    if (!route) {
+        throw new Error("\n      Invalid configuration of route '" + fullPath + "': Encountered undefined route.\n      The reason might be an extra comma.\n\n      Example:\n      const routes: Routes = [\n        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },\n        { path: 'dashboard',  component: DashboardComponent },, << two commas\n        { path: 'detail/:id', component: HeroDetailComponent }\n      ];\n    ");
+    }
+    if (Array.isArray(route)) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': Array cannot be specified");
+    }
+    if (!route.component && (route.outlet && route.outlet !== PRIMARY_OUTLET)) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': a componentless route cannot have a named outlet set");
+    }
+    if (route.redirectTo && route.children) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and children cannot be used together");
+    }
+    if (route.redirectTo && route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and loadChildren cannot be used together");
+    }
+    if (route.children && route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': children and loadChildren cannot be used together");
+    }
+    if (route.redirectTo && route.component) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and component cannot be used together");
+    }
+    if (route.path && route.matcher) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': path and matcher cannot be used together");
+    }
+    if (route.redirectTo === void 0 && !route.component && !route.children && !route.loadChildren) {
+        throw new Error("Invalid configuration of route '" + fullPath + "'. One of the following must be provided: component, redirectTo, children or loadChildren");
+    }
+    if (route.path === void 0 && route.matcher === void 0) {
+        throw new Error("Invalid configuration of route '" + fullPath + "': routes must have either a path or a matcher specified");
+    }
+    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
+        throw new Error("Invalid configuration of route '" + fullPath + "': path cannot start with a slash");
+    }
+    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
+        var /** @type {?} */ exp = "The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.";
+        throw new Error("Invalid configuration of route '{path: \"" + fullPath + "\", redirectTo: \"" + route.redirectTo + "\"}': please provide 'pathMatch'. " + exp);
+    }
+    if (route.pathMatch !== void 0 && route.pathMatch !== 'full' && route.pathMatch !== 'prefix') {
+        throw new Error("Invalid configuration of route '" + fullPath + "': pathMatch can only be set to 'prefix' or 'full'");
+    }
+    if (route.children) {
+        validateConfig(route.children, fullPath);
+    }
+}
+/**
+ * @param {?} parentPath
+ * @param {?} currentRoute
+ * @return {?}
+ */
+function getFullPath(parentPath, currentRoute) {
+    if (!currentRoute) {
+        return parentPath;
+    }
+    if (!parentPath && !currentRoute.path) {
+        return '';
+    }
+    else if (parentPath && !currentRoute.path) {
+        return parentPath + "/";
+    }
+    else if (!parentPath && currentRoute.path) {
+        return currentRoute.path;
+    }
+    else {
+        return parentPath + "/" + currentRoute.path;
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function shallowEqualArrays(a, b) {
+    if (a.length !== b.length)
+        return false;
+    for (var /** @type {?} */ i = 0; i < a.length; ++i) {
+        if (!shallowEqual(a[i], b[i]))
+            return false;
+    }
+    return true;
+}
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function shallowEqual(a, b) {
+    var /** @type {?} */ k1 = Object.keys(a);
+    var /** @type {?} */ k2 = Object.keys(b);
+    if (k1.length != k2.length) {
+        return false;
+    }
+    var /** @type {?} */ key;
+    for (var /** @type {?} */ i = 0; i < k1.length; i++) {
+        key = k1[i];
+        if (a[key] !== b[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * @template T
+ * @param {?} arr
+ * @return {?}
+ */
+function flatten(arr) {
+    return Array.prototype.concat.apply([], arr);
+}
+/**
+ * @template T
+ * @param {?} a
+ * @return {?}
+ */
+function last$1(a) {
+    return a.length > 0 ? a[a.length - 1] : null;
+}
+/**
+ * @param {?} bools
+ * @return {?}
+ */
+/**
+ * @template K, V
+ * @param {?} map
+ * @param {?} callback
+ * @return {?}
+ */
+function forEach(map$$1, callback) {
+    for (var /** @type {?} */ prop in map$$1) {
+        if (map$$1.hasOwnProperty(prop)) {
+            callback(map$$1[prop], prop);
+        }
+    }
+}
+/**
+ * @template A, B
+ * @param {?} obj
+ * @param {?} fn
+ * @return {?}
+ */
+function waitForMap(obj, fn) {
+    if (Object.keys(obj).length === 0) {
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({});
+    }
+    var /** @type {?} */ waitHead = [];
+    var /** @type {?} */ waitTail = [];
+    var /** @type {?} */ res = {};
+    forEach(obj, function (a, k) {
+        var /** @type {?} */ mapped = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(fn(k, a), function (r) { return res[k] = r; });
+        if (k === PRIMARY_OUTLET) {
+            waitHead.push(mapped);
+        }
+        else {
+            waitTail.push(mapped);
+        }
+    });
+    var /** @type {?} */ concat$ = __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__["concatAll"].call(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"].apply(void 0, waitHead.concat(waitTail)));
+    var /** @type {?} */ last$ = __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__["last"].call(concat$);
+    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(last$, function () { return res; });
+}
+/**
+ * @param {?} observables
+ * @return {?}
+ */
+function andObservables(observables) {
+    var /** @type {?} */ merged$ = __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__["mergeAll"].call(observables);
+    return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(merged$, function (result) { return result === true; });
+}
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
+ */
+function wrapIntoObservable(value) {
+    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["X" /* ɵisObservable */])(value)) {
+        return value;
+    }
+    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["W" /* ɵisPromise */])(value)) {
+        // Use `Promise.resolve()` to wrap promise-like instances.
+        // Required ie when a Resolver returns a AngularJS `$q` promise to correctly trigger the
+        // change detection.
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(Promise.resolve(value));
+    }
+    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(/** @type {?} */ (value));
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @return {?}
+ */
+function createEmptyUrlTree() {
+    return new UrlTree(new UrlSegmentGroup([], {}), {}, null);
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @param {?} exact
+ * @return {?}
+ */
+function containsTree(container, containee, exact) {
+    if (exact) {
+        return equalQueryParams(container.queryParams, containee.queryParams) &&
+            equalSegmentGroups(container.root, containee.root);
+    }
+    return containsQueryParams(container.queryParams, containee.queryParams) &&
+        containsSegmentGroup(container.root, containee.root);
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @return {?}
+ */
+function equalQueryParams(container, containee) {
+    return shallowEqual(container, containee);
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @return {?}
+ */
+function equalSegmentGroups(container, containee) {
+    if (!equalPath(container.segments, containee.segments))
+        return false;
+    if (container.numberOfChildren !== containee.numberOfChildren)
+        return false;
+    for (var /** @type {?} */ c in containee.children) {
+        if (!container.children[c])
+            return false;
+        if (!equalSegmentGroups(container.children[c], containee.children[c]))
+            return false;
+    }
+    return true;
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @return {?}
+ */
+function containsQueryParams(container, containee) {
+    return Object.keys(containee).length <= Object.keys(container).length &&
+        Object.keys(containee).every(function (key) { return containee[key] === container[key]; });
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @return {?}
+ */
+function containsSegmentGroup(container, containee) {
+    return containsSegmentGroupHelper(container, containee, containee.segments);
+}
+/**
+ * @param {?} container
+ * @param {?} containee
+ * @param {?} containeePaths
+ * @return {?}
+ */
+function containsSegmentGroupHelper(container, containee, containeePaths) {
+    if (container.segments.length > containeePaths.length) {
+        var /** @type {?} */ current = container.segments.slice(0, containeePaths.length);
+        if (!equalPath(current, containeePaths))
+            return false;
+        if (containee.hasChildren())
+            return false;
+        return true;
+    }
+    else if (container.segments.length === containeePaths.length) {
+        if (!equalPath(container.segments, containeePaths))
+            return false;
+        for (var /** @type {?} */ c in containee.children) {
+            if (!container.children[c])
+                return false;
+            if (!containsSegmentGroup(container.children[c], containee.children[c]))
+                return false;
+        }
+        return true;
+    }
+    else {
+        var /** @type {?} */ current = containeePaths.slice(0, container.segments.length);
+        var /** @type {?} */ next = containeePaths.slice(container.segments.length);
+        if (!equalPath(container.segments, current))
+            return false;
+        if (!container.children[PRIMARY_OUTLET])
+            return false;
+        return containsSegmentGroupHelper(container.children[PRIMARY_OUTLET], containee, next);
+    }
+}
+/**
+ * \@whatItDoes Represents the parsed URL.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const tree: UrlTree =
+ *       router.parseUrl('/team/33/(user/victor//support:help)?debug=true#fragment');
+ *     const f = tree.fragment; // return 'fragment'
+ *     const q = tree.queryParams; // returns {debug: 'true'}
+ *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+ *     const s: UrlSegment[] = g.segments; // returns 2 segments 'team' and '33'
+ *     g.children[PRIMARY_OUTLET].segments; // returns 2 segments 'user' and 'victor'
+ *     g.children['support'].segments; // return 1 segment 'help'
+ *   }
+ * }
+ * ```
+ *
+ * \@description
+ *
+ * Since a router state is a tree, and the URL is nothing but a serialized state, the URL is a
+ * serialized tree.
+ * UrlTree is a data structure that provides a lot of affordances in dealing with URLs
+ *
+ * \@stable
+ */
+var UrlTree = (function () {
+    /**
+     * \@internal
+     * @param {?} root
+     * @param {?} queryParams
+     * @param {?} fragment
+     */
+    function UrlTree(root, queryParams, fragment) {
+        this.root = root;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+    }
+    Object.defineProperty(UrlTree.prototype, "queryParamMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap = convertToParamMap(this.queryParams);
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    UrlTree.prototype.toString = function () { return DEFAULT_SERIALIZER.serialize(this); };
+    return UrlTree;
+}());
+/**
+ * \@whatItDoes Represents the parsed URL segment group.
+ *
+ * See {\@link UrlTree} for more information.
+ *
+ * \@stable
+ */
+var UrlSegmentGroup = (function () {
+    /**
+     * @param {?} segments
+     * @param {?} children
+     */
+    function UrlSegmentGroup(segments, children) {
+        var _this = this;
+        this.segments = segments;
+        this.children = children;
+        /**
+         * The parent node in the url tree
+         */
+        this.parent = null;
+        forEach(children, function (v, k) { return v.parent = _this; });
+    }
+    /**
+     * Whether the segment has child segments
+     * @return {?}
+     */
+    UrlSegmentGroup.prototype.hasChildren = function () { return this.numberOfChildren > 0; };
+    Object.defineProperty(UrlSegmentGroup.prototype, "numberOfChildren", {
+        /**
+         * Number of child segments
+         * @return {?}
+         */
+        get: function () { return Object.keys(this.children).length; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    UrlSegmentGroup.prototype.toString = function () { return serializePaths(this); };
+    return UrlSegmentGroup;
+}());
+/**
+ * \@whatItDoes Represents a single URL segment.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const tree: UrlTree = router.parseUrl('/team;id=33');
+ *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
+ *     const s: UrlSegment[] = g.segments;
+ *     s[0].path; // returns 'team'
+ *     s[0].parameters; // returns {id: 33}
+ *   }
+ * }
+ * ```
+ *
+ * \@description
+ *
+ * A UrlSegment is a part of a URL between the two slashes. It contains a path and the matrix
+ * parameters associated with the segment.
+ *
+ * \@stable
+ */
+var UrlSegment = (function () {
+    /**
+     * @param {?} path
+     * @param {?} parameters
+     */
+    function UrlSegment(path, parameters) {
+        this.path = path;
+        this.parameters = parameters;
+    }
+    Object.defineProperty(UrlSegment.prototype, "parameterMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._parameterMap) {
+                this._parameterMap = convertToParamMap(this.parameters);
+            }
+            return this._parameterMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    UrlSegment.prototype.toString = function () { return serializePath(this); };
+    return UrlSegment;
+}());
+/**
+ * @param {?} as
+ * @param {?} bs
+ * @return {?}
+ */
+function equalSegments(as, bs) {
+    return equalPath(as, bs) && as.every(function (a, i) { return shallowEqual(a.parameters, bs[i].parameters); });
+}
+/**
+ * @param {?} as
+ * @param {?} bs
+ * @return {?}
+ */
+function equalPath(as, bs) {
+    if (as.length !== bs.length)
+        return false;
+    return as.every(function (a, i) { return a.path === bs[i].path; });
+}
+/**
+ * @template T
+ * @param {?} segment
+ * @param {?} fn
+ * @return {?}
+ */
+function mapChildrenIntoArray(segment, fn) {
+    var /** @type {?} */ res = [];
+    forEach(segment.children, function (child, childOutlet) {
+        if (childOutlet === PRIMARY_OUTLET) {
+            res = res.concat(fn(child, childOutlet));
+        }
+    });
+    forEach(segment.children, function (child, childOutlet) {
+        if (childOutlet !== PRIMARY_OUTLET) {
+            res = res.concat(fn(child, childOutlet));
+        }
+    });
+    return res;
+}
+/**
+ * \@whatItDoes Serializes and deserializes a URL string into a URL tree.
+ *
+ * \@description The url serialization strategy is customizable. You can
+ * make all URLs case insensitive by providing a custom UrlSerializer.
+ *
+ * See {\@link DefaultUrlSerializer} for an example of a URL serializer.
+ *
+ * \@stable
+ * @abstract
+ */
+var UrlSerializer = (function () {
+    function UrlSerializer() {
+    }
+    /**
+     * Parse a url into a {\@link UrlTree}
+     * @abstract
+     * @param {?} url
+     * @return {?}
+     */
+    UrlSerializer.prototype.parse = function (url) { };
+    /**
+     * Converts a {\@link UrlTree} into a url
+     * @abstract
+     * @param {?} tree
+     * @return {?}
+     */
+    UrlSerializer.prototype.serialize = function (tree) { };
+    return UrlSerializer;
+}());
+/**
+ * \@whatItDoes A default implementation of the {\@link UrlSerializer}.
+ *
+ * \@description
+ *
+ * Example URLs:
+ *
+ * ```
+ * /inbox/33(popup:compose)
+ * /inbox/33;open=true/messages/44
+ * ```
+ *
+ * DefaultUrlSerializer uses parentheses to serialize secondary segments (e.g., popup:compose), the
+ * colon syntax to specify the outlet, and the ';parameter=value' syntax (e.g., open=true) to
+ * specify route specific parameters.
+ *
+ * \@stable
+ */
+var DefaultUrlSerializer = (function () {
+    function DefaultUrlSerializer() {
+    }
+    /**
+     * Parses a url into a {\@link UrlTree}
+     * @param {?} url
+     * @return {?}
+     */
+    DefaultUrlSerializer.prototype.parse = function (url) {
+        var /** @type {?} */ p = new UrlParser(url);
+        return new UrlTree(p.parseRootSegment(), p.parseQueryParams(), p.parseFragment());
+    };
+    /**
+     * Converts a {\@link UrlTree} into a url
+     * @param {?} tree
+     * @return {?}
+     */
+    DefaultUrlSerializer.prototype.serialize = function (tree) {
+        var /** @type {?} */ segment = "/" + serializeSegment(tree.root, true);
+        var /** @type {?} */ query = serializeQueryParams(tree.queryParams);
+        var /** @type {?} */ fragment = typeof tree.fragment === "string" ? "#" + encodeURI(/** @type {?} */ ((tree.fragment))) : '';
+        return "" + segment + query + fragment;
+    };
+    return DefaultUrlSerializer;
+}());
+var DEFAULT_SERIALIZER = new DefaultUrlSerializer();
+/**
+ * @param {?} segment
+ * @return {?}
+ */
+function serializePaths(segment) {
+    return segment.segments.map(function (p) { return serializePath(p); }).join('/');
+}
+/**
+ * @param {?} segment
+ * @param {?} root
+ * @return {?}
+ */
+function serializeSegment(segment, root) {
+    if (!segment.hasChildren()) {
+        return serializePaths(segment);
+    }
+    if (root) {
+        var /** @type {?} */ primary = segment.children[PRIMARY_OUTLET] ?
+            serializeSegment(segment.children[PRIMARY_OUTLET], false) :
+            '';
+        var /** @type {?} */ children_1 = [];
+        forEach(segment.children, function (v, k) {
+            if (k !== PRIMARY_OUTLET) {
+                children_1.push(k + ":" + serializeSegment(v, false));
+            }
+        });
+        return children_1.length > 0 ? primary + "(" + children_1.join('//') + ")" : primary;
+    }
+    else {
+        var /** @type {?} */ children = mapChildrenIntoArray(segment, function (v, k) {
+            if (k === PRIMARY_OUTLET) {
+                return [serializeSegment(segment.children[PRIMARY_OUTLET], false)];
+            }
+            return [k + ":" + serializeSegment(v, false)];
+        });
+        return serializePaths(segment) + "/(" + children.join('//') + ")";
+    }
+}
+/**
+ * This method is intended for encoding *key* or *value* parts of query component. We need a custom
+ * method because encodeURIComponent is too aggressive and encodes stuff that doesn't have to be
+ * encoded per http://tools.ietf.org/html/rfc3986:
+ *    query         = *( pchar / "/" / "?" )
+ *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "\@"
+ *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
+ *    pct-encoded   = "%" HEXDIG HEXDIG
+ *    sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
+ *                     / "*" / "+" / "," / ";" / "="
+ * @param {?} s
+ * @return {?}
+ */
+function encode(s) {
+    return encodeURIComponent(s)
+        .replace(/%40/g, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/g, '$')
+        .replace(/%2C/gi, ',')
+        .replace(/%3B/gi, ';');
+}
+/**
+ * @param {?} s
+ * @return {?}
+ */
+function decode(s) {
+    return decodeURIComponent(s);
+}
+/**
+ * @param {?} path
+ * @return {?}
+ */
+function serializePath(path) {
+    return "" + encode(path.path) + serializeParams(path.parameters);
+}
+/**
+ * @param {?} params
+ * @return {?}
+ */
+function serializeParams(params) {
+    return Object.keys(params).map(function (key) { return ";" + encode(key) + "=" + encode(params[key]); }).join('');
+}
+/**
+ * @param {?} params
+ * @return {?}
+ */
+function serializeQueryParams(params) {
+    var /** @type {?} */ strParams = Object.keys(params).map(function (name) {
+        var /** @type {?} */ value = params[name];
+        return Array.isArray(value) ? value.map(function (v) { return encode(name) + "=" + encode(v); }).join('&') :
+            encode(name) + "=" + encode(value);
+    });
+    return strParams.length ? "?" + strParams.join("&") : '';
+}
+var SEGMENT_RE = /^[^\/()?;=&#]+/;
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function matchSegments(str) {
+    var /** @type {?} */ match = str.match(SEGMENT_RE);
+    return match ? match[0] : '';
+}
+var QUERY_PARAM_RE = /^[^=?&#]+/;
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function matchQueryParams(str) {
+    var /** @type {?} */ match = str.match(QUERY_PARAM_RE);
+    return match ? match[0] : '';
+}
+var QUERY_PARAM_VALUE_RE = /^[^?&#]+/;
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function matchUrlQueryParamValue(str) {
+    var /** @type {?} */ match = str.match(QUERY_PARAM_VALUE_RE);
+    return match ? match[0] : '';
+}
+var UrlParser = (function () {
+    /**
+     * @param {?} url
+     */
+    function UrlParser(url) {
+        this.url = url;
+        this.remaining = url;
+    }
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseRootSegment = function () {
+        this.consumeOptional('/');
+        if (this.remaining === '' || this.peekStartsWith('?') || this.peekStartsWith('#')) {
+            return new UrlSegmentGroup([], {});
+        }
+        // The root segment group never has segments
+        return new UrlSegmentGroup([], this.parseChildren());
+    };
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseQueryParams = function () {
+        var /** @type {?} */ params = {};
+        if (this.consumeOptional('?')) {
+            do {
+                this.parseQueryParam(params);
+            } while (this.consumeOptional('&'));
+        }
+        return params;
+    };
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseFragment = function () {
+        return this.consumeOptional('#') ? decodeURI(this.remaining) : null;
+    };
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseChildren = function () {
+        if (this.remaining === '') {
+            return {};
+        }
+        this.consumeOptional('/');
+        var /** @type {?} */ segments = [];
+        if (!this.peekStartsWith('(')) {
+            segments.push(this.parseSegment());
+        }
+        while (this.peekStartsWith('/') && !this.peekStartsWith('//') && !this.peekStartsWith('/(')) {
+            this.capture('/');
+            segments.push(this.parseSegment());
+        }
+        var /** @type {?} */ children = {};
+        if (this.peekStartsWith('/(')) {
+            this.capture('/');
+            children = this.parseParens(true);
+        }
+        var /** @type {?} */ res = {};
+        if (this.peekStartsWith('(')) {
+            res = this.parseParens(false);
+        }
+        if (segments.length > 0 || Object.keys(children).length > 0) {
+            res[PRIMARY_OUTLET] = new UrlSegmentGroup(segments, children);
+        }
+        return res;
+    };
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseSegment = function () {
+        var /** @type {?} */ path = matchSegments(this.remaining);
+        if (path === '' && this.peekStartsWith(';')) {
+            throw new Error("Empty path url segment cannot have parameters: '" + this.remaining + "'.");
+        }
+        this.capture(path);
+        return new UrlSegment(decode(path), this.parseMatrixParams());
+    };
+    /**
+     * @return {?}
+     */
+    UrlParser.prototype.parseMatrixParams = function () {
+        var /** @type {?} */ params = {};
+        while (this.consumeOptional(';')) {
+            this.parseParam(params);
+        }
+        return params;
+    };
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+    UrlParser.prototype.parseParam = function (params) {
+        var /** @type {?} */ key = matchSegments(this.remaining);
+        if (!key) {
+            return;
+        }
+        this.capture(key);
+        var /** @type {?} */ value = '';
+        if (this.consumeOptional('=')) {
+            var /** @type {?} */ valueMatch = matchSegments(this.remaining);
+            if (valueMatch) {
+                value = valueMatch;
+                this.capture(value);
+            }
+        }
+        params[decode(key)] = decode(value);
+    };
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+    UrlParser.prototype.parseQueryParam = function (params) {
+        var /** @type {?} */ key = matchQueryParams(this.remaining);
+        if (!key) {
+            return;
+        }
+        this.capture(key);
+        var /** @type {?} */ value = '';
+        if (this.consumeOptional('=')) {
+            var /** @type {?} */ valueMatch = matchUrlQueryParamValue(this.remaining);
+            if (valueMatch) {
+                value = valueMatch;
+                this.capture(value);
+            }
+        }
+        var /** @type {?} */ decodedKey = decode(key);
+        var /** @type {?} */ decodedVal = decode(value);
+        if (params.hasOwnProperty(decodedKey)) {
+            // Append to existing values
+            var /** @type {?} */ currentVal = params[decodedKey];
+            if (!Array.isArray(currentVal)) {
+                currentVal = [currentVal];
+                params[decodedKey] = currentVal;
+            }
+            currentVal.push(decodedVal);
+        }
+        else {
+            // Create a new value
+            params[decodedKey] = decodedVal;
+        }
+    };
+    /**
+     * @param {?} allowPrimary
+     * @return {?}
+     */
+    UrlParser.prototype.parseParens = function (allowPrimary) {
+        var /** @type {?} */ segments = {};
+        this.capture('(');
+        while (!this.consumeOptional(')') && this.remaining.length > 0) {
+            var /** @type {?} */ path = matchSegments(this.remaining);
+            var /** @type {?} */ next = this.remaining[path.length];
+            // if is is not one of these characters, then the segment was unescaped
+            // or the group was not closed
+            if (next !== '/' && next !== ')' && next !== ';') {
+                throw new Error("Cannot parse url '" + this.url + "'");
+            }
+            var /** @type {?} */ outletName = ((undefined));
+            if (path.indexOf(':') > -1) {
+                outletName = path.substr(0, path.indexOf(':'));
+                this.capture(outletName);
+                this.capture(':');
+            }
+            else if (allowPrimary) {
+                outletName = PRIMARY_OUTLET;
+            }
+            var /** @type {?} */ children = this.parseChildren();
+            segments[outletName] = Object.keys(children).length === 1 ? children[PRIMARY_OUTLET] :
+                new UrlSegmentGroup([], children);
+            this.consumeOptional('//');
+        }
+        return segments;
+    };
+    /**
+     * @param {?} str
+     * @return {?}
+     */
+    UrlParser.prototype.peekStartsWith = function (str) { return this.remaining.startsWith(str); };
+    /**
+     * @param {?} str
+     * @return {?}
+     */
+    UrlParser.prototype.consumeOptional = function (str) {
+        if (this.peekStartsWith(str)) {
+            this.remaining = this.remaining.substring(str.length);
+            return true;
+        }
+        return false;
+    };
+    /**
+     * @param {?} str
+     * @return {?}
+     */
+    UrlParser.prototype.capture = function (str) {
+        if (!this.consumeOptional(str)) {
+            throw new Error("Expected \"" + str + "\".");
+        }
+    };
+    return UrlParser;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NoMatch = (function () {
+    /**
+     * @param {?=} segmentGroup
+     */
+    function NoMatch(segmentGroup) {
+        this.segmentGroup = segmentGroup || null;
+    }
+    return NoMatch;
+}());
+var AbsoluteRedirect = (function () {
+    /**
+     * @param {?} urlTree
+     */
+    function AbsoluteRedirect(urlTree) {
+        this.urlTree = urlTree;
+    }
+    return AbsoluteRedirect;
+}());
+/**
+ * @param {?} segmentGroup
+ * @return {?}
+ */
+function noMatch(segmentGroup) {
+    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new NoMatch(segmentGroup)); });
+}
+/**
+ * @param {?} newTree
+ * @return {?}
+ */
+function absoluteRedirect(newTree) {
+    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new AbsoluteRedirect(newTree)); });
+}
+/**
+ * @param {?} redirectTo
+ * @return {?}
+ */
+function namedOutletsRedirect(redirectTo) {
+    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new Error("Only absolute redirects can have named outlets. redirectTo: '" + redirectTo + "'")); });
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function canLoadFails(route) {
+    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(navigationCancelingError("Cannot load children because the guard of the route \"path: '" + route.path + "'\" returned false")); });
+}
+/**
+ * Returns the `UrlTree` with the redirection applied.
+ *
+ * Lazy modules are loaded along the way.
+ * @param {?} moduleInjector
+ * @param {?} configLoader
+ * @param {?} urlSerializer
+ * @param {?} urlTree
+ * @param {?} config
+ * @return {?}
+ */
+function applyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
+    return new ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config).apply();
+}
+var ApplyRedirects = (function () {
+    /**
+     * @param {?} moduleInjector
+     * @param {?} configLoader
+     * @param {?} urlSerializer
+     * @param {?} urlTree
+     * @param {?} config
+     */
+    function ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
+        this.configLoader = configLoader;
+        this.urlSerializer = urlSerializer;
+        this.urlTree = urlTree;
+        this.config = config;
+        this.allowRedirects = true;
+        this.ngModule = moduleInjector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
+    }
+    /**
+     * @return {?}
+     */
+    ApplyRedirects.prototype.apply = function () {
+        var _this = this;
+        var /** @type {?} */ expanded$ = this.expandSegmentGroup(this.ngModule, this.config, this.urlTree.root, PRIMARY_OUTLET);
+        var /** @type {?} */ urlTrees$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (rootSegmentGroup) { return _this.createUrlTree(rootSegmentGroup, _this.urlTree.queryParams, /** @type {?} */ ((_this.urlTree.fragment))); });
+        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(urlTrees$, function (e) {
+            if (e instanceof AbsoluteRedirect) {
+                // after an absolute redirect we do not apply any more redirects!
+                _this.allowRedirects = false;
+                // we need to run matching, so we can fetch all lazy-loaded modules
+                return _this.match(e.urlTree);
+            }
+            if (e instanceof NoMatch) {
+                throw _this.noMatchError(e);
+            }
+            throw e;
+        });
+    };
+    /**
+     * @param {?} tree
+     * @return {?}
+     */
+    ApplyRedirects.prototype.match = function (tree) {
+        var _this = this;
+        var /** @type {?} */ expanded$ = this.expandSegmentGroup(this.ngModule, this.config, tree.root, PRIMARY_OUTLET);
+        var /** @type {?} */ mapped$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (rootSegmentGroup) { return _this.createUrlTree(rootSegmentGroup, tree.queryParams, /** @type {?} */ ((tree.fragment))); });
+        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(mapped$, function (e) {
+            if (e instanceof NoMatch) {
+                throw _this.noMatchError(e);
+            }
+            throw e;
+        });
+    };
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    ApplyRedirects.prototype.noMatchError = function (e) {
+        return new Error("Cannot match any routes. URL Segment: '" + e.segmentGroup + "'");
+    };
+    /**
+     * @param {?} rootCandidate
+     * @param {?} queryParams
+     * @param {?} fragment
+     * @return {?}
+     */
+    ApplyRedirects.prototype.createUrlTree = function (rootCandidate, queryParams, fragment) {
+        var /** @type {?} */ root = rootCandidate.segments.length > 0 ?
+            new UrlSegmentGroup([], (_a = {}, _a[PRIMARY_OUTLET] = rootCandidate, _a)) :
+            rootCandidate;
+        return new UrlTree(root, queryParams, fragment);
+        var _a;
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} routes
+     * @param {?} segmentGroup
+     * @param {?} outlet
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandSegmentGroup = function (ngModule, routes, segmentGroup, outlet) {
+        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.expandChildren(ngModule, routes, segmentGroup), function (children) { return new UrlSegmentGroup([], children); });
+        }
+        return this.expandSegment(ngModule, segmentGroup, routes, segmentGroup.segments, outlet, true);
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} routes
+     * @param {?} segmentGroup
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandChildren = function (ngModule, routes, segmentGroup) {
+        var _this = this;
+        return waitForMap(segmentGroup.children, function (childOutlet, child) { return _this.expandSegmentGroup(ngModule, routes, child, childOutlet); });
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} segmentGroup
+     * @param {?} routes
+     * @param {?} segments
+     * @param {?} outlet
+     * @param {?} allowRedirects
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandSegment = function (ngModule, segmentGroup, routes, segments, outlet, allowRedirects) {
+        var _this = this;
+        var /** @type {?} */ routes$ = __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"].apply(void 0, routes);
+        var /** @type {?} */ processedRoutes$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(routes$, function (r) {
+            var /** @type {?} */ expanded$ = _this.expandSegmentAgainstRoute(ngModule, segmentGroup, routes, r, segments, outlet, allowRedirects);
+            return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(expanded$, function (e) {
+                if (e instanceof NoMatch) {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null);
+                }
+                throw e;
+            });
+        });
+        var /** @type {?} */ concattedProcessedRoutes$ = __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__["concatAll"].call(processedRoutes$);
+        var /** @type {?} */ first$ = __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(concattedProcessedRoutes$, function (s) { return !!s; });
+        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(first$, function (e, _) {
+            if (e instanceof __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__["EmptyError"]) {
+                if (_this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup([], {}));
+                }
+                throw new NoMatch(segmentGroup);
+            }
+            throw e;
+        });
+    };
+    /**
+     * @param {?} segmentGroup
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    ApplyRedirects.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
+        return segments.length === 0 && !segmentGroup.children[outlet];
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} segmentGroup
+     * @param {?} routes
+     * @param {?} route
+     * @param {?} paths
+     * @param {?} outlet
+     * @param {?} allowRedirects
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandSegmentAgainstRoute = function (ngModule, segmentGroup, routes, route, paths, outlet, allowRedirects) {
+        if (getOutlet(route) !== outlet) {
+            return noMatch(segmentGroup);
+        }
+        if (route.redirectTo === undefined) {
+            return this.matchSegmentAgainstRoute(ngModule, segmentGroup, route, paths);
+        }
+        if (allowRedirects && this.allowRedirects) {
+            return this.expandSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, paths, outlet);
+        }
+        return noMatch(segmentGroup);
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} segmentGroup
+     * @param {?} routes
+     * @param {?} route
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
+        if (route.path === '**') {
+            return this.expandWildCardWithParamsAgainstRouteUsingRedirect(ngModule, routes, route, outlet);
+        }
+        return this.expandRegularSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, segments, outlet);
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} routes
+     * @param {?} route
+     * @param {?} outlet
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandWildCardWithParamsAgainstRouteUsingRedirect = function (ngModule, routes, route, outlet) {
+        var _this = this;
+        var /** @type {?} */ newTree = this.applyRedirectCommands([], /** @type {?} */ ((route.redirectTo)), {});
+        if (((route.redirectTo)).startsWith('/')) {
+            return absoluteRedirect(newTree);
+        }
+        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(this.lineralizeSegments(route, newTree), function (newSegments) {
+            var /** @type {?} */ group = new UrlSegmentGroup(newSegments, {});
+            return _this.expandSegment(ngModule, group, routes, newSegments, outlet, false);
+        });
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} segmentGroup
+     * @param {?} routes
+     * @param {?} route
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    ApplyRedirects.prototype.expandRegularSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
+        var _this = this;
+        var _a = match(segmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild, positionalParamSegments = _a.positionalParamSegments;
+        if (!matched)
+            return noMatch(segmentGroup);
+        var /** @type {?} */ newTree = this.applyRedirectCommands(consumedSegments, /** @type {?} */ ((route.redirectTo)), /** @type {?} */ (positionalParamSegments));
+        if (((route.redirectTo)).startsWith('/')) {
+            return absoluteRedirect(newTree);
+        }
+        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(this.lineralizeSegments(route, newTree), function (newSegments) {
+            return _this.expandSegment(ngModule, segmentGroup, routes, newSegments.concat(segments.slice(lastChild)), outlet, false);
+        });
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} rawSegmentGroup
+     * @param {?} route
+     * @param {?} segments
+     * @return {?}
+     */
+    ApplyRedirects.prototype.matchSegmentAgainstRoute = function (ngModule, rawSegmentGroup, route, segments) {
+        var _this = this;
+        if (route.path === '**') {
+            if (route.loadChildren) {
+                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.configLoader.load(ngModule.injector, route), function (cfg) {
+                    route._loadedConfig = cfg;
+                    return new UrlSegmentGroup(segments, {});
+                });
+            }
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup(segments, {}));
+        }
+        var _a = match(rawSegmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild;
+        if (!matched)
+            return noMatch(rawSegmentGroup);
+        var /** @type {?} */ rawSlicedSegments = segments.slice(lastChild);
+        var /** @type {?} */ childConfig$ = this.getChildConfig(ngModule, route);
+        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(childConfig$, function (routerConfig) {
+            var /** @type {?} */ childModule = routerConfig.module;
+            var /** @type {?} */ childConfig = routerConfig.routes;
+            var _a = split(rawSegmentGroup, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _a.segmentGroup, slicedSegments = _a.slicedSegments;
+            if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
+                var /** @type {?} */ expanded$_1 = _this.expandChildren(childModule, childConfig, segmentGroup);
+                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$_1, function (children) { return new UrlSegmentGroup(consumedSegments, children); });
+            }
+            if (childConfig.length === 0 && slicedSegments.length === 0) {
+                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup(consumedSegments, {}));
+            }
+            var /** @type {?} */ expanded$ = _this.expandSegment(childModule, segmentGroup, childConfig, slicedSegments, PRIMARY_OUTLET, true);
+            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (cs) { return new UrlSegmentGroup(consumedSegments.concat(cs.segments), cs.children); });
+        });
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} route
+     * @return {?}
+     */
+    ApplyRedirects.prototype.getChildConfig = function (ngModule, route) {
+        var _this = this;
+        if (route.children) {
+            // The children belong to the same module
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new LoadedRouterConfig(route.children, ngModule));
+        }
+        if (route.loadChildren) {
+            // lazy children belong to the loaded module
+            if (route._loadedConfig !== undefined) {
+                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(route._loadedConfig);
+            }
+            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(runCanLoadGuard(ngModule.injector, route), function (shouldLoad) {
+                if (shouldLoad) {
+                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.configLoader.load(ngModule.injector, route), function (cfg) {
+                        route._loadedConfig = cfg;
+                        return cfg;
+                    });
+                }
+                return canLoadFails(route);
+            });
+        }
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new LoadedRouterConfig([], ngModule));
+    };
+    /**
+     * @param {?} route
+     * @param {?} urlTree
+     * @return {?}
+     */
+    ApplyRedirects.prototype.lineralizeSegments = function (route, urlTree) {
+        var /** @type {?} */ res = [];
+        var /** @type {?} */ c = urlTree.root;
+        while (true) {
+            res = res.concat(c.segments);
+            if (c.numberOfChildren === 0) {
+                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(res);
+            }
+            if (c.numberOfChildren > 1 || !c.children[PRIMARY_OUTLET]) {
+                return namedOutletsRedirect(/** @type {?} */ ((route.redirectTo)));
+            }
+            c = c.children[PRIMARY_OUTLET];
+        }
+    };
+    /**
+     * @param {?} segments
+     * @param {?} redirectTo
+     * @param {?} posParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.applyRedirectCommands = function (segments, redirectTo, posParams) {
+        return this.applyRedirectCreatreUrlTree(redirectTo, this.urlSerializer.parse(redirectTo), segments, posParams);
+    };
+    /**
+     * @param {?} redirectTo
+     * @param {?} urlTree
+     * @param {?} segments
+     * @param {?} posParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.applyRedirectCreatreUrlTree = function (redirectTo, urlTree, segments, posParams) {
+        var /** @type {?} */ newRoot = this.createSegmentGroup(redirectTo, urlTree.root, segments, posParams);
+        return new UrlTree(newRoot, this.createQueryParams(urlTree.queryParams, this.urlTree.queryParams), urlTree.fragment);
+    };
+    /**
+     * @param {?} redirectToParams
+     * @param {?} actualParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.createQueryParams = function (redirectToParams, actualParams) {
+        var /** @type {?} */ res = {};
+        forEach(redirectToParams, function (v, k) {
+            var /** @type {?} */ copySourceValue = typeof v === 'string' && v.startsWith(':');
+            if (copySourceValue) {
+                var /** @type {?} */ sourceName = v.substring(1);
+                res[k] = actualParams[sourceName];
+            }
+            else {
+                res[k] = v;
+            }
+        });
+        return res;
+    };
+    /**
+     * @param {?} redirectTo
+     * @param {?} group
+     * @param {?} segments
+     * @param {?} posParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.createSegmentGroup = function (redirectTo, group, segments, posParams) {
+        var _this = this;
+        var /** @type {?} */ updatedSegments = this.createSegments(redirectTo, group.segments, segments, posParams);
+        var /** @type {?} */ children = {};
+        forEach(group.children, function (child, name) {
+            children[name] = _this.createSegmentGroup(redirectTo, child, segments, posParams);
+        });
+        return new UrlSegmentGroup(updatedSegments, children);
+    };
+    /**
+     * @param {?} redirectTo
+     * @param {?} redirectToSegments
+     * @param {?} actualSegments
+     * @param {?} posParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.createSegments = function (redirectTo, redirectToSegments, actualSegments, posParams) {
+        var _this = this;
+        return redirectToSegments.map(function (s) { return s.path.startsWith(':') ? _this.findPosParam(redirectTo, s, posParams) :
+            _this.findOrReturn(s, actualSegments); });
+    };
+    /**
+     * @param {?} redirectTo
+     * @param {?} redirectToUrlSegment
+     * @param {?} posParams
+     * @return {?}
+     */
+    ApplyRedirects.prototype.findPosParam = function (redirectTo, redirectToUrlSegment, posParams) {
+        var /** @type {?} */ pos = posParams[redirectToUrlSegment.path.substring(1)];
+        if (!pos)
+            throw new Error("Cannot redirect to '" + redirectTo + "'. Cannot find '" + redirectToUrlSegment.path + "'.");
+        return pos;
+    };
+    /**
+     * @param {?} redirectToUrlSegment
+     * @param {?} actualSegments
+     * @return {?}
+     */
+    ApplyRedirects.prototype.findOrReturn = function (redirectToUrlSegment, actualSegments) {
+        var /** @type {?} */ idx = 0;
+        for (var _i = 0, actualSegments_1 = actualSegments; _i < actualSegments_1.length; _i++) {
+            var s = actualSegments_1[_i];
+            if (s.path === redirectToUrlSegment.path) {
+                actualSegments.splice(idx);
+                return s;
+            }
+            idx++;
+        }
+        return redirectToUrlSegment;
+    };
+    return ApplyRedirects;
+}());
+/**
+ * @param {?} moduleInjector
+ * @param {?} route
+ * @return {?}
+ */
+function runCanLoadGuard(moduleInjector, route) {
+    var /** @type {?} */ canLoad = route.canLoad;
+    if (!canLoad || canLoad.length === 0)
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
+    var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canLoad), function (injectionToken) {
+        var /** @type {?} */ guard = moduleInjector.get(injectionToken);
+        return wrapIntoObservable(guard.canLoad ? guard.canLoad(route) : guard(route));
+    });
+    return andObservables(obs);
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} route
+ * @param {?} segments
+ * @return {?}
+ */
+function match(segmentGroup, route, segments) {
+    if (route.path === '') {
+        if ((route.pathMatch === 'full') && (segmentGroup.hasChildren() || segments.length > 0)) {
+            return { matched: false, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
+        }
+        return { matched: true, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
+    }
+    var /** @type {?} */ matcher = route.matcher || defaultUrlMatcher;
+    var /** @type {?} */ res = matcher(segments, segmentGroup, route);
+    if (!res) {
+        return {
+            matched: false,
+            consumedSegments: /** @type {?} */ ([]),
+            lastChild: 0,
+            positionalParamSegments: {},
+        };
+    }
+    return {
+        matched: true,
+        consumedSegments: /** @type {?} */ ((res.consumed)),
+        lastChild: /** @type {?} */ ((res.consumed.length)),
+        positionalParamSegments: /** @type {?} */ ((res.posParams)),
+    };
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} consumedSegments
+ * @param {?} slicedSegments
+ * @param {?} config
+ * @return {?}
+ */
+function split(segmentGroup, consumedSegments, slicedSegments, config) {
+    if (slicedSegments.length > 0 &&
+        containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, slicedSegments, config)) {
+        var /** @type {?} */ s = new UrlSegmentGroup(consumedSegments, createChildrenForEmptySegments(config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
+        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: [] };
+    }
+    if (slicedSegments.length === 0 &&
+        containsEmptyPathRedirects(segmentGroup, slicedSegments, config)) {
+        var /** @type {?} */ s = new UrlSegmentGroup(segmentGroup.segments, addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
+        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: slicedSegments };
+    }
+    return { segmentGroup: segmentGroup, slicedSegments: slicedSegments };
+}
+/**
+ * @param {?} s
+ * @return {?}
+ */
+function mergeTrivialChildren(s) {
+    if (s.numberOfChildren === 1 && s.children[PRIMARY_OUTLET]) {
+        var /** @type {?} */ c = s.children[PRIMARY_OUTLET];
+        return new UrlSegmentGroup(s.segments.concat(c.segments), c.children);
+    }
+    return s;
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} slicedSegments
+ * @param {?} routes
+ * @param {?} children
+ * @return {?}
+ */
+function addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
+    var /** @type {?} */ res = {};
+    for (var _i = 0, routes_1 = routes; _i < routes_1.length; _i++) {
+        var r = routes_1[_i];
+        if (isEmptyPathRedirect(segmentGroup, slicedSegments, r) && !children[getOutlet(r)]) {
+            res[getOutlet(r)] = new UrlSegmentGroup([], {});
+        }
+    }
+    return Object.assign({}, children, res);
+}
+/**
+ * @param {?} routes
+ * @param {?} primarySegmentGroup
+ * @return {?}
+ */
+function createChildrenForEmptySegments(routes, primarySegmentGroup) {
+    var /** @type {?} */ res = {};
+    res[PRIMARY_OUTLET] = primarySegmentGroup;
+    for (var _i = 0, routes_2 = routes; _i < routes_2.length; _i++) {
+        var r = routes_2[_i];
+        if (r.path === '' && getOutlet(r) !== PRIMARY_OUTLET) {
+            res[getOutlet(r)] = new UrlSegmentGroup([], {});
+        }
+    }
+    return res;
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} segments
+ * @param {?} routes
+ * @return {?}
+ */
+function containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, segments, routes) {
+    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r) && getOutlet(r) !== PRIMARY_OUTLET; });
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} segments
+ * @param {?} routes
+ * @return {?}
+ */
+function containsEmptyPathRedirects(segmentGroup, segments, routes) {
+    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r); });
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} segments
+ * @param {?} r
+ * @return {?}
+ */
+function isEmptyPathRedirect(segmentGroup, segments, r) {
+    if ((segmentGroup.hasChildren() || segments.length > 0) && r.pathMatch === 'full') {
+        return false;
+    }
+    return r.path === '' && r.redirectTo !== undefined;
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function getOutlet(route) {
+    return route.outlet || PRIMARY_OUTLET;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var Tree = (function () {
+    /**
+     * @param {?} root
+     */
+    function Tree(root) {
+        this._root = root;
+    }
+    Object.defineProperty(Tree.prototype, "root", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._root.value; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @param {?} t
+     * @return {?}
+     */
+    Tree.prototype.parent = function (t) {
+        var /** @type {?} */ p = this.pathFromRoot(t);
+        return p.length > 1 ? p[p.length - 2] : null;
+    };
+    /**
+     * \@internal
+     * @param {?} t
+     * @return {?}
+     */
+    Tree.prototype.children = function (t) {
+        var /** @type {?} */ n = findNode(t, this._root);
+        return n ? n.children.map(function (t) { return t.value; }) : [];
+    };
+    /**
+     * \@internal
+     * @param {?} t
+     * @return {?}
+     */
+    Tree.prototype.firstChild = function (t) {
+        var /** @type {?} */ n = findNode(t, this._root);
+        return n && n.children.length > 0 ? n.children[0].value : null;
+    };
+    /**
+     * \@internal
+     * @param {?} t
+     * @return {?}
+     */
+    Tree.prototype.siblings = function (t) {
+        var /** @type {?} */ p = findPath(t, this._root);
+        if (p.length < 2)
+            return [];
+        var /** @type {?} */ c = p[p.length - 2].children.map(function (c) { return c.value; });
+        return c.filter(function (cc) { return cc !== t; });
+    };
+    /**
+     * \@internal
+     * @param {?} t
+     * @return {?}
+     */
+    Tree.prototype.pathFromRoot = function (t) { return findPath(t, this._root).map(function (s) { return s.value; }); };
+    return Tree;
+}());
+/**
+ * @template T
+ * @param {?} value
+ * @param {?} node
+ * @return {?}
+ */
+function findNode(value, node) {
+    if (value === node.value)
+        return node;
+    for (var _i = 0, _a = node.children; _i < _a.length; _i++) {
+        var child = _a[_i];
+        var /** @type {?} */ node_1 = findNode(value, child);
+        if (node_1)
+            return node_1;
+    }
+    return null;
+}
+/**
+ * @template T
+ * @param {?} value
+ * @param {?} node
+ * @return {?}
+ */
+function findPath(value, node) {
+    if (value === node.value)
+        return [node];
+    for (var _i = 0, _a = node.children; _i < _a.length; _i++) {
+        var child = _a[_i];
+        var /** @type {?} */ path = findPath(value, child);
+        if (path.length) {
+            path.unshift(node);
+            return path;
+        }
+    }
+    return [];
+}
+var TreeNode = (function () {
+    /**
+     * @param {?} value
+     * @param {?} children
+     */
+    function TreeNode(value, children) {
+        this.value = value;
+        this.children = children;
+    }
+    /**
+     * @return {?}
+     */
+    TreeNode.prototype.toString = function () { return "TreeNode(" + this.value + ")"; };
+    return TreeNode;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Represents the state of the router.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const state: RouterState = router.routerState;
+ *     const root: ActivatedRoute = state.root;
+ *     const child = root.firstChild;
+ *     const id: Observable<string> = child.params.map(p => p.id);
+ *     //...
+ *   }
+ * }
+ * ```
+ *
+ * \@description
+ * RouterState is a tree of activated routes. Every node in this tree knows about the "consumed" URL
+ * segments, the extracted parameters, and the resolved data.
+ *
+ * See {\@link ActivatedRoute} for more information.
+ *
+ * \@stable
+ */
+var RouterState = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](RouterState, _super);
+    /**
+     * \@internal
+     * @param {?} root
+     * @param {?} snapshot
+     */
+    function RouterState(root, snapshot) {
+        var _this = _super.call(this, root) || this;
+        _this.snapshot = snapshot;
+        setRouterState(_this, root);
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    RouterState.prototype.toString = function () { return this.snapshot.toString(); };
+    return RouterState;
+}(Tree));
+/**
+ * @param {?} urlTree
+ * @param {?} rootComponent
+ * @return {?}
+ */
+function createEmptyState(urlTree, rootComponent) {
+    var /** @type {?} */ snapshot = createEmptyStateSnapshot(urlTree, rootComponent);
+    var /** @type {?} */ emptyUrl = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([new UrlSegment('', {})]);
+    var /** @type {?} */ emptyParams = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+    var /** @type {?} */ emptyData = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+    var /** @type {?} */ emptyQueryParams = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
+    var /** @type {?} */ fragment = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]('');
+    var /** @type {?} */ activated = new ActivatedRoute(emptyUrl, emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, snapshot.root);
+    activated.snapshot = snapshot.root;
+    return new RouterState(new TreeNode(activated, []), snapshot);
+}
+/**
+ * @param {?} urlTree
+ * @param {?} rootComponent
+ * @return {?}
+ */
+function createEmptyStateSnapshot(urlTree, rootComponent) {
+    var /** @type {?} */ emptyParams = {};
+    var /** @type {?} */ emptyData = {};
+    var /** @type {?} */ emptyQueryParams = {};
+    var /** @type {?} */ fragment = '';
+    var /** @type {?} */ activated = new ActivatedRouteSnapshot([], emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, null, urlTree.root, -1, {});
+    return new RouterStateSnapshot('', new TreeNode(activated, []));
+}
+/**
+ * \@whatItDoes Contains the information about a route associated with a component loaded in an
+ * outlet.
+ * An `ActivatedRoute` can also be used to traverse the router state tree.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({...})
+ * class MyComponent {
+ *   constructor(route: ActivatedRoute) {
+ *     const id: Observable<string> = route.params.map(p => p.id);
+ *     const url: Observable<string> = route.url.map(segments => segments.join(''));
+ *     // route.data includes both `data` and `resolve`
+ *     const user = route.data.map(d => d.user);
+ *   }
+ * }
+ * ```
+ *
+ * \@stable
+ */
+var ActivatedRoute = (function () {
+    /**
+     * \@internal
+     * @param {?} url
+     * @param {?} params
+     * @param {?} queryParams
+     * @param {?} fragment
+     * @param {?} data
+     * @param {?} outlet
+     * @param {?} component
+     * @param {?} futureSnapshot
+     */
+    function ActivatedRoute(url, params, queryParams, fragment, data, outlet, component, futureSnapshot) {
+        this.url = url;
+        this.params = params;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+        this.data = data;
+        this.outlet = outlet;
+        this.component = component;
+        this._futureSnapshot = futureSnapshot;
+    }
+    Object.defineProperty(ActivatedRoute.prototype, "routeConfig", {
+        /**
+         * The configuration used to match this route
+         * @return {?}
+         */
+        get: function () { return this._futureSnapshot.routeConfig; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "root", {
+        /**
+         * The root of the router state
+         * @return {?}
+         */
+        get: function () { return this._routerState.root; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "parent", {
+        /**
+         * The parent of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.parent(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "firstChild", {
+        /**
+         * The first child of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.firstChild(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "children", {
+        /**
+         * The children of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.children(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "pathFromRoot", {
+        /**
+         * The path from the root of the router state tree to this route
+         * @return {?}
+         */
+        get: function () { return this._routerState.pathFromRoot(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "paramMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._paramMap) {
+                this._paramMap = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.params, function (p) { return convertToParamMap(p); });
+            }
+            return this._paramMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRoute.prototype, "queryParamMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap =
+                    __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.queryParams, function (p) { return convertToParamMap(p); });
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    ActivatedRoute.prototype.toString = function () {
+        return this.snapshot ? this.snapshot.toString() : "Future(" + this._futureSnapshot + ")";
+    };
+    return ActivatedRoute;
+}());
+/**
+ * \@internal
+ * @param {?} route
+ * @return {?}
+ */
+function inheritedParamsDataResolve(route) {
+    var /** @type {?} */ pathToRoot = route.pathFromRoot;
+    var /** @type {?} */ inhertingStartingFrom = pathToRoot.length - 1;
+    while (inhertingStartingFrom >= 1) {
+        var /** @type {?} */ current = pathToRoot[inhertingStartingFrom];
+        var /** @type {?} */ parent = pathToRoot[inhertingStartingFrom - 1];
+        // current route is an empty path => inherits its parent's params and data
+        if (current.routeConfig && current.routeConfig.path === '') {
+            inhertingStartingFrom--;
+            // parent is componentless => current route should inherit its params and data
+        }
+        else if (!parent.component) {
+            inhertingStartingFrom--;
+        }
+        else {
+            break;
+        }
+    }
+    return pathToRoot.slice(inhertingStartingFrom).reduce(function (res, curr) {
+        var /** @type {?} */ params = Object.assign({}, res.params, curr.params);
+        var /** @type {?} */ data = Object.assign({}, res.data, curr.data);
+        var /** @type {?} */ resolve = Object.assign({}, res.resolve, curr._resolvedData);
+        return { params: params, data: data, resolve: resolve };
+    }, /** @type {?} */ ({ params: {}, data: {}, resolve: {} }));
+}
+/**
+ * \@whatItDoes Contains the information about a route associated with a component loaded in an
+ * outlet
+ * at a particular moment in time. ActivatedRouteSnapshot can also be used to traverse the router
+ * state tree.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({templateUrl:'./my-component.html'})
+ * class MyComponent {
+ *   constructor(route: ActivatedRoute) {
+ *     const id: string = route.snapshot.params.id;
+ *     const url: string = route.snapshot.url.join('');
+ *     const user = route.snapshot.data.user;
+ *   }
+ * }
+ * ```
+ *
+ * \@stable
+ */
+var ActivatedRouteSnapshot = (function () {
+    /**
+     * \@internal
+     * @param {?} url
+     * @param {?} params
+     * @param {?} queryParams
+     * @param {?} fragment
+     * @param {?} data
+     * @param {?} outlet
+     * @param {?} component
+     * @param {?} routeConfig
+     * @param {?} urlSegment
+     * @param {?} lastPathIndex
+     * @param {?} resolve
+     */
+    function ActivatedRouteSnapshot(url, params, queryParams, fragment, data, outlet, component, routeConfig, urlSegment, lastPathIndex, resolve) {
+        this.url = url;
+        this.params = params;
+        this.queryParams = queryParams;
+        this.fragment = fragment;
+        this.data = data;
+        this.outlet = outlet;
+        this.component = component;
+        this._routeConfig = routeConfig;
+        this._urlSegment = urlSegment;
+        this._lastPathIndex = lastPathIndex;
+        this._resolve = resolve;
+    }
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "routeConfig", {
+        /**
+         * The configuration used to match this route
+         * @return {?}
+         */
+        get: function () { return this._routeConfig; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "root", {
+        /**
+         * The root of the router state
+         * @return {?}
+         */
+        get: function () { return this._routerState.root; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "parent", {
+        /**
+         * The parent of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.parent(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "firstChild", {
+        /**
+         * The first child of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.firstChild(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "children", {
+        /**
+         * The children of this route in the router state tree
+         * @return {?}
+         */
+        get: function () { return this._routerState.children(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "pathFromRoot", {
+        /**
+         * The path from the root of the router state tree to this route
+         * @return {?}
+         */
+        get: function () { return this._routerState.pathFromRoot(this); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "paramMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._paramMap) {
+                this._paramMap = convertToParamMap(this.params);
+            }
+            return this._paramMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ActivatedRouteSnapshot.prototype, "queryParamMap", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this._queryParamMap) {
+                this._queryParamMap = convertToParamMap(this.queryParams);
+            }
+            return this._queryParamMap;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    ActivatedRouteSnapshot.prototype.toString = function () {
+        var /** @type {?} */ url = this.url.map(function (segment) { return segment.toString(); }).join('/');
+        var /** @type {?} */ matched = this._routeConfig ? this._routeConfig.path : '';
+        return "Route(url:'" + url + "', path:'" + matched + "')";
+    };
+    return ActivatedRouteSnapshot;
+}());
+/**
+ * \@whatItDoes Represents the state of the router at a moment in time.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@Component({templateUrl:'template.html'})
+ * class MyComponent {
+ *   constructor(router: Router) {
+ *     const state: RouterState = router.routerState;
+ *     const snapshot: RouterStateSnapshot = state.snapshot;
+ *     const root: ActivatedRouteSnapshot = snapshot.root;
+ *     const child = root.firstChild;
+ *     const id: Observable<string> = child.params.map(p => p.id);
+ *     //...
+ *   }
+ * }
+ * ```
+ *
+ * \@description
+ * RouterStateSnapshot is a tree of activated route snapshots. Every node in this tree knows about
+ * the "consumed" URL segments, the extracted parameters, and the resolved data.
+ *
+ * \@stable
+ */
+var RouterStateSnapshot = (function (_super) {
+    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](RouterStateSnapshot, _super);
+    /**
+     * \@internal
+     * @param {?} url
+     * @param {?} root
+     */
+    function RouterStateSnapshot(url, root) {
+        var _this = _super.call(this, root) || this;
+        _this.url = url;
+        setRouterState(_this, root);
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    RouterStateSnapshot.prototype.toString = function () { return serializeNode(this._root); };
+    return RouterStateSnapshot;
+}(Tree));
+/**
+ * @template U, T
+ * @param {?} state
+ * @param {?} node
+ * @return {?}
+ */
+function setRouterState(state, node) {
+    node.value._routerState = state;
+    node.children.forEach(function (c) { return setRouterState(state, c); });
+}
+/**
+ * @param {?} node
+ * @return {?}
+ */
+function serializeNode(node) {
+    var /** @type {?} */ c = node.children.length > 0 ? " { " + node.children.map(serializeNode).join(", ") + " } " : '';
+    return "" + node.value + c;
+}
+/**
+ * The expectation is that the activate route is created with the right set of parameters.
+ * So we push new values into the observables only when they are not the initial values.
+ * And we detect that by checking if the snapshot field is set.
+ * @param {?} route
+ * @return {?}
+ */
+function advanceActivatedRoute(route) {
+    if (route.snapshot) {
+        var /** @type {?} */ currentSnapshot = route.snapshot;
+        var /** @type {?} */ nextSnapshot = route._futureSnapshot;
+        route.snapshot = nextSnapshot;
+        if (!shallowEqual(currentSnapshot.queryParams, nextSnapshot.queryParams)) {
+            ((route.queryParams)).next(nextSnapshot.queryParams);
+        }
+        if (currentSnapshot.fragment !== nextSnapshot.fragment) {
+            ((route.fragment)).next(nextSnapshot.fragment);
+        }
+        if (!shallowEqual(currentSnapshot.params, nextSnapshot.params)) {
+            ((route.params)).next(nextSnapshot.params);
+        }
+        if (!shallowEqualArrays(currentSnapshot.url, nextSnapshot.url)) {
+            ((route.url)).next(nextSnapshot.url);
+        }
+        if (!shallowEqual(currentSnapshot.data, nextSnapshot.data)) {
+            ((route.data)).next(nextSnapshot.data);
+        }
+    }
+    else {
+        route.snapshot = route._futureSnapshot;
+        // this is for resolved data
+        ((route.data)).next(route._futureSnapshot.data);
+    }
+}
+/**
+ * @param {?} a
+ * @param {?} b
+ * @return {?}
+ */
+function equalParamsAndUrlSegments(a, b) {
+    var /** @type {?} */ equalUrlParams = shallowEqual(a.params, b.params) && equalSegments(a.url, b.url);
+    var /** @type {?} */ parentsMismatch = !a.parent !== !b.parent;
+    return equalUrlParams && !parentsMismatch &&
+        (!a.parent || equalParamsAndUrlSegments(a.parent, /** @type {?} */ ((b.parent))));
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} routeReuseStrategy
+ * @param {?} curr
+ * @param {?} prevState
+ * @return {?}
+ */
+function createRouterState(routeReuseStrategy, curr, prevState) {
+    var /** @type {?} */ root = createNode(routeReuseStrategy, curr._root, prevState ? prevState._root : undefined);
+    return new RouterState(root, curr);
+}
+/**
+ * @param {?} routeReuseStrategy
+ * @param {?} curr
+ * @param {?=} prevState
+ * @return {?}
+ */
+function createNode(routeReuseStrategy, curr, prevState) {
+    // reuse an activated route that is currently displayed on the screen
+    if (prevState && routeReuseStrategy.shouldReuseRoute(curr.value, prevState.value.snapshot)) {
+        var /** @type {?} */ value = prevState.value;
+        value._futureSnapshot = curr.value;
+        var /** @type {?} */ children = createOrReuseChildren(routeReuseStrategy, curr, prevState);
+        return new TreeNode(value, children);
+        // retrieve an activated route that is used to be displayed, but is not currently displayed
+    }
+    else if (routeReuseStrategy.retrieve(curr.value)) {
+        var /** @type {?} */ tree_1 = ((routeReuseStrategy.retrieve(curr.value))).route;
+        setFutureSnapshotsOfActivatedRoutes(curr, tree_1);
+        return tree_1;
+    }
+    else {
+        var /** @type {?} */ value = createActivatedRoute(curr.value);
+        var /** @type {?} */ children = curr.children.map(function (c) { return createNode(routeReuseStrategy, c); });
+        return new TreeNode(value, children);
+    }
+}
+/**
+ * @param {?} curr
+ * @param {?} result
+ * @return {?}
+ */
+function setFutureSnapshotsOfActivatedRoutes(curr, result) {
+    if (curr.value.routeConfig !== result.value.routeConfig) {
+        throw new Error('Cannot reattach ActivatedRouteSnapshot created from a different route');
+    }
+    if (curr.children.length !== result.children.length) {
+        throw new Error('Cannot reattach ActivatedRouteSnapshot with a different number of children');
+    }
+    result.value._futureSnapshot = curr.value;
+    for (var /** @type {?} */ i = 0; i < curr.children.length; ++i) {
+        setFutureSnapshotsOfActivatedRoutes(curr.children[i], result.children[i]);
+    }
+}
+/**
+ * @param {?} routeReuseStrategy
+ * @param {?} curr
+ * @param {?} prevState
+ * @return {?}
+ */
+function createOrReuseChildren(routeReuseStrategy, curr, prevState) {
+    return curr.children.map(function (child) {
+        for (var _i = 0, _a = prevState.children; _i < _a.length; _i++) {
+            var p = _a[_i];
+            if (routeReuseStrategy.shouldReuseRoute(p.value.snapshot, child.value)) {
+                return createNode(routeReuseStrategy, child, p);
+            }
+        }
+        return createNode(routeReuseStrategy, child);
+    });
+}
+/**
+ * @param {?} c
+ * @return {?}
+ */
+function createActivatedRoute(c) {
+    return new ActivatedRoute(new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.url), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.params), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.queryParams), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.fragment), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.data), c.outlet, c.component, c);
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} route
+ * @param {?} urlTree
+ * @param {?} commands
+ * @param {?} queryParams
+ * @param {?} fragment
+ * @return {?}
+ */
+function createUrlTree(route, urlTree, commands, queryParams, fragment) {
+    if (commands.length === 0) {
+        return tree(urlTree.root, urlTree.root, urlTree, queryParams, fragment);
+    }
+    var /** @type {?} */ nav = computeNavigation(commands);
+    if (nav.toRoot()) {
+        return tree(urlTree.root, new UrlSegmentGroup([], {}), urlTree, queryParams, fragment);
+    }
+    var /** @type {?} */ startingPosition = findStartingPosition(nav, urlTree, route);
+    var /** @type {?} */ segmentGroup = startingPosition.processChildren ?
+        updateSegmentGroupChildren(startingPosition.segmentGroup, startingPosition.index, nav.commands) :
+        updateSegmentGroup(startingPosition.segmentGroup, startingPosition.index, nav.commands);
+    return tree(startingPosition.segmentGroup, segmentGroup, urlTree, queryParams, fragment);
+}
+/**
+ * @param {?} command
+ * @return {?}
+ */
+function isMatrixParams(command) {
+    return typeof command === 'object' && command != null && !command.outlets && !command.segmentPath;
+}
+/**
+ * @param {?} oldSegmentGroup
+ * @param {?} newSegmentGroup
+ * @param {?} urlTree
+ * @param {?} queryParams
+ * @param {?} fragment
+ * @return {?}
+ */
+function tree(oldSegmentGroup, newSegmentGroup, urlTree, queryParams, fragment) {
+    var /** @type {?} */ qp = {};
+    if (queryParams) {
+        forEach(queryParams, function (value, name) {
+            qp[name] = Array.isArray(value) ? value.map(function (v) { return "" + v; }) : "" + value;
+        });
+    }
+    if (urlTree.root === oldSegmentGroup) {
+        return new UrlTree(newSegmentGroup, qp, fragment);
+    }
+    return new UrlTree(replaceSegment(urlTree.root, oldSegmentGroup, newSegmentGroup), qp, fragment);
+}
+/**
+ * @param {?} current
+ * @param {?} oldSegment
+ * @param {?} newSegment
+ * @return {?}
+ */
+function replaceSegment(current, oldSegment, newSegment) {
+    var /** @type {?} */ children = {};
+    forEach(current.children, function (c, outletName) {
+        if (c === oldSegment) {
+            children[outletName] = newSegment;
+        }
+        else {
+            children[outletName] = replaceSegment(c, oldSegment, newSegment);
+        }
+    });
+    return new UrlSegmentGroup(current.segments, children);
+}
+var Navigation = (function () {
+    /**
+     * @param {?} isAbsolute
+     * @param {?} numberOfDoubleDots
+     * @param {?} commands
+     */
+    function Navigation(isAbsolute, numberOfDoubleDots, commands) {
+        this.isAbsolute = isAbsolute;
+        this.numberOfDoubleDots = numberOfDoubleDots;
+        this.commands = commands;
+        if (isAbsolute && commands.length > 0 && isMatrixParams(commands[0])) {
+            throw new Error('Root segment cannot have matrix parameters');
+        }
+        var cmdWithOutlet = commands.find(function (c) { return typeof c === 'object' && c != null && c.outlets; });
+        if (cmdWithOutlet && cmdWithOutlet !== last$1(commands)) {
+            throw new Error('{outlets:{}} has to be the last command');
+        }
+    }
+    /**
+     * @return {?}
+     */
+    Navigation.prototype.toRoot = function () {
+        return this.isAbsolute && this.commands.length === 1 && this.commands[0] == '/';
+    };
+    return Navigation;
+}());
+/**
+ * Transforms commands to a normalized `Navigation`
+ * @param {?} commands
+ * @return {?}
+ */
+function computeNavigation(commands) {
+    if ((typeof commands[0] === 'string') && commands.length === 1 && commands[0] === '/') {
+        return new Navigation(true, 0, commands);
+    }
+    var /** @type {?} */ numberOfDoubleDots = 0;
+    var /** @type {?} */ isAbsolute = false;
+    var /** @type {?} */ res = commands.reduce(function (res, cmd, cmdIdx) {
+        if (typeof cmd === 'object' && cmd != null) {
+            if (cmd.outlets) {
+                var /** @type {?} */ outlets_1 = {};
+                forEach(cmd.outlets, function (commands, name) {
+                    outlets_1[name] = typeof commands === 'string' ? commands.split('/') : commands;
+                });
+                return res.concat([{ outlets: outlets_1 }]);
+            }
+            if (cmd.segmentPath) {
+                return res.concat([cmd.segmentPath]);
+            }
+        }
+        if (!(typeof cmd === 'string')) {
+            return res.concat([cmd]);
+        }
+        if (cmdIdx === 0) {
+            cmd.split('/').forEach(function (urlPart, partIndex) {
+                if (partIndex == 0 && urlPart === '.') {
+                    // skip './a'
+                }
+                else if (partIndex == 0 && urlPart === '') {
+                    isAbsolute = true;
+                }
+                else if (urlPart === '..') {
+                    numberOfDoubleDots++;
+                }
+                else if (urlPart != '') {
+                    res.push(urlPart);
+                }
+            });
+            return res;
+        }
+        return res.concat([cmd]);
+    }, []);
+    return new Navigation(isAbsolute, numberOfDoubleDots, res);
+}
+var Position = (function () {
+    /**
+     * @param {?} segmentGroup
+     * @param {?} processChildren
+     * @param {?} index
+     */
+    function Position(segmentGroup, processChildren, index) {
+        this.segmentGroup = segmentGroup;
+        this.processChildren = processChildren;
+        this.index = index;
+    }
+    return Position;
+}());
+/**
+ * @param {?} nav
+ * @param {?} tree
+ * @param {?} route
+ * @return {?}
+ */
+function findStartingPosition(nav, tree, route) {
+    if (nav.isAbsolute) {
+        return new Position(tree.root, true, 0);
+    }
+    if (route.snapshot._lastPathIndex === -1) {
+        return new Position(route.snapshot._urlSegment, true, 0);
+    }
+    var /** @type {?} */ modifier = isMatrixParams(nav.commands[0]) ? 0 : 1;
+    var /** @type {?} */ index = route.snapshot._lastPathIndex + modifier;
+    return createPositionApplyingDoubleDots(route.snapshot._urlSegment, index, nav.numberOfDoubleDots);
+}
+/**
+ * @param {?} group
+ * @param {?} index
+ * @param {?} numberOfDoubleDots
+ * @return {?}
+ */
+function createPositionApplyingDoubleDots(group, index, numberOfDoubleDots) {
+    var /** @type {?} */ g = group;
+    var /** @type {?} */ ci = index;
+    var /** @type {?} */ dd = numberOfDoubleDots;
+    while (dd > ci) {
+        dd -= ci;
+        g = ((g.parent));
+        if (!g) {
+            throw new Error('Invalid number of \'../\'');
+        }
+        ci = g.segments.length;
+    }
+    return new Position(g, false, ci - dd);
+}
+/**
+ * @param {?} command
+ * @return {?}
+ */
+function getPath(command) {
+    if (typeof command === 'object' && command != null && command.outlets) {
+        return command.outlets[PRIMARY_OUTLET];
+    }
+    return "" + command;
+}
+/**
+ * @param {?} commands
+ * @return {?}
+ */
+function getOutlets(commands) {
+    if (!(typeof commands[0] === 'object'))
+        return _a = {}, _a[PRIMARY_OUTLET] = commands, _a;
+    if (commands[0].outlets === undefined)
+        return _b = {}, _b[PRIMARY_OUTLET] = commands, _b;
+    return commands[0].outlets;
+    var _a, _b;
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} startIndex
+ * @param {?} commands
+ * @return {?}
+ */
+function updateSegmentGroup(segmentGroup, startIndex, commands) {
+    if (!segmentGroup) {
+        segmentGroup = new UrlSegmentGroup([], {});
+    }
+    if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+        return updateSegmentGroupChildren(segmentGroup, startIndex, commands);
+    }
+    var /** @type {?} */ m = prefixedWith(segmentGroup, startIndex, commands);
+    var /** @type {?} */ slicedCommands = commands.slice(m.commandIndex);
+    if (m.match && m.pathIndex < segmentGroup.segments.length) {
+        var /** @type {?} */ g = new UrlSegmentGroup(segmentGroup.segments.slice(0, m.pathIndex), {});
+        g.children[PRIMARY_OUTLET] =
+            new UrlSegmentGroup(segmentGroup.segments.slice(m.pathIndex), segmentGroup.children);
+        return updateSegmentGroupChildren(g, 0, slicedCommands);
+    }
+    else if (m.match && slicedCommands.length === 0) {
+        return new UrlSegmentGroup(segmentGroup.segments, {});
+    }
+    else if (m.match && !segmentGroup.hasChildren()) {
+        return createNewSegmentGroup(segmentGroup, startIndex, commands);
+    }
+    else if (m.match) {
+        return updateSegmentGroupChildren(segmentGroup, 0, slicedCommands);
+    }
+    else {
+        return createNewSegmentGroup(segmentGroup, startIndex, commands);
+    }
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} startIndex
+ * @param {?} commands
+ * @return {?}
+ */
+function updateSegmentGroupChildren(segmentGroup, startIndex, commands) {
+    if (commands.length === 0) {
+        return new UrlSegmentGroup(segmentGroup.segments, {});
+    }
+    else {
+        var /** @type {?} */ outlets_2 = getOutlets(commands);
+        var /** @type {?} */ children_2 = {};
+        forEach(outlets_2, function (commands, outlet) {
+            if (commands !== null) {
+                children_2[outlet] = updateSegmentGroup(segmentGroup.children[outlet], startIndex, commands);
+            }
+        });
+        forEach(segmentGroup.children, function (child, childOutlet) {
+            if (outlets_2[childOutlet] === undefined) {
+                children_2[childOutlet] = child;
+            }
+        });
+        return new UrlSegmentGroup(segmentGroup.segments, children_2);
+    }
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} startIndex
+ * @param {?} commands
+ * @return {?}
+ */
+function prefixedWith(segmentGroup, startIndex, commands) {
+    var /** @type {?} */ currentCommandIndex = 0;
+    var /** @type {?} */ currentPathIndex = startIndex;
+    var /** @type {?} */ noMatch = { match: false, pathIndex: 0, commandIndex: 0 };
+    while (currentPathIndex < segmentGroup.segments.length) {
+        if (currentCommandIndex >= commands.length)
+            return noMatch;
+        var /** @type {?} */ path = segmentGroup.segments[currentPathIndex];
+        var /** @type {?} */ curr = getPath(commands[currentCommandIndex]);
+        var /** @type {?} */ next = currentCommandIndex < commands.length - 1 ? commands[currentCommandIndex + 1] : null;
+        if (currentPathIndex > 0 && curr === undefined)
+            break;
+        if (curr && next && (typeof next === 'object') && next.outlets === undefined) {
+            if (!compare(curr, next, path))
+                return noMatch;
+            currentCommandIndex += 2;
+        }
+        else {
+            if (!compare(curr, {}, path))
+                return noMatch;
+            currentCommandIndex++;
+        }
+        currentPathIndex++;
+    }
+    return { match: true, pathIndex: currentPathIndex, commandIndex: currentCommandIndex };
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} startIndex
+ * @param {?} commands
+ * @return {?}
+ */
+function createNewSegmentGroup(segmentGroup, startIndex, commands) {
+    var /** @type {?} */ paths = segmentGroup.segments.slice(0, startIndex);
+    var /** @type {?} */ i = 0;
+    while (i < commands.length) {
+        if (typeof commands[i] === 'object' && commands[i].outlets !== undefined) {
+            var /** @type {?} */ children = createNewSegmentChildren(commands[i].outlets);
+            return new UrlSegmentGroup(paths, children);
+        }
+        // if we start with an object literal, we need to reuse the path part from the segment
+        if (i === 0 && isMatrixParams(commands[0])) {
+            var /** @type {?} */ p = segmentGroup.segments[startIndex];
+            paths.push(new UrlSegment(p.path, commands[0]));
+            i++;
+            continue;
+        }
+        var /** @type {?} */ curr = getPath(commands[i]);
+        var /** @type {?} */ next = (i < commands.length - 1) ? commands[i + 1] : null;
+        if (curr && next && isMatrixParams(next)) {
+            paths.push(new UrlSegment(curr, stringify(next)));
+            i += 2;
+        }
+        else {
+            paths.push(new UrlSegment(curr, {}));
+            i++;
+        }
+    }
+    return new UrlSegmentGroup(paths, {});
+}
+/**
+ * @param {?} outlets
+ * @return {?}
+ */
+function createNewSegmentChildren(outlets) {
+    var /** @type {?} */ children = {};
+    forEach(outlets, function (commands, outlet) {
+        if (commands !== null) {
+            children[outlet] = createNewSegmentGroup(new UrlSegmentGroup([], {}), 0, commands);
+        }
+    });
+    return children;
+}
+/**
+ * @param {?} params
+ * @return {?}
+ */
+function stringify(params) {
+    var /** @type {?} */ res = {};
+    forEach(params, function (v, k) { return res[k] = "" + v; });
+    return res;
+}
+/**
+ * @param {?} path
+ * @param {?} params
+ * @param {?} segment
+ * @return {?}
+ */
+function compare(path, params, segment) {
+    return path == segment.path && shallowEqual(params, segment.parameters);
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+var NoMatch$1 = (function () {
+    function NoMatch$1() {
+    }
+    return NoMatch$1;
+}());
+/**
+ * @param {?} rootComponentType
+ * @param {?} config
+ * @param {?} urlTree
+ * @param {?} url
+ * @return {?}
+ */
+function recognize(rootComponentType, config, urlTree, url) {
+    return new Recognizer(rootComponentType, config, urlTree, url).recognize();
+}
+var Recognizer = (function () {
+    /**
+     * @param {?} rootComponentType
+     * @param {?} config
+     * @param {?} urlTree
+     * @param {?} url
+     */
+    function Recognizer(rootComponentType, config, urlTree, url) {
+        this.rootComponentType = rootComponentType;
+        this.config = config;
+        this.urlTree = urlTree;
+        this.url = url;
+    }
+    /**
+     * @return {?}
+     */
+    Recognizer.prototype.recognize = function () {
+        try {
+            var /** @type {?} */ rootSegmentGroup = split$1(this.urlTree.root, [], [], this.config).segmentGroup;
+            var /** @type {?} */ children = this.processSegmentGroup(this.config, rootSegmentGroup, PRIMARY_OUTLET);
+            var /** @type {?} */ root = new ActivatedRouteSnapshot([], Object.freeze({}), Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), {}, PRIMARY_OUTLET, this.rootComponentType, null, this.urlTree.root, -1, {});
+            var /** @type {?} */ rootNode = new TreeNode(root, children);
+            var /** @type {?} */ routeState = new RouterStateSnapshot(this.url, rootNode);
+            this.inheritParamsAndData(routeState._root);
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(routeState);
+        }
+        catch (e) {
+            return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(e); });
+        }
+    };
+    /**
+     * @param {?} routeNode
+     * @return {?}
+     */
+    Recognizer.prototype.inheritParamsAndData = function (routeNode) {
+        var _this = this;
+        var /** @type {?} */ route = routeNode.value;
+        var /** @type {?} */ i = inheritedParamsDataResolve(route);
+        route.params = Object.freeze(i.params);
+        route.data = Object.freeze(i.data);
+        routeNode.children.forEach(function (n) { return _this.inheritParamsAndData(n); });
+    };
+    /**
+     * @param {?} config
+     * @param {?} segmentGroup
+     * @param {?} outlet
+     * @return {?}
+     */
+    Recognizer.prototype.processSegmentGroup = function (config, segmentGroup, outlet) {
+        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
+            return this.processChildren(config, segmentGroup);
+        }
+        return this.processSegment(config, segmentGroup, segmentGroup.segments, outlet);
+    };
+    /**
+     * @param {?} config
+     * @param {?} segmentGroup
+     * @return {?}
+     */
+    Recognizer.prototype.processChildren = function (config, segmentGroup) {
+        var _this = this;
+        var /** @type {?} */ children = mapChildrenIntoArray(segmentGroup, function (child, childOutlet) { return _this.processSegmentGroup(config, child, childOutlet); });
+        checkOutletNameUniqueness(children);
+        sortActivatedRouteSnapshots(children);
+        return children;
+    };
+    /**
+     * @param {?} config
+     * @param {?} segmentGroup
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    Recognizer.prototype.processSegment = function (config, segmentGroup, segments, outlet) {
+        for (var _i = 0, config_1 = config; _i < config_1.length; _i++) {
+            var r = config_1[_i];
+            try {
+                return this.processSegmentAgainstRoute(r, segmentGroup, segments, outlet);
+            }
+            catch (e) {
+                if (!(e instanceof NoMatch$1))
+                    throw e;
+            }
+        }
+        if (this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
+            return [];
+        }
+        throw new NoMatch$1();
+    };
+    /**
+     * @param {?} segmentGroup
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    Recognizer.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
+        return segments.length === 0 && !segmentGroup.children[outlet];
+    };
+    /**
+     * @param {?} route
+     * @param {?} rawSegment
+     * @param {?} segments
+     * @param {?} outlet
+     * @return {?}
+     */
+    Recognizer.prototype.processSegmentAgainstRoute = function (route, rawSegment, segments, outlet) {
+        if (route.redirectTo)
+            throw new NoMatch$1();
+        if ((route.outlet || PRIMARY_OUTLET) !== outlet)
+            throw new NoMatch$1();
+        if (route.path === '**') {
+            var /** @type {?} */ params = segments.length > 0 ? ((last$1(segments))).parameters : {};
+            var /** @type {?} */ snapshot_1 = new ActivatedRouteSnapshot(segments, params, Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), getData(route), outlet, /** @type {?} */ ((route.component)), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + segments.length, getResolve(route));
+            return [new TreeNode(snapshot_1, [])];
+        }
+        var _a = match$1(rawSegment, route, segments), consumedSegments = _a.consumedSegments, parameters = _a.parameters, lastChild = _a.lastChild;
+        var /** @type {?} */ rawSlicedSegments = segments.slice(lastChild);
+        var /** @type {?} */ childConfig = getChildConfig(route);
+        var _b = split$1(rawSegment, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _b.segmentGroup, slicedSegments = _b.slicedSegments;
+        var /** @type {?} */ snapshot = new ActivatedRouteSnapshot(consumedSegments, parameters, Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), getData(route), outlet, /** @type {?} */ ((route.component)), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + consumedSegments.length, getResolve(route));
+        if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
+            var /** @type {?} */ children_3 = this.processChildren(childConfig, segmentGroup);
+            return [new TreeNode(snapshot, children_3)];
+        }
+        if (childConfig.length === 0 && slicedSegments.length === 0) {
+            return [new TreeNode(snapshot, [])];
+        }
+        var /** @type {?} */ children = this.processSegment(childConfig, segmentGroup, slicedSegments, PRIMARY_OUTLET);
+        return [new TreeNode(snapshot, children)];
+    };
+    return Recognizer;
+}());
+/**
+ * @param {?} nodes
+ * @return {?}
+ */
+function sortActivatedRouteSnapshots(nodes) {
+    nodes.sort(function (a, b) {
+        if (a.value.outlet === PRIMARY_OUTLET)
+            return -1;
+        if (b.value.outlet === PRIMARY_OUTLET)
+            return 1;
+        return a.value.outlet.localeCompare(b.value.outlet);
+    });
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function getChildConfig(route) {
+    if (route.children) {
+        return route.children;
+    }
+    if (route.loadChildren) {
+        return ((route._loadedConfig)).routes;
+    }
+    return [];
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} route
+ * @param {?} segments
+ * @return {?}
+ */
+function match$1(segmentGroup, route, segments) {
+    if (route.path === '') {
+        if (route.pathMatch === 'full' && (segmentGroup.hasChildren() || segments.length > 0)) {
+            throw new NoMatch$1();
+        }
+        return { consumedSegments: [], lastChild: 0, parameters: {} };
+    }
+    var /** @type {?} */ matcher = route.matcher || defaultUrlMatcher;
+    var /** @type {?} */ res = matcher(segments, segmentGroup, route);
+    if (!res)
+        throw new NoMatch$1();
+    var /** @type {?} */ posParams = {};
+    forEach(/** @type {?} */ ((res.posParams)), function (v, k) { posParams[k] = v.path; });
+    var /** @type {?} */ parameters = res.consumed.length > 0 ? Object.assign({}, posParams, res.consumed[res.consumed.length - 1].parameters) :
+        posParams;
+    return { consumedSegments: res.consumed, lastChild: res.consumed.length, parameters: parameters };
+}
+/**
+ * @param {?} nodes
+ * @return {?}
+ */
+function checkOutletNameUniqueness(nodes) {
+    var /** @type {?} */ names = {};
+    nodes.forEach(function (n) {
+        var /** @type {?} */ routeWithSameOutletName = names[n.value.outlet];
+        if (routeWithSameOutletName) {
+            var /** @type {?} */ p = routeWithSameOutletName.url.map(function (s) { return s.toString(); }).join('/');
+            var /** @type {?} */ c = n.value.url.map(function (s) { return s.toString(); }).join('/');
+            throw new Error("Two segments cannot have the same outlet name: '" + p + "' and '" + c + "'.");
+        }
+        names[n.value.outlet] = n.value;
+    });
+}
+/**
+ * @param {?} segmentGroup
+ * @return {?}
+ */
+function getSourceSegmentGroup(segmentGroup) {
+    var /** @type {?} */ s = segmentGroup;
+    while (s._sourceSegment) {
+        s = s._sourceSegment;
+    }
+    return s;
+}
+/**
+ * @param {?} segmentGroup
+ * @return {?}
+ */
+function getPathIndexShift(segmentGroup) {
+    var /** @type {?} */ s = segmentGroup;
+    var /** @type {?} */ res = (s._segmentIndexShift ? s._segmentIndexShift : 0);
+    while (s._sourceSegment) {
+        s = s._sourceSegment;
+        res += (s._segmentIndexShift ? s._segmentIndexShift : 0);
+    }
+    return res - 1;
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} consumedSegments
+ * @param {?} slicedSegments
+ * @param {?} config
+ * @return {?}
+ */
+function split$1(segmentGroup, consumedSegments, slicedSegments, config) {
+    if (slicedSegments.length > 0 &&
+        containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, config)) {
+        var /** @type {?} */ s_1 = new UrlSegmentGroup(consumedSegments, createChildrenForEmptyPaths(segmentGroup, consumedSegments, config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
+        s_1._sourceSegment = segmentGroup;
+        s_1._segmentIndexShift = consumedSegments.length;
+        return { segmentGroup: s_1, slicedSegments: [] };
+    }
+    if (slicedSegments.length === 0 &&
+        containsEmptyPathMatches(segmentGroup, slicedSegments, config)) {
+        var /** @type {?} */ s_2 = new UrlSegmentGroup(segmentGroup.segments, addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
+        s_2._sourceSegment = segmentGroup;
+        s_2._segmentIndexShift = consumedSegments.length;
+        return { segmentGroup: s_2, slicedSegments: slicedSegments };
+    }
+    var /** @type {?} */ s = new UrlSegmentGroup(segmentGroup.segments, segmentGroup.children);
+    s._sourceSegment = segmentGroup;
+    s._segmentIndexShift = consumedSegments.length;
+    return { segmentGroup: s, slicedSegments: slicedSegments };
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} slicedSegments
+ * @param {?} routes
+ * @param {?} children
+ * @return {?}
+ */
+function addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
+    var /** @type {?} */ res = {};
+    for (var _i = 0, routes_3 = routes; _i < routes_3.length; _i++) {
+        var r = routes_3[_i];
+        if (emptyPathMatch(segmentGroup, slicedSegments, r) && !children[getOutlet$1(r)]) {
+            var /** @type {?} */ s = new UrlSegmentGroup([], {});
+            s._sourceSegment = segmentGroup;
+            s._segmentIndexShift = segmentGroup.segments.length;
+            res[getOutlet$1(r)] = s;
+        }
+    }
+    return Object.assign({}, children, res);
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} consumedSegments
+ * @param {?} routes
+ * @param {?} primarySegment
+ * @return {?}
+ */
+function createChildrenForEmptyPaths(segmentGroup, consumedSegments, routes, primarySegment) {
+    var /** @type {?} */ res = {};
+    res[PRIMARY_OUTLET] = primarySegment;
+    primarySegment._sourceSegment = segmentGroup;
+    primarySegment._segmentIndexShift = consumedSegments.length;
+    for (var _i = 0, routes_4 = routes; _i < routes_4.length; _i++) {
+        var r = routes_4[_i];
+        if (r.path === '' && getOutlet$1(r) !== PRIMARY_OUTLET) {
+            var /** @type {?} */ s = new UrlSegmentGroup([], {});
+            s._sourceSegment = segmentGroup;
+            s._segmentIndexShift = consumedSegments.length;
+            res[getOutlet$1(r)] = s;
+        }
+    }
+    return res;
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} slicedSegments
+ * @param {?} routes
+ * @return {?}
+ */
+function containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, routes) {
+    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r) && getOutlet$1(r) !== PRIMARY_OUTLET; });
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} slicedSegments
+ * @param {?} routes
+ * @return {?}
+ */
+function containsEmptyPathMatches(segmentGroup, slicedSegments, routes) {
+    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r); });
+}
+/**
+ * @param {?} segmentGroup
+ * @param {?} slicedSegments
+ * @param {?} r
+ * @return {?}
+ */
+function emptyPathMatch(segmentGroup, slicedSegments, r) {
+    if ((segmentGroup.hasChildren() || slicedSegments.length > 0) && r.pathMatch === 'full') {
+        return false;
+    }
+    return r.path === '' && r.redirectTo === undefined;
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function getOutlet$1(route) {
+    return route.outlet || PRIMARY_OUTLET;
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function getData(route) {
+    return route.data || {};
+}
+/**
+ * @param {?} route
+ * @return {?}
+ */
+function getResolve(route) {
+    return route.resolve || {};
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Provides a way to customize when activated routes get reused.
+ *
+ * \@experimental
+ * @abstract
+ */
+var RouteReuseStrategy = (function () {
+    function RouteReuseStrategy() {
+    }
+    /**
+     * Determines if this route (and its subtree) should be detached to be reused later
+     * @abstract
+     * @param {?} route
+     * @return {?}
+     */
+    RouteReuseStrategy.prototype.shouldDetach = function (route) { };
+    /**
+     * Stores the detached route.
+     *
+     * Storing a `null` value should erase the previously stored value.
+     * @abstract
+     * @param {?} route
+     * @param {?} handle
+     * @return {?}
+     */
+    RouteReuseStrategy.prototype.store = function (route, handle) { };
+    /**
+     * Determines if this route (and its subtree) should be reattached
+     * @abstract
+     * @param {?} route
+     * @return {?}
+     */
+    RouteReuseStrategy.prototype.shouldAttach = function (route) { };
+    /**
+     * Retrieves the previously stored route
+     * @abstract
+     * @param {?} route
+     * @return {?}
+     */
+    RouteReuseStrategy.prototype.retrieve = function (route) { };
+    /**
+     * Determines if a route should be reused
+     * @abstract
+     * @param {?} future
+     * @param {?} curr
+     * @return {?}
+     */
+    RouteReuseStrategy.prototype.shouldReuseRoute = function (future, curr) { };
+    return RouteReuseStrategy;
+}());
+/**
+ * Does not detach any subtrees. Reuses routes as long as their route config is the same.
+ */
+var DefaultRouteReuseStrategy = (function () {
+    function DefaultRouteReuseStrategy() {
+    }
+    /**
+     * @param {?} route
+     * @return {?}
+     */
+    DefaultRouteReuseStrategy.prototype.shouldDetach = function (route) { return false; };
+    /**
+     * @param {?} route
+     * @param {?} detachedTree
+     * @return {?}
+     */
+    DefaultRouteReuseStrategy.prototype.store = function (route, detachedTree) { };
+    /**
+     * @param {?} route
+     * @return {?}
+     */
+    DefaultRouteReuseStrategy.prototype.shouldAttach = function (route) { return false; };
+    /**
+     * @param {?} route
+     * @return {?}
+     */
+    DefaultRouteReuseStrategy.prototype.retrieve = function (route) { return null; };
+    /**
+     * @param {?} future
+     * @param {?} curr
+     * @return {?}
+     */
+    DefaultRouteReuseStrategy.prototype.shouldReuseRoute = function (future, curr) {
+        return future.routeConfig === curr.routeConfig;
+    };
+    return DefaultRouteReuseStrategy;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@docsNotRequired
+ * \@experimental
+ */
+var ROUTES = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTES');
+var RouterConfigLoader = (function () {
+    /**
+     * @param {?} loader
+     * @param {?} compiler
+     * @param {?=} onLoadStartListener
+     * @param {?=} onLoadEndListener
+     */
+    function RouterConfigLoader(loader, compiler, onLoadStartListener, onLoadEndListener) {
+        this.loader = loader;
+        this.compiler = compiler;
+        this.onLoadStartListener = onLoadStartListener;
+        this.onLoadEndListener = onLoadEndListener;
+    }
+    /**
+     * @param {?} parentInjector
+     * @param {?} route
+     * @return {?}
+     */
+    RouterConfigLoader.prototype.load = function (parentInjector, route) {
+        var _this = this;
+        if (this.onLoadStartListener) {
+            this.onLoadStartListener(route);
+        }
+        var /** @type {?} */ moduleFactory$ = this.loadModuleFactory(/** @type {?} */ ((route.loadChildren)));
+        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(moduleFactory$, function (factory) {
+            if (_this.onLoadEndListener) {
+                _this.onLoadEndListener(route);
+            }
+            var /** @type {?} */ module = factory.create(parentInjector);
+            return new LoadedRouterConfig(flatten(module.injector.get(ROUTES)), module);
+        });
+    };
+    /**
+     * @param {?} loadChildren
+     * @return {?}
+     */
+    RouterConfigLoader.prototype.loadModuleFactory = function (loadChildren) {
+        var _this = this;
+        if (typeof loadChildren === 'string') {
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(this.loader.load(loadChildren));
+        }
+        else {
+            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(wrapIntoObservable(loadChildren()), function (t) {
+                if (t instanceof __WEBPACK_IMPORTED_MODULE_2__angular_core__["_0" /* NgModuleFactory */]) {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(t);
+                }
+                else {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(_this.compiler.compileModuleAsync(t));
+                }
+            });
+        }
+    };
+    return RouterConfigLoader;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Provides a way to migrate AngularJS applications to Angular.
+ *
+ * \@experimental
+ * @abstract
+ */
+var UrlHandlingStrategy = (function () {
+    function UrlHandlingStrategy() {
+    }
+    /**
+     * Tells the router if this URL should be processed.
+     *
+     * When it returns true, the router will execute the regular navigation.
+     * When it returns false, the router will set the router state to an empty state.
+     * As a result, all the active components will be destroyed.
+     *
+     * @abstract
+     * @param {?} url
+     * @return {?}
+     */
+    UrlHandlingStrategy.prototype.shouldProcessUrl = function (url) { };
+    /**
+     * Extracts the part of the URL that should be handled by the router.
+     * The rest of the URL will remain untouched.
+     * @abstract
+     * @param {?} url
+     * @return {?}
+     */
+    UrlHandlingStrategy.prototype.extract = function (url) { };
+    /**
+     * Merges the URL fragment with the rest of the URL.
+     * @abstract
+     * @param {?} newUrlPart
+     * @param {?} rawUrl
+     * @return {?}
+     */
+    UrlHandlingStrategy.prototype.merge = function (newUrlPart, rawUrl) { };
+    return UrlHandlingStrategy;
+}());
+/**
+ * \@experimental
+ */
+var DefaultUrlHandlingStrategy = (function () {
+    function DefaultUrlHandlingStrategy() {
+    }
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    DefaultUrlHandlingStrategy.prototype.shouldProcessUrl = function (url) { return true; };
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    DefaultUrlHandlingStrategy.prototype.extract = function (url) { return url; };
+    /**
+     * @param {?} newUrlPart
+     * @param {?} wholeUrl
+     * @return {?}
+     */
+    DefaultUrlHandlingStrategy.prototype.merge = function (newUrlPart, wholeUrl) { return newUrlPart; };
+    return DefaultUrlHandlingStrategy;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @param {?} error
+ * @return {?}
+ */
+function defaultErrorHandler(error) {
+    throw error;
+}
+/**
+ * \@internal
+ * @param {?} snapshot
+ * @return {?}
+ */
+function defaultRouterHook(snapshot) {
+    return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
+}
+/**
+ * \@whatItDoes Provides the navigation and url manipulation capabilities.
+ *
+ * See {\@link Routes} for more details and examples.
+ *
+ * \@ngModule RouterModule
+ *
+ * \@stable
+ */
+var Router = (function () {
+    /**
+     * @param {?} rootComponentType
+     * @param {?} urlSerializer
+     * @param {?} rootContexts
+     * @param {?} location
+     * @param {?} injector
+     * @param {?} loader
+     * @param {?} compiler
+     * @param {?} config
+     */
+    function Router(rootComponentType, urlSerializer, rootContexts, location, injector, loader, compiler, config) {
+        var _this = this;
+        this.rootComponentType = rootComponentType;
+        this.urlSerializer = urlSerializer;
+        this.rootContexts = rootContexts;
+        this.location = location;
+        this.config = config;
+        this.navigations = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](/** @type {?} */ ((null)));
+        this.routerEvents = new __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__["Subject"]();
+        this.navigationId = 0;
+        /**
+         * Error handler that is invoked when a navigation errors.
+         *
+         * See {\@link ErrorHandler} for more information.
+         */
+        this.errorHandler = defaultErrorHandler;
+        /**
+         * Indicates if at least one navigation happened.
+         */
+        this.navigated = false;
+        /**
+         * Used by RouterModule. This allows us to
+         * pause the navigation either before preactivation or after it.
+         * \@internal
+         */
+        this.hooks = {
+            beforePreactivation: defaultRouterHook,
+            afterPreactivation: defaultRouterHook
+        };
+        /**
+         * Extracts and merges URLs. Used for AngularJS to Angular migrations.
+         */
+        this.urlHandlingStrategy = new DefaultUrlHandlingStrategy();
+        this.routeReuseStrategy = new DefaultRouteReuseStrategy();
+        var onLoadStart = function (r) { return _this.triggerEvent(new RouteConfigLoadStart(r)); };
+        var onLoadEnd = function (r) { return _this.triggerEvent(new RouteConfigLoadEnd(r)); };
+        this.ngModule = injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
+        this.resetConfig(config);
+        this.currentUrlTree = createEmptyUrlTree();
+        this.rawUrlTree = this.currentUrlTree;
+        this.configLoader = new RouterConfigLoader(loader, compiler, onLoadStart, onLoadEnd);
+        this.currentRouterState = createEmptyState(this.currentUrlTree, this.rootComponentType);
+        this.processNavigations();
+    }
+    /**
+     * \@internal
+     * TODO: this should be removed once the constructor of the router made internal
+     * @param {?} rootComponentType
+     * @return {?}
+     */
+    Router.prototype.resetRootComponentType = function (rootComponentType) {
+        this.rootComponentType = rootComponentType;
+        // TODO: vsavkin router 4.0 should make the root component set to null
+        // this will simplify the lifecycle of the router.
+        this.currentRouterState.root.component = this.rootComponentType;
+    };
+    /**
+     * Sets up the location change listener and performs the initial navigation.
+     * @return {?}
+     */
+    Router.prototype.initialNavigation = function () {
+        this.setUpLocationChangeListener();
+        if (this.navigationId === 0) {
+            this.navigateByUrl(this.location.path(true), { replaceUrl: true });
+        }
+    };
+    /**
+     * Sets up the location change listener.
+     * @return {?}
+     */
+    Router.prototype.setUpLocationChangeListener = function () {
+        var _this = this;
+        // Zone.current.wrap is needed because of the issue with RxJS scheduler,
+        // which does not work properly with zone.js in IE and Safari
+        if (!this.locationSubscription) {
+            this.locationSubscription = (this.location.subscribe(Zone.current.wrap(function (change) {
+                var /** @type {?} */ rawUrlTree = _this.urlSerializer.parse(change['url']);
+                var /** @type {?} */ source = change['type'] === 'popstate' ? 'popstate' : 'hashchange';
+                setTimeout(function () { _this.scheduleNavigation(rawUrlTree, source, { replaceUrl: true }); }, 0);
+            })));
+        }
+    };
+    Object.defineProperty(Router.prototype, "routerState", {
+        /**
+         * The current route state
+         * @return {?}
+         */
+        get: function () { return this.currentRouterState; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Router.prototype, "url", {
+        /**
+         * The current url
+         * @return {?}
+         */
+        get: function () { return this.serializeUrl(this.currentUrlTree); },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Router.prototype, "events", {
+        /**
+         * An observable of router events
+         * @return {?}
+         */
+        get: function () { return this.routerEvents; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @param {?} e
+     * @return {?}
+     */
+    Router.prototype.triggerEvent = function (e) { this.routerEvents.next(e); };
+    /**
+     * Resets the configuration used for navigation and generating links.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.resetConfig([
+     *  { path: 'team/:id', component: TeamCmp, children: [
+     *    { path: 'simple', component: SimpleCmp },
+     *    { path: 'user/:name', component: UserCmp }
+     *  ]}
+     * ]);
+     * ```
+     * @param {?} config
+     * @return {?}
+     */
+    Router.prototype.resetConfig = function (config) {
+        validateConfig(config);
+        this.config = config;
+        this.navigated = false;
+    };
+    /**
+     * \@docsNotRequired
+     * @return {?}
+     */
+    Router.prototype.ngOnDestroy = function () { this.dispose(); };
+    /**
+     * Disposes of the router
+     * @return {?}
+     */
+    Router.prototype.dispose = function () {
+        if (this.locationSubscription) {
+            this.locationSubscription.unsubscribe();
+            this.locationSubscription = ((null));
+        }
+    };
+    /**
+     * Applies an array of commands to the current url tree and creates a new url tree.
+     *
+     * When given an activate route, applies the given commands starting from the route.
+     * When not given a route, applies the given command starting from the root.
+     *
+     * ### Usage
+     *
+     * ```
+     * // create /team/33/user/11
+     * router.createUrlTree(['/team', 33, 'user', 11]);
+     *
+     * // create /team/33;expand=true/user/11
+     * router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
+     *
+     * // you can collapse static segments like this (this works only with the first passed-in value):
+     * router.createUrlTree(['/team/33/user', userId]);
+     *
+     * // If the first segment can contain slashes, and you do not want the router to split it, you
+     * // can do the following:
+     *
+     * router.createUrlTree([{segmentPath: '/one/two'}]);
+     *
+     * // create /team/33/(user/11//right:chat)
+     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
+     *
+     * // remove the right secondary node
+     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
+     *
+     * // assuming the current url is `/team/33/user/11` and the route points to `user/11`
+     *
+     * // navigate to /team/33/user/11/details
+     * router.createUrlTree(['details'], {relativeTo: route});
+     *
+     * // navigate to /team/33/user/22
+     * router.createUrlTree(['../22'], {relativeTo: route});
+     *
+     * // navigate to /team/44/user/22
+     * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
+     * ```
+     * @param {?} commands
+     * @param {?=} navigationExtras
+     * @return {?}
+     */
+    Router.prototype.createUrlTree = function (commands, navigationExtras) {
+        if (navigationExtras === void 0) { navigationExtras = {}; }
+        var relativeTo = navigationExtras.relativeTo, queryParams = navigationExtras.queryParams, fragment = navigationExtras.fragment, preserveQueryParams = navigationExtras.preserveQueryParams, queryParamsHandling = navigationExtras.queryParamsHandling, preserveFragment = navigationExtras.preserveFragment;
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && preserveQueryParams && (console) && (console.warn)) {
+            console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
+        }
+        var /** @type {?} */ a = relativeTo || this.routerState.root;
+        var /** @type {?} */ f = preserveFragment ? this.currentUrlTree.fragment : fragment;
+        var /** @type {?} */ q = null;
+        if (queryParamsHandling) {
+            switch (queryParamsHandling) {
+                case 'merge':
+                    q = Object.assign({}, this.currentUrlTree.queryParams, queryParams);
+                    break;
+                case 'preserve':
+                    q = this.currentUrlTree.queryParams;
+                    break;
+                default:
+                    q = queryParams || null;
+            }
+        }
+        else {
+            q = preserveQueryParams ? this.currentUrlTree.queryParams : queryParams || null;
+        }
+        return createUrlTree(a, this.currentUrlTree, commands, /** @type {?} */ ((q)), /** @type {?} */ ((f)));
+    };
+    /**
+     * Navigate based on the provided url. This navigation is always absolute.
+     *
+     * Returns a promise that:
+     * - resolves to 'true' when navigation succeeds,
+     * - resolves to 'false' when navigation fails,
+     * - is rejected when an error happens.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.navigateByUrl("/team/33/user/11");
+     *
+     * // Navigate without updating the URL
+     * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
+     * ```
+     *
+     * In opposite to `navigate`, `navigateByUrl` takes a whole URL
+     * and does not apply any delta to the current one.
+     * @param {?} url
+     * @param {?=} extras
+     * @return {?}
+     */
+    Router.prototype.navigateByUrl = function (url, extras) {
+        if (extras === void 0) { extras = { skipLocationChange: false }; }
+        var /** @type {?} */ urlTree = url instanceof UrlTree ? url : this.parseUrl(url);
+        var /** @type {?} */ mergedTree = this.urlHandlingStrategy.merge(urlTree, this.rawUrlTree);
+        return this.scheduleNavigation(mergedTree, 'imperative', extras);
+    };
+    /**
+     * Navigate based on the provided array of commands and a starting point.
+     * If no starting route is provided, the navigation is absolute.
+     *
+     * Returns a promise that:
+     * - resolves to 'true' when navigation succeeds,
+     * - resolves to 'false' when navigation fails,
+     * - is rejected when an error happens.
+     *
+     * ### Usage
+     *
+     * ```
+     * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
+     *
+     * // Navigate without updating the URL
+     * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
+     * ```
+     *
+     * In opposite to `navigateByUrl`, `navigate` always takes a delta that is applied to the current
+     * URL.
+     * @param {?} commands
+     * @param {?=} extras
+     * @return {?}
+     */
+    Router.prototype.navigate = function (commands, extras) {
+        if (extras === void 0) { extras = { skipLocationChange: false }; }
+        validateCommands(commands);
+        if (typeof extras.queryParams === 'object' && extras.queryParams !== null) {
+            extras.queryParams = this.removeEmptyProps(extras.queryParams);
+        }
+        return this.navigateByUrl(this.createUrlTree(commands, extras), extras);
+    };
+    /**
+     * Serializes a {\@link UrlTree} into a string
+     * @param {?} url
+     * @return {?}
+     */
+    Router.prototype.serializeUrl = function (url) { return this.urlSerializer.serialize(url); };
+    /**
+     * Parses a string into a {\@link UrlTree}
+     * @param {?} url
+     * @return {?}
+     */
+    Router.prototype.parseUrl = function (url) { return this.urlSerializer.parse(url); };
+    /**
+     * Returns whether the url is activated
+     * @param {?} url
+     * @param {?} exact
+     * @return {?}
+     */
+    Router.prototype.isActive = function (url, exact) {
+        if (url instanceof UrlTree) {
+            return containsTree(this.currentUrlTree, url, exact);
+        }
+        var /** @type {?} */ urlTree = this.urlSerializer.parse(url);
+        return containsTree(this.currentUrlTree, urlTree, exact);
+    };
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+    Router.prototype.removeEmptyProps = function (params) {
+        return Object.keys(params).reduce(function (result, key) {
+            var /** @type {?} */ value = params[key];
+            if (value !== null && value !== undefined) {
+                result[key] = value;
+            }
+            return result;
+        }, {});
+    };
+    /**
+     * @return {?}
+     */
+    Router.prototype.processNavigations = function () {
+        var _this = this;
+        __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"]
+            .call(this.navigations, function (nav) {
+            if (nav) {
+                _this.executeScheduledNavigation(nav);
+                // a failed navigation should not stop the router from processing
+                // further navigations => the catch
+                return nav.promise.catch(function () { });
+            }
+            else {
+                return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
+            }
+        })
+            .subscribe(function () { });
+    };
+    /**
+     * @param {?} rawUrl
+     * @param {?} source
+     * @param {?} extras
+     * @return {?}
+     */
+    Router.prototype.scheduleNavigation = function (rawUrl, source, extras) {
+        var /** @type {?} */ lastNavigation = this.navigations.value;
+        // If the user triggers a navigation imperatively (e.g., by using navigateByUrl),
+        // and that navigation results in 'replaceState' that leads to the same URL,
+        // we should skip those.
+        if (lastNavigation && source !== 'imperative' && lastNavigation.source === 'imperative' &&
+            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
+            return Promise.resolve(true); // return value is not used
+        }
+        // Because of a bug in IE and Edge, the location class fires two events (popstate and
+        // hashchange) every single time. The second one should be ignored. Otherwise, the URL will
+        // flicker.
+        if (lastNavigation && source == 'hashchange' && lastNavigation.source === 'popstate' &&
+            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
+            return Promise.resolve(true); // return value is not used
+        }
+        var /** @type {?} */ resolve = null;
+        var /** @type {?} */ reject = null;
+        var /** @type {?} */ promise = new Promise(function (res, rej) {
+            resolve = res;
+            reject = rej;
+        });
+        var /** @type {?} */ id = ++this.navigationId;
+        this.navigations.next({ id: id, source: source, rawUrl: rawUrl, extras: extras, resolve: resolve, reject: reject, promise: promise });
+        // Make sure that the error is propagated even though `processNavigations` catch
+        // handler does not rethrow
+        return promise.catch(function (e) { return Promise.reject(e); });
+    };
+    /**
+     * @param {?} __0
+     * @return {?}
+     */
+    Router.prototype.executeScheduledNavigation = function (_a) {
+        var _this = this;
+        var id = _a.id, rawUrl = _a.rawUrl, extras = _a.extras, resolve = _a.resolve, reject = _a.reject;
+        var /** @type {?} */ url = this.urlHandlingStrategy.extract(rawUrl);
+        var /** @type {?} */ urlTransition = !this.navigated || url.toString() !== this.currentUrlTree.toString();
+        if (urlTransition && this.urlHandlingStrategy.shouldProcessUrl(rawUrl)) {
+            this.routerEvents.next(new NavigationStart(id, this.serializeUrl(url)));
+            Promise.resolve()
+                .then(function (_) { return _this.runNavigate(url, rawUrl, !!extras.skipLocationChange, !!extras.replaceUrl, id, null); })
+                .then(resolve, reject);
+            // we cannot process the current URL, but we could process the previous one =>
+            // we need to do some cleanup
+        }
+        else if (urlTransition && this.rawUrlTree &&
+            this.urlHandlingStrategy.shouldProcessUrl(this.rawUrlTree)) {
+            this.routerEvents.next(new NavigationStart(id, this.serializeUrl(url)));
+            Promise.resolve()
+                .then(function (_) { return _this.runNavigate(url, rawUrl, false, false, id, createEmptyState(url, _this.rootComponentType).snapshot); })
+                .then(resolve, reject);
+        }
+        else {
+            this.rawUrlTree = rawUrl;
+            resolve(null);
+        }
+    };
+    /**
+     * @param {?} url
+     * @param {?} rawUrl
+     * @param {?} shouldPreventPushState
+     * @param {?} shouldReplaceUrl
+     * @param {?} id
+     * @param {?} precreatedState
+     * @return {?}
+     */
+    Router.prototype.runNavigate = function (url, rawUrl, shouldPreventPushState, shouldReplaceUrl, id, precreatedState) {
+        var _this = this;
+        if (id !== this.navigationId) {
+            this.location.go(this.urlSerializer.serialize(this.currentUrlTree));
+            this.routerEvents.next(new NavigationCancel(id, this.serializeUrl(url), "Navigation ID " + id + " is not equal to the current navigation id " + this.navigationId));
+            return Promise.resolve(false);
+        }
+        return new Promise(function (resolvePromise, rejectPromise) {
+            // create an observable of the url and route state snapshot
+            // this operation do not result in any side effects
+            var /** @type {?} */ urlAndSnapshot$;
+            if (!precreatedState) {
+                var /** @type {?} */ moduleInjector = _this.ngModule.injector;
+                var /** @type {?} */ redirectsApplied$ = applyRedirects(moduleInjector, _this.configLoader, _this.urlSerializer, url, _this.config);
+                urlAndSnapshot$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(redirectsApplied$, function (appliedUrl) {
+                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(recognize(_this.rootComponentType, _this.config, appliedUrl, _this.serializeUrl(appliedUrl)), function (snapshot) {
+                        _this.routerEvents.next(new RoutesRecognized(id, _this.serializeUrl(url), _this.serializeUrl(appliedUrl), snapshot));
+                        return { appliedUrl: appliedUrl, snapshot: snapshot };
+                    });
+                });
+            }
+            else {
+                urlAndSnapshot$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({ appliedUrl: url, snapshot: precreatedState });
+            }
+            var /** @type {?} */ beforePreactivationDone$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(urlAndSnapshot$, function (p) {
+                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.hooks.beforePreactivation(p.snapshot), function () { return p; });
+            });
+            // run preactivation: guards and data resolvers
+            var /** @type {?} */ preActivation;
+            var /** @type {?} */ preactivationTraverse$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(beforePreactivationDone$, function (_a) {
+                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot;
+                var /** @type {?} */ moduleInjector = _this.ngModule.injector;
+                preActivation =
+                    new PreActivation(snapshot, _this.currentRouterState.snapshot, moduleInjector);
+                preActivation.traverse(_this.rootContexts);
+                return { appliedUrl: appliedUrl, snapshot: snapshot };
+            });
+            var /** @type {?} */ preactivationCheckGuards$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationTraverse$, function (_a) {
+                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot;
+                if (_this.navigationId !== id)
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false);
+                _this.triggerEvent(new GuardsCheckStart(id, _this.serializeUrl(url), appliedUrl, snapshot));
+                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preActivation.checkGuards(), function (shouldActivate) {
+                    _this.triggerEvent(new GuardsCheckEnd(id, _this.serializeUrl(url), appliedUrl, snapshot, shouldActivate));
+                    return { appliedUrl: appliedUrl, snapshot: snapshot, shouldActivate: shouldActivate };
+                });
+            });
+            var /** @type {?} */ preactivationResolveData$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationCheckGuards$, function (p) {
+                if (_this.navigationId !== id)
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false);
+                if (p.shouldActivate && preActivation.isActivating()) {
+                    _this.triggerEvent(new ResolveStart(id, _this.serializeUrl(url), p.appliedUrl, p.snapshot));
+                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preActivation.resolveData(), function () {
+                        _this.triggerEvent(new ResolveEnd(id, _this.serializeUrl(url), p.appliedUrl, p.snapshot));
+                        return p;
+                    });
+                }
+                else {
+                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(p);
+                }
+            });
+            var /** @type {?} */ preactivationDone$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationResolveData$, function (p) {
+                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.hooks.afterPreactivation(p.snapshot), function () { return p; });
+            });
+            // create router state
+            // this operation has side effects => route state is being affected
+            var /** @type {?} */ routerState$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preactivationDone$, function (_a) {
+                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot, shouldActivate = _a.shouldActivate;
+                if (shouldActivate) {
+                    var /** @type {?} */ state = createRouterState(_this.routeReuseStrategy, snapshot, _this.currentRouterState);
+                    return { appliedUrl: appliedUrl, state: state, shouldActivate: shouldActivate };
+                }
+                else {
+                    return { appliedUrl: appliedUrl, state: null, shouldActivate: shouldActivate };
+                }
+            });
+            // applied the new router state
+            // this operation has side effects
+            var /** @type {?} */ navigationIsSuccessful;
+            var /** @type {?} */ storedState = _this.currentRouterState;
+            var /** @type {?} */ storedUrl = _this.currentUrlTree;
+            routerState$
+                .forEach(function (_a) {
+                var appliedUrl = _a.appliedUrl, state = _a.state, shouldActivate = _a.shouldActivate;
+                if (!shouldActivate || id !== _this.navigationId) {
+                    navigationIsSuccessful = false;
+                    return;
+                }
+                _this.currentUrlTree = appliedUrl;
+                _this.rawUrlTree = _this.urlHandlingStrategy.merge(_this.currentUrlTree, rawUrl);
+                _this.currentRouterState = state;
+                if (!shouldPreventPushState) {
+                    var /** @type {?} */ path = _this.urlSerializer.serialize(_this.rawUrlTree);
+                    if (_this.location.isCurrentPathEqualTo(path) || shouldReplaceUrl) {
+                        _this.location.replaceState(path);
+                    }
+                    else {
+                        _this.location.go(path);
+                    }
+                }
+                new ActivateRoutes(_this.routeReuseStrategy, state, storedState)
+                    .activate(_this.rootContexts);
+                navigationIsSuccessful = true;
+            })
+                .then(function () {
+                if (navigationIsSuccessful) {
+                    _this.navigated = true;
+                    _this.routerEvents.next(new NavigationEnd(id, _this.serializeUrl(url), _this.serializeUrl(_this.currentUrlTree)));
+                    resolvePromise(true);
+                }
+                else {
+                    _this.resetUrlToCurrentUrlTree();
+                    _this.routerEvents.next(new NavigationCancel(id, _this.serializeUrl(url), ''));
+                    resolvePromise(false);
+                }
+            }, function (e) {
+                if (isNavigationCancelingError(e)) {
+                    _this.resetUrlToCurrentUrlTree();
+                    _this.navigated = true;
+                    _this.routerEvents.next(new NavigationCancel(id, _this.serializeUrl(url), e.message));
+                    resolvePromise(false);
+                }
+                else {
+                    _this.routerEvents.next(new NavigationError(id, _this.serializeUrl(url), e));
+                    try {
+                        resolvePromise(_this.errorHandler(e));
+                    }
+                    catch (ee) {
+                        rejectPromise(ee);
+                    }
+                }
+                _this.currentRouterState = storedState;
+                _this.currentUrlTree = storedUrl;
+                _this.rawUrlTree = _this.urlHandlingStrategy.merge(_this.currentUrlTree, rawUrl);
+                _this.location.replaceState(_this.serializeUrl(_this.rawUrlTree));
+            });
+        });
+    };
+    /**
+     * @return {?}
+     */
+    Router.prototype.resetUrlToCurrentUrlTree = function () {
+        var /** @type {?} */ path = this.urlSerializer.serialize(this.rawUrlTree);
+        this.location.replaceState(path);
+    };
+    return Router;
+}());
+var CanActivate = (function () {
+    /**
+     * @param {?} path
+     */
+    function CanActivate(path) {
+        this.path = path;
+    }
+    Object.defineProperty(CanActivate.prototype, "route", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.path[this.path.length - 1]; },
+        enumerable: true,
+        configurable: true
+    });
+    return CanActivate;
+}());
+var CanDeactivate = (function () {
+    /**
+     * @param {?} component
+     * @param {?} route
+     */
+    function CanDeactivate(component, route) {
+        this.component = component;
+        this.route = route;
+    }
+    return CanDeactivate;
+}());
+var PreActivation = (function () {
+    /**
+     * @param {?} future
+     * @param {?} curr
+     * @param {?} moduleInjector
+     */
+    function PreActivation(future, curr, moduleInjector) {
+        this.future = future;
+        this.curr = curr;
+        this.moduleInjector = moduleInjector;
+        this.canActivateChecks = [];
+        this.canDeactivateChecks = [];
+    }
+    /**
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    PreActivation.prototype.traverse = function (parentContexts) {
+        var /** @type {?} */ futureRoot = this.future._root;
+        var /** @type {?} */ currRoot = this.curr ? this.curr._root : null;
+        this.traverseChildRoutes(futureRoot, currRoot, parentContexts, [futureRoot.value]);
+    };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.checkGuards = function () {
+        var _this = this;
+        if (!this.isDeactivating() && !this.isActivating()) {
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
+        }
+        var /** @type {?} */ canDeactivate$ = this.runCanDeactivateChecks();
+        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(canDeactivate$, function (canDeactivate) { return canDeactivate ? _this.runCanActivateChecks() : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false); });
+    };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.resolveData = function () {
+        var _this = this;
+        if (!this.isActivating())
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null);
+        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canActivateChecks);
+        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(checks$, function (check) { return _this.runResolve(check.route); });
+        return __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__["reduce"].call(runningChecks$, function (_, __) { return _; });
+    };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.isDeactivating = function () { return this.canDeactivateChecks.length !== 0; };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.isActivating = function () { return this.canActivateChecks.length !== 0; };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} contexts
+     * @param {?} futurePath
+     * @return {?}
+     */
+    PreActivation.prototype.traverseChildRoutes = function (futureNode, currNode, contexts, futurePath) {
+        var _this = this;
+        var /** @type {?} */ prevChildren = nodeChildrenAsMap(currNode);
+        // Process the children of the future route
+        futureNode.children.forEach(function (c) {
+            _this.traverseRoutes(c, prevChildren[c.value.outlet], contexts, futurePath.concat([c.value]));
+            delete prevChildren[c.value.outlet];
+        });
+        // Process any children left from the current route (not active for the future route)
+        forEach(prevChildren, function (v, k) { return _this.deactivateRouteAndItsChildren(v, /** @type {?} */ ((contexts)).getContext(k)); });
+    };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} parentContexts
+     * @param {?} futurePath
+     * @return {?}
+     */
+    PreActivation.prototype.traverseRoutes = function (futureNode, currNode, parentContexts, futurePath) {
+        var /** @type {?} */ future = futureNode.value;
+        var /** @type {?} */ curr = currNode ? currNode.value : null;
+        var /** @type {?} */ context = parentContexts ? parentContexts.getContext(futureNode.value.outlet) : null;
+        // reusing the node
+        if (curr && future._routeConfig === curr._routeConfig) {
+            var /** @type {?} */ shouldRunGuardsAndResolvers = this.shouldRunGuardsAndResolvers(curr, future, /** @type {?} */ ((future._routeConfig)).runGuardsAndResolvers);
+            if (shouldRunGuardsAndResolvers) {
+                this.canActivateChecks.push(new CanActivate(futurePath));
+            }
+            else {
+                // we need to set the data
+                future.data = curr.data;
+                future._resolvedData = curr._resolvedData;
+            }
+            // If we have a component, we need to go through an outlet.
+            if (future.component) {
+                this.traverseChildRoutes(futureNode, currNode, context ? context.children : null, futurePath);
+                // if we have a componentless route, we recurse but keep the same outlet map.
+            }
+            else {
+                this.traverseChildRoutes(futureNode, currNode, parentContexts, futurePath);
+            }
+            if (shouldRunGuardsAndResolvers) {
+                var /** @type {?} */ outlet = ((((context)).outlet));
+                this.canDeactivateChecks.push(new CanDeactivate(outlet.component, curr));
+            }
+        }
+        else {
+            if (curr) {
+                this.deactivateRouteAndItsChildren(currNode, context);
+            }
+            this.canActivateChecks.push(new CanActivate(futurePath));
+            // If we have a component, we need to go through an outlet.
+            if (future.component) {
+                this.traverseChildRoutes(futureNode, null, context ? context.children : null, futurePath);
+                // if we have a componentless route, we recurse but keep the same outlet map.
+            }
+            else {
+                this.traverseChildRoutes(futureNode, null, parentContexts, futurePath);
+            }
+        }
+    };
+    /**
+     * @param {?} curr
+     * @param {?} future
+     * @param {?} mode
+     * @return {?}
+     */
+    PreActivation.prototype.shouldRunGuardsAndResolvers = function (curr, future, mode) {
+        switch (mode) {
+            case 'always':
+                return true;
+            case 'paramsOrQueryParamsChange':
+                return !equalParamsAndUrlSegments(curr, future) ||
+                    !shallowEqual(curr.queryParams, future.queryParams);
+            case 'paramsChange':
+            default:
+                return !equalParamsAndUrlSegments(curr, future);
+        }
+    };
+    /**
+     * @param {?} route
+     * @param {?} context
+     * @return {?}
+     */
+    PreActivation.prototype.deactivateRouteAndItsChildren = function (route, context) {
+        var _this = this;
+        var /** @type {?} */ children = nodeChildrenAsMap(route);
+        var /** @type {?} */ r = route.value;
+        forEach(children, function (node, childName) {
+            if (!r.component) {
+                _this.deactivateRouteAndItsChildren(node, context);
+            }
+            else if (context) {
+                _this.deactivateRouteAndItsChildren(node, context.children.getContext(childName));
+            }
+            else {
+                _this.deactivateRouteAndItsChildren(node, null);
+            }
+        });
+        if (!r.component) {
+            this.canDeactivateChecks.push(new CanDeactivate(null, r));
+        }
+        else if (context && context.outlet && context.outlet.isActivated) {
+            this.canDeactivateChecks.push(new CanDeactivate(context.outlet.component, r));
+        }
+        else {
+            this.canDeactivateChecks.push(new CanDeactivate(null, r));
+        }
+    };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.runCanDeactivateChecks = function () {
+        var _this = this;
+        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canDeactivateChecks);
+        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(checks$, function (check) { return _this.runCanDeactivate(check.component, check.route); });
+        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(runningChecks$, function (result) { return result === true; });
+    };
+    /**
+     * @return {?}
+     */
+    PreActivation.prototype.runCanActivateChecks = function () {
+        var _this = this;
+        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canActivateChecks);
+        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(checks$, function (check) { return andObservables(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])([_this.runCanActivateChild(check.path), _this.runCanActivate(check.route)])); });
+        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(runningChecks$, function (result) { return result === true; });
+    };
+    /**
+     * @param {?} future
+     * @return {?}
+     */
+    PreActivation.prototype.runCanActivate = function (future) {
+        var _this = this;
+        var /** @type {?} */ canActivate = future._routeConfig ? future._routeConfig.canActivate : null;
+        if (!canActivate || canActivate.length === 0)
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
+        var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canActivate), function (c) {
+            var /** @type {?} */ guard = _this.getToken(c, future);
+            var /** @type {?} */ observable;
+            if (guard.canActivate) {
+                observable = wrapIntoObservable(guard.canActivate(future, _this.future));
+            }
+            else {
+                observable = wrapIntoObservable(guard(future, _this.future));
+            }
+            return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
+        });
+        return andObservables(obs);
+    };
+    /**
+     * @param {?} path
+     * @return {?}
+     */
+    PreActivation.prototype.runCanActivateChild = function (path) {
+        var _this = this;
+        var /** @type {?} */ future = path[path.length - 1];
+        var /** @type {?} */ canActivateChildGuards = path.slice(0, path.length - 1)
+            .reverse()
+            .map(function (p) { return _this.extractCanActivateChild(p); })
+            .filter(function (_) { return _ !== null; });
+        return andObservables(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canActivateChildGuards), function (d) {
+            var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(d.guards), function (c) {
+                var /** @type {?} */ guard = _this.getToken(c, d.node);
+                var /** @type {?} */ observable;
+                if (guard.canActivateChild) {
+                    observable = wrapIntoObservable(guard.canActivateChild(future, _this.future));
+                }
+                else {
+                    observable = wrapIntoObservable(guard(future, _this.future));
+                }
+                return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
+            });
+            return andObservables(obs);
+        }));
+    };
+    /**
+     * @param {?} p
+     * @return {?}
+     */
+    PreActivation.prototype.extractCanActivateChild = function (p) {
+        var /** @type {?} */ canActivateChild = p._routeConfig ? p._routeConfig.canActivateChild : null;
+        if (!canActivateChild || canActivateChild.length === 0)
+            return null;
+        return { node: p, guards: canActivateChild };
+    };
+    /**
+     * @param {?} component
+     * @param {?} curr
+     * @return {?}
+     */
+    PreActivation.prototype.runCanDeactivate = function (component, curr) {
+        var _this = this;
+        var /** @type {?} */ canDeactivate = curr && curr._routeConfig ? curr._routeConfig.canDeactivate : null;
+        if (!canDeactivate || canDeactivate.length === 0)
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
+        var /** @type {?} */ canDeactivate$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canDeactivate), function (c) {
+            var /** @type {?} */ guard = _this.getToken(c, curr);
+            var /** @type {?} */ observable;
+            if (guard.canDeactivate) {
+                observable =
+                    wrapIntoObservable(guard.canDeactivate(component, curr, _this.curr, _this.future));
+            }
+            else {
+                observable = wrapIntoObservable(guard(component, curr, _this.curr, _this.future));
+            }
+            return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
+        });
+        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(canDeactivate$, function (result) { return result === true; });
+    };
+    /**
+     * @param {?} future
+     * @return {?}
+     */
+    PreActivation.prototype.runResolve = function (future) {
+        var /** @type {?} */ resolve = future._resolve;
+        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.resolveNode(resolve, future), function (resolvedData) {
+            future._resolvedData = resolvedData;
+            future.data = Object.assign({}, future.data, inheritedParamsDataResolve(future).resolve);
+            return null;
+        });
+    };
+    /**
+     * @param {?} resolve
+     * @param {?} future
+     * @return {?}
+     */
+    PreActivation.prototype.resolveNode = function (resolve, future) {
+        var _this = this;
+        var /** @type {?} */ keys = Object.keys(resolve);
+        if (keys.length === 0) {
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({});
+        }
+        if (keys.length === 1) {
+            var /** @type {?} */ key_1 = keys[0];
+            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.getResolver(resolve[key_1], future), function (value) {
+                return _a = {}, _a[key_1] = value, _a;
+                var _a;
+            });
+        }
+        var /** @type {?} */ data = {};
+        var /** @type {?} */ runningResolvers$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(keys), function (key) {
+            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.getResolver(resolve[key], future), function (value) {
+                data[key] = value;
+                return value;
+            });
+        });
+        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__["last"].call(runningResolvers$), function () { return data; });
+    };
+    /**
+     * @param {?} injectionToken
+     * @param {?} future
+     * @return {?}
+     */
+    PreActivation.prototype.getResolver = function (injectionToken, future) {
+        var /** @type {?} */ resolver = this.getToken(injectionToken, future);
+        return resolver.resolve ? wrapIntoObservable(resolver.resolve(future, this.future)) :
+            wrapIntoObservable(resolver(future, this.future));
+    };
+    /**
+     * @param {?} token
+     * @param {?} snapshot
+     * @return {?}
+     */
+    PreActivation.prototype.getToken = function (token, snapshot) {
+        var /** @type {?} */ config = closestLoadedConfig(snapshot);
+        var /** @type {?} */ injector = config ? config.module.injector : this.moduleInjector;
+        return injector.get(token);
+    };
+    return PreActivation;
+}());
+var ActivateRoutes = (function () {
+    /**
+     * @param {?} routeReuseStrategy
+     * @param {?} futureState
+     * @param {?} currState
+     */
+    function ActivateRoutes(routeReuseStrategy, futureState, currState) {
+        this.routeReuseStrategy = routeReuseStrategy;
+        this.futureState = futureState;
+        this.currState = currState;
+    }
+    /**
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.activate = function (parentContexts) {
+        var /** @type {?} */ futureRoot = this.futureState._root;
+        var /** @type {?} */ currRoot = this.currState ? this.currState._root : null;
+        this.deactivateChildRoutes(futureRoot, currRoot, parentContexts);
+        advanceActivatedRoute(this.futureState.root);
+        this.activateChildRoutes(futureRoot, currRoot, parentContexts);
+    };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} contexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.deactivateChildRoutes = function (futureNode, currNode, contexts) {
+        var _this = this;
+        var /** @type {?} */ children = nodeChildrenAsMap(currNode);
+        // Recurse on the routes active in the future state to de-activate deeper children
+        futureNode.children.forEach(function (futureChild) {
+            var /** @type {?} */ childOutletName = futureChild.value.outlet;
+            _this.deactivateRoutes(futureChild, children[childOutletName], contexts);
+            delete children[childOutletName];
+        });
+        // De-activate the routes that will not be re-used
+        forEach(children, function (v, childName) {
+            _this.deactivateRouteAndItsChildren(v, contexts);
+        });
+    };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} parentContext
+     * @return {?}
+     */
+    ActivateRoutes.prototype.deactivateRoutes = function (futureNode, currNode, parentContext) {
+        var /** @type {?} */ future = futureNode.value;
+        var /** @type {?} */ curr = currNode ? currNode.value : null;
+        if (future === curr) {
+            // Reusing the node, check to see if the children need to be de-activated
+            if (future.component) {
+                // If we have a normal route, we need to go through an outlet.
+                var /** @type {?} */ context = parentContext.getContext(future.outlet);
+                if (context) {
+                    this.deactivateChildRoutes(futureNode, currNode, context.children);
+                }
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.deactivateChildRoutes(futureNode, currNode, parentContext);
+            }
+        }
+        else {
+            if (curr) {
+                // Deactivate the current route which will not be re-used
+                this.deactivateRouteAndItsChildren(currNode, parentContext);
+            }
+        }
+    };
+    /**
+     * @param {?} route
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.deactivateRouteAndItsChildren = function (route, parentContexts) {
+        if (this.routeReuseStrategy.shouldDetach(route.value.snapshot)) {
+            this.detachAndStoreRouteSubtree(route, parentContexts);
+        }
+        else {
+            this.deactivateRouteAndOutlet(route, parentContexts);
+        }
+    };
+    /**
+     * @param {?} route
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.detachAndStoreRouteSubtree = function (route, parentContexts) {
+        var /** @type {?} */ context = parentContexts.getContext(route.value.outlet);
+        if (context && context.outlet) {
+            var /** @type {?} */ componentRef = context.outlet.detach();
+            var /** @type {?} */ contexts = context.children.onOutletDeactivated();
+            this.routeReuseStrategy.store(route.value.snapshot, { componentRef: componentRef, route: route, contexts: contexts });
+        }
+    };
+    /**
+     * @param {?} route
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.deactivateRouteAndOutlet = function (route, parentContexts) {
+        var _this = this;
+        var /** @type {?} */ context = parentContexts.getContext(route.value.outlet);
+        if (context) {
+            var /** @type {?} */ children = nodeChildrenAsMap(route);
+            var /** @type {?} */ contexts_1 = route.value.component ? context.children : parentContexts;
+            forEach(children, function (v, k) { return _this.deactivateRouteAndItsChildren(v, contexts_1); });
+            if (context.outlet) {
+                // Destroy the component
+                context.outlet.deactivate();
+                // Destroy the contexts for all the outlets that were in the component
+                context.children.onOutletDeactivated();
+            }
+        }
+    };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} contexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.activateChildRoutes = function (futureNode, currNode, contexts) {
+        var _this = this;
+        var /** @type {?} */ children = nodeChildrenAsMap(currNode);
+        futureNode.children.forEach(function (c) { _this.activateRoutes(c, children[c.value.outlet], contexts); });
+    };
+    /**
+     * @param {?} futureNode
+     * @param {?} currNode
+     * @param {?} parentContexts
+     * @return {?}
+     */
+    ActivateRoutes.prototype.activateRoutes = function (futureNode, currNode, parentContexts) {
+        var /** @type {?} */ future = futureNode.value;
+        var /** @type {?} */ curr = currNode ? currNode.value : null;
+        advanceActivatedRoute(future);
+        // reusing the node
+        if (future === curr) {
+            if (future.component) {
+                // If we have a normal route, we need to go through an outlet.
+                var /** @type {?} */ context = parentContexts.getOrCreateContext(future.outlet);
+                this.activateChildRoutes(futureNode, currNode, context.children);
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.activateChildRoutes(futureNode, currNode, parentContexts);
+            }
+        }
+        else {
+            if (future.component) {
+                // if we have a normal route, we need to place the component into the outlet and recurse.
+                var /** @type {?} */ context = parentContexts.getOrCreateContext(future.outlet);
+                if (this.routeReuseStrategy.shouldAttach(future.snapshot)) {
+                    var /** @type {?} */ stored = ((this.routeReuseStrategy.retrieve(future.snapshot)));
+                    this.routeReuseStrategy.store(future.snapshot, null);
+                    context.children.onOutletReAttached(stored.contexts);
+                    context.attachRef = stored.componentRef;
+                    context.route = stored.route.value;
+                    if (context.outlet) {
+                        // Attach right away when the outlet has already been instantiated
+                        // Otherwise attach from `RouterOutlet.ngOnInit` when it is instantiated
+                        context.outlet.attach(stored.componentRef, stored.route.value);
+                    }
+                    advanceActivatedRouteNodeAndItsChildren(stored.route);
+                }
+                else {
+                    var /** @type {?} */ config = parentLoadedConfig(future.snapshot);
+                    var /** @type {?} */ cmpFactoryResolver = config ? config.module.componentFactoryResolver : null;
+                    context.route = future;
+                    context.resolver = cmpFactoryResolver;
+                    if (context.outlet) {
+                        // Activate the outlet when it has already been instantiated
+                        // Otherwise it will get activated from its `ngOnInit` when instantiated
+                        context.outlet.activateWith(future, cmpFactoryResolver);
+                    }
+                    this.activateChildRoutes(futureNode, null, context.children);
+                }
+            }
+            else {
+                // if we have a componentless route, we recurse but keep the same outlet map.
+                this.activateChildRoutes(futureNode, null, parentContexts);
+            }
+        }
+    };
+    return ActivateRoutes;
+}());
+/**
+ * @param {?} node
+ * @return {?}
+ */
+function advanceActivatedRouteNodeAndItsChildren(node) {
+    advanceActivatedRoute(node.value);
+    node.children.forEach(advanceActivatedRouteNodeAndItsChildren);
+}
+/**
+ * @param {?} snapshot
+ * @return {?}
+ */
+function parentLoadedConfig(snapshot) {
+    for (var /** @type {?} */ s = snapshot.parent; s; s = s.parent) {
+        var /** @type {?} */ route = s._routeConfig;
+        if (route && route._loadedConfig)
+            return route._loadedConfig;
+        if (route && route.component)
+            return null;
+    }
+    return null;
+}
+/**
+ * @param {?} snapshot
+ * @return {?}
+ */
+function closestLoadedConfig(snapshot) {
+    if (!snapshot)
+        return null;
+    for (var /** @type {?} */ s = snapshot.parent; s; s = s.parent) {
+        var /** @type {?} */ route = s._routeConfig;
+        if (route && route._loadedConfig)
+            return route._loadedConfig;
+    }
+    return null;
+}
+/**
+ * @template T
+ * @param {?} node
+ * @return {?}
+ */
+function nodeChildrenAsMap(node) {
+    var /** @type {?} */ map$$1 = {};
+    if (node) {
+        node.children.forEach(function (child) { return map$$1[child.value.outlet] = child; });
+    }
+    return map$$1;
+}
+/**
+ * @param {?} commands
+ * @return {?}
+ */
+function validateCommands(commands) {
+    for (var /** @type {?} */ i = 0; i < commands.length; i++) {
+        var /** @type {?} */ cmd = commands[i];
+        if (cmd == null) {
+            throw new Error("The requested path contains " + cmd + " segment at index " + i);
+        }
+    }
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Lets you link to specific parts of your app.
+ *
+ * \@howToUse
+ *
+ * Consider the following route configuration:
+ * `[{ path: 'user/:name', component: UserCmp }]`
+ *
+ * When linking to this `user/:name` route, you can write:
+ * `<a routerLink='/user/bob'>link to user component</a>`
+ *
+ * \@description
+ *
+ * The RouterLink directives let you link to specific parts of your app.
+ *
+ * When the link is static, you can use the directive as follows:
+ * `<a routerLink="/user/bob">link to user component</a>`
+ *
+ * If you use dynamic values to generate the link, you can pass an array of path
+ * segments, followed by the params for each segment.
+ *
+ * For instance `['/team', teamId, 'user', userName, {details: true}]`
+ * means that we want to generate a link to `/team/11/user/bob;details=true`.
+ *
+ * Multiple static segments can be merged into one
+ * (e.g., `['/team/11/user', userName, {details: true}]`).
+ *
+ * The first segment name can be prepended with `/`, `./`, or `../`:
+ * * If the first segment begins with `/`, the router will look up the route from the root of the
+ *   app.
+ * * If the first segment begins with `./`, or doesn't begin with a slash, the router will
+ *   instead look in the children of the current activated route.
+ * * And if the first segment begins with `../`, the router will go up one level.
+ *
+ * You can set query params and fragment as follows:
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
+ *   link to user component
+ * </a>
+ * ```
+ * RouterLink will use these to generate this link: `/user/bob#education?debug=true`.
+ *
+ * (Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the
+ * directive to preserve the current query params and fragment:
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" preserveQueryParams preserveFragment>
+ *   link to user component
+ * </a>
+ * ```
+ *
+ * You can tell the directive to how to handle queryParams, available options are:
+ *  - 'merge' merge the queryParams into the current queryParams
+ *  - 'preserve' preserve the current queryParams
+ *  - default / '' use the queryParams only
+ *  same options for {\@link NavigationExtras#queryParamsHandling}
+ *
+ * ```
+ * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" queryParamsHandling="merge">
+ *   link to user component
+ * </a>
+ * ```
+ *
+ * The router link directive always treats the provided input as a delta to the current url.
+ *
+ * For instance, if the current url is `/user/(box//aux:team)`.
+ *
+ * Then the following link `<a [routerLink]="['/user/jim']">Jim</a>` will generate the link
+ * `/user/(jim//aux:team)`.
+ *
+ * \@ngModule RouterModule
+ *
+ * See {\@link Router#createUrlTree} for more information.
+ *
+ * \@stable
+ */
+var RouterLink = (function () {
+    /**
+     * @param {?} router
+     * @param {?} route
+     * @param {?} tabIndex
+     * @param {?} renderer
+     * @param {?} el
+     */
+    function RouterLink(router, route, tabIndex, renderer, el) {
+        this.router = router;
+        this.route = route;
+        this.commands = [];
+        if (tabIndex == null) {
+            renderer.setAttribute(el.nativeElement, 'tabindex', '0');
+        }
+    }
+    Object.defineProperty(RouterLink.prototype, "routerLink", {
+        /**
+         * @param {?} commands
+         * @return {?}
+         */
+        set: function (commands) {
+            if (commands != null) {
+                this.commands = Array.isArray(commands) ? commands : [commands];
+            }
+            else {
+                this.commands = [];
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterLink.prototype, "preserveQueryParams", {
+        /**
+         * @deprecated 4.0.0 use `queryParamsHandling` instead.
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && (console) && (console.warn)) {
+                console.warn('preserveQueryParams is deprecated!, use queryParamsHandling instead.');
+            }
+            this.preserve = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    RouterLink.prototype.onClick = function () {
+        var /** @type {?} */ extras = {
+            skipLocationChange: attrBoolValue(this.skipLocationChange),
+            replaceUrl: attrBoolValue(this.replaceUrl),
+        };
+        this.router.navigateByUrl(this.urlTree, extras);
+        return true;
+    };
+    Object.defineProperty(RouterLink.prototype, "urlTree", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return this.router.createUrlTree(this.commands, {
+                relativeTo: this.route,
+                queryParams: this.queryParams,
+                fragment: this.fragment,
+                preserveQueryParams: attrBoolValue(this.preserve),
+                queryParamsHandling: this.queryParamsHandling,
+                preserveFragment: attrBoolValue(this.preserveFragment),
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return RouterLink;
+}());
+RouterLink.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: ':not(a)[routerLink]' },] },
+];
+/**
+ * @nocollapse
+ */
+RouterLink.ctorParameters = function () { return [
+    { type: Router, },
+    { type: ActivatedRoute, },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["U" /* Attribute */], args: ['tabindex',] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["N" /* ElementRef */], },
+]; };
+RouterLink.propDecorators = {
+    'queryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'fragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'queryParamsHandling': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'preserveFragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'skipLocationChange': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'replaceUrl': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'routerLink': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'preserveQueryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_2" /* HostListener */], args: ['click',] },],
+};
+/**
+ * \@whatItDoes Lets you link to specific parts of your app.
+ *
+ * See {\@link RouterLink} for more information.
+ *
+ * \@ngModule RouterModule
+ *
+ * \@stable
+ */
+var RouterLinkWithHref = (function () {
+    /**
+     * @param {?} router
+     * @param {?} route
+     * @param {?} locationStrategy
+     */
+    function RouterLinkWithHref(router, route, locationStrategy) {
+        var _this = this;
+        this.router = router;
+        this.route = route;
+        this.locationStrategy = locationStrategy;
+        this.commands = [];
+        this.subscription = router.events.subscribe(function (s) {
+            if (s instanceof NavigationEnd) {
+                _this.updateTargetUrlAndHref();
+            }
+        });
+    }
+    Object.defineProperty(RouterLinkWithHref.prototype, "routerLink", {
+        /**
+         * @param {?} commands
+         * @return {?}
+         */
+        set: function (commands) {
+            if (commands != null) {
+                this.commands = Array.isArray(commands) ? commands : [commands];
+            }
+            else {
+                this.commands = [];
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterLinkWithHref.prototype, "preserveQueryParams", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && (console) && (console.warn)) {
+                console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
+            }
+            this.preserve = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    RouterLinkWithHref.prototype.ngOnChanges = function (changes) { this.updateTargetUrlAndHref(); };
+    /**
+     * @return {?}
+     */
+    RouterLinkWithHref.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+    /**
+     * @param {?} button
+     * @param {?} ctrlKey
+     * @param {?} metaKey
+     * @param {?} shiftKey
+     * @return {?}
+     */
+    RouterLinkWithHref.prototype.onClick = function (button, ctrlKey, metaKey, shiftKey) {
+        if (button !== 0 || ctrlKey || metaKey || shiftKey) {
+            return true;
+        }
+        if (typeof this.target === 'string' && this.target != '_self') {
+            return true;
+        }
+        var /** @type {?} */ extras = {
+            skipLocationChange: attrBoolValue(this.skipLocationChange),
+            replaceUrl: attrBoolValue(this.replaceUrl),
+        };
+        this.router.navigateByUrl(this.urlTree, extras);
+        return false;
+    };
+    /**
+     * @return {?}
+     */
+    RouterLinkWithHref.prototype.updateTargetUrlAndHref = function () {
+        this.href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.urlTree));
+    };
+    Object.defineProperty(RouterLinkWithHref.prototype, "urlTree", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            return this.router.createUrlTree(this.commands, {
+                relativeTo: this.route,
+                queryParams: this.queryParams,
+                fragment: this.fragment,
+                preserveQueryParams: attrBoolValue(this.preserve),
+                queryParamsHandling: this.queryParamsHandling,
+                preserveFragment: attrBoolValue(this.preserveFragment),
+            });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return RouterLinkWithHref;
+}());
+RouterLinkWithHref.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: 'a[routerLink]' },] },
+];
+/**
+ * @nocollapse
+ */
+RouterLinkWithHref.ctorParameters = function () { return [
+    { type: Router, },
+    { type: ActivatedRoute, },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* LocationStrategy */], },
+]; };
+RouterLinkWithHref.propDecorators = {
+    'target': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_3" /* HostBinding */], args: ['attr.target',] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'queryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'fragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'queryParamsHandling': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'preserveFragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'skipLocationChange': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'replaceUrl': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'href': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_3" /* HostBinding */] },],
+    'routerLink': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'preserveQueryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_2" /* HostListener */], args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey', '$event.shiftKey'],] },],
+};
+/**
+ * @param {?} s
+ * @return {?}
+ */
+function attrBoolValue(s) {
+    return s === '' || !!s;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Lets you add a CSS class to an element when the link's route becomes active.
+ *
+ * \@howToUse
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
+ * ```
+ *
+ * \@description
+ *
+ * The RouterLinkActive directive lets you add a CSS class to an element when the link's route
+ * becomes active.
+ *
+ * Consider the following example:
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
+ * ```
+ *
+ * When the url is either '/user' or '/user/bob', the active-link class will
+ * be added to the `a` tag. If the url changes, the class will be removed.
+ *
+ * You can set more than one class, as follows:
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
+ * <a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
+ * ```
+ *
+ * You can configure RouterLinkActive by passing `exact: true`. This will add the classes
+ * only when the url matches the link exactly.
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+ * true}">Bob</a>
+ * ```
+ *
+ * You can assign the RouterLinkActive instance to a template variable and directly check
+ * the `isActive` status.
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive #rla="routerLinkActive">
+ *   Bob {{ rla.isActive ? '(already open)' : ''}}
+ * </a>
+ * ```
+ *
+ * Finally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.
+ *
+ * ```
+ * <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+ *   <a routerLink="/user/jim">Jim</a>
+ *   <a routerLink="/user/bob">Bob</a>
+ * </div>
+ * ```
+ *
+ * This will set the active-link class on the div tag if the url is either '/user/jim' or
+ * '/user/bob'.
+ *
+ * \@ngModule RouterModule
+ *
+ * \@stable
+ */
+var RouterLinkActive = (function () {
+    /**
+     * @param {?} router
+     * @param {?} element
+     * @param {?} renderer
+     * @param {?} cdr
+     */
+    function RouterLinkActive(router, element, renderer, cdr) {
+        var _this = this;
+        this.router = router;
+        this.element = element;
+        this.renderer = renderer;
+        this.cdr = cdr;
+        this.classes = [];
+        this.active = false;
+        this.routerLinkActiveOptions = { exact: false };
+        this.subscription = router.events.subscribe(function (s) {
+            if (s instanceof NavigationEnd) {
+                _this.update();
+            }
+        });
+    }
+    Object.defineProperty(RouterLinkActive.prototype, "isActive", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.active; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    RouterLinkActive.prototype.ngAfterContentInit = function () {
+        var _this = this;
+        this.links.changes.subscribe(function (_) { return _this.update(); });
+        this.linksWithHrefs.changes.subscribe(function (_) { return _this.update(); });
+        this.update();
+    };
+    Object.defineProperty(RouterLinkActive.prototype, "routerLinkActive", {
+        /**
+         * @param {?} data
+         * @return {?}
+         */
+        set: function (data) {
+            var /** @type {?} */ classes = Array.isArray(data) ? data : data.split(' ');
+            this.classes = classes.filter(function (c) { return !!c; });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    RouterLinkActive.prototype.ngOnChanges = function (changes) { this.update(); };
+    /**
+     * @return {?}
+     */
+    RouterLinkActive.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+    /**
+     * @return {?}
+     */
+    RouterLinkActive.prototype.update = function () {
+        var _this = this;
+        if (!this.links || !this.linksWithHrefs || !this.router.navigated)
+            return;
+        Promise.resolve().then(function () {
+            var /** @type {?} */ hasActiveLinks = _this.hasActiveLinks();
+            if (_this.active !== hasActiveLinks) {
+                _this.active = hasActiveLinks;
+                _this.classes.forEach(function (c) {
+                    if (hasActiveLinks) {
+                        _this.renderer.addClass(_this.element.nativeElement, c);
+                    }
+                    else {
+                        _this.renderer.removeClass(_this.element.nativeElement, c);
+                    }
+                });
+            }
+        });
+    };
+    /**
+     * @param {?} router
+     * @return {?}
+     */
+    RouterLinkActive.prototype.isLinkActive = function (router) {
+        var _this = this;
+        return function (link) { return router.isActive(link.urlTree, _this.routerLinkActiveOptions.exact); };
+    };
+    /**
+     * @return {?}
+     */
+    RouterLinkActive.prototype.hasActiveLinks = function () {
+        return this.links.some(this.isLinkActive(this.router)) ||
+            this.linksWithHrefs.some(this.isLinkActive(this.router));
+    };
+    return RouterLinkActive;
+}());
+RouterLinkActive.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{
+                selector: '[routerLinkActive]',
+                exportAs: 'routerLinkActive',
+            },] },
+];
+/**
+ * @nocollapse
+ */
+RouterLinkActive.ctorParameters = function () { return [
+    { type: Router, },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["N" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_1" /* Renderer2 */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Z" /* ChangeDetectorRef */], },
+]; };
+RouterLinkActive.propDecorators = {
+    'links': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_4" /* ContentChildren */], args: [RouterLink, { descendants: true },] },],
+    'linksWithHrefs': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_4" /* ContentChildren */], args: [RouterLinkWithHref, { descendants: true },] },],
+    'routerLinkActiveOptions': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+    'routerLinkActive': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
+};
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Store contextual information about a {\@link RouterOutlet}
+ *
+ * \@stable
+ */
+var OutletContext = (function () {
+    function OutletContext() {
+        this.outlet = null;
+        this.route = null;
+        this.resolver = null;
+        this.children = new ChildrenOutletContexts();
+        this.attachRef = null;
+    }
+    return OutletContext;
+}());
+/**
+ * Store contextual information about the children (= nested) {\@link RouterOutlet}
+ *
+ * \@stable
+ */
+var ChildrenOutletContexts = (function () {
+    function ChildrenOutletContexts() {
+        this.contexts = new Map();
+    }
+    /**
+     * Called when a `RouterOutlet` directive is instantiated
+     * @param {?} childName
+     * @param {?} outlet
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.onChildOutletCreated = function (childName, outlet) {
+        var /** @type {?} */ context = this.getOrCreateContext(childName);
+        context.outlet = outlet;
+        this.contexts.set(childName, context);
+    };
+    /**
+     * Called when a `RouterOutlet` directive is destroyed.
+     * We need to keep the context as the outlet could be destroyed inside a NgIf and might be
+     * re-created later.
+     * @param {?} childName
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.onChildOutletDestroyed = function (childName) {
+        var /** @type {?} */ context = this.getContext(childName);
+        if (context) {
+            context.outlet = null;
+        }
+    };
+    /**
+     * Called when the corresponding route is deactivated during navigation.
+     * Because the component get destroyed, all children outlet are destroyed.
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.onOutletDeactivated = function () {
+        var /** @type {?} */ contexts = this.contexts;
+        this.contexts = new Map();
+        return contexts;
+    };
+    /**
+     * @param {?} contexts
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.onOutletReAttached = function (contexts) { this.contexts = contexts; };
+    /**
+     * @param {?} childName
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.getOrCreateContext = function (childName) {
+        var /** @type {?} */ context = this.getContext(childName);
+        if (!context) {
+            context = new OutletContext();
+            this.contexts.set(childName, context);
+        }
+        return context;
+    };
+    /**
+     * @param {?} childName
+     * @return {?}
+     */
+    ChildrenOutletContexts.prototype.getContext = function (childName) { return this.contexts.get(childName) || null; };
+    return ChildrenOutletContexts;
+}());
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Acts as a placeholder that Angular dynamically fills based on the current router
+ * state.
+ *
+ * \@howToUse
+ *
+ * ```
+ * <router-outlet></router-outlet>
+ * <router-outlet name='left'></router-outlet>
+ * <router-outlet name='right'></router-outlet>
+ * ```
+ *
+ * A router outlet will emit an activate event any time a new component is being instantiated,
+ * and a deactivate event when it is being destroyed.
+ *
+ * ```
+ * <router-outlet
+ *   (activate)='onActivate($event)'
+ *   (deactivate)='onDeactivate($event)'></router-outlet>
+ * ```
+ * \@ngModule RouterModule
+ *
+ * \@stable
+ */
+var RouterOutlet = (function () {
+    /**
+     * @param {?} parentContexts
+     * @param {?} location
+     * @param {?} resolver
+     * @param {?} name
+     * @param {?} changeDetector
+     */
+    function RouterOutlet(parentContexts, location, resolver, name, changeDetector) {
+        this.parentContexts = parentContexts;
+        this.location = location;
+        this.resolver = resolver;
+        this.changeDetector = changeDetector;
+        this.activated = null;
+        this._activatedRoute = null;
+        this.activateEvents = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["G" /* EventEmitter */]();
+        this.deactivateEvents = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["G" /* EventEmitter */]();
+        this.name = name || PRIMARY_OUTLET;
+        parentContexts.onChildOutletCreated(this.name, this);
+    }
+    /**
+     * @return {?}
+     */
+    RouterOutlet.prototype.ngOnDestroy = function () { this.parentContexts.onChildOutletDestroyed(this.name); };
+    /**
+     * @return {?}
+     */
+    RouterOutlet.prototype.ngOnInit = function () {
+        if (!this.activated) {
+            // If the outlet was not instantiated at the time the route got activated we need to populate
+            // the outlet when it is initialized (ie inside a NgIf)
+            var /** @type {?} */ context = this.parentContexts.getContext(this.name);
+            if (context && context.route) {
+                if (context.attachRef) {
+                    // `attachRef` is populated when there is an existing component to mount
+                    this.attach(context.attachRef, context.route);
+                }
+                else {
+                    // otherwise the component defined in the configuration is created
+                    this.activateWith(context.route, context.resolver || null);
+                }
+            }
+        }
+    };
+    Object.defineProperty(RouterOutlet.prototype, "locationInjector", {
+        /**
+         * @deprecated since v4 *
+         * @return {?}
+         */
+        get: function () { return this.location.injector; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "locationFactoryResolver", {
+        /**
+         * @deprecated since v4 *
+         * @return {?}
+         */
+        get: function () { return this.resolver; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "isActivated", {
+        /**
+         * @return {?}
+         */
+        get: function () { return !!this.activated; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "component", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this.activated)
+                throw new Error('Outlet is not activated');
+            return this.activated.instance;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "activatedRoute", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (!this.activated)
+                throw new Error('Outlet is not activated');
+            return (this._activatedRoute);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(RouterOutlet.prototype, "activatedRouteData", {
+        /**
+         * @return {?}
+         */
+        get: function () {
+            if (this._activatedRoute) {
+                return this._activatedRoute.snapshot.data;
+            }
+            return {};
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Called when the `RouteReuseStrategy` instructs to detach the subtree
+     * @return {?}
+     */
+    RouterOutlet.prototype.detach = function () {
+        if (!this.activated)
+            throw new Error('Outlet is not activated');
+        this.location.detach();
+        var /** @type {?} */ cmp = this.activated;
+        this.activated = null;
+        this._activatedRoute = null;
+        return cmp;
+    };
+    /**
+     * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
+     * @param {?} ref
+     * @param {?} activatedRoute
+     * @return {?}
+     */
+    RouterOutlet.prototype.attach = function (ref, activatedRoute) {
+        this.activated = ref;
+        this._activatedRoute = activatedRoute;
+        this.location.insert(ref.hostView);
+    };
+    /**
+     * @return {?}
+     */
+    RouterOutlet.prototype.deactivate = function () {
+        if (this.activated) {
+            var /** @type {?} */ c = this.component;
+            this.activated.destroy();
+            this.activated = null;
+            this._activatedRoute = null;
+            this.deactivateEvents.emit(c);
+        }
+    };
+    /**
+     * @param {?} activatedRoute
+     * @param {?} resolver
+     * @return {?}
+     */
+    RouterOutlet.prototype.activateWith = function (activatedRoute, resolver) {
+        if (this.isActivated) {
+            throw new Error('Cannot activate an already activated outlet');
+        }
+        this._activatedRoute = activatedRoute;
+        var /** @type {?} */ snapshot = activatedRoute._futureSnapshot;
+        var /** @type {?} */ component = (((snapshot._routeConfig)).component);
+        resolver = resolver || this.resolver;
+        var /** @type {?} */ factory = resolver.resolveComponentFactory(component);
+        var /** @type {?} */ childContexts = this.parentContexts.getOrCreateContext(this.name).children;
+        var /** @type {?} */ injector = new OutletInjector(activatedRoute, childContexts, this.location.injector);
+        this.activated = this.location.createComponent(factory, this.location.length, injector);
+        // Calling `markForCheck` to make sure we will run the change detection when the
+        // `RouterOutlet` is inside a `ChangeDetectionStrategy.OnPush` component.
+        this.changeDetector.markForCheck();
+        this.activateEvents.emit(this.activated.instance);
+    };
+    return RouterOutlet;
+}());
+RouterOutlet.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: 'router-outlet', exportAs: 'outlet' },] },
+];
+/**
+ * @nocollapse
+ */
+RouterOutlet.ctorParameters = function () { return [
+    { type: ChildrenOutletContexts, },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["R" /* ViewContainerRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Q" /* ComponentFactoryResolver */], },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["U" /* Attribute */], args: ['name',] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Z" /* ChangeDetectorRef */], },
+]; };
+RouterOutlet.propDecorators = {
+    'activateEvents': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_5" /* Output */], args: ['activate',] },],
+    'deactivateEvents': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_5" /* Output */], args: ['deactivate',] },],
+};
+var OutletInjector = (function () {
+    /**
+     * @param {?} route
+     * @param {?} childContexts
+     * @param {?} parent
+     */
+    function OutletInjector(route, childContexts, parent) {
+        this.route = route;
+        this.childContexts = childContexts;
+        this.parent = parent;
+    }
+    /**
+     * @param {?} token
+     * @param {?=} notFoundValue
+     * @return {?}
+     */
+    OutletInjector.prototype.get = function (token, notFoundValue) {
+        if (token === ActivatedRoute) {
+            return this.route;
+        }
+        if (token === ChildrenOutletContexts) {
+            return this.childContexts;
+        }
+        return this.parent.get(token, notFoundValue);
+    };
+    return OutletInjector;
+}());
+/**
+*@license
+*Copyright Google Inc. All Rights Reserved.
+*
+*Use of this source code is governed by an MIT-style license that can be
+*found in the LICENSE file at https://angular.io/license
+*/
+/**
+ * \@whatItDoes Provides a preloading strategy.
+ *
+ * \@experimental
+ * @abstract
+ */
+var PreloadingStrategy = (function () {
+    function PreloadingStrategy() {
+    }
+    /**
+     * @abstract
+     * @param {?} route
+     * @param {?} fn
+     * @return {?}
+     */
+    PreloadingStrategy.prototype.preload = function (route, fn) { };
+    return PreloadingStrategy;
+}());
+/**
+ * \@whatItDoes Provides a preloading strategy that preloads all modules as quickly as possible.
+ *
+ * \@howToUse
+ *
+ * ```
+ * RouteModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
+ * ```
+ *
+ * \@experimental
+ */
+var PreloadAllModules = (function () {
+    function PreloadAllModules() {
+    }
+    /**
+     * @param {?} route
+     * @param {?} fn
+     * @return {?}
+     */
+    PreloadAllModules.prototype.preload = function (route, fn) {
+        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(fn(), function () { return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null); });
+    };
+    return PreloadAllModules;
+}());
+/**
+ * \@whatItDoes Provides a preloading strategy that does not preload any modules.
+ *
+ * \@description
+ *
+ * This strategy is enabled by default.
+ *
+ * \@experimental
+ */
+var NoPreloading = (function () {
+    function NoPreloading() {
+    }
+    /**
+     * @param {?} route
+     * @param {?} fn
+     * @return {?}
+     */
+    NoPreloading.prototype.preload = function (route, fn) { return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null); };
+    return NoPreloading;
+}());
+/**
+ * The preloader optimistically loads all router configurations to
+ * make navigations into lazily-loaded sections of the application faster.
+ *
+ * The preloader runs in the background. When the router bootstraps, the preloader
+ * starts listening to all navigation events. After every such event, the preloader
+ * will check if any configurations can be loaded lazily.
+ *
+ * If a route is protected by `canLoad` guards, the preloaded will not load it.
+ *
+ * \@stable
+ */
+var RouterPreloader = (function () {
+    /**
+     * @param {?} router
+     * @param {?} moduleLoader
+     * @param {?} compiler
+     * @param {?} injector
+     * @param {?} preloadingStrategy
+     */
+    function RouterPreloader(router, moduleLoader, compiler, injector, preloadingStrategy) {
+        this.router = router;
+        this.injector = injector;
+        this.preloadingStrategy = preloadingStrategy;
+        var onStartLoad = function (r) { return router.triggerEvent(new RouteConfigLoadStart(r)); };
+        var onEndLoad = function (r) { return router.triggerEvent(new RouteConfigLoadEnd(r)); };
+        this.loader = new RouterConfigLoader(moduleLoader, compiler, onStartLoad, onEndLoad);
+    }
+    /**
+     * @return {?}
+     */
+    RouterPreloader.prototype.setUpPreloading = function () {
+        var _this = this;
+        var /** @type {?} */ navigations$ = __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__["filter"].call(this.router.events, function (e) { return e instanceof NavigationEnd; });
+        this.subscription = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(navigations$, function () { return _this.preload(); }).subscribe(function () { });
+    };
+    /**
+     * @return {?}
+     */
+    RouterPreloader.prototype.preload = function () {
+        var /** @type {?} */ ngModule = this.injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
+        return this.processRoutes(ngModule, this.router.config);
+    };
+    /**
+     * @return {?}
+     */
+    RouterPreloader.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
+    /**
+     * @param {?} ngModule
+     * @param {?} routes
+     * @return {?}
+     */
+    RouterPreloader.prototype.processRoutes = function (ngModule, routes) {
+        var /** @type {?} */ res = [];
+        for (var _i = 0, routes_5 = routes; _i < routes_5.length; _i++) {
+            var route = routes_5[_i];
+            // we already have the config loaded, just recurse
+            if (route.loadChildren && !route.canLoad && route._loadedConfig) {
+                var /** @type {?} */ childConfig = route._loadedConfig;
+                res.push(this.processRoutes(childConfig.module, childConfig.routes));
+                // no config loaded, fetch the config
+            }
+            else if (route.loadChildren && !route.canLoad) {
+                res.push(this.preloadConfig(ngModule, route));
+                // recurse into children
+            }
+            else if (route.children) {
+                res.push(this.processRoutes(ngModule, route.children));
+            }
+        }
+        return __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__["mergeAll"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(res));
+    };
+    /**
+     * @param {?} ngModule
+     * @param {?} route
+     * @return {?}
+     */
+    RouterPreloader.prototype.preloadConfig = function (ngModule, route) {
+        var _this = this;
+        return this.preloadingStrategy.preload(route, function () {
+            var /** @type {?} */ loaded$ = _this.loader.load(ngModule.injector, route);
+            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(loaded$, function (config) {
+                route._loadedConfig = config;
+                return _this.processRoutes(config.module, config.routes);
+            });
+        });
+    };
+    return RouterPreloader;
+}());
+RouterPreloader.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Injectable */] },
+];
+/**
+ * @nocollapse
+ */
+RouterPreloader.ctorParameters = function () { return [
+    { type: Router, },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_7" /* Compiler */], },
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */], },
+    { type: PreloadingStrategy, },
+]; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * \@whatItDoes Contains a list of directives
+ * \@stable
+ */
+var ROUTER_DIRECTIVES = [RouterOutlet, RouterLink, RouterLinkWithHref, RouterLinkActive];
+/**
+ * \@whatItDoes Is used in DI to configure the router.
+ * \@stable
+ */
+var ROUTER_CONFIGURATION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTER_CONFIGURATION');
+/**
+ * \@docsNotRequired
+ */
+var ROUTER_FORROOT_GUARD = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTER_FORROOT_GUARD');
+var ROUTER_PROVIDERS = [
+    __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */],
+    { provide: UrlSerializer, useClass: DefaultUrlSerializer },
+    {
+        provide: Router,
+        useFactory: setupRouter,
+        deps: [
+            __WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* ApplicationRef */], UrlSerializer, ChildrenOutletContexts, __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["_7" /* Compiler */], ROUTES, ROUTER_CONFIGURATION,
+            [UrlHandlingStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()], [RouteReuseStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()]
+        ]
+    },
+    ChildrenOutletContexts,
+    { provide: ActivatedRoute, useFactory: rootRoute, deps: [Router] },
+    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], useClass: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_8" /* SystemJsNgModuleLoader */] },
+    RouterPreloader,
+    NoPreloading,
+    PreloadAllModules,
+    { provide: ROUTER_CONFIGURATION, useValue: { enableTracing: false } },
+];
+/**
+ * @return {?}
+ */
+function routerNgProbeToken() {
+    return new __WEBPACK_IMPORTED_MODULE_2__angular_core__["q" /* NgProbeToken */]('Router', Router);
+}
+/**
+ * \@whatItDoes Adds router directives and providers.
+ *
+ * \@howToUse
+ *
+ * RouterModule can be imported multiple times: once per lazily-loaded bundle.
+ * Since the router deals with a global shared resource--location, we cannot have
+ * more than one router service active.
+ *
+ * That is why there are two ways to create the module: `RouterModule.forRoot` and
+ * `RouterModule.forChild`.
+ *
+ * * `forRoot` creates a module that contains all the directives, the given routes, and the router
+ *   service itself.
+ * * `forChild` creates a module that contains all the directives and the given routes, but does not
+ *   include the router service.
+ *
+ * When registered at the root, the module should be used as follows
+ *
+ * ```
+ * \@NgModule({
+ *   imports: [RouterModule.forRoot(ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ * For submodules and lazy loaded submodules the module should be used as follows:
+ *
+ * ```
+ * \@NgModule({
+ *   imports: [RouterModule.forChild(ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ * \@description
+ *
+ * Managing state transitions is one of the hardest parts of building applications. This is
+ * especially true on the web, where you also need to ensure that the state is reflected in the URL.
+ * In addition, we often want to split applications into multiple bundles and load them on demand.
+ * Doing this transparently is not trivial.
+ *
+ * The Angular router solves these problems. Using the router, you can declaratively specify
+ * application states, manage state transitions while taking care of the URL, and load bundles on
+ * demand.
+ *
+ * [Read this developer guide](https://angular.io/docs/ts/latest/guide/router.html) to get an
+ * overview of how the router should be used.
+ *
+ * \@stable
+ */
+var RouterModule = (function () {
+    /**
+     * @param {?} guard
+     * @param {?} router
+     */
+    function RouterModule(guard, router) {
+    }
+    /**
+     * Creates a module with all the router providers and directives. It also optionally sets up an
+     * application listener to perform an initial navigation.
+     *
+     * Options:
+     * * `enableTracing` makes the router log all its internal events to the console.
+     * * `useHash` enables the location strategy that uses the URL fragment instead of the history
+     * API.
+     * * `initialNavigation` disables the initial navigation.
+     * * `errorHandler` provides a custom error handler.
+     * @param {?} routes
+     * @param {?=} config
+     * @return {?}
+     */
+    RouterModule.forRoot = function (routes, config) {
+        return {
+            ngModule: RouterModule,
+            providers: [
+                ROUTER_PROVIDERS,
+                provideRoutes(routes),
+                {
+                    provide: ROUTER_FORROOT_GUARD,
+                    useFactory: provideForRootGuard,
+                    deps: [[Router, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["F" /* SkipSelf */]()]]
+                },
+                { provide: ROUTER_CONFIGURATION, useValue: config ? config : {} },
+                {
+                    provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* LocationStrategy */],
+                    useFactory: provideLocationStrategy,
+                    deps: [
+                        __WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* PlatformLocation */], [new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* APP_BASE_HREF */]), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()], ROUTER_CONFIGURATION
+                    ]
+                },
+                {
+                    provide: PreloadingStrategy,
+                    useExisting: config && config.preloadingStrategy ? config.preloadingStrategy :
+                        NoPreloading
+                },
+                { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["q" /* NgProbeToken */], multi: true, useFactory: routerNgProbeToken },
+                provideRouterInitializer(),
+            ],
+        };
+    };
+    /**
+     * Creates a module with all the router directives and a provider registering routes.
+     * @param {?} routes
+     * @return {?}
+     */
+    RouterModule.forChild = function (routes) {
+        return { ngModule: RouterModule, providers: [provideRoutes(routes)] };
+    };
+    return RouterModule;
+}());
+RouterModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* NgModule */], args: [{ declarations: ROUTER_DIRECTIVES, exports: ROUTER_DIRECTIVES },] },
+];
+/**
+ * @nocollapse
+ */
+RouterModule.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [ROUTER_FORROOT_GUARD,] },] },
+    { type: Router, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */] },] },
+]; };
+/**
+ * @param {?} platformLocationStrategy
+ * @param {?} baseHref
+ * @param {?=} options
+ * @return {?}
+ */
+function provideLocationStrategy(platformLocationStrategy, baseHref, options) {
+    if (options === void 0) { options = {}; }
+    return options.useHash ? new __WEBPACK_IMPORTED_MODULE_1__angular_common__["i" /* HashLocationStrategy */](platformLocationStrategy, baseHref) :
+        new __WEBPACK_IMPORTED_MODULE_1__angular_common__["j" /* PathLocationStrategy */](platformLocationStrategy, baseHref);
+}
+/**
+ * @param {?} router
+ * @return {?}
+ */
+function provideForRootGuard(router) {
+    if (router) {
+        throw new Error("RouterModule.forRoot() called twice. Lazy loaded modules should use RouterModule.forChild() instead.");
+    }
+    return 'guarded';
+}
+/**
+ * \@whatItDoes Registers routes.
+ *
+ * \@howToUse
+ *
+ * ```
+ * \@NgModule({
+ *   imports: [RouterModule.forChild(ROUTES)],
+ *   providers: [provideRoutes(EXTRA_ROUTES)]
+ * })
+ * class MyNgModule {}
+ * ```
+ *
+ * \@stable
+ * @param {?} routes
+ * @return {?}
+ */
+function provideRoutes(routes) {
+    return [
+        { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_9" /* ANALYZE_FOR_ENTRY_COMPONENTS */], multi: true, useValue: routes },
+        { provide: ROUTES, multi: true, useValue: routes },
+    ];
+}
+/**
+ * @param {?} ref
+ * @param {?} urlSerializer
+ * @param {?} contexts
+ * @param {?} location
+ * @param {?} injector
+ * @param {?} loader
+ * @param {?} compiler
+ * @param {?} config
+ * @param {?=} opts
+ * @param {?=} urlHandlingStrategy
+ * @param {?=} routeReuseStrategy
+ * @return {?}
+ */
+function setupRouter(ref, urlSerializer, contexts, location, injector, loader, compiler, config, opts, urlHandlingStrategy, routeReuseStrategy) {
+    if (opts === void 0) { opts = {}; }
+    var /** @type {?} */ router = new Router(null, urlSerializer, contexts, location, injector, loader, compiler, flatten(config));
+    if (urlHandlingStrategy) {
+        router.urlHandlingStrategy = urlHandlingStrategy;
+    }
+    if (routeReuseStrategy) {
+        router.routeReuseStrategy = routeReuseStrategy;
+    }
+    if (opts.errorHandler) {
+        router.errorHandler = opts.errorHandler;
+    }
+    if (opts.enableTracing) {
+        var /** @type {?} */ dom_1 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__["b" /* ɵgetDOM */])();
+        router.events.subscribe(function (e) {
+            dom_1.logGroup("Router Event: " + ((e.constructor)).name);
+            dom_1.log(e.toString());
+            dom_1.log(e);
+            dom_1.logGroupEnd();
+        });
+    }
+    return router;
+}
+/**
+ * @param {?} router
+ * @return {?}
+ */
+function rootRoute(router) {
+    return router.routerState.root;
+}
+/**
+ * To initialize the router properly we need to do in two steps:
+ *
+ * We need to start the navigation in a APP_INITIALIZER to block the bootstrap if
+ * a resolver or a guards executes asynchronously. Second, we need to actually run
+ * activation in a BOOTSTRAP_LISTENER. We utilize the afterPreactivation
+ * hook provided by the router to do that.
+ *
+ * The router navigation starts, reaches the point when preactivation is done, and then
+ * pauses. It waits for the hook to be resolved. We then resolve it only in a bootstrap listener.
+ */
+var RouterInitializer = (function () {
+    /**
+     * @param {?} injector
+     */
+    function RouterInitializer(injector) {
+        this.injector = injector;
+        this.initNavigation = false;
+        this.resultOfPreactivationDone = new __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__["Subject"]();
+    }
+    /**
+     * @return {?}
+     */
+    RouterInitializer.prototype.appInitializer = function () {
+        var _this = this;
+        var /** @type {?} */ p = this.injector.get(__WEBPACK_IMPORTED_MODULE_1__angular_common__["k" /* LOCATION_INITIALIZED */], Promise.resolve(null));
+        return p.then(function () {
+            var /** @type {?} */ resolve = ((null));
+            var /** @type {?} */ res = new Promise(function (r) { return resolve = r; });
+            var /** @type {?} */ router = _this.injector.get(Router);
+            var /** @type {?} */ opts = _this.injector.get(ROUTER_CONFIGURATION);
+            if (_this.isLegacyDisabled(opts) || _this.isLegacyEnabled(opts)) {
+                resolve(true);
+            }
+            else if (opts.initialNavigation === 'disabled') {
+                router.setUpLocationChangeListener();
+                resolve(true);
+            }
+            else if (opts.initialNavigation === 'enabled') {
+                router.hooks.afterPreactivation = function () {
+                    // only the initial navigation should be delayed
+                    if (!_this.initNavigation) {
+                        _this.initNavigation = true;
+                        resolve(true);
+                        return _this.resultOfPreactivationDone;
+                        // subsequent navigations should not be delayed
+                    }
+                    else {
+                        return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
+                    }
+                };
+                router.initialNavigation();
+            }
+            else {
+                throw new Error("Invalid initialNavigation options: '" + opts.initialNavigation + "'");
+            }
+            return res;
+        });
+    };
+    /**
+     * @param {?} bootstrappedComponentRef
+     * @return {?}
+     */
+    RouterInitializer.prototype.bootstrapListener = function (bootstrappedComponentRef) {
+        var /** @type {?} */ opts = this.injector.get(ROUTER_CONFIGURATION);
+        var /** @type {?} */ preloader = this.injector.get(RouterPreloader);
+        var /** @type {?} */ router = this.injector.get(Router);
+        var /** @type {?} */ ref = this.injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* ApplicationRef */]);
+        if (bootstrappedComponentRef !== ref.components[0]) {
+            return;
+        }
+        if (this.isLegacyEnabled(opts)) {
+            router.initialNavigation();
+        }
+        else if (this.isLegacyDisabled(opts)) {
+            router.setUpLocationChangeListener();
+        }
+        preloader.setUpPreloading();
+        router.resetRootComponentType(ref.componentTypes[0]);
+        this.resultOfPreactivationDone.next(/** @type {?} */ ((null)));
+        this.resultOfPreactivationDone.complete();
+    };
+    /**
+     * @param {?} opts
+     * @return {?}
+     */
+    RouterInitializer.prototype.isLegacyEnabled = function (opts) {
+        return opts.initialNavigation === 'legacy_enabled' || opts.initialNavigation === true ||
+            opts.initialNavigation === undefined;
+    };
+    /**
+     * @param {?} opts
+     * @return {?}
+     */
+    RouterInitializer.prototype.isLegacyDisabled = function (opts) {
+        return opts.initialNavigation === 'legacy_disabled' || opts.initialNavigation === false;
+    };
+    return RouterInitializer;
+}());
+RouterInitializer.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Injectable */] },
+];
+/**
+ * @nocollapse
+ */
+RouterInitializer.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */], },
+]; };
+/**
+ * @param {?} r
+ * @return {?}
+ */
+function getAppInitializer(r) {
+    return r.appInitializer.bind(r);
+}
+/**
+ * @param {?} r
+ * @return {?}
+ */
+function getBootstrapListener(r) {
+    return r.bootstrapListener.bind(r);
+}
+/**
+ * A token for the router initializer that will be called after the app is bootstrapped.
+ *
+ * \@experimental
+ */
+var ROUTER_INITIALIZER = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('Router Initializer');
+/**
+ * @return {?}
+ */
+function provideRouterInitializer() {
+    return [
+        RouterInitializer,
+        {
+            provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* APP_INITIALIZER */],
+            multi: true,
+            useFactory: getAppInitializer,
+            deps: [RouterInitializer]
+        },
+        { provide: ROUTER_INITIALIZER, useFactory: getBootstrapListener, deps: [RouterInitializer] },
+        { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_10" /* APP_BOOTSTRAP_LISTENER */], multi: true, useExisting: ROUTER_INITIALIZER },
+    ];
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the common package.
+ */
+/**
+ * \@stable
+ */
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["e" /* Version */]('4.4.7');
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @module
+ * @description
+ * Entry point for all public APIs of the router package.
+ */
+// This file only reexports content of the `src` folder. Keep it that way.
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
 /* 75 */,
 /* 76 */,
 /* 77 */,
@@ -30060,7 +42632,11 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["e" /* Version */]
 /* 82 */,
 /* 83 */,
 /* 84 */,
-/* 85 */
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30074,7 +42650,7 @@ exports.empty = {
 
 
 /***/ }),
-/* 86 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30201,7 +42777,7 @@ function dispatchError(arg) {
 
 
 /***/ }),
-/* 87 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30265,17 +42841,17 @@ exports.ScalarObservable = ScalarObservable;
 
 
 /***/ }),
-/* 88 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(86);
+var PromiseObservable_1 = __webpack_require__(90);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 
 
 /***/ }),
-/* 89 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30366,7 +42942,7 @@ var RefCountSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 90 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30399,7 +42975,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 
 
 /***/ }),
-/* 91 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30409,7 +42985,7 @@ exports.errorObject = { e: {} };
 
 
 /***/ }),
-/* 92 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30418,7 +42994,7 @@ exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; 
 
 
 /***/ }),
-/* 93 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30430,7 +43006,7 @@ exports.isFunction = isFunction;
 
 
 /***/ }),
-/* 94 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30442,7 +43018,7 @@ exports.isObject = isObject;
 
 
 /***/ }),
-/* 95 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30454,7 +43030,7 @@ exports.isPromise = isPromise;
 
 
 /***/ }),
-/* 96 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30466,12 +43042,12 @@ exports.isScheduler = isScheduler;
 
 
 /***/ }),
-/* 97 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var noop_1 = __webpack_require__(226);
+var noop_1 = __webpack_require__(229);
 /* tslint:enable:max-line-length */
 function pipe() {
     var fns = [];
@@ -30497,10 +43073,6 @@ exports.pipeFromArray = pipeFromArray;
 
 
 /***/ }),
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
 /* 102 */,
 /* 103 */,
 /* 104 */,
@@ -30519,7 +43091,12 @@ exports.pipeFromArray = pipeFromArray;
 /* 117 */,
 /* 118 */,
 /* 119 */,
-/* 120 */
+/* 120 */,
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58415,6200 +70992,15 @@ function _mergeArrays(parts) {
 //# sourceMappingURL=compiler.es5.js.map
 
 /***/ }),
-/* 121 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(16);
-/* unused harmony export AbstractControlDirective */
-/* unused harmony export AbstractFormGroupDirective */
-/* unused harmony export CheckboxControlValueAccessor */
-/* unused harmony export ControlContainer */
-/* unused harmony export NG_VALUE_ACCESSOR */
-/* unused harmony export COMPOSITION_BUFFER_MODE */
-/* unused harmony export DefaultValueAccessor */
-/* unused harmony export NgControl */
-/* unused harmony export NgControlStatus */
-/* unused harmony export NgControlStatusGroup */
-/* unused harmony export NgForm */
-/* unused harmony export NgModel */
-/* unused harmony export NgModelGroup */
-/* unused harmony export RadioControlValueAccessor */
-/* unused harmony export FormControlDirective */
-/* unused harmony export FormControlName */
-/* unused harmony export FormGroupDirective */
-/* unused harmony export FormArrayName */
-/* unused harmony export FormGroupName */
-/* unused harmony export NgSelectOption */
-/* unused harmony export SelectControlValueAccessor */
-/* unused harmony export SelectMultipleControlValueAccessor */
-/* unused harmony export CheckboxRequiredValidator */
-/* unused harmony export EmailValidator */
-/* unused harmony export MaxLengthValidator */
-/* unused harmony export MinLengthValidator */
-/* unused harmony export PatternValidator */
-/* unused harmony export RequiredValidator */
-/* unused harmony export FormBuilder */
-/* unused harmony export AbstractControl */
-/* unused harmony export FormArray */
-/* unused harmony export FormControl */
-/* unused harmony export FormGroup */
-/* unused harmony export NG_ASYNC_VALIDATORS */
-/* unused harmony export NG_VALIDATORS */
-/* unused harmony export Validators */
-/* unused harmony export VERSION */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
-/* unused harmony export ReactiveFormsModule */
-/* unused harmony export ɵba */
-/* unused harmony export ɵz */
-/* unused harmony export ɵx */
-/* unused harmony export ɵy */
-/* unused harmony export ɵa */
-/* unused harmony export ɵb */
-/* unused harmony export ɵc */
-/* unused harmony export ɵd */
-/* unused harmony export ɵe */
-/* unused harmony export ɵf */
-/* unused harmony export ɵg */
-/* unused harmony export ɵbf */
-/* unused harmony export ɵbb */
-/* unused harmony export ɵbc */
-/* unused harmony export ɵh */
-/* unused harmony export ɵi */
-/* unused harmony export ɵbd */
-/* unused harmony export ɵbe */
-/* unused harmony export ɵj */
-/* unused harmony export ɵk */
-/* unused harmony export ɵl */
-/* unused harmony export ɵn */
-/* unused harmony export ɵm */
-/* unused harmony export ɵo */
-/* unused harmony export ɵq */
-/* unused harmony export ɵp */
-/* unused harmony export ɵs */
-/* unused harmony export ɵt */
-/* unused harmony export ɵv */
-/* unused harmony export ɵu */
-/* unused harmony export ɵw */
-/* unused harmony export ɵr */
-
-/**
- * @license Angular v4.4.7
- * (c) 2010-2017 Google, Inc. https://angular.io/
- * License: MIT
- */
-
-
-
-
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Base class for control directives.
- *
- * Only used internally in the forms module.
- *
- * \@stable
- * @abstract
- */
-var AbstractControlDirective = (function () {
-    function AbstractControlDirective() {
-    }
-    /**
-     * The {\@link FormControl}, {\@link FormGroup}, or {\@link FormArray}
-     * that backs this directive. Most properties fall through to that
-     * instance.
-     * @abstract
-     * @return {?}
-     */
-    AbstractControlDirective.prototype.control = function () { };
-    Object.defineProperty(AbstractControlDirective.prototype, "value", {
-        /**
-         * The value of the control.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.value : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "valid", {
-        /**
-         * A control is `valid` when its `status === VALID`.
-         *
-         * In order to have this status, the control must have passed all its
-         * validation checks.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.valid : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "invalid", {
-        /**
-         * A control is `invalid` when its `status === INVALID`.
-         *
-         * In order to have this status, the control must have failed
-         * at least one of its validation checks.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.invalid : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "pending", {
-        /**
-         * A control is `pending` when its `status === PENDING`.
-         *
-         * In order to have this status, the control must be in the
-         * middle of conducting a validation check.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.pending : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
-        /**
-         * A control is `disabled` when its `status === DISABLED`.
-         *
-         * Disabled controls are exempt from validation checks and
-         * are not included in the aggregate value of their ancestor
-         * controls.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.disabled : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
-        /**
-         * A control is `enabled` as long as its `status !== DISABLED`.
-         *
-         * In other words, it has a status of `VALID`, `INVALID`, or
-         * `PENDING`.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.enabled : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "errors", {
-        /**
-         * Returns any errors generated by failing validation. If there
-         * are no errors, it will return null.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.errors : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "pristine", {
-        /**
-         * A control is `pristine` if the user has not yet changed
-         * the value in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.pristine : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "dirty", {
-        /**
-         * A control is `dirty` if the user has changed the value
-         * in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.dirty : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "touched", {
-        /**
-         * A control is marked `touched` once the user has triggered
-         * a `blur` event on it.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.touched : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "untouched", {
-        /**
-         * A control is `untouched` if the user has not yet triggered
-         * a `blur` event on it.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.untouched : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "statusChanges", {
-        /**
-         * Emits an event every time the validation status of the control
-         * is re-calculated.
-         * @return {?}
-         */
-        get: function () {
-            return this.control ? this.control.statusChanges : null;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "valueChanges", {
-        /**
-         * Emits an event every time the value of the control changes, in
-         * the UI or programmatically.
-         * @return {?}
-         */
-        get: function () {
-            return this.control ? this.control.valueChanges : null;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "path", {
-        /**
-         * Returns an array that represents the path from the top-level form
-         * to this control. Each index is the string name of the control on
-         * that level.
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Resets the form control. This means by default:
-     *
-     * * it is marked as `pristine`
-     * * it is marked as `untouched`
-     * * value is set to null
-     *
-     * For more information, see {\@link AbstractControl}.
-     * @param {?=} value
-     * @return {?}
-     */
-    AbstractControlDirective.prototype.reset = function (value) {
-        if (value === void 0) { value = undefined; }
-        if (this.control)
-            this.control.reset(value);
-    };
-    /**
-     * Returns true if the control with the given path has the error specified. Otherwise
-     * returns false.
-     *
-     * If no path is given, it checks for the error on the present control.
-     * @param {?} errorCode
-     * @param {?=} path
-     * @return {?}
-     */
-    AbstractControlDirective.prototype.hasError = function (errorCode, path) {
-        return this.control ? this.control.hasError(errorCode, path) : false;
-    };
-    /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
-     * returns null or undefined.
-     *
-     * If no path is given, it checks for the error on the present control.
-     * @param {?} errorCode
-     * @param {?=} path
-     * @return {?}
-     */
-    AbstractControlDirective.prototype.getError = function (errorCode, path) {
-        return this.control ? this.control.getError(errorCode, path) : null;
-    };
-    return AbstractControlDirective;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * A directive that contains multiple {\@link NgControl}s.
- *
- * Only used by the forms module.
- *
- * \@stable
- * @abstract
- */
-var ControlContainer = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](ControlContainer, _super);
-    function ControlContainer() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    Object.defineProperty(ControlContainer.prototype, "formDirective", {
-        /**
-         * Get the form to which this container belongs.
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ControlContainer.prototype, "path", {
-        /**
-         * Get the path to this container.
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    return ControlContainer;
-}(AbstractControlDirective));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} value
- * @return {?}
- */
-function isEmptyInputValue(value) {
-    // we don't check for string here so it also works with arrays
-    return value == null || value.length === 0;
-}
-/**
- * Providers for validators to be used for {\@link FormControl}s in a form.
- *
- * Provide this using `multi: true` to add validators.
- *
- * \@stable
- */
-var NG_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgValidators');
-/**
- * Providers for asynchronous validators to be used for {\@link FormControl}s
- * in a form.
- *
- * Provide this using `multi: true` to add validators.
- *
- * See {\@link NG_VALIDATORS} for more details.
- *
- * \@stable
- */
-var NG_ASYNC_VALIDATORS = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgAsyncValidators');
-var EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/;
-/**
- * Provides a set of validators used by form controls.
- *
- * A validator is a function that processes a {\@link FormControl} or collection of
- * controls and returns a map of errors. A null map means that validation has passed.
- *
- * ### Example
- *
- * ```typescript
- * var loginControl = new FormControl("", Validators.required)
- * ```
- *
- * \@stable
- */
-var Validators = (function () {
-    function Validators() {
-    }
-    /**
-     * Validator that requires controls to have a value greater than a number.
-     * @param {?} min
-     * @return {?}
-     */
-    Validators.min = function (min) {
-        return function (control) {
-            if (isEmptyInputValue(control.value) || isEmptyInputValue(min)) {
-                return null; // don't validate empty values to allow optional controls
-            }
-            var /** @type {?} */ value = parseFloat(control.value);
-            // Controls with NaN values after parsing should be treated as not having a
-            // minimum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-min
-            return !isNaN(value) && value < min ? { 'min': { 'min': min, 'actual': control.value } } : null;
-        };
-    };
-    /**
-     * Validator that requires controls to have a value less than a number.
-     * @param {?} max
-     * @return {?}
-     */
-    Validators.max = function (max) {
-        return function (control) {
-            if (isEmptyInputValue(control.value) || isEmptyInputValue(max)) {
-                return null; // don't validate empty values to allow optional controls
-            }
-            var /** @type {?} */ value = parseFloat(control.value);
-            // Controls with NaN values after parsing should be treated as not having a
-            // maximum, per the HTML forms spec: https://www.w3.org/TR/html5/forms.html#attr-input-max
-            return !isNaN(value) && value > max ? { 'max': { 'max': max, 'actual': control.value } } : null;
-        };
-    };
-    /**
-     * Validator that requires controls to have a non-empty value.
-     * @param {?} control
-     * @return {?}
-     */
-    Validators.required = function (control) {
-        return isEmptyInputValue(control.value) ? { 'required': true } : null;
-    };
-    /**
-     * Validator that requires control value to be true.
-     * @param {?} control
-     * @return {?}
-     */
-    Validators.requiredTrue = function (control) {
-        return control.value === true ? null : { 'required': true };
-    };
-    /**
-     * Validator that performs email validation.
-     * @param {?} control
-     * @return {?}
-     */
-    Validators.email = function (control) {
-        return EMAIL_REGEXP.test(control.value) ? null : { 'email': true };
-    };
-    /**
-     * Validator that requires controls to have a value of a minimum length.
-     * @param {?} minLength
-     * @return {?}
-     */
-    Validators.minLength = function (minLength) {
-        return function (control) {
-            if (isEmptyInputValue(control.value)) {
-                return null; // don't validate empty values to allow optional controls
-            }
-            var /** @type {?} */ length = control.value ? control.value.length : 0;
-            return length < minLength ?
-                { 'minlength': { 'requiredLength': minLength, 'actualLength': length } } :
-                null;
-        };
-    };
-    /**
-     * Validator that requires controls to have a value of a maximum length.
-     * @param {?} maxLength
-     * @return {?}
-     */
-    Validators.maxLength = function (maxLength) {
-        return function (control) {
-            var /** @type {?} */ length = control.value ? control.value.length : 0;
-            return length > maxLength ?
-                { 'maxlength': { 'requiredLength': maxLength, 'actualLength': length } } :
-                null;
-        };
-    };
-    /**
-     * Validator that requires a control to match a regex to its value.
-     * @param {?} pattern
-     * @return {?}
-     */
-    Validators.pattern = function (pattern) {
-        if (!pattern)
-            return Validators.nullValidator;
-        var /** @type {?} */ regex;
-        var /** @type {?} */ regexStr;
-        if (typeof pattern === 'string') {
-            regexStr = "^" + pattern + "$";
-            regex = new RegExp(regexStr);
-        }
-        else {
-            regexStr = pattern.toString();
-            regex = pattern;
-        }
-        return function (control) {
-            if (isEmptyInputValue(control.value)) {
-                return null; // don't validate empty values to allow optional controls
-            }
-            var /** @type {?} */ value = control.value;
-            return regex.test(value) ? null :
-                { 'pattern': { 'requiredPattern': regexStr, 'actualValue': value } };
-        };
-    };
-    /**
-     * No-op validator.
-     * @param {?} c
-     * @return {?}
-     */
-    Validators.nullValidator = function (c) { return null; };
-    /**
-     * @param {?} validators
-     * @return {?}
-     */
-    Validators.compose = function (validators) {
-        if (!validators)
-            return null;
-        var /** @type {?} */ presentValidators = (validators.filter(isPresent));
-        if (presentValidators.length == 0)
-            return null;
-        return function (control) {
-            return _mergeErrors(_executeValidators(control, presentValidators));
-        };
-    };
-    /**
-     * @param {?} validators
-     * @return {?}
-     */
-    Validators.composeAsync = function (validators) {
-        if (!validators)
-            return null;
-        var /** @type {?} */ presentValidators = (validators.filter(isPresent));
-        if (presentValidators.length == 0)
-            return null;
-        return function (control) {
-            var /** @type {?} */ observables = _executeAsyncValidators(control, presentValidators).map(toObservable);
-            return __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_forkJoin__["forkJoin"])(observables), _mergeErrors);
-        };
-    };
-    return Validators;
-}());
-/**
- * @param {?} o
- * @return {?}
- */
-function isPresent(o) {
-    return o != null;
-}
-/**
- * @param {?} r
- * @return {?}
- */
-function toObservable(r) {
-    var /** @type {?} */ obs = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["W" /* ɵisPromise */])(r) ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3_rxjs_observable_fromPromise__["fromPromise"])(r) : r;
-    if (!(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["X" /* ɵisObservable */])(obs))) {
-        throw new Error("Expected validator to return Promise or Observable.");
-    }
-    return obs;
-}
-/**
- * @param {?} control
- * @param {?} validators
- * @return {?}
- */
-function _executeValidators(control, validators) {
-    return validators.map(function (v) { return v(control); });
-}
-/**
- * @param {?} control
- * @param {?} validators
- * @return {?}
- */
-function _executeAsyncValidators(control, validators) {
-    return validators.map(function (v) { return v(control); });
-}
-/**
- * @param {?} arrayOfErrors
- * @return {?}
- */
-function _mergeErrors(arrayOfErrors) {
-    var /** @type {?} */ res = arrayOfErrors.reduce(function (res, errors) {
-        return errors != null ? Object.assign({}, /** @type {?} */ ((res)), errors) : ((res));
-    }, {});
-    return Object.keys(res).length === 0 ? null : res;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Used to provide a {\@link ControlValueAccessor} for form controls.
- *
- * See {\@link DefaultValueAccessor} for how to implement one.
- * \@stable
- */
-var NG_VALUE_ACCESSOR = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('NgValueAccessor');
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var CHECKBOX_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return CheckboxControlValueAccessor; }),
-    multi: true,
-};
-/**
- * The accessor for writing a value and listening to changes on a checkbox input element.
- *
- *  ### Example
- *  ```
- *  <input type="checkbox" name="rememberLogin" ngModel>
- *  ```
- *
- *  \@stable
- */
-var CheckboxControlValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     */
-    function CheckboxControlValueAccessor(_renderer, _elementRef) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    CheckboxControlValueAccessor.prototype.writeValue = function (value) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', value);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    CheckboxControlValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    CheckboxControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    CheckboxControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    return CheckboxControlValueAccessor;
-}());
-CheckboxControlValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input[type=checkbox][formControlName],input[type=checkbox][formControl],input[type=checkbox][ngModel]',
-                host: { '(change)': 'onChange($event.target.checked)', '(blur)': 'onTouched()' },
-                providers: [CHECKBOX_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-CheckboxControlValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var DEFAULT_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return DefaultValueAccessor; }),
-    multi: true
-};
-/**
- * We must check whether the agent is Android because composition events
- * behave differently between iOS and Android.
- * @return {?}
- */
-function _isAndroid() {
-    var /** @type {?} */ userAgent = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* ɵgetDOM */])() ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["b" /* ɵgetDOM */])().getUserAgent() : '';
-    return /android (\d+)/.test(userAgent.toLowerCase());
-}
-/**
- * Turn this mode on if you want form directives to buffer IME input until compositionend
- * \@experimental
- */
-var COMPOSITION_BUFFER_MODE = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["h" /* InjectionToken */]('CompositionEventMode');
-/**
- * The default accessor for writing a value and listening to changes that is used by the
- * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
- *
- *  ### Example
- *  ```
- *  <input type="text" name="searchQuery" ngModel>
- *  ```
- *
- *  \@stable
- */
-var DefaultValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     * @param {?} _compositionMode
-     */
-    function DefaultValueAccessor(_renderer, _elementRef, _compositionMode) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this._compositionMode = _compositionMode;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-        /**
-         * Whether the user is creating a composition string (IME events).
-         */
-        this._composing = false;
-        if (this._compositionMode == null) {
-            this._compositionMode = !_isAndroid();
-        }
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype.writeValue = function (value) {
-        var /** @type {?} */ normalizedValue = value == null ? '' : value;
-        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype.registerOnChange = function (fn) { this.onChange = fn; };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype._handleInput = function (value) {
-        if (!this._compositionMode || (this._compositionMode && !this._composing)) {
-            this.onChange(value);
-        }
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype._compositionStart = function () { this._composing = true; };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    DefaultValueAccessor.prototype._compositionEnd = function (value) {
-        this._composing = false;
-        this._compositionMode && this.onChange(value);
-    };
-    return DefaultValueAccessor;
-}());
-DefaultValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input:not([type=checkbox])[formControlName],textarea[formControlName],input:not([type=checkbox])[formControl],textarea[formControl],input:not([type=checkbox])[ngModel],textarea[ngModel],[ngDefaultControl]',
-                // TODO: vsavkin replace the above selector with the one below it once
-                // https://github.com/angular/angular/issues/3011 is implemented
-                // selector: '[ngModel],[formControl],[formControlName]',
-                host: {
-                    '(input)': '_handleInput($event.target.value)',
-                    '(blur)': 'onTouched()',
-                    '(compositionstart)': '_compositionStart()',
-                    '(compositionend)': '_compositionEnd($event.target.value)'
-                },
-                providers: [DEFAULT_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-DefaultValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [COMPOSITION_BUFFER_MODE,] },] },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} validator
- * @return {?}
- */
-function normalizeValidator(validator) {
-    if (((validator)).validate) {
-        return function (c) { return ((validator)).validate(c); };
-    }
-    else {
-        return (validator);
-    }
-}
-/**
- * @param {?} validator
- * @return {?}
- */
-function normalizeAsyncValidator(validator) {
-    if (((validator)).validate) {
-        return function (c) { return ((validator)).validate(c); };
-    }
-    else {
-        return (validator);
-    }
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var NUMBER_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NumberValueAccessor; }),
-    multi: true
-};
-/**
- * The accessor for writing a number value and listening to changes that is used by the
- * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
- *
- *  ### Example
- *  ```
- *  <input type="number" [(ngModel)]="age">
- *  ```
- */
-var NumberValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     */
-    function NumberValueAccessor(_renderer, _elementRef) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    NumberValueAccessor.prototype.writeValue = function (value) {
-        // The value needs to be normalized for IE9, otherwise it is set to 'null' when null
-        var /** @type {?} */ normalizedValue = value == null ? '' : value;
-        this._renderer.setProperty(this._elementRef.nativeElement, 'value', normalizedValue);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    NumberValueAccessor.prototype.registerOnChange = function (fn) {
-        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    NumberValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    NumberValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    return NumberValueAccessor;
-}());
-NumberValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input[type=number][formControlName],input[type=number][formControl],input[type=number][ngModel]',
-                host: {
-                    '(change)': 'onChange($event.target.value)',
-                    '(input)': 'onChange($event.target.value)',
-                    '(blur)': 'onTouched()'
-                },
-                providers: [NUMBER_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-NumberValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @return {?}
- */
-function unimplemented() {
-    throw new Error('unimplemented');
-}
-/**
- * A base class that all control directive extend.
- * It binds a {\@link FormControl} object to a DOM element.
- *
- * Used internally by Angular forms.
- *
- * \@stable
- * @abstract
- */
-var NgControl = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControl, _super);
-    function NgControl() {
-        var _this = _super.apply(this, arguments) || this;
-        /**
-         * \@internal
-         */
-        _this._parent = null;
-        _this.name = null;
-        _this.valueAccessor = null;
-        /**
-         * \@internal
-         */
-        _this._rawValidators = [];
-        /**
-         * \@internal
-         */
-        _this._rawAsyncValidators = [];
-        return _this;
-    }
-    Object.defineProperty(NgControl.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return (unimplemented()); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgControl.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return (unimplemented()); },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @abstract
-     * @param {?} newValue
-     * @return {?}
-     */
-    NgControl.prototype.viewToModelUpdate = function (newValue) { };
-    return NgControl;
-}(AbstractControlDirective));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var RADIO_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RadioControlValueAccessor; }),
-    multi: true
-};
-/**
- * Internal class used by Angular to uncheck radio buttons with the matching name.
- */
-var RadioControlRegistry = (function () {
-    function RadioControlRegistry() {
-        this._accessors = [];
-    }
-    /**
-     * @param {?} control
-     * @param {?} accessor
-     * @return {?}
-     */
-    RadioControlRegistry.prototype.add = function (control, accessor) {
-        this._accessors.push([control, accessor]);
-    };
-    /**
-     * @param {?} accessor
-     * @return {?}
-     */
-    RadioControlRegistry.prototype.remove = function (accessor) {
-        for (var /** @type {?} */ i = this._accessors.length - 1; i >= 0; --i) {
-            if (this._accessors[i][1] === accessor) {
-                this._accessors.splice(i, 1);
-                return;
-            }
-        }
-    };
-    /**
-     * @param {?} accessor
-     * @return {?}
-     */
-    RadioControlRegistry.prototype.select = function (accessor) {
-        var _this = this;
-        this._accessors.forEach(function (c) {
-            if (_this._isSameGroup(c, accessor) && c[1] !== accessor) {
-                c[1].fireUncheck(accessor.value);
-            }
-        });
-    };
-    /**
-     * @param {?} controlPair
-     * @param {?} accessor
-     * @return {?}
-     */
-    RadioControlRegistry.prototype._isSameGroup = function (controlPair, accessor) {
-        if (!controlPair[0].control)
-            return false;
-        return controlPair[0]._parent === accessor._control._parent &&
-            controlPair[1].name === accessor.name;
-    };
-    return RadioControlRegistry;
-}());
-RadioControlRegistry.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Injectable */] },
-];
-/**
- * @nocollapse
- */
-RadioControlRegistry.ctorParameters = function () { return []; };
-/**
- * \@whatItDoes Writes radio control values and listens to radio control changes.
- *
- * Used by {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName}
- * to keep the view synced with the {\@link FormControl} model.
- *
- * \@howToUse
- *
- * If you have imported the {\@link FormsModule} or the {\@link ReactiveFormsModule}, this
- * value accessor will be active on any radio control that has a form directive. You do
- * **not** need to add a special selector to activate it.
- *
- * ### How to use radio buttons with form directives
- *
- * To use radio buttons in a template-driven form, you'll want to ensure that radio buttons
- * in the same group have the same `name` attribute.  Radio buttons with different `name`
- * attributes do not affect each other.
- *
- * {\@example forms/ts/radioButtons/radio_button_example.ts region='TemplateDriven'}
- *
- * When using radio buttons in a reactive form, radio buttons in the same group should have the
- * same `formControlName`. You can also add a `name` attribute, but it's optional.
- *
- * {\@example forms/ts/reactiveRadioButtons/reactive_radio_button_example.ts region='Reactive'}
- *
- *  * **npm package**: `\@angular/forms`
- *
- *  \@stable
- */
-var RadioControlValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     * @param {?} _registry
-     * @param {?} _injector
-     */
-    function RadioControlValueAccessor(_renderer, _elementRef, _registry, _injector) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this._registry = _registry;
-        this._injector = _injector;
-        this.onChange = function () { };
-        this.onTouched = function () { };
-    }
-    /**
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.ngOnInit = function () {
-        this._control = this._injector.get(NgControl);
-        this._checkName();
-        this._registry.add(this._control, this);
-    };
-    /**
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.ngOnDestroy = function () { this._registry.remove(this); };
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.writeValue = function (value) {
-        this._state = value === this.value;
-        this._renderer.setProperty(this._elementRef.nativeElement, 'checked', this._state);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.registerOnChange = function (fn) {
-        var _this = this;
-        this._fn = fn;
-        this.onChange = function () {
-            fn(_this.value);
-            _this._registry.select(_this);
-        };
-    };
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.fireUncheck = function (value) { this.writeValue(value); };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    /**
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype._checkName = function () {
-        if (this.name && this.formControlName && this.name !== this.formControlName) {
-            this._throwNameError();
-        }
-        if (!this.name && this.formControlName)
-            this.name = this.formControlName;
-    };
-    /**
-     * @return {?}
-     */
-    RadioControlValueAccessor.prototype._throwNameError = function () {
-        throw new Error("\n      If you define both a name and a formControlName attribute on your radio button, their values\n      must match. Ex: <input type=\"radio\" formControlName=\"food\" name=\"food\">\n    ");
-    };
-    return RadioControlValueAccessor;
-}());
-RadioControlValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input[type=radio][formControlName],input[type=radio][formControl],input[type=radio][ngModel]',
-                host: { '(change)': 'onChange()', '(blur)': 'onTouched()' },
-                providers: [RADIO_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-RadioControlValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-    { type: RadioControlRegistry, },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Injector */], },
-]; };
-RadioControlValueAccessor.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-    'formControlName': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var RANGE_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RangeValueAccessor; }),
-    multi: true
-};
-/**
- * The accessor for writing a range value and listening to changes that is used by the
- * {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName} directives.
- *
- *  ### Example
- *  ```
- *  <input type="range" [(ngModel)]="age" >
- *  ```
- */
-var RangeValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     */
-    function RangeValueAccessor(_renderer, _elementRef) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    RangeValueAccessor.prototype.writeValue = function (value) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'value', parseFloat(value));
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    RangeValueAccessor.prototype.registerOnChange = function (fn) {
-        this.onChange = function (value) { fn(value == '' ? null : parseFloat(value)); };
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    RangeValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    RangeValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    return RangeValueAccessor;
-}());
-RangeValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel]',
-                host: {
-                    '(change)': 'onChange($event.target.value)',
-                    '(input)': 'onChange($event.target.value)',
-                    '(blur)': 'onTouched()'
-                },
-                providers: [RANGE_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-RangeValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var SELECT_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return SelectControlValueAccessor; }),
-    multi: true
-};
-/**
- * @param {?} id
- * @param {?} value
- * @return {?}
- */
-function _buildValueString(id, value) {
-    if (id == null)
-        return "" + value;
-    if (value && typeof value === 'object')
-        value = 'Object';
-    return (id + ": " + value).slice(0, 50);
-}
-/**
- * @param {?} valueString
- * @return {?}
- */
-function _extractId(valueString) {
-    return valueString.split(':')[0];
-}
-/**
- * \@whatItDoes Writes values and listens to changes on a select element.
- *
- * Used by {\@link NgModel}, {\@link FormControlDirective}, and {\@link FormControlName}
- * to keep the view synced with the {\@link FormControl} model.
- *
- * \@howToUse
- *
- * If you have imported the {\@link FormsModule} or the {\@link ReactiveFormsModule}, this
- * value accessor will be active on any select control that has a form directive. You do
- * **not** need to add a special selector to activate it.
- *
- * ### How to use select controls with form directives
- *
- * To use a select in a template-driven form, simply add an `ngModel` and a `name`
- * attribute to the main `<select>` tag.
- *
- * If your option values are simple strings, you can bind to the normal `value` property
- * on the option.  If your option values happen to be objects (and you'd like to save the
- * selection in your form as an object), use `ngValue` instead:
- *
- * {\@example forms/ts/selectControl/select_control_example.ts region='Component'}
- *
- * In reactive forms, you'll also want to add your form directive (`formControlName` or
- * `formControl`) on the main `<select>` tag. Like in the former example, you have the
- * choice of binding to the  `value` or `ngValue` property on the select's options.
- *
- * {\@example forms/ts/reactiveSelectControl/reactive_select_control_example.ts region='Component'}
- *
- * ### Caveat: Option selection
- *
- * Angular uses object identity to select option. It's possible for the identities of items
- * to change while the data does not. This can happen, for example, if the items are produced
- * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
- * second response will produce objects with different identities.
- *
- * To customize the default option comparison algorithm, `<select>` supports `compareWith` input.
- * `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
- * If `compareWith` is given, Angular selects option by the return value of the function.
- *
- * #### Syntax
- *
- * ```
- * <select [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
- *     <option *ngFor="let country of countries" [ngValue]="country">
- *         {{country.name}}
- *     </option>
- * </select>
- *
- * compareFn(c1: Country, c2: Country): boolean {
- *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
- * }
- * ```
- *
- * Note: We listen to the 'change' event because 'input' events aren't fired
- * for selects in Firefox and IE:
- * https://bugzilla.mozilla.org/show_bug.cgi?id=1024350
- * https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/4660045/
- *
- * * **npm package**: `\@angular/forms`
- *
- * \@stable
- */
-var SelectControlValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     */
-    function SelectControlValueAccessor(_renderer, _elementRef) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        /**
-         * \@internal
-         */
-        this._optionMap = new Map();
-        /**
-         * \@internal
-         */
-        this._idCounter = 0;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-        this._compareWith = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */];
-    }
-    Object.defineProperty(SelectControlValueAccessor.prototype, "compareWith", {
-        /**
-         * @param {?} fn
-         * @return {?}
-         */
-        set: function (fn) {
-            if (typeof fn !== 'function') {
-                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
-            }
-            this._compareWith = fn;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype.writeValue = function (value) {
-        this.value = value;
-        var /** @type {?} */ id = this._getOptionId(value);
-        if (id == null) {
-            this._renderer.setProperty(this._elementRef.nativeElement, 'selectedIndex', -1);
-        }
-        var /** @type {?} */ valueString = _buildValueString(id, value);
-        this._renderer.setProperty(this._elementRef.nativeElement, 'value', valueString);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype.registerOnChange = function (fn) {
-        var _this = this;
-        this.onChange = function (valueString) {
-            _this.value = _this._getOptionValue(valueString);
-            fn(_this.value);
-        };
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype._registerOption = function () { return (this._idCounter++).toString(); };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype._getOptionId = function (value) {
-        for (var _i = 0, _a = Array.from(this._optionMap.keys()); _i < _a.length; _i++) {
-            var id = _a[_i];
-            if (this._compareWith(this._optionMap.get(id), value))
-                return id;
-        }
-        return null;
-    };
-    /**
-     * \@internal
-     * @param {?} valueString
-     * @return {?}
-     */
-    SelectControlValueAccessor.prototype._getOptionValue = function (valueString) {
-        var /** @type {?} */ id = _extractId(valueString);
-        return this._optionMap.has(id) ? this._optionMap.get(id) : valueString;
-    };
-    return SelectControlValueAccessor;
-}());
-SelectControlValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'select:not([multiple])[formControlName],select:not([multiple])[formControl],select:not([multiple])[ngModel]',
-                host: { '(change)': 'onChange($event.target.value)', '(blur)': 'onTouched()' },
-                providers: [SELECT_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-SelectControlValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-]; };
-SelectControlValueAccessor.propDecorators = {
-    'compareWith': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * \@whatItDoes Marks `<option>` as dynamic, so Angular can be notified when options change.
- *
- * \@howToUse
- *
- * See docs for {\@link SelectControlValueAccessor} for usage examples.
- *
- * \@stable
- */
-var NgSelectOption = (function () {
-    /**
-     * @param {?} _element
-     * @param {?} _renderer
-     * @param {?} _select
-     */
-    function NgSelectOption(_element, _renderer, _select) {
-        this._element = _element;
-        this._renderer = _renderer;
-        this._select = _select;
-        if (this._select)
-            this.id = this._select._registerOption();
-    }
-    Object.defineProperty(NgSelectOption.prototype, "ngValue", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            if (this._select == null)
-                return;
-            this._select._optionMap.set(this.id, value);
-            this._setElementValue(_buildValueString(this.id, value));
-            this._select.writeValue(this._select.value);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgSelectOption.prototype, "value", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            this._setElementValue(value);
-            if (this._select)
-                this._select.writeValue(this._select.value);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    NgSelectOption.prototype._setElementValue = function (value) {
-        this._renderer.setProperty(this._element.nativeElement, 'value', value);
-    };
-    /**
-     * @return {?}
-     */
-    NgSelectOption.prototype.ngOnDestroy = function () {
-        if (this._select) {
-            this._select._optionMap.delete(this.id);
-            this._select.writeValue(this._select.value);
-        }
-    };
-    return NgSelectOption;
-}());
-NgSelectOption.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: 'option' },] },
-];
-/**
- * @nocollapse
- */
-NgSelectOption.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: SelectControlValueAccessor, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
-]; };
-NgSelectOption.propDecorators = {
-    'ngValue': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngValue',] },],
-    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['value',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var SELECT_MULTIPLE_VALUE_ACCESSOR = {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return SelectMultipleControlValueAccessor; }),
-    multi: true
-};
-/**
- * @param {?} id
- * @param {?} value
- * @return {?}
- */
-function _buildValueString$1(id, value) {
-    if (id == null)
-        return "" + value;
-    if (typeof value === 'string')
-        value = "'" + value + "'";
-    if (value && typeof value === 'object')
-        value = 'Object';
-    return (id + ": " + value).slice(0, 50);
-}
-/**
- * @param {?} valueString
- * @return {?}
- */
-function _extractId$1(valueString) {
-    return valueString.split(':')[0];
-}
-/**
- * The accessor for writing a value and listening to changes on a select element.
- *
- *  ### Caveat: Options selection
- *
- * Angular uses object identity to select options. It's possible for the identities of items
- * to change while the data does not. This can happen, for example, if the items are produced
- * from an RPC to the server, and that RPC is re-run. Even if the data hasn't changed, the
- * second response will produce objects with different identities.
- *
- * To customize the default option comparison algorithm, `<select multiple>` supports `compareWith`
- * input. `compareWith` takes a **function** which has two arguments: `option1` and `option2`.
- * If `compareWith` is given, Angular selects options by the return value of the function.
- *
- * #### Syntax
- *
- * ```
- * <select multiple [compareWith]="compareFn"  [(ngModel)]="selectedCountries">
- *     <option *ngFor="let country of countries" [ngValue]="country">
- *         {{country.name}}
- *     </option>
- * </select>
- *
- * compareFn(c1: Country, c2: Country): boolean {
- *     return c1 && c2 ? c1.id === c2.id : c1 === c2;
- * }
- * ```
- *
- * \@stable
- */
-var SelectMultipleControlValueAccessor = (function () {
-    /**
-     * @param {?} _renderer
-     * @param {?} _elementRef
-     */
-    function SelectMultipleControlValueAccessor(_renderer, _elementRef) {
-        this._renderer = _renderer;
-        this._elementRef = _elementRef;
-        /**
-         * \@internal
-         */
-        this._optionMap = new Map();
-        /**
-         * \@internal
-         */
-        this._idCounter = 0;
-        this.onChange = function (_) { };
-        this.onTouched = function () { };
-        this._compareWith = __WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */];
-    }
-    Object.defineProperty(SelectMultipleControlValueAccessor.prototype, "compareWith", {
-        /**
-         * @param {?} fn
-         * @return {?}
-         */
-        set: function (fn) {
-            if (typeof fn !== 'function') {
-                throw new Error("compareWith must be a function, but received " + JSON.stringify(fn));
-            }
-            this._compareWith = fn;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype.writeValue = function (value) {
-        var _this = this;
-        this.value = value;
-        var /** @type {?} */ optionSelectedStateSetter;
-        if (Array.isArray(value)) {
-            // convert values to ids
-            var /** @type {?} */ ids_1 = value.map(function (v) { return _this._getOptionId(v); });
-            optionSelectedStateSetter = function (opt, o) { opt._setSelected(ids_1.indexOf(o.toString()) > -1); };
-        }
-        else {
-            optionSelectedStateSetter = function (opt, o) { opt._setSelected(false); };
-        }
-        this._optionMap.forEach(optionSelectedStateSetter);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype.registerOnChange = function (fn) {
-        var _this = this;
-        this.onChange = function (_) {
-            var /** @type {?} */ selected = [];
-            if (_.hasOwnProperty('selectedOptions')) {
-                var /** @type {?} */ options = _.selectedOptions;
-                for (var /** @type {?} */ i = 0; i < options.length; i++) {
-                    var /** @type {?} */ opt = options.item(i);
-                    var /** @type {?} */ val = _this._getOptionValue(opt.value);
-                    selected.push(val);
-                }
-            }
-            else {
-                var /** @type {?} */ options = (_.options);
-                for (var /** @type {?} */ i = 0; i < options.length; i++) {
-                    var /** @type {?} */ opt = options.item(i);
-                    if (opt.selected) {
-                        var /** @type {?} */ val = _this._getOptionValue(opt.value);
-                        selected.push(val);
-                    }
-                }
-            }
-            _this.value = selected;
-            fn(selected);
-        };
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype.registerOnTouched = function (fn) { this.onTouched = fn; };
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype._registerOption = function (value) {
-        var /** @type {?} */ id = (this._idCounter++).toString();
-        this._optionMap.set(id, value);
-        return id;
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype._getOptionId = function (value) {
-        for (var _i = 0, _a = Array.from(this._optionMap.keys()); _i < _a.length; _i++) {
-            var id = _a[_i];
-            if (this._compareWith(/** @type {?} */ ((this._optionMap.get(id)))._value, value))
-                return id;
-        }
-        return null;
-    };
-    /**
-     * \@internal
-     * @param {?} valueString
-     * @return {?}
-     */
-    SelectMultipleControlValueAccessor.prototype._getOptionValue = function (valueString) {
-        var /** @type {?} */ id = _extractId$1(valueString);
-        return this._optionMap.has(id) ? ((this._optionMap.get(id)))._value : valueString;
-    };
-    return SelectMultipleControlValueAccessor;
-}());
-SelectMultipleControlValueAccessor.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'select[multiple][formControlName],select[multiple][formControl],select[multiple][ngModel]',
-                host: { '(change)': 'onChange($event.target)', '(blur)': 'onTouched()' },
-                providers: [SELECT_MULTIPLE_VALUE_ACCESSOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-SelectMultipleControlValueAccessor.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-]; };
-SelectMultipleControlValueAccessor.propDecorators = {
-    'compareWith': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * Marks `<option>` as dynamic, so Angular can be notified when options change.
- *
- * ### Example
- *
- * ```
- * <select multiple name="city" ngModel>
- *   <option *ngFor="let c of cities" [value]="c"></option>
- * </select>
- * ```
- */
-var NgSelectMultipleOption = (function () {
-    /**
-     * @param {?} _element
-     * @param {?} _renderer
-     * @param {?} _select
-     */
-    function NgSelectMultipleOption(_element, _renderer, _select) {
-        this._element = _element;
-        this._renderer = _renderer;
-        this._select = _select;
-        if (this._select) {
-            this.id = this._select._registerOption(this);
-        }
-    }
-    Object.defineProperty(NgSelectMultipleOption.prototype, "ngValue", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            if (this._select == null)
-                return;
-            this._value = value;
-            this._setElementValue(_buildValueString$1(this.id, value));
-            this._select.writeValue(this._select.value);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgSelectMultipleOption.prototype, "value", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            if (this._select) {
-                this._value = value;
-                this._setElementValue(_buildValueString$1(this.id, value));
-                this._select.writeValue(this._select.value);
-            }
-            else {
-                this._setElementValue(value);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    NgSelectMultipleOption.prototype._setElementValue = function (value) {
-        this._renderer.setProperty(this._element.nativeElement, 'value', value);
-    };
-    /**
-     * \@internal
-     * @param {?} selected
-     * @return {?}
-     */
-    NgSelectMultipleOption.prototype._setSelected = function (selected) {
-        this._renderer.setProperty(this._element.nativeElement, 'selected', selected);
-    };
-    /**
-     * @return {?}
-     */
-    NgSelectMultipleOption.prototype.ngOnDestroy = function () {
-        if (this._select) {
-            this._select._optionMap.delete(this.id);
-            this._select.writeValue(this._select.value);
-        }
-    };
-    return NgSelectMultipleOption;
-}());
-NgSelectMultipleOption.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: 'option' },] },
-];
-/**
- * @nocollapse
- */
-NgSelectMultipleOption.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["N" /* ElementRef */], },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_1" /* Renderer2 */], },
-    { type: SelectMultipleControlValueAccessor, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
-]; };
-NgSelectMultipleOption.propDecorators = {
-    'ngValue': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngValue',] },],
-    'value': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['value',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} name
- * @param {?} parent
- * @return {?}
- */
-function controlPath(name, parent) {
-    return ((parent.path)).concat([name]);
-}
-/**
- * @param {?} control
- * @param {?} dir
- * @return {?}
- */
-function setUpControl(control, dir) {
-    if (!control)
-        _throwError(dir, 'Cannot find control with');
-    if (!dir.valueAccessor)
-        _throwError(dir, 'No value accessor for form control with');
-    control.validator = Validators.compose([/** @type {?} */ ((control.validator)), dir.validator]);
-    control.asyncValidator = Validators.composeAsync([/** @type {?} */ ((control.asyncValidator)), dir.asyncValidator]); /** @type {?} */
-    ((dir.valueAccessor)).writeValue(control.value); /** @type {?} */
-    ((
-    // view -> model
-    dir.valueAccessor)).registerOnChange(function (newValue) {
-        dir.viewToModelUpdate(newValue);
-        control.markAsDirty();
-        control.setValue(newValue, { emitModelToViewChange: false });
-    }); /** @type {?} */
-    ((
-    // touched
-    dir.valueAccessor)).registerOnTouched(function () { return control.markAsTouched(); });
-    control.registerOnChange(function (newValue, emitModelEvent) {
-        ((
-        // control -> view
-        dir.valueAccessor)).writeValue(newValue);
-        // control -> ngModel
-        if (emitModelEvent)
-            dir.viewToModelUpdate(newValue);
-    });
-    if (((dir.valueAccessor)).setDisabledState) {
-        control.registerOnDisabledChange(function (isDisabled) { /** @type {?} */ ((((dir.valueAccessor)).setDisabledState))(isDisabled); });
-    }
-    // re-run validation when validator binding changes, e.g. minlength=3 -> minlength=4
-    dir._rawValidators.forEach(function (validator) {
-        if (((validator)).registerOnValidatorChange)
-            ((((validator)).registerOnValidatorChange))(function () { return control.updateValueAndValidity(); });
-    });
-    dir._rawAsyncValidators.forEach(function (validator) {
-        if (((validator)).registerOnValidatorChange)
-            ((((validator)).registerOnValidatorChange))(function () { return control.updateValueAndValidity(); });
-    });
-}
-/**
- * @param {?} control
- * @param {?} dir
- * @return {?}
- */
-function cleanUpControl(control, dir) {
-    ((dir.valueAccessor)).registerOnChange(function () { return _noControlError(dir); }); /** @type {?} */
-    ((dir.valueAccessor)).registerOnTouched(function () { return _noControlError(dir); });
-    dir._rawValidators.forEach(function (validator) {
-        if (validator.registerOnValidatorChange) {
-            validator.registerOnValidatorChange(null);
-        }
-    });
-    dir._rawAsyncValidators.forEach(function (validator) {
-        if (validator.registerOnValidatorChange) {
-            validator.registerOnValidatorChange(null);
-        }
-    });
-    if (control)
-        control._clearChangeFns();
-}
-/**
- * @param {?} control
- * @param {?} dir
- * @return {?}
- */
-function setUpFormContainer(control, dir) {
-    if (control == null)
-        _throwError(dir, 'Cannot find control with');
-    control.validator = Validators.compose([control.validator, dir.validator]);
-    control.asyncValidator = Validators.composeAsync([control.asyncValidator, dir.asyncValidator]);
-}
-/**
- * @param {?} dir
- * @return {?}
- */
-function _noControlError(dir) {
-    return _throwError(dir, 'There is no FormControl instance attached to form control element with');
-}
-/**
- * @param {?} dir
- * @param {?} message
- * @return {?}
- */
-function _throwError(dir, message) {
-    var /** @type {?} */ messageEnd;
-    if (((dir.path)).length > 1) {
-        messageEnd = "path: '" + ((dir.path)).join(' -> ') + "'";
-    }
-    else if (((dir.path))[0]) {
-        messageEnd = "name: '" + dir.path + "'";
-    }
-    else {
-        messageEnd = 'unspecified name attribute';
-    }
-    throw new Error(message + " " + messageEnd);
-}
-/**
- * @param {?} validators
- * @return {?}
- */
-function composeValidators(validators) {
-    return validators != null ? Validators.compose(validators.map(normalizeValidator)) : null;
-}
-/**
- * @param {?} validators
- * @return {?}
- */
-function composeAsyncValidators(validators) {
-    return validators != null ? Validators.composeAsync(validators.map(normalizeAsyncValidator)) :
-        null;
-}
-/**
- * @param {?} changes
- * @param {?} viewModel
- * @return {?}
- */
-function isPropertyUpdated(changes, viewModel) {
-    if (!changes.hasOwnProperty('model'))
-        return false;
-    var /** @type {?} */ change = changes['model'];
-    if (change.isFirstChange())
-        return true;
-    return !__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_12" /* ɵlooseIdentical */])(viewModel, change.currentValue);
-}
-var BUILTIN_ACCESSORS = [
-    CheckboxControlValueAccessor,
-    RangeValueAccessor,
-    NumberValueAccessor,
-    SelectControlValueAccessor,
-    SelectMultipleControlValueAccessor,
-    RadioControlValueAccessor,
-];
-/**
- * @param {?} valueAccessor
- * @return {?}
- */
-function isBuiltInAccessor(valueAccessor) {
-    return BUILTIN_ACCESSORS.some(function (a) { return valueAccessor.constructor === a; });
-}
-/**
- * @param {?} dir
- * @param {?} valueAccessors
- * @return {?}
- */
-function selectValueAccessor(dir, valueAccessors) {
-    if (!valueAccessors)
-        return null;
-    var /** @type {?} */ defaultAccessor = undefined;
-    var /** @type {?} */ builtinAccessor = undefined;
-    var /** @type {?} */ customAccessor = undefined;
-    valueAccessors.forEach(function (v) {
-        if (v.constructor === DefaultValueAccessor) {
-            defaultAccessor = v;
-        }
-        else if (isBuiltInAccessor(v)) {
-            if (builtinAccessor)
-                _throwError(dir, 'More than one built-in value accessor matches form control with');
-            builtinAccessor = v;
-        }
-        else {
-            if (customAccessor)
-                _throwError(dir, 'More than one custom value accessor matches form control with');
-            customAccessor = v;
-        }
-    });
-    if (customAccessor)
-        return customAccessor;
-    if (builtinAccessor)
-        return builtinAccessor;
-    if (defaultAccessor)
-        return defaultAccessor;
-    _throwError(dir, 'No valid value accessor for form control with');
-    return null;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * This is a base class for code shared between {\@link NgModelGroup} and {\@link FormGroupName}.
- *
- * \@stable
- */
-var AbstractFormGroupDirective = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](AbstractFormGroupDirective, _super);
-    function AbstractFormGroupDirective() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    /**
-     * @return {?}
-     */
-    AbstractFormGroupDirective.prototype.ngOnInit = function () {
-        this._checkParentType(); /** @type {?} */
-        ((this.formDirective)).addFormGroup(this);
-    };
-    /**
-     * @return {?}
-     */
-    AbstractFormGroupDirective.prototype.ngOnDestroy = function () {
-        if (this.formDirective) {
-            this.formDirective.removeFormGroup(this);
-        }
-    };
-    Object.defineProperty(AbstractFormGroupDirective.prototype, "control", {
-        /**
-         * Get the {\@link FormGroup} backing this binding.
-         * @return {?}
-         */
-        get: function () { return ((this.formDirective)).getFormGroup(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractFormGroupDirective.prototype, "path", {
-        /**
-         * Get the path to this control group.
-         * @return {?}
-         */
-        get: function () { return controlPath(this.name, this._parent); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractFormGroupDirective.prototype, "formDirective", {
-        /**
-         * Get the {\@link Form} to which this group belongs.
-         * @return {?}
-         */
-        get: function () { return this._parent ? this._parent.formDirective : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractFormGroupDirective.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return composeValidators(this._validators); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractFormGroupDirective.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return composeAsyncValidators(this._asyncValidators);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @return {?}
-     */
-    AbstractFormGroupDirective.prototype._checkParentType = function () { };
-    return AbstractFormGroupDirective;
-}(ControlContainer));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var AbstractControlStatus = (function () {
-    /**
-     * @param {?} cd
-     */
-    function AbstractControlStatus(cd) {
-        this._cd = cd;
-    }
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassUntouched", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.untouched : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassTouched", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.touched : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPristine", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.pristine : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassDirty", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.dirty : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassValid", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.valid : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassInvalid", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.invalid : false; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlStatus.prototype, "ngClassPending", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._cd.control ? this._cd.control.pending : false; },
-        enumerable: true,
-        configurable: true
-    });
-    return AbstractControlStatus;
-}());
-var ngControlStatusHost = {
-    '[class.ng-untouched]': 'ngClassUntouched',
-    '[class.ng-touched]': 'ngClassTouched',
-    '[class.ng-pristine]': 'ngClassPristine',
-    '[class.ng-dirty]': 'ngClassDirty',
-    '[class.ng-valid]': 'ngClassValid',
-    '[class.ng-invalid]': 'ngClassInvalid',
-    '[class.ng-pending]': 'ngClassPending',
-};
-/**
- * Directive automatically applied to Angular form controls that sets CSS classes
- * based on control status. The following classes are applied as the properties
- * become true:
- *
- * * ng-valid
- * * ng-invalid
- * * ng-pending
- * * ng-pristine
- * * ng-dirty
- * * ng-untouched
- * * ng-touched
- *
- * \@stable
- */
-var NgControlStatus = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControlStatus, _super);
-    /**
-     * @param {?} cd
-     */
-    function NgControlStatus(cd) {
-        return _super.call(this, cd) || this;
-    }
-    return NgControlStatus;
-}(AbstractControlStatus));
-NgControlStatus.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControlName],[ngModel],[formControl]', host: ngControlStatusHost },] },
-];
-/**
- * @nocollapse
- */
-NgControlStatus.ctorParameters = function () { return [
-    { type: NgControl, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] },] },
-]; };
-/**
- * Directive automatically applied to Angular form groups that sets CSS classes
- * based on control status (valid/invalid/dirty/etc).
- *
- * \@stable
- */
-var NgControlStatusGroup = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgControlStatusGroup, _super);
-    /**
-     * @param {?} cd
-     */
-    function NgControlStatusGroup(cd) {
-        return _super.call(this, cd) || this;
-    }
-    return NgControlStatusGroup;
-}(AbstractControlStatus));
-NgControlStatusGroup.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[formGroupName],[formArrayName],[ngModelGroup],[formGroup],form:not([ngNoForm]),[ngForm]',
-                host: ngControlStatusHost
-            },] },
-];
-/**
- * @nocollapse
- */
-NgControlStatusGroup.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] },] },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Indicates that a FormControl is valid, i.e. that no errors exist in the input value.
- */
-var VALID = 'VALID';
-/**
- * Indicates that a FormControl is invalid, i.e. that an error exists in the input value.
- */
-var INVALID = 'INVALID';
-/**
- * Indicates that a FormControl is pending, i.e. that async validation is occurring and
- * errors are not yet available for the input value.
- */
-var PENDING = 'PENDING';
-/**
- * Indicates that a FormControl is disabled, i.e. that the control is exempt from ancestor
- * calculations of validity or value.
- */
-var DISABLED = 'DISABLED';
-/**
- * @param {?} control
- * @param {?} path
- * @param {?} delimiter
- * @return {?}
- */
-function _find(control, path, delimiter) {
-    if (path == null)
-        return null;
-    if (!(path instanceof Array)) {
-        path = ((path)).split(delimiter);
-    }
-    if (path instanceof Array && (path.length === 0))
-        return null;
-    return ((path)).reduce(function (v, name) {
-        if (v instanceof FormGroup) {
-            return v.controls[name] || null;
-        }
-        if (v instanceof FormArray) {
-            return v.at(/** @type {?} */ (name)) || null;
-        }
-        return null;
-    }, control);
-}
-/**
- * @param {?=} validator
- * @return {?}
- */
-function coerceToValidator(validator) {
-    return Array.isArray(validator) ? composeValidators(validator) : validator || null;
-}
-/**
- * @param {?=} asyncValidator
- * @return {?}
- */
-function coerceToAsyncValidator(asyncValidator) {
-    return Array.isArray(asyncValidator) ? composeAsyncValidators(asyncValidator) :
-        asyncValidator || null;
-}
-/**
- * \@whatItDoes This is the base class for {\@link FormControl}, {\@link FormGroup}, and
- * {\@link FormArray}.
- *
- * It provides some of the shared behavior that all controls and groups of controls have, like
- * running validators, calculating status, and resetting state. It also defines the properties
- * that are shared between all sub-classes, like `value`, `valid`, and `dirty`. It shouldn't be
- * instantiated directly.
- *
- * \@stable
- * @abstract
- */
-var AbstractControl = (function () {
-    /**
-     * @param {?} validator
-     * @param {?} asyncValidator
-     */
-    function AbstractControl(validator, asyncValidator) {
-        this.validator = validator;
-        this.asyncValidator = asyncValidator;
-        /**
-         * \@internal
-         */
-        this._onCollectionChange = function () { };
-        this._pristine = true;
-        this._touched = false;
-        /**
-         * \@internal
-         */
-        this._onDisabledChange = [];
-    }
-    Object.defineProperty(AbstractControl.prototype, "value", {
-        /**
-         * The value of the control.
-         * @return {?}
-         */
-        get: function () { return this._value; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "parent", {
-        /**
-         * The parent control.
-         * @return {?}
-         */
-        get: function () { return this._parent; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "status", {
-        /**
-         * The validation status of the control. There are four possible
-         * validation statuses:
-         *
-         * * **VALID**:  control has passed all validation checks
-         * * **INVALID**: control has failed at least one validation check
-         * * **PENDING**: control is in the midst of conducting a validation check
-         * * **DISABLED**: control is exempt from validation checks
-         *
-         * These statuses are mutually exclusive, so a control cannot be
-         * both valid AND invalid or invalid AND disabled.
-         * @return {?}
-         */
-        get: function () { return this._status; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "valid", {
-        /**
-         * A control is `valid` when its `status === VALID`.
-         *
-         * In order to have this status, the control must have passed all its
-         * validation checks.
-         * @return {?}
-         */
-        get: function () { return this._status === VALID; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "invalid", {
-        /**
-         * A control is `invalid` when its `status === INVALID`.
-         *
-         * In order to have this status, the control must have failed
-         * at least one of its validation checks.
-         * @return {?}
-         */
-        get: function () { return this._status === INVALID; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "pending", {
-        /**
-         * A control is `pending` when its `status === PENDING`.
-         *
-         * In order to have this status, the control must be in the
-         * middle of conducting a validation check.
-         * @return {?}
-         */
-        get: function () { return this._status == PENDING; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "disabled", {
-        /**
-         * A control is `disabled` when its `status === DISABLED`.
-         *
-         * Disabled controls are exempt from validation checks and
-         * are not included in the aggregate value of their ancestor
-         * controls.
-         * @return {?}
-         */
-        get: function () { return this._status === DISABLED; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "enabled", {
-        /**
-         * A control is `enabled` as long as its `status !== DISABLED`.
-         *
-         * In other words, it has a status of `VALID`, `INVALID`, or
-         * `PENDING`.
-         * @return {?}
-         */
-        get: function () { return this._status !== DISABLED; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "errors", {
-        /**
-         * Returns any errors generated by failing validation. If there
-         * are no errors, it will return null.
-         * @return {?}
-         */
-        get: function () { return this._errors; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "pristine", {
-        /**
-         * A control is `pristine` if the user has not yet changed
-         * the value in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
-         * @return {?}
-         */
-        get: function () { return this._pristine; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "dirty", {
-        /**
-         * A control is `dirty` if the user has changed the value
-         * in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
-         * @return {?}
-         */
-        get: function () { return !this.pristine; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "touched", {
-        /**
-         * A control is marked `touched` once the user has triggered
-         * a `blur` event on it.
-         * @return {?}
-         */
-        get: function () { return this._touched; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "untouched", {
-        /**
-         * A control is `untouched` if the user has not yet triggered
-         * a `blur` event on it.
-         * @return {?}
-         */
-        get: function () { return !this._touched; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "valueChanges", {
-        /**
-         * Emits an event every time the value of the control changes, in
-         * the UI or programmatically.
-         * @return {?}
-         */
-        get: function () { return this._valueChanges; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControl.prototype, "statusChanges", {
-        /**
-         * Emits an event every time the validation status of the control
-         * is re-calculated.
-         * @return {?}
-         */
-        get: function () { return this._statusChanges; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Sets the synchronous validators that are active on this control.  Calling
-     * this will overwrite any existing sync validators.
-     * @param {?} newValidator
-     * @return {?}
-     */
-    AbstractControl.prototype.setValidators = function (newValidator) {
-        this.validator = coerceToValidator(newValidator);
-    };
-    /**
-     * Sets the async validators that are active on this control. Calling this
-     * will overwrite any existing async validators.
-     * @param {?} newValidator
-     * @return {?}
-     */
-    AbstractControl.prototype.setAsyncValidators = function (newValidator) {
-        this.asyncValidator = coerceToAsyncValidator(newValidator);
-    };
-    /**
-     * Empties out the sync validator list.
-     * @return {?}
-     */
-    AbstractControl.prototype.clearValidators = function () { this.validator = null; };
-    /**
-     * Empties out the async validator list.
-     * @return {?}
-     */
-    AbstractControl.prototype.clearAsyncValidators = function () { this.asyncValidator = null; };
-    /**
-     * Marks the control as `touched`.
-     *
-     * This will also mark all direct ancestors as `touched` to maintain
-     * the model.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.markAsTouched = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._touched = true;
-        if (this._parent && !opts.onlySelf) {
-            this._parent.markAsTouched(opts);
-        }
-    };
-    /**
-     * Marks the control as `untouched`.
-     *
-     * If the control has any children, it will also mark all children as `untouched`
-     * to maintain the model, and re-calculate the `touched` status of all parent
-     * controls.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.markAsUntouched = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._touched = false;
-        this._forEachChild(function (control) { control.markAsUntouched({ onlySelf: true }); });
-        if (this._parent && !opts.onlySelf) {
-            this._parent._updateTouched(opts);
-        }
-    };
-    /**
-     * Marks the control as `dirty`.
-     *
-     * This will also mark all direct ancestors as `dirty` to maintain
-     * the model.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.markAsDirty = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._pristine = false;
-        if (this._parent && !opts.onlySelf) {
-            this._parent.markAsDirty(opts);
-        }
-    };
-    /**
-     * Marks the control as `pristine`.
-     *
-     * If the control has any children, it will also mark all children as `pristine`
-     * to maintain the model, and re-calculate the `pristine` status of all parent
-     * controls.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.markAsPristine = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._pristine = true;
-        this._forEachChild(function (control) { control.markAsPristine({ onlySelf: true }); });
-        if (this._parent && !opts.onlySelf) {
-            this._parent._updatePristine(opts);
-        }
-    };
-    /**
-     * Marks the control as `pending`.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.markAsPending = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._status = PENDING;
-        if (this._parent && !opts.onlySelf) {
-            this._parent.markAsPending(opts);
-        }
-    };
-    /**
-     * Disables the control. This means the control will be exempt from validation checks and
-     * excluded from the aggregate value of any parent. Its status is `DISABLED`.
-     *
-     * If the control has children, all children will be disabled to maintain the model.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.disable = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._status = DISABLED;
-        this._errors = null;
-        this._forEachChild(function (control) { control.disable({ onlySelf: true }); });
-        this._updateValue();
-        if (opts.emitEvent !== false) {
-            this._valueChanges.emit(this._value);
-            this._statusChanges.emit(this._status);
-        }
-        this._updateAncestors(!!opts.onlySelf);
-        this._onDisabledChange.forEach(function (changeFn) { return changeFn(true); });
-    };
-    /**
-     * Enables the control. This means the control will be included in validation checks and
-     * the aggregate value of its parent. Its status is re-calculated based on its value and
-     * its validators.
-     *
-     * If the control has children, all children will be enabled.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.enable = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._status = VALID;
-        this._forEachChild(function (control) { control.enable({ onlySelf: true }); });
-        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
-        this._updateAncestors(!!opts.onlySelf);
-        this._onDisabledChange.forEach(function (changeFn) { return changeFn(false); });
-    };
-    /**
-     * @param {?} onlySelf
-     * @return {?}
-     */
-    AbstractControl.prototype._updateAncestors = function (onlySelf) {
-        if (this._parent && !onlySelf) {
-            this._parent.updateValueAndValidity();
-            this._parent._updatePristine();
-            this._parent._updateTouched();
-        }
-    };
-    /**
-     * @param {?} parent
-     * @return {?}
-     */
-    AbstractControl.prototype.setParent = function (parent) { this._parent = parent; };
-    /**
-     * Sets the value of the control. Abstract method (implemented in sub-classes).
-     * @abstract
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    AbstractControl.prototype.setValue = function (value, options) { };
-    /**
-     * Patches the value of the control. Abstract method (implemented in sub-classes).
-     * @abstract
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    AbstractControl.prototype.patchValue = function (value, options) { };
-    /**
-     * Resets the control. Abstract method (implemented in sub-classes).
-     * @abstract
-     * @param {?=} value
-     * @param {?=} options
-     * @return {?}
-     */
-    AbstractControl.prototype.reset = function (value, options) { };
-    /**
-     * Re-calculates the value and validation status of the control.
-     *
-     * By default, it will also update the value and validity of its ancestors.
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.updateValueAndValidity = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._setInitialStatus();
-        this._updateValue();
-        if (this.enabled) {
-            this._cancelExistingSubscription();
-            this._errors = this._runValidator();
-            this._status = this._calculateStatus();
-            if (this._status === VALID || this._status === PENDING) {
-                this._runAsyncValidator(opts.emitEvent);
-            }
-        }
-        if (opts.emitEvent !== false) {
-            this._valueChanges.emit(this._value);
-            this._statusChanges.emit(this._status);
-        }
-        if (this._parent && !opts.onlySelf) {
-            this._parent.updateValueAndValidity(opts);
-        }
-    };
-    /**
-     * \@internal
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype._updateTreeValidity = function (opts) {
-        if (opts === void 0) { opts = { emitEvent: true }; }
-        this._forEachChild(function (ctrl) { return ctrl._updateTreeValidity(opts); });
-        this.updateValueAndValidity({ onlySelf: true, emitEvent: opts.emitEvent });
-    };
-    /**
-     * @return {?}
-     */
-    AbstractControl.prototype._setInitialStatus = function () { this._status = this._allControlsDisabled() ? DISABLED : VALID; };
-    /**
-     * @return {?}
-     */
-    AbstractControl.prototype._runValidator = function () {
-        return this.validator ? this.validator(this) : null;
-    };
-    /**
-     * @param {?=} emitEvent
-     * @return {?}
-     */
-    AbstractControl.prototype._runAsyncValidator = function (emitEvent) {
-        var _this = this;
-        if (this.asyncValidator) {
-            this._status = PENDING;
-            var /** @type {?} */ obs = toObservable(this.asyncValidator(this));
-            this._asyncValidationSubscription =
-                obs.subscribe(function (errors) { return _this.setErrors(errors, { emitEvent: emitEvent }); });
-        }
-    };
-    /**
-     * @return {?}
-     */
-    AbstractControl.prototype._cancelExistingSubscription = function () {
-        if (this._asyncValidationSubscription) {
-            this._asyncValidationSubscription.unsubscribe();
-        }
-    };
-    /**
-     * Sets errors on a form control.
-     *
-     * This is used when validations are run manually by the user, rather than automatically.
-     *
-     * Calling `setErrors` will also update the validity of the parent control.
-     *
-     * ### Example
-     *
-     * ```
-     * const login = new FormControl("someLogin");
-     * login.setErrors({
-     *   "notUnique": true
-     * });
-     *
-     * expect(login.valid).toEqual(false);
-     * expect(login.errors).toEqual({"notUnique": true});
-     *
-     * login.setValue("someOtherLogin");
-     *
-     * expect(login.valid).toEqual(true);
-     * ```
-     * @param {?} errors
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype.setErrors = function (errors, opts) {
-        if (opts === void 0) { opts = {}; }
-        this._errors = errors;
-        this._updateControlsErrors(opts.emitEvent !== false);
-    };
-    /**
-     * Retrieves a child control given the control's name or path.
-     *
-     * Paths can be passed in as an array or a string delimited by a dot.
-     *
-     * To get a control nested within a `person` sub-group:
-     *
-     * * `this.form.get('person.name');`
-     *
-     * -OR-
-     *
-     * * `this.form.get(['person', 'name']);`
-     * @param {?} path
-     * @return {?}
-     */
-    AbstractControl.prototype.get = function (path) { return _find(this, path, '.'); };
-    /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
-     * returns null or undefined.
-     *
-     * If no path is given, it checks for the error on the present control.
-     * @param {?} errorCode
-     * @param {?=} path
-     * @return {?}
-     */
-    AbstractControl.prototype.getError = function (errorCode, path) {
-        var /** @type {?} */ control = path ? this.get(path) : this;
-        return control && control._errors ? control._errors[errorCode] : null;
-    };
-    /**
-     * Returns true if the control with the given path has the error specified. Otherwise
-     * returns false.
-     *
-     * If no path is given, it checks for the error on the present control.
-     * @param {?} errorCode
-     * @param {?=} path
-     * @return {?}
-     */
-    AbstractControl.prototype.hasError = function (errorCode, path) { return !!this.getError(errorCode, path); };
-    Object.defineProperty(AbstractControl.prototype, "root", {
-        /**
-         * Retrieves the top-level ancestor of this control.
-         * @return {?}
-         */
-        get: function () {
-            var /** @type {?} */ x = this;
-            while (x._parent) {
-                x = x._parent;
-            }
-            return x;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @param {?} emitEvent
-     * @return {?}
-     */
-    AbstractControl.prototype._updateControlsErrors = function (emitEvent) {
-        this._status = this._calculateStatus();
-        if (emitEvent) {
-            this._statusChanges.emit(this._status);
-        }
-        if (this._parent) {
-            this._parent._updateControlsErrors(emitEvent);
-        }
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    AbstractControl.prototype._initObservables = function () {
-        this._valueChanges = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        this._statusChanges = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-    };
-    /**
-     * @return {?}
-     */
-    AbstractControl.prototype._calculateStatus = function () {
-        if (this._allControlsDisabled())
-            return DISABLED;
-        if (this._errors)
-            return INVALID;
-        if (this._anyControlsHaveStatus(PENDING))
-            return PENDING;
-        if (this._anyControlsHaveStatus(INVALID))
-            return INVALID;
-        return VALID;
-    };
-    /**
-     * \@internal
-     * @abstract
-     * @return {?}
-     */
-    AbstractControl.prototype._updateValue = function () { };
-    /**
-     * \@internal
-     * @abstract
-     * @param {?} cb
-     * @return {?}
-     */
-    AbstractControl.prototype._forEachChild = function (cb) { };
-    /**
-     * \@internal
-     * @abstract
-     * @param {?} condition
-     * @return {?}
-     */
-    AbstractControl.prototype._anyControls = function (condition) { };
-    /**
-     * \@internal
-     * @abstract
-     * @return {?}
-     */
-    AbstractControl.prototype._allControlsDisabled = function () { };
-    /**
-     * \@internal
-     * @param {?} status
-     * @return {?}
-     */
-    AbstractControl.prototype._anyControlsHaveStatus = function (status) {
-        return this._anyControls(function (control) { return control.status === status; });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    AbstractControl.prototype._anyControlsDirty = function () {
-        return this._anyControls(function (control) { return control.dirty; });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    AbstractControl.prototype._anyControlsTouched = function () {
-        return this._anyControls(function (control) { return control.touched; });
-    };
-    /**
-     * \@internal
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype._updatePristine = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._pristine = !this._anyControlsDirty();
-        if (this._parent && !opts.onlySelf) {
-            this._parent._updatePristine(opts);
-        }
-    };
-    /**
-     * \@internal
-     * @param {?=} opts
-     * @return {?}
-     */
-    AbstractControl.prototype._updateTouched = function (opts) {
-        if (opts === void 0) { opts = {}; }
-        this._touched = this._anyControlsTouched();
-        if (this._parent && !opts.onlySelf) {
-            this._parent._updateTouched(opts);
-        }
-    };
-    /**
-     * \@internal
-     * @param {?} formState
-     * @return {?}
-     */
-    AbstractControl.prototype._isBoxedValue = function (formState) {
-        return typeof formState === 'object' && formState !== null &&
-            Object.keys(formState).length === 2 && 'value' in formState && 'disabled' in formState;
-    };
-    /**
-     * \@internal
-     * @param {?} fn
-     * @return {?}
-     */
-    AbstractControl.prototype._registerOnCollectionChange = function (fn) { this._onCollectionChange = fn; };
-    return AbstractControl;
-}());
-/**
- * \@whatItDoes Tracks the value and validation status of an individual form control.
- *
- * It is one of the three fundamental building blocks of Angular forms, along with
- * {\@link FormGroup} and {\@link FormArray}.
- *
- * \@howToUse
- *
- * When instantiating a {\@link FormControl}, you can pass in an initial value as the
- * first argument. Example:
- *
- * ```ts
- * const ctrl = new FormControl('some value');
- * console.log(ctrl.value);     // 'some value'
- * ```
- *
- * You can also initialize the control with a form state object on instantiation,
- * which includes both the value and whether or not the control is disabled.
- * You can't use the value key without the disabled key; both are required
- * to use this way of initialization.
- *
- * ```ts
- * const ctrl = new FormControl({value: 'n/a', disabled: true});
- * console.log(ctrl.value);     // 'n/a'
- * console.log(ctrl.status);   // 'DISABLED'
- * ```
- *
- * To include a sync validator (or an array of sync validators) with the control,
- * pass it in as the second argument. Async validators are also supported, but
- * have to be passed in separately as the third arg.
- *
- * ```ts
- * const ctrl = new FormControl('', Validators.required);
- * console.log(ctrl.value);     // ''
- * console.log(ctrl.status);   // 'INVALID'
- * ```
- *
- * See its superclass, {\@link AbstractControl}, for more properties and methods.
- *
- * * **npm package**: `\@angular/forms`
- *
- * \@stable
- */
-var FormControl = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControl, _super);
-    /**
-     * @param {?=} formState
-     * @param {?=} validator
-     * @param {?=} asyncValidator
-     */
-    function FormControl(formState, validator, asyncValidator) {
-        if (formState === void 0) { formState = null; }
-        var _this = _super.call(this, coerceToValidator(validator), coerceToAsyncValidator(asyncValidator)) || this;
-        /**
-         * \@internal
-         */
-        _this._onChange = [];
-        _this._applyFormState(formState);
-        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
-        _this._initObservables();
-        return _this;
-    }
-    /**
-     * Set the value of the form control to `value`.
-     *
-     * If `onlySelf` is `true`, this change will only affect the validation of this `FormControl`
-     * and not its parent component. This defaults to false.
-     *
-     * If `emitEvent` is `true`, this
-     * change will cause a `valueChanges` event on the `FormControl` to be emitted. This defaults
-     * to true (as it falls through to `updateValueAndValidity`).
-     *
-     * If `emitModelToViewChange` is `true`, the view will be notified about the new value
-     * via an `onChange` event. This is the default behavior if `emitModelToViewChange` is not
-     * specified.
-     *
-     * If `emitViewToModelChange` is `true`, an ngModelChange event will be fired to update the
-     * model.  This is the default behavior if `emitViewToModelChange` is not specified.
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormControl.prototype.setValue = function (value, options) {
-        var _this = this;
-        if (options === void 0) { options = {}; }
-        this._value = value;
-        if (this._onChange.length && options.emitModelToViewChange !== false) {
-            this._onChange.forEach(function (changeFn) { return changeFn(_this._value, options.emitViewToModelChange !== false); });
-        }
-        this.updateValueAndValidity(options);
-    };
-    /**
-     * Patches the value of a control.
-     *
-     * This function is functionally the same as {\@link FormControl#setValue} at this level.
-     * It exists for symmetry with {\@link FormGroup#patchValue} on `FormGroups` and `FormArrays`,
-     * where it does behave differently.
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormControl.prototype.patchValue = function (value, options) {
-        if (options === void 0) { options = {}; }
-        this.setValue(value, options);
-    };
-    /**
-     * Resets the form control. This means by default:
-     *
-     * * it is marked as `pristine`
-     * * it is marked as `untouched`
-     * * value is set to null
-     *
-     * You can also reset to a specific form state by passing through a standalone
-     * value or a form state object that contains both a value and a disabled state
-     * (these are the only two properties that cannot be calculated).
-     *
-     * Ex:
-     *
-     * ```ts
-     * this.control.reset('Nancy');
-     *
-     * console.log(this.control.value);  // 'Nancy'
-     * ```
-     *
-     * OR
-     *
-     * ```
-     * this.control.reset({value: 'Nancy', disabled: true});
-     *
-     * console.log(this.control.value);  // 'Nancy'
-     * console.log(this.control.status);  // 'DISABLED'
-     * ```
-     * @param {?=} formState
-     * @param {?=} options
-     * @return {?}
-     */
-    FormControl.prototype.reset = function (formState, options) {
-        if (formState === void 0) { formState = null; }
-        if (options === void 0) { options = {}; }
-        this._applyFormState(formState);
-        this.markAsPristine(options);
-        this.markAsUntouched(options);
-        this.setValue(this._value, options);
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormControl.prototype._updateValue = function () { };
-    /**
-     * \@internal
-     * @param {?} condition
-     * @return {?}
-     */
-    FormControl.prototype._anyControls = function (condition) { return false; };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormControl.prototype._allControlsDisabled = function () { return this.disabled; };
-    /**
-     * Register a listener for change events.
-     * @param {?} fn
-     * @return {?}
-     */
-    FormControl.prototype.registerOnChange = function (fn) { this._onChange.push(fn); };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormControl.prototype._clearChangeFns = function () {
-        this._onChange = [];
-        this._onDisabledChange = [];
-        this._onCollectionChange = function () { };
-    };
-    /**
-     * Register a listener for disabled events.
-     * @param {?} fn
-     * @return {?}
-     */
-    FormControl.prototype.registerOnDisabledChange = function (fn) {
-        this._onDisabledChange.push(fn);
-    };
-    /**
-     * \@internal
-     * @param {?} cb
-     * @return {?}
-     */
-    FormControl.prototype._forEachChild = function (cb) { };
-    /**
-     * @param {?} formState
-     * @return {?}
-     */
-    FormControl.prototype._applyFormState = function (formState) {
-        if (this._isBoxedValue(formState)) {
-            this._value = formState.value;
-            formState.disabled ? this.disable({ onlySelf: true, emitEvent: false }) :
-                this.enable({ onlySelf: true, emitEvent: false });
-        }
-        else {
-            this._value = formState;
-        }
-    };
-    return FormControl;
-}(AbstractControl));
-/**
- * \@whatItDoes Tracks the value and validity state of a group of {\@link FormControl}
- * instances.
- *
- * A `FormGroup` aggregates the values of each child {\@link FormControl} into one object,
- * with each control name as the key.  It calculates its status by reducing the statuses
- * of its children. For example, if one of the controls in a group is invalid, the entire
- * group becomes invalid.
- *
- * `FormGroup` is one of the three fundamental building blocks used to define forms in Angular,
- * along with {\@link FormControl} and {\@link FormArray}.
- *
- * \@howToUse
- *
- * When instantiating a {\@link FormGroup}, pass in a collection of child controls as the first
- * argument. The key for each child will be the name under which it is registered.
- *
- * ### Example
- *
- * ```
- * const form = new FormGroup({
- *   first: new FormControl('Nancy', Validators.minLength(2)),
- *   last: new FormControl('Drew'),
- * });
- *
- * console.log(form.value);   // {first: 'Nancy', last; 'Drew'}
- * console.log(form.status);  // 'VALID'
- * ```
- *
- * You can also include group-level validators as the second arg, or group-level async
- * validators as the third arg. These come in handy when you want to perform validation
- * that considers the value of more than one child control.
- *
- * ### Example
- *
- * ```
- * const form = new FormGroup({
- *   password: new FormControl('', Validators.minLength(2)),
- *   passwordConfirm: new FormControl('', Validators.minLength(2)),
- * }, passwordMatchValidator);
- *
- *
- * function passwordMatchValidator(g: FormGroup) {
- *    return g.get('password').value === g.get('passwordConfirm').value
- *       ? null : {'mismatch': true};
- * }
- * ```
- *
- * * **npm package**: `\@angular/forms`
- *
- * \@stable
- */
-var FormGroup = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroup, _super);
-    /**
-     * @param {?} controls
-     * @param {?=} validator
-     * @param {?=} asyncValidator
-     */
-    function FormGroup(controls, validator, asyncValidator) {
-        var _this = _super.call(this, validator || null, asyncValidator || null) || this;
-        _this.controls = controls;
-        _this._initObservables();
-        _this._setUpControls();
-        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
-        return _this;
-    }
-    /**
-     * Registers a control with the group's list of controls.
-     *
-     * This method does not update value or validity of the control, so for
-     * most cases you'll want to use {\@link FormGroup#addControl} instead.
-     * @param {?} name
-     * @param {?} control
-     * @return {?}
-     */
-    FormGroup.prototype.registerControl = function (name, control) {
-        if (this.controls[name])
-            return this.controls[name];
-        this.controls[name] = control;
-        control.setParent(this);
-        control._registerOnCollectionChange(this._onCollectionChange);
-        return control;
-    };
-    /**
-     * Add a control to this group.
-     * @param {?} name
-     * @param {?} control
-     * @return {?}
-     */
-    FormGroup.prototype.addControl = function (name, control) {
-        this.registerControl(name, control);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Remove a control from this group.
-     * @param {?} name
-     * @return {?}
-     */
-    FormGroup.prototype.removeControl = function (name) {
-        if (this.controls[name])
-            this.controls[name]._registerOnCollectionChange(function () { });
-        delete (this.controls[name]);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Replace an existing control.
-     * @param {?} name
-     * @param {?} control
-     * @return {?}
-     */
-    FormGroup.prototype.setControl = function (name, control) {
-        if (this.controls[name])
-            this.controls[name]._registerOnCollectionChange(function () { });
-        delete (this.controls[name]);
-        if (control)
-            this.registerControl(name, control);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Check whether there is an enabled control with the given name in the group.
-     *
-     * It will return false for disabled controls. If you'd like to check for
-     * existence in the group only, use {\@link AbstractControl#get} instead.
-     * @param {?} controlName
-     * @return {?}
-     */
-    FormGroup.prototype.contains = function (controlName) {
-        return this.controls.hasOwnProperty(controlName) && this.controls[controlName].enabled;
-    };
-    /**
-     *  Sets the value of the {\@link FormGroup}. It accepts an object that matches
-     *  the structure of the group, with control names as keys.
-     *
-     * This method performs strict checks, so it will throw an error if you try
-     * to set the value of a control that doesn't exist or if you exclude the
-     * value of a control.
-     *
-     *  ### Example
-     *
-     *  ```
-     *  const form = new FormGroup({
-     *     first: new FormControl(),
-     *     last: new FormControl()
-     *  });
-     *  console.log(form.value);   // {first: null, last: null}
-     *
-     *  form.setValue({first: 'Nancy', last: 'Drew'});
-     *  console.log(form.value);   // {first: 'Nancy', last: 'Drew'}
-     *
-     *  ```
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormGroup.prototype.setValue = function (value, options) {
-        var _this = this;
-        if (options === void 0) { options = {}; }
-        this._checkAllValuesPresent(value);
-        Object.keys(value).forEach(function (name) {
-            _this._throwIfControlMissing(name);
-            _this.controls[name].setValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
-        });
-        this.updateValueAndValidity(options);
-    };
-    /**
-     *  Patches the value of the {\@link FormGroup}. It accepts an object with control
-     *  names as keys, and will do its best to match the values to the correct controls
-     *  in the group.
-     *
-     *  It accepts both super-sets and sub-sets of the group without throwing an error.
-     *
-     *  ### Example
-     *
-     *  ```
-     *  const form = new FormGroup({
-     *     first: new FormControl(),
-     *     last: new FormControl()
-     *  });
-     *  console.log(form.value);   // {first: null, last: null}
-     *
-     *  form.patchValue({first: 'Nancy'});
-     *  console.log(form.value);   // {first: 'Nancy', last: null}
-     *
-     *  ```
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormGroup.prototype.patchValue = function (value, options) {
-        var _this = this;
-        if (options === void 0) { options = {}; }
-        Object.keys(value).forEach(function (name) {
-            if (_this.controls[name]) {
-                _this.controls[name].patchValue(value[name], { onlySelf: true, emitEvent: options.emitEvent });
-            }
-        });
-        this.updateValueAndValidity(options);
-    };
-    /**
-     * Resets the {\@link FormGroup}. This means by default:
-     *
-     * * The group and all descendants are marked `pristine`
-     * * The group and all descendants are marked `untouched`
-     * * The value of all descendants will be null or null maps
-     *
-     * You can also reset to a specific form state by passing in a map of states
-     * that matches the structure of your form, with control names as keys. The state
-     * can be a standalone value or a form state object with both a value and a disabled
-     * status.
-     *
-     * ### Example
-     *
-     * ```ts
-     * this.form.reset({first: 'name', last: 'last name'});
-     *
-     * console.log(this.form.value);  // {first: 'name', last: 'last name'}
-     * ```
-     *
-     * - OR -
-     *
-     * ```
-     * this.form.reset({
-     *   first: {value: 'name', disabled: true},
-     *   last: 'last'
-     * });
-     *
-     * console.log(this.form.value);  // {first: 'name', last: 'last name'}
-     * console.log(this.form.get('first').status);  // 'DISABLED'
-     * ```
-     * @param {?=} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormGroup.prototype.reset = function (value, options) {
-        if (value === void 0) { value = {}; }
-        if (options === void 0) { options = {}; }
-        this._forEachChild(function (control, name) {
-            control.reset(value[name], { onlySelf: true, emitEvent: options.emitEvent });
-        });
-        this.updateValueAndValidity(options);
-        this._updatePristine(options);
-        this._updateTouched(options);
-    };
-    /**
-     * The aggregate value of the {\@link FormGroup}, including any disabled controls.
-     *
-     * If you'd like to include all values regardless of disabled status, use this method.
-     * Otherwise, the `value` property is the best way to get the value of the group.
-     * @return {?}
-     */
-    FormGroup.prototype.getRawValue = function () {
-        return this._reduceChildren({}, function (acc, control, name) {
-            acc[name] = control instanceof FormControl ? control.value : ((control)).getRawValue();
-            return acc;
-        });
-    };
-    /**
-     * \@internal
-     * @param {?} name
-     * @return {?}
-     */
-    FormGroup.prototype._throwIfControlMissing = function (name) {
-        if (!Object.keys(this.controls).length) {
-            throw new Error("\n        There are no form controls registered with this group yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
-        }
-        if (!this.controls[name]) {
-            throw new Error("Cannot find form control with name: " + name + ".");
-        }
-    };
-    /**
-     * \@internal
-     * @param {?} cb
-     * @return {?}
-     */
-    FormGroup.prototype._forEachChild = function (cb) {
-        var _this = this;
-        Object.keys(this.controls).forEach(function (k) { return cb(_this.controls[k], k); });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroup.prototype._setUpControls = function () {
-        var _this = this;
-        this._forEachChild(function (control) {
-            control.setParent(_this);
-            control._registerOnCollectionChange(_this._onCollectionChange);
-        });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroup.prototype._updateValue = function () { this._value = this._reduceValue(); };
-    /**
-     * \@internal
-     * @param {?} condition
-     * @return {?}
-     */
-    FormGroup.prototype._anyControls = function (condition) {
-        var _this = this;
-        var /** @type {?} */ res = false;
-        this._forEachChild(function (control, name) {
-            res = res || (_this.contains(name) && condition(control));
-        });
-        return res;
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroup.prototype._reduceValue = function () {
-        var _this = this;
-        return this._reduceChildren({}, function (acc, control, name) {
-            if (control.enabled || _this.disabled) {
-                acc[name] = control.value;
-            }
-            return acc;
-        });
-    };
-    /**
-     * \@internal
-     * @param {?} initValue
-     * @param {?} fn
-     * @return {?}
-     */
-    FormGroup.prototype._reduceChildren = function (initValue, fn) {
-        var /** @type {?} */ res = initValue;
-        this._forEachChild(function (control, name) { res = fn(res, control, name); });
-        return res;
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroup.prototype._allControlsDisabled = function () {
-        for (var _i = 0, _a = Object.keys(this.controls); _i < _a.length; _i++) {
-            var controlName = _a[_i];
-            if (this.controls[controlName].enabled) {
-                return false;
-            }
-        }
-        return Object.keys(this.controls).length > 0 || this.disabled;
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    FormGroup.prototype._checkAllValuesPresent = function (value) {
-        this._forEachChild(function (control, name) {
-            if (value[name] === undefined) {
-                throw new Error("Must supply a value for form control with name: '" + name + "'.");
-            }
-        });
-    };
-    return FormGroup;
-}(AbstractControl));
-/**
- * \@whatItDoes Tracks the value and validity state of an array of {\@link FormControl},
- * {\@link FormGroup} or {\@link FormArray} instances.
- *
- * A `FormArray` aggregates the values of each child {\@link FormControl} into an array.
- * It calculates its status by reducing the statuses of its children. For example, if one of
- * the controls in a `FormArray` is invalid, the entire array becomes invalid.
- *
- * `FormArray` is one of the three fundamental building blocks used to define forms in Angular,
- * along with {\@link FormControl} and {\@link FormGroup}.
- *
- * \@howToUse
- *
- * When instantiating a {\@link FormArray}, pass in an array of child controls as the first
- * argument.
- *
- * ### Example
- *
- * ```
- * const arr = new FormArray([
- *   new FormControl('Nancy', Validators.minLength(2)),
- *   new FormControl('Drew'),
- * ]);
- *
- * console.log(arr.value);   // ['Nancy', 'Drew']
- * console.log(arr.status);  // 'VALID'
- * ```
- *
- * You can also include array-level validators as the second arg, or array-level async
- * validators as the third arg. These come in handy when you want to perform validation
- * that considers the value of more than one child control.
- *
- * ### Adding or removing controls
- *
- * To change the controls in the array, use the `push`, `insert`, or `removeAt` methods
- * in `FormArray` itself. These methods ensure the controls are properly tracked in the
- * form's hierarchy. Do not modify the array of `AbstractControl`s used to instantiate
- * the `FormArray` directly, as that will result in strange and unexpected behavior such
- * as broken change detection.
- *
- * * **npm package**: `\@angular/forms`
- *
- * \@stable
- */
-var FormArray = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormArray, _super);
-    /**
-     * @param {?} controls
-     * @param {?=} validator
-     * @param {?=} asyncValidator
-     */
-    function FormArray(controls, validator, asyncValidator) {
-        var _this = _super.call(this, validator || null, asyncValidator || null) || this;
-        _this.controls = controls;
-        _this._initObservables();
-        _this._setUpControls();
-        _this.updateValueAndValidity({ onlySelf: true, emitEvent: false });
-        return _this;
-    }
-    /**
-     * Get the {\@link AbstractControl} at the given `index` in the array.
-     * @param {?} index
-     * @return {?}
-     */
-    FormArray.prototype.at = function (index) { return this.controls[index]; };
-    /**
-     * Insert a new {\@link AbstractControl} at the end of the array.
-     * @param {?} control
-     * @return {?}
-     */
-    FormArray.prototype.push = function (control) {
-        this.controls.push(control);
-        this._registerControl(control);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Insert a new {\@link AbstractControl} at the given `index` in the array.
-     * @param {?} index
-     * @param {?} control
-     * @return {?}
-     */
-    FormArray.prototype.insert = function (index, control) {
-        this.controls.splice(index, 0, control);
-        this._registerControl(control);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Remove the control at the given `index` in the array.
-     * @param {?} index
-     * @return {?}
-     */
-    FormArray.prototype.removeAt = function (index) {
-        if (this.controls[index])
-            this.controls[index]._registerOnCollectionChange(function () { });
-        this.controls.splice(index, 1);
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    /**
-     * Replace an existing control.
-     * @param {?} index
-     * @param {?} control
-     * @return {?}
-     */
-    FormArray.prototype.setControl = function (index, control) {
-        if (this.controls[index])
-            this.controls[index]._registerOnCollectionChange(function () { });
-        this.controls.splice(index, 1);
-        if (control) {
-            this.controls.splice(index, 0, control);
-            this._registerControl(control);
-        }
-        this.updateValueAndValidity();
-        this._onCollectionChange();
-    };
-    Object.defineProperty(FormArray.prototype, "length", {
-        /**
-         * Length of the control array.
-         * @return {?}
-         */
-        get: function () { return this.controls.length; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     *  Sets the value of the {\@link FormArray}. It accepts an array that matches
-     *  the structure of the control.
-     *
-     * This method performs strict checks, so it will throw an error if you try
-     * to set the value of a control that doesn't exist or if you exclude the
-     * value of a control.
-     *
-     *  ### Example
-     *
-     *  ```
-     *  const arr = new FormArray([
-     *     new FormControl(),
-     *     new FormControl()
-     *  ]);
-     *  console.log(arr.value);   // [null, null]
-     *
-     *  arr.setValue(['Nancy', 'Drew']);
-     *  console.log(arr.value);   // ['Nancy', 'Drew']
-     *  ```
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormArray.prototype.setValue = function (value, options) {
-        var _this = this;
-        if (options === void 0) { options = {}; }
-        this._checkAllValuesPresent(value);
-        value.forEach(function (newValue, index) {
-            _this._throwIfControlMissing(index);
-            _this.at(index).setValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
-        });
-        this.updateValueAndValidity(options);
-    };
-    /**
-     *  Patches the value of the {\@link FormArray}. It accepts an array that matches the
-     *  structure of the control, and will do its best to match the values to the correct
-     *  controls in the group.
-     *
-     *  It accepts both super-sets and sub-sets of the array without throwing an error.
-     *
-     *  ### Example
-     *
-     *  ```
-     *  const arr = new FormArray([
-     *     new FormControl(),
-     *     new FormControl()
-     *  ]);
-     *  console.log(arr.value);   // [null, null]
-     *
-     *  arr.patchValue(['Nancy']);
-     *  console.log(arr.value);   // ['Nancy', null]
-     *  ```
-     * @param {?} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormArray.prototype.patchValue = function (value, options) {
-        var _this = this;
-        if (options === void 0) { options = {}; }
-        value.forEach(function (newValue, index) {
-            if (_this.at(index)) {
-                _this.at(index).patchValue(newValue, { onlySelf: true, emitEvent: options.emitEvent });
-            }
-        });
-        this.updateValueAndValidity(options);
-    };
-    /**
-     * Resets the {\@link FormArray}. This means by default:
-     *
-     * * The array and all descendants are marked `pristine`
-     * * The array and all descendants are marked `untouched`
-     * * The value of all descendants will be null or null maps
-     *
-     * You can also reset to a specific form state by passing in an array of states
-     * that matches the structure of the control. The state can be a standalone value
-     * or a form state object with both a value and a disabled status.
-     *
-     * ### Example
-     *
-     * ```ts
-     * this.arr.reset(['name', 'last name']);
-     *
-     * console.log(this.arr.value);  // ['name', 'last name']
-     * ```
-     *
-     * - OR -
-     *
-     * ```
-     * this.arr.reset([
-     *   {value: 'name', disabled: true},
-     *   'last'
-     * ]);
-     *
-     * console.log(this.arr.value);  // ['name', 'last name']
-     * console.log(this.arr.get(0).status);  // 'DISABLED'
-     * ```
-     * @param {?=} value
-     * @param {?=} options
-     * @return {?}
-     */
-    FormArray.prototype.reset = function (value, options) {
-        if (value === void 0) { value = []; }
-        if (options === void 0) { options = {}; }
-        this._forEachChild(function (control, index) {
-            control.reset(value[index], { onlySelf: true, emitEvent: options.emitEvent });
-        });
-        this.updateValueAndValidity(options);
-        this._updatePristine(options);
-        this._updateTouched(options);
-    };
-    /**
-     * The aggregate value of the array, including any disabled controls.
-     *
-     * If you'd like to include all values regardless of disabled status, use this method.
-     * Otherwise, the `value` property is the best way to get the value of the array.
-     * @return {?}
-     */
-    FormArray.prototype.getRawValue = function () {
-        return this.controls.map(function (control) {
-            return control instanceof FormControl ? control.value : ((control)).getRawValue();
-        });
-    };
-    /**
-     * \@internal
-     * @param {?} index
-     * @return {?}
-     */
-    FormArray.prototype._throwIfControlMissing = function (index) {
-        if (!this.controls.length) {
-            throw new Error("\n        There are no form controls registered with this array yet.  If you're using ngModel,\n        you may want to check next tick (e.g. use setTimeout).\n      ");
-        }
-        if (!this.at(index)) {
-            throw new Error("Cannot find form control at index " + index);
-        }
-    };
-    /**
-     * \@internal
-     * @param {?} cb
-     * @return {?}
-     */
-    FormArray.prototype._forEachChild = function (cb) {
-        this.controls.forEach(function (control, index) { cb(control, index); });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormArray.prototype._updateValue = function () {
-        var _this = this;
-        this._value = this.controls.filter(function (control) { return control.enabled || _this.disabled; })
-            .map(function (control) { return control.value; });
-    };
-    /**
-     * \@internal
-     * @param {?} condition
-     * @return {?}
-     */
-    FormArray.prototype._anyControls = function (condition) {
-        return this.controls.some(function (control) { return control.enabled && condition(control); });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormArray.prototype._setUpControls = function () {
-        var _this = this;
-        this._forEachChild(function (control) { return _this._registerControl(control); });
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    FormArray.prototype._checkAllValuesPresent = function (value) {
-        this._forEachChild(function (control, i) {
-            if (value[i] === undefined) {
-                throw new Error("Must supply a value for form control at index: " + i + ".");
-            }
-        });
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormArray.prototype._allControlsDisabled = function () {
-        for (var _i = 0, _a = this.controls; _i < _a.length; _i++) {
-            var control = _a[_i];
-            if (control.enabled)
-                return false;
-        }
-        return this.controls.length > 0 || this.disabled;
-    };
-    /**
-     * @param {?} control
-     * @return {?}
-     */
-    FormArray.prototype._registerControl = function (control) {
-        control.setParent(this);
-        control._registerOnCollectionChange(this._onCollectionChange);
-    };
-    return FormArray;
-}(AbstractControl));
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var formDirectiveProvider = {
-    provide: ControlContainer,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgForm; })
-};
-var resolvedPromise = Promise.resolve(null);
-/**
- * \@whatItDoes Creates a top-level {\@link FormGroup} instance and binds it to a form
- * to track aggregate form value and validation status.
- *
- * \@howToUse
- *
- * As soon as you import the `FormsModule`, this directive becomes active by default on
- * all `<form>` tags.  You don't need to add a special selector.
- *
- * You can export the directive into a local template variable using `ngForm` as the key
- * (ex: `#myForm="ngForm"`). This is optional, but useful.  Many properties from the underlying
- * {\@link FormGroup} instance are duplicated on the directive itself, so a reference to it
- * will give you access to the aggregate value and validity status of the form, as well as
- * user interaction properties like `dirty` and `touched`.
- *
- * To register child controls with the form, you'll want to use {\@link NgModel} with a
- * `name` attribute.  You can also use {\@link NgModelGroup} if you'd like to create
- * sub-groups within the form.
- *
- * You can listen to the directive's `ngSubmit` event to be notified when the user has
- * triggered a form submission. The `ngSubmit` event will be emitted with the original form
- * submission event.
- *
- * In template driven forms, all `<form>` tags are automatically tagged as `NgForm`.
- * If you want to import the `FormsModule` but skip its usage in some forms,
- * for example, to use native HTML5 validation, you can add `ngNoForm` and the `<form>`
- * tags won't create an `NgForm` directive. In reactive forms, using `ngNoForm` is
- * unnecessary because the `<form>` tags are inert. In that case, you would
- * refrain from using the `formGroup` directive.
- *
- * {\@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
- *
- * * **npm package**: `\@angular/forms`
- *
- * * **NgModule**: `FormsModule`
- *
- *  \@stable
- */
-var NgForm = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgForm, _super);
-    /**
-     * @param {?} validators
-     * @param {?} asyncValidators
-     */
-    function NgForm(validators, asyncValidators) {
-        var _this = _super.call(this) || this;
-        _this._submitted = false;
-        _this.ngSubmit = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        _this.form =
-            new FormGroup({}, composeValidators(validators), composeAsyncValidators(asyncValidators));
-        return _this;
-    }
-    Object.defineProperty(NgForm.prototype, "submitted", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._submitted; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForm.prototype, "formDirective", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForm.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.form; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForm.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () { return []; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForm.prototype, "controls", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.form.controls; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.addControl = function (dir) {
-        var _this = this;
-        resolvedPromise.then(function () {
-            var /** @type {?} */ container = _this._findContainer(dir.path);
-            dir._control = (container.registerControl(dir.name, dir.control));
-            setUpControl(dir.control, dir);
-            dir.control.updateValueAndValidity({ emitEvent: false });
-        });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.getControl = function (dir) { return (this.form.get(dir.path)); };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.removeControl = function (dir) {
-        var _this = this;
-        resolvedPromise.then(function () {
-            var /** @type {?} */ container = _this._findContainer(dir.path);
-            if (container) {
-                container.removeControl(dir.name);
-            }
-        });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.addFormGroup = function (dir) {
-        var _this = this;
-        resolvedPromise.then(function () {
-            var /** @type {?} */ container = _this._findContainer(dir.path);
-            var /** @type {?} */ group = new FormGroup({});
-            setUpFormContainer(group, dir);
-            container.registerControl(dir.name, group);
-            group.updateValueAndValidity({ emitEvent: false });
-        });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.removeFormGroup = function (dir) {
-        var _this = this;
-        resolvedPromise.then(function () {
-            var /** @type {?} */ container = _this._findContainer(dir.path);
-            if (container) {
-                container.removeControl(dir.name);
-            }
-        });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    NgForm.prototype.getFormGroup = function (dir) { return (this.form.get(dir.path)); };
-    /**
-     * @param {?} dir
-     * @param {?} value
-     * @return {?}
-     */
-    NgForm.prototype.updateModel = function (dir, value) {
-        var _this = this;
-        resolvedPromise.then(function () {
-            var /** @type {?} */ ctrl = (_this.form.get(/** @type {?} */ ((dir.path))));
-            ctrl.setValue(value);
-        });
-    };
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    NgForm.prototype.setValue = function (value) { this.control.setValue(value); };
-    /**
-     * @param {?} $event
-     * @return {?}
-     */
-    NgForm.prototype.onSubmit = function ($event) {
-        this._submitted = true;
-        this.ngSubmit.emit($event);
-        return false;
-    };
-    /**
-     * @return {?}
-     */
-    NgForm.prototype.onReset = function () { this.resetForm(); };
-    /**
-     * @param {?=} value
-     * @return {?}
-     */
-    NgForm.prototype.resetForm = function (value) {
-        if (value === void 0) { value = undefined; }
-        this.form.reset(value);
-        this._submitted = false;
-    };
-    /**
-     * \@internal
-     * @param {?} path
-     * @return {?}
-     */
-    NgForm.prototype._findContainer = function (path) {
-        path.pop();
-        return path.length ? (this.form.get(path)) : this.form;
-    };
-    return NgForm;
-}(ControlContainer));
-NgForm.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'form:not([ngNoForm]):not([formGroup]),ngForm,[ngForm]',
-                providers: [formDirectiveProvider],
-                host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
-                outputs: ['ngSubmit'],
-                exportAs: 'ngForm'
-            },] },
-];
-/**
- * @nocollapse
- */
-NgForm.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var FormErrorExamples = {
-    formControlName: "\n    <div [formGroup]=\"myGroup\">\n      <input formControlName=\"firstName\">\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       firstName: new FormControl()\n    });",
-    formGroupName: "\n    <div [formGroup]=\"myGroup\">\n       <div formGroupName=\"person\">\n          <input formControlName=\"firstName\">\n       </div>\n    </div>\n\n    In your class:\n\n    this.myGroup = new FormGroup({\n       person: new FormGroup({ firstName: new FormControl() })\n    });",
-    formArrayName: "\n    <div [formGroup]=\"myGroup\">\n      <div formArrayName=\"cities\">\n        <div *ngFor=\"let city of cityArray.controls; index as i\">\n          <input [formControlName]=\"i\">\n        </div>\n      </div>\n    </div>\n\n    In your class:\n\n    this.cityArray = new FormArray([new FormControl('SF')]);\n    this.myGroup = new FormGroup({\n      cities: this.cityArray\n    });",
-    ngModelGroup: "\n    <form>\n       <div ngModelGroup=\"person\">\n          <input [(ngModel)]=\"person.name\" name=\"firstName\">\n       </div>\n    </form>",
-    ngModelWithFormGroup: "\n    <div [formGroup]=\"myGroup\">\n       <input formControlName=\"firstName\">\n       <input [(ngModel)]=\"showMoreControls\" [ngModelOptions]=\"{standalone: true}\">\n    </div>\n  "
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var TemplateDrivenErrors = (function () {
-    function TemplateDrivenErrors() {
-    }
-    /**
-     * @return {?}
-     */
-    TemplateDrivenErrors.modelParentException = function () {
-        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroup directive.  Try using\n      formGroup's partner directive \"formControlName\" instead.  Example:\n\n      " + FormErrorExamples.formControlName + "\n\n      Or, if you'd like to avoid registering this form control, indicate that it's standalone in ngModelOptions:\n\n      Example:\n\n      " + FormErrorExamples.ngModelWithFormGroup);
-    };
-    /**
-     * @return {?}
-     */
-    TemplateDrivenErrors.formGroupNameException = function () {
-        throw new Error("\n      ngModel cannot be used to register form controls with a parent formGroupName or formArrayName directive.\n\n      Option 1: Use formControlName instead of ngModel (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Update ngModel's parent be ngModelGroup (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
-    };
-    /**
-     * @return {?}
-     */
-    TemplateDrivenErrors.missingNameException = function () {
-        throw new Error("If ngModel is used within a form tag, either the name attribute must be set or the form\n      control must be defined as 'standalone' in ngModelOptions.\n\n      Example 1: <input [(ngModel)]=\"person.firstName\" name=\"first\">\n      Example 2: <input [(ngModel)]=\"person.firstName\" [ngModelOptions]=\"{standalone: true}\">");
-    };
-    /**
-     * @return {?}
-     */
-    TemplateDrivenErrors.modelGroupParentException = function () {
-        throw new Error("\n      ngModelGroup cannot be used with a parent formGroup directive.\n\n      Option 1: Use formGroupName instead of ngModelGroup (reactive strategy):\n\n      " + FormErrorExamples.formGroupName + "\n\n      Option 2:  Use a regular form tag instead of the formGroup directive (template-driven strategy):\n\n      " + FormErrorExamples.ngModelGroup);
-    };
-    return TemplateDrivenErrors;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var modelGroupProvider = {
-    provide: ControlContainer,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgModelGroup; })
-};
-/**
- * \@whatItDoes Creates and binds a {\@link FormGroup} instance to a DOM element.
- *
- * \@howToUse
- *
- * This directive can only be used as a child of {\@link NgForm} (or in other words,
- * within `<form>` tags).
- *
- * Use this directive if you'd like to create a sub-group within a form. This can
- * come in handy if you want to validate a sub-group of your form separately from
- * the rest of your form, or if some values in your domain model make more sense to
- * consume together in a nested object.
- *
- * Pass in the name you'd like this sub-group to have and it will become the key
- * for the sub-group in the form's full value. You can also export the directive into
- * a local template variable using `ngModelGroup` (ex: `#myGroup="ngModelGroup"`).
- *
- * {\@example forms/ts/ngModelGroup/ng_model_group_example.ts region='Component'}
- *
- * * **npm package**: `\@angular/forms`
- *
- * * **NgModule**: `FormsModule`
- *
- * \@stable
- */
-var NgModelGroup = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgModelGroup, _super);
-    /**
-     * @param {?} parent
-     * @param {?} validators
-     * @param {?} asyncValidators
-     */
-    function NgModelGroup(parent, validators, asyncValidators) {
-        var _this = _super.call(this) || this;
-        _this._parent = parent;
-        _this._validators = validators;
-        _this._asyncValidators = asyncValidators;
-        return _this;
-    }
-    /**
-     * \@internal
-     * @return {?}
-     */
-    NgModelGroup.prototype._checkParentType = function () {
-        if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
-            TemplateDrivenErrors.modelGroupParentException();
-        }
-    };
-    return NgModelGroup;
-}(AbstractFormGroupDirective));
-NgModelGroup.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[ngModelGroup]', providers: [modelGroupProvider], exportAs: 'ngModelGroup' },] },
-];
-/**
- * @nocollapse
- */
-NgModelGroup.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-]; };
-NgModelGroup.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModelGroup',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var formControlBinding = {
-    provide: NgControl,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return NgModel; })
-};
-/**
- * `ngModel` forces an additional change detection run when its inputs change:
- * E.g.:
- * ```
- * <div>{{myModel.valid}}</div>
- * <input [(ngModel)]="myValue" #myModel="ngModel">
- * ```
- * I.e. `ngModel` can export itself on the element and then be used in the template.
- * Normally, this would result in expressions before the `input` that use the exported directive
- * to have and old value as they have been
- * dirty checked before. As this is a very common case for `ngModel`, we added this second change
- * detection run.
- *
- * Notes:
- * - this is just one extra run no matter how many `ngModel` have been changed.
- * - this is a general problem when using `exportAs` for directives!
- */
-var resolvedPromise$1 = Promise.resolve(null);
-/**
- * \@whatItDoes Creates a {\@link FormControl} instance from a domain model and binds it
- * to a form control element.
- *
- * The {\@link FormControl} instance will track the value, user interaction, and
- * validation status of the control and keep the view synced with the model. If used
- * within a parent form, the directive will also register itself with the form as a child
- * control.
- *
- * \@howToUse
- *
- * This directive can be used by itself or as part of a larger form. All you need is the
- * `ngModel` selector to activate it.
- *
- * It accepts a domain model as an optional {\@link Input}. If you have a one-way binding
- * to `ngModel` with `[]` syntax, changing the value of the domain model in the component
- * class will set the value in the view. If you have a two-way binding with `[()]` syntax
- * (also known as 'banana-box syntax'), the value in the UI will always be synced back to
- * the domain model in your class as well.
- *
- * If you wish to inspect the properties of the associated {\@link FormControl} (like
- * validity state), you can also export the directive into a local template variable using
- * `ngModel` as the key (ex: `#myVar="ngModel"`). You can then access the control using the
- * directive's `control` property, but most properties you'll need (like `valid` and `dirty`)
- * will fall through to the control anyway, so you can access them directly. You can see a
- * full list of properties directly available in {\@link AbstractControlDirective}.
- *
- * The following is an example of a simple standalone control using `ngModel`:
- *
- * {\@example forms/ts/simpleNgModel/simple_ng_model_example.ts region='Component'}
- *
- * When using the `ngModel` within `<form>` tags, you'll also need to supply a `name` attribute
- * so that the control can be registered with the parent form under that name.
- *
- * It's worth noting that in the context of a parent form, you often can skip one-way or
- * two-way binding because the parent form will sync the value for you. You can access
- * its properties by exporting it into a local template variable using `ngForm` (ex:
- * `#f="ngForm"`). Then you can pass it where it needs to go on submit.
- *
- * If you do need to populate initial values into your form, using a one-way binding for
- * `ngModel` tends to be sufficient as long as you use the exported form's value rather
- * than the domain model's value on submit.
- *
- * Take a look at an example of using `ngModel` within a form:
- *
- * {\@example forms/ts/simpleForm/simple_form_example.ts region='Component'}
- *
- * To see `ngModel` examples with different form control types, see:
- *
- * * Radio buttons: {\@link RadioControlValueAccessor}
- * * Selects: {\@link SelectControlValueAccessor}
- *
- * **npm package**: `\@angular/forms`
- *
- * **NgModule**: `FormsModule`
- *
- *  \@stable
- */
-var NgModel = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](NgModel, _super);
-    /**
-     * @param {?} parent
-     * @param {?} validators
-     * @param {?} asyncValidators
-     * @param {?} valueAccessors
-     */
-    function NgModel(parent, validators, asyncValidators, valueAccessors) {
-        var _this = _super.call(this) || this;
-        /**
-         * \@internal
-         */
-        _this._control = new FormControl();
-        /**
-         * \@internal
-         */
-        _this._registered = false;
-        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        _this._parent = parent;
-        _this._rawValidators = validators || [];
-        _this._rawAsyncValidators = asyncValidators || [];
-        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
-        return _this;
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgModel.prototype.ngOnChanges = function (changes) {
-        this._checkForErrors();
-        if (!this._registered)
-            this._setUpControl();
-        if ('isDisabled' in changes) {
-            this._updateDisabled(changes);
-        }
-        if (isPropertyUpdated(changes, this.viewModel)) {
-            this._updateValue(this.model);
-            this.viewModel = this.model;
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype.ngOnDestroy = function () { this.formDirective && this.formDirective.removeControl(this); };
-    Object.defineProperty(NgModel.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._control; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgModel.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return this._parent ? controlPath(this.name, this._parent) : [this.name];
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgModel.prototype, "formDirective", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._parent ? this._parent.formDirective : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgModel.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return composeValidators(this._rawValidators); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgModel.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return composeAsyncValidators(this._rawAsyncValidators);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} newValue
-     * @return {?}
-     */
-    NgModel.prototype.viewToModelUpdate = function (newValue) {
-        this.viewModel = newValue;
-        this.update.emit(newValue);
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._setUpControl = function () {
-        this._isStandalone() ? this._setUpStandalone() :
-            this.formDirective.addControl(this);
-        this._registered = true;
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._isStandalone = function () {
-        return !this._parent || !!(this.options && this.options.standalone);
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._setUpStandalone = function () {
-        setUpControl(this._control, this);
-        this._control.updateValueAndValidity({ emitEvent: false });
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._checkForErrors = function () {
-        if (!this._isStandalone()) {
-            this._checkParentType();
-        }
-        this._checkName();
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._checkParentType = function () {
-        if (!(this._parent instanceof NgModelGroup) &&
-            this._parent instanceof AbstractFormGroupDirective) {
-            TemplateDrivenErrors.formGroupNameException();
-        }
-        else if (!(this._parent instanceof NgModelGroup) && !(this._parent instanceof NgForm)) {
-            TemplateDrivenErrors.modelParentException();
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgModel.prototype._checkName = function () {
-        if (this.options && this.options.name)
-            this.name = this.options.name;
-        if (!this._isStandalone() && !this.name) {
-            TemplateDrivenErrors.missingNameException();
-        }
-    };
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    NgModel.prototype._updateValue = function (value) {
-        var _this = this;
-        resolvedPromise$1.then(function () { _this.control.setValue(value, { emitViewToModelChange: false }); });
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgModel.prototype._updateDisabled = function (changes) {
-        var _this = this;
-        var /** @type {?} */ disabledValue = changes['isDisabled'].currentValue;
-        var /** @type {?} */ isDisabled = disabledValue === '' || (disabledValue && disabledValue !== 'false');
-        resolvedPromise$1.then(function () {
-            if (isDisabled && !_this.control.disabled) {
-                _this.control.disable();
-            }
-            else if (!isDisabled && _this.control.disabled) {
-                _this.control.enable();
-            }
-        });
-    };
-    return NgModel;
-}(NgControl));
-NgModel.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[ngModel]:not([formControlName]):not([formControl])',
-                providers: [formControlBinding],
-                exportAs: 'ngModel'
-            },] },
-];
-/**
- * @nocollapse
- */
-NgModel.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
-]; };
-NgModel.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
-    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
-    'options': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModelOptions',] },],
-    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var ReactiveErrors = (function () {
-    function ReactiveErrors() {
-    }
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.controlParentException = function () {
-        throw new Error("formControlName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formControlName);
-    };
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.ngModelGroupException = function () {
-        throw new Error("formControlName cannot be used with an ngModelGroup parent. It is only compatible with parents\n       that also have a \"form\" prefix: formGroupName, formArrayName, or formGroup.\n\n       Option 1:  Update the parent to be formGroupName (reactive form strategy)\n\n        " + FormErrorExamples.formGroupName + "\n\n        Option 2: Use ngModel instead of formControlName (template-driven strategy)\n\n        " + FormErrorExamples.ngModelGroup);
-    };
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.missingFormException = function () {
-        throw new Error("formGroup expects a FormGroup instance. Please pass one in.\n\n       Example:\n\n       " + FormErrorExamples.formControlName);
-    };
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.groupParentException = function () {
-        throw new Error("formGroupName must be used with a parent formGroup directive.  You'll want to add a formGroup\n      directive and pass it an existing FormGroup instance (you can create one in your class).\n\n      Example:\n\n      " + FormErrorExamples.formGroupName);
-    };
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.arrayParentException = function () {
-        throw new Error("formArrayName must be used with a parent formGroup directive.  You'll want to add a formGroup\n       directive and pass it an existing FormGroup instance (you can create one in your class).\n\n        Example:\n\n        " + FormErrorExamples.formArrayName);
-    };
-    /**
-     * @return {?}
-     */
-    ReactiveErrors.disabledAttrWarning = function () {
-        console.warn("\n      It looks like you're using the disabled attribute with a reactive form directive. If you set disabled to true\n      when you set up this control in your component class, the disabled attribute will actually be set in the DOM for\n      you. We recommend using this approach to avoid 'changed after checked' errors.\n       \n      Example: \n      form = new FormGroup({\n        first: new FormControl({value: 'Nancy', disabled: true}, Validators.required),\n        last: new FormControl('Drew', Validators.required)\n      });\n    ");
-    };
-    return ReactiveErrors;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var formControlBinding$1 = {
-    provide: NgControl,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormControlDirective; })
-};
-/**
- * \@whatItDoes Syncs a standalone {\@link FormControl} instance to a form control element.
- *
- * In other words, this directive ensures that any values written to the {\@link FormControl}
- * instance programmatically will be written to the DOM element (model -> view). Conversely,
- * any values written to the DOM element through user input will be reflected in the
- * {\@link FormControl} instance (view -> model).
- *
- * \@howToUse
- *
- * Use this directive if you'd like to create and manage a {\@link FormControl} instance directly.
- * Simply create a {\@link FormControl}, save it to your component class, and pass it into the
- * {\@link FormControlDirective}.
- *
- * This directive is designed to be used as a standalone control.  Unlike {\@link FormControlName},
- * it does not require that your {\@link FormControl} instance be part of any parent
- * {\@link FormGroup}, and it won't be registered to any {\@link FormGroupDirective} that
- * exists above it.
- *
- * **Get the value**: the `value` property is always synced and available on the
- * {\@link FormControl} instance. See a full list of available properties in
- * {\@link AbstractControl}.
- *
- * **Set the value**: You can pass in an initial value when instantiating the {\@link FormControl},
- * or you can set it programmatically later using {\@link AbstractControl#setValue setValue} or
- * {\@link AbstractControl#patchValue patchValue}.
- *
- * **Listen to value**: If you want to listen to changes in the value of the control, you can
- * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
- * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
- * re-calculated.
- *
- * ### Example
- *
- * {\@example forms/ts/simpleFormControl/simple_form_control_example.ts region='Component'}
- *
- * * **npm package**: `\@angular/forms`
- *
- * * **NgModule**: `ReactiveFormsModule`
- *
- *  \@stable
- */
-var FormControlDirective = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControlDirective, _super);
-    /**
-     * @param {?} validators
-     * @param {?} asyncValidators
-     * @param {?} valueAccessors
-     */
-    function FormControlDirective(validators, asyncValidators, valueAccessors) {
-        var _this = _super.call(this) || this;
-        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        _this._rawValidators = validators || [];
-        _this._rawAsyncValidators = asyncValidators || [];
-        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
-        return _this;
-    }
-    Object.defineProperty(FormControlDirective.prototype, "isDisabled", {
-        /**
-         * @param {?} isDisabled
-         * @return {?}
-         */
-        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    FormControlDirective.prototype.ngOnChanges = function (changes) {
-        if (this._isControlChanged(changes)) {
-            setUpControl(this.form, this);
-            if (this.control.disabled && ((this.valueAccessor)).setDisabledState) {
-                ((((this.valueAccessor)).setDisabledState))(true);
-            }
-            this.form.updateValueAndValidity({ emitEvent: false });
-        }
-        if (isPropertyUpdated(changes, this.viewModel)) {
-            this.form.setValue(this.model);
-            this.viewModel = this.model;
-        }
-    };
-    Object.defineProperty(FormControlDirective.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () { return []; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlDirective.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return composeValidators(this._rawValidators); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlDirective.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return composeAsyncValidators(this._rawAsyncValidators);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlDirective.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.form; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} newValue
-     * @return {?}
-     */
-    FormControlDirective.prototype.viewToModelUpdate = function (newValue) {
-        this.viewModel = newValue;
-        this.update.emit(newValue);
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    FormControlDirective.prototype._isControlChanged = function (changes) {
-        return changes.hasOwnProperty('form');
-    };
-    return FormControlDirective;
-}(NgControl));
-FormControlDirective.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControl]', providers: [formControlBinding$1], exportAs: 'ngForm' },] },
-];
-/**
- * @nocollapse
- */
-FormControlDirective.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
-]; };
-FormControlDirective.propDecorators = {
-    'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formControl',] },],
-    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
-    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
-    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var formDirectiveProvider$1 = {
-    provide: ControlContainer,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormGroupDirective; })
-};
-/**
- * \@whatItDoes Binds an existing {\@link FormGroup} to a DOM element.
- *
- * \@howToUse
- *
- * This directive accepts an existing {\@link FormGroup} instance. It will then use this
- * {\@link FormGroup} instance to match any child {\@link FormControl}, {\@link FormGroup},
- * and {\@link FormArray} instances to child {\@link FormControlName}, {\@link FormGroupName},
- * and {\@link FormArrayName} directives.
- *
- * **Set value**: You can set the form's initial value when instantiating the
- * {\@link FormGroup}, or you can set it programmatically later using the {\@link FormGroup}'s
- * {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}
- * methods.
- *
- * **Listen to value**: If you want to listen to changes in the value of the form, you can subscribe
- * to the {\@link FormGroup}'s {\@link AbstractControl#valueChanges valueChanges} event.  You can also
- * listen to its {\@link AbstractControl#statusChanges statusChanges} event to be notified when the
- * validation status is re-calculated.
- *
- * Furthermore, you can listen to the directive's `ngSubmit` event to be notified when the user has
- * triggered a form submission. The `ngSubmit` event will be emitted with the original form
- * submission event.
- *
- * ### Example
- *
- * In this example, we create form controls for first name and last name.
- *
- * {\@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
- *
- * **npm package**: `\@angular/forms`
- *
- * **NgModule**: {\@link ReactiveFormsModule}
- *
- *  \@stable
- */
-var FormGroupDirective = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroupDirective, _super);
-    /**
-     * @param {?} _validators
-     * @param {?} _asyncValidators
-     */
-    function FormGroupDirective(_validators, _asyncValidators) {
-        var _this = _super.call(this) || this;
-        _this._validators = _validators;
-        _this._asyncValidators = _asyncValidators;
-        _this._submitted = false;
-        _this.directives = [];
-        _this.form = ((null));
-        _this.ngSubmit = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        return _this;
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    FormGroupDirective.prototype.ngOnChanges = function (changes) {
-        this._checkFormPresent();
-        if (changes.hasOwnProperty('form')) {
-            this._updateValidators();
-            this._updateDomValue();
-            this._updateRegistrations();
-        }
-    };
-    Object.defineProperty(FormGroupDirective.prototype, "submitted", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._submitted; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormGroupDirective.prototype, "formDirective", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormGroupDirective.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.form; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormGroupDirective.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () { return []; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.addControl = function (dir) {
-        var /** @type {?} */ ctrl = this.form.get(dir.path);
-        setUpControl(ctrl, dir);
-        ctrl.updateValueAndValidity({ emitEvent: false });
-        this.directives.push(dir);
-        return ctrl;
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.getControl = function (dir) { return (this.form.get(dir.path)); };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.removeControl = function (dir) { remove(this.directives, dir); };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.addFormGroup = function (dir) {
-        var /** @type {?} */ ctrl = this.form.get(dir.path);
-        setUpFormContainer(ctrl, dir);
-        ctrl.updateValueAndValidity({ emitEvent: false });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.removeFormGroup = function (dir) { };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.getFormGroup = function (dir) { return (this.form.get(dir.path)); };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.addFormArray = function (dir) {
-        var /** @type {?} */ ctrl = this.form.get(dir.path);
-        setUpFormContainer(ctrl, dir);
-        ctrl.updateValueAndValidity({ emitEvent: false });
-    };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.removeFormArray = function (dir) { };
-    /**
-     * @param {?} dir
-     * @return {?}
-     */
-    FormGroupDirective.prototype.getFormArray = function (dir) { return (this.form.get(dir.path)); };
-    /**
-     * @param {?} dir
-     * @param {?} value
-     * @return {?}
-     */
-    FormGroupDirective.prototype.updateModel = function (dir, value) {
-        var /** @type {?} */ ctrl = (this.form.get(dir.path));
-        ctrl.setValue(value);
-    };
-    /**
-     * @param {?} $event
-     * @return {?}
-     */
-    FormGroupDirective.prototype.onSubmit = function ($event) {
-        this._submitted = true;
-        this.ngSubmit.emit($event);
-        return false;
-    };
-    /**
-     * @return {?}
-     */
-    FormGroupDirective.prototype.onReset = function () { this.resetForm(); };
-    /**
-     * @param {?=} value
-     * @return {?}
-     */
-    FormGroupDirective.prototype.resetForm = function (value) {
-        if (value === void 0) { value = undefined; }
-        this.form.reset(value);
-        this._submitted = false;
-    };
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroupDirective.prototype._updateDomValue = function () {
-        var _this = this;
-        this.directives.forEach(function (dir) {
-            var /** @type {?} */ newCtrl = _this.form.get(dir.path);
-            if (dir._control !== newCtrl) {
-                cleanUpControl(dir._control, dir);
-                if (newCtrl)
-                    setUpControl(newCtrl, dir);
-                dir._control = newCtrl;
-            }
-        });
-        this.form._updateTreeValidity({ emitEvent: false });
-    };
-    /**
-     * @return {?}
-     */
-    FormGroupDirective.prototype._updateRegistrations = function () {
-        var _this = this;
-        this.form._registerOnCollectionChange(function () { return _this._updateDomValue(); });
-        if (this._oldForm)
-            this._oldForm._registerOnCollectionChange(function () { });
-        this._oldForm = this.form;
-    };
-    /**
-     * @return {?}
-     */
-    FormGroupDirective.prototype._updateValidators = function () {
-        var /** @type {?} */ sync = composeValidators(this._validators);
-        this.form.validator = Validators.compose([/** @type {?} */ ((this.form.validator)), /** @type {?} */ ((sync))]);
-        var /** @type {?} */ async = composeAsyncValidators(this._asyncValidators);
-        this.form.asyncValidator = Validators.composeAsync([/** @type {?} */ ((this.form.asyncValidator)), /** @type {?} */ ((async))]);
-    };
-    /**
-     * @return {?}
-     */
-    FormGroupDirective.prototype._checkFormPresent = function () {
-        if (!this.form) {
-            ReactiveErrors.missingFormException();
-        }
-    };
-    return FormGroupDirective;
-}(ControlContainer));
-FormGroupDirective.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[formGroup]',
-                providers: [formDirectiveProvider$1],
-                host: { '(submit)': 'onSubmit($event)', '(reset)': 'onReset()' },
-                exportAs: 'ngForm'
-            },] },
-];
-/**
- * @nocollapse
- */
-FormGroupDirective.ctorParameters = function () { return [
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-]; };
-FormGroupDirective.propDecorators = {
-    'form': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formGroup',] },],
-    'ngSubmit': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */] },],
-};
-/**
- * @template T
- * @param {?} list
- * @param {?} el
- * @return {?}
- */
-function remove(list, el) {
-    var /** @type {?} */ index = list.indexOf(el);
-    if (index > -1) {
-        list.splice(index, 1);
-    }
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var formGroupNameProvider = {
-    provide: ControlContainer,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormGroupName; })
-};
-/**
- * \@whatItDoes Syncs a nested {\@link FormGroup} to a DOM element.
- *
- * \@howToUse
- *
- * This directive can only be used with a parent {\@link FormGroupDirective} (selector:
- * `[formGroup]`).
- *
- * It accepts the string name of the nested {\@link FormGroup} you want to link, and
- * will look for a {\@link FormGroup} registered with that name in the parent
- * {\@link FormGroup} instance you passed into {\@link FormGroupDirective}.
- *
- * Nested form groups can come in handy when you want to validate a sub-group of a
- * form separately from the rest or when you'd like to group the values of certain
- * controls into their own nested object.
- *
- * **Access the group**: You can access the associated {\@link FormGroup} using the
- * {\@link AbstractControl#get} method. Ex: `this.form.get('name')`.
- *
- * You can also access individual controls within the group using dot syntax.
- * Ex: `this.form.get('name.first')`
- *
- * **Get the value**: the `value` property is always synced and available on the
- * {\@link FormGroup}. See a full list of available properties in {\@link AbstractControl}.
- *
- * **Set the value**: You can set an initial value for each child control when instantiating
- * the {\@link FormGroup}, or you can set it programmatically later using
- * {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}.
- *
- * **Listen to value**: If you want to listen to changes in the value of the group, you can
- * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
- * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
- * re-calculated.
- *
- * ### Example
- *
- * {\@example forms/ts/nestedFormGroup/nested_form_group_example.ts region='Component'}
- *
- * * **npm package**: `\@angular/forms`
- *
- * * **NgModule**: `ReactiveFormsModule`
- *
- * \@stable
- */
-var FormGroupName = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormGroupName, _super);
-    /**
-     * @param {?} parent
-     * @param {?} validators
-     * @param {?} asyncValidators
-     */
-    function FormGroupName(parent, validators, asyncValidators) {
-        var _this = _super.call(this) || this;
-        _this._parent = parent;
-        _this._validators = validators;
-        _this._asyncValidators = asyncValidators;
-        return _this;
-    }
-    /**
-     * \@internal
-     * @return {?}
-     */
-    FormGroupName.prototype._checkParentType = function () {
-        if (_hasInvalidParent(this._parent)) {
-            ReactiveErrors.groupParentException();
-        }
-    };
-    return FormGroupName;
-}(AbstractFormGroupDirective));
-FormGroupName.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formGroupName]', providers: [formGroupNameProvider] },] },
-];
-/**
- * @nocollapse
- */
-FormGroupName.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-]; };
-FormGroupName.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formGroupName',] },],
-};
-var formArrayNameProvider = {
-    provide: ControlContainer,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormArrayName; })
-};
-/**
- * \@whatItDoes Syncs a nested {\@link FormArray} to a DOM element.
- *
- * \@howToUse
- *
- * This directive is designed to be used with a parent {\@link FormGroupDirective} (selector:
- * `[formGroup]`).
- *
- * It accepts the string name of the nested {\@link FormArray} you want to link, and
- * will look for a {\@link FormArray} registered with that name in the parent
- * {\@link FormGroup} instance you passed into {\@link FormGroupDirective}.
- *
- * Nested form arrays can come in handy when you have a group of form controls but
- * you're not sure how many there will be. Form arrays allow you to create new
- * form controls dynamically.
- *
- * **Access the array**: You can access the associated {\@link FormArray} using the
- * {\@link AbstractControl#get} method on the parent {\@link FormGroup}.
- * Ex: `this.form.get('cities')`.
- *
- * **Get the value**: the `value` property is always synced and available on the
- * {\@link FormArray}. See a full list of available properties in {\@link AbstractControl}.
- *
- * **Set the value**: You can set an initial value for each child control when instantiating
- * the {\@link FormArray}, or you can set the value programmatically later using the
- * {\@link FormArray}'s {\@link AbstractControl#setValue} or {\@link AbstractControl#patchValue}
- * methods.
- *
- * **Listen to value**: If you want to listen to changes in the value of the array, you can
- * subscribe to the {\@link FormArray}'s {\@link AbstractControl#valueChanges} event.  You can also
- * listen to its {\@link AbstractControl#statusChanges} event to be notified when the validation
- * status is re-calculated.
- *
- * **Add new controls**: You can add new controls to the {\@link FormArray} dynamically by
- * calling its {\@link FormArray#push} method.
- *  Ex: `this.form.get('cities').push(new FormControl());`
- *
- * ### Example
- *
- * {\@example forms/ts/nestedFormArray/nested_form_array_example.ts region='Component'}
- *
- * * **npm package**: `\@angular/forms`
- *
- * * **NgModule**: `ReactiveFormsModule`
- *
- * \@stable
- */
-var FormArrayName = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormArrayName, _super);
-    /**
-     * @param {?} parent
-     * @param {?} validators
-     * @param {?} asyncValidators
-     */
-    function FormArrayName(parent, validators, asyncValidators) {
-        var _this = _super.call(this) || this;
-        _this._parent = parent;
-        _this._validators = validators;
-        _this._asyncValidators = asyncValidators;
-        return _this;
-    }
-    /**
-     * @return {?}
-     */
-    FormArrayName.prototype.ngOnInit = function () {
-        this._checkParentType(); /** @type {?} */
-        ((this.formDirective)).addFormArray(this);
-    };
-    /**
-     * @return {?}
-     */
-    FormArrayName.prototype.ngOnDestroy = function () {
-        if (this.formDirective) {
-            this.formDirective.removeFormArray(this);
-        }
-    };
-    Object.defineProperty(FormArrayName.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return ((this.formDirective)).getFormArray(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormArrayName.prototype, "formDirective", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return this._parent ? (this._parent.formDirective) : null;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormArrayName.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () { return controlPath(this.name, this._parent); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormArrayName.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return composeValidators(this._validators); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormArrayName.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return composeAsyncValidators(this._asyncValidators);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    FormArrayName.prototype._checkParentType = function () {
-        if (_hasInvalidParent(this._parent)) {
-            ReactiveErrors.arrayParentException();
-        }
-    };
-    return FormArrayName;
-}(ControlContainer));
-FormArrayName.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formArrayName]', providers: [formArrayNameProvider] },] },
-];
-/**
- * @nocollapse
- */
-FormArrayName.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-]; };
-FormArrayName.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formArrayName',] },],
-};
-/**
- * @param {?} parent
- * @return {?}
- */
-function _hasInvalidParent(parent) {
-    return !(parent instanceof FormGroupName) && !(parent instanceof FormGroupDirective) &&
-        !(parent instanceof FormArrayName);
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var controlNameBinding = {
-    provide: NgControl,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return FormControlName; })
-};
-/**
- * \@whatItDoes Syncs a {\@link FormControl} in an existing {\@link FormGroup} to a form control
- * element by name.
- *
- * In other words, this directive ensures that any values written to the {\@link FormControl}
- * instance programmatically will be written to the DOM element (model -> view). Conversely,
- * any values written to the DOM element through user input will be reflected in the
- * {\@link FormControl} instance (view -> model).
- *
- * \@howToUse
- *
- * This directive is designed to be used with a parent {\@link FormGroupDirective} (selector:
- * `[formGroup]`).
- *
- * It accepts the string name of the {\@link FormControl} instance you want to
- * link, and will look for a {\@link FormControl} registered with that name in the
- * closest {\@link FormGroup} or {\@link FormArray} above it.
- *
- * **Access the control**: You can access the {\@link FormControl} associated with
- * this directive by using the {\@link AbstractControl#get get} method.
- * Ex: `this.form.get('first');`
- *
- * **Get value**: the `value` property is always synced and available on the {\@link FormControl}.
- * See a full list of available properties in {\@link AbstractControl}.
- *
- *  **Set value**: You can set an initial value for the control when instantiating the
- *  {\@link FormControl}, or you can set it programmatically later using
- *  {\@link AbstractControl#setValue setValue} or {\@link AbstractControl#patchValue patchValue}.
- *
- * **Listen to value**: If you want to listen to changes in the value of the control, you can
- * subscribe to the {\@link AbstractControl#valueChanges valueChanges} event.  You can also listen to
- * {\@link AbstractControl#statusChanges statusChanges} to be notified when the validation status is
- * re-calculated.
- *
- * ### Example
- *
- * In this example, we create form controls for first name and last name.
- *
- * {\@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
- *
- * To see `formControlName` examples with different form control types, see:
- *
- * * Radio buttons: {\@link RadioControlValueAccessor}
- * * Selects: {\@link SelectControlValueAccessor}
- *
- * **npm package**: `\@angular/forms`
- *
- * **NgModule**: {\@link ReactiveFormsModule}
- *
- *  \@stable
- */
-var FormControlName = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](FormControlName, _super);
-    /**
-     * @param {?} parent
-     * @param {?} validators
-     * @param {?} asyncValidators
-     * @param {?} valueAccessors
-     */
-    function FormControlName(parent, validators, asyncValidators, valueAccessors) {
-        var _this = _super.call(this) || this;
-        _this._added = false;
-        _this.update = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* EventEmitter */]();
-        _this._parent = parent;
-        _this._rawValidators = validators || [];
-        _this._rawAsyncValidators = asyncValidators || [];
-        _this.valueAccessor = selectValueAccessor(_this, valueAccessors);
-        return _this;
-    }
-    Object.defineProperty(FormControlName.prototype, "isDisabled", {
-        /**
-         * @param {?} isDisabled
-         * @return {?}
-         */
-        set: function (isDisabled) { ReactiveErrors.disabledAttrWarning(); },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    FormControlName.prototype.ngOnChanges = function (changes) {
-        if (!this._added)
-            this._setUpControl();
-        if (isPropertyUpdated(changes, this.viewModel)) {
-            this.viewModel = this.model;
-            this.formDirective.updateModel(this, this.model);
-        }
-    };
-    /**
-     * @return {?}
-     */
-    FormControlName.prototype.ngOnDestroy = function () {
-        if (this.formDirective) {
-            this.formDirective.removeControl(this);
-        }
-    };
-    /**
-     * @param {?} newValue
-     * @return {?}
-     */
-    FormControlName.prototype.viewToModelUpdate = function (newValue) {
-        this.viewModel = newValue;
-        this.update.emit(newValue);
-    };
-    Object.defineProperty(FormControlName.prototype, "path", {
-        /**
-         * @return {?}
-         */
-        get: function () { return controlPath(this.name, /** @type {?} */ ((this._parent))); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlName.prototype, "formDirective", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._parent ? this._parent.formDirective : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlName.prototype, "validator", {
-        /**
-         * @return {?}
-         */
-        get: function () { return composeValidators(this._rawValidators); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlName.prototype, "asyncValidator", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return ((composeAsyncValidators(this._rawAsyncValidators)));
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(FormControlName.prototype, "control", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._control; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    FormControlName.prototype._checkParentType = function () {
-        if (!(this._parent instanceof FormGroupName) &&
-            this._parent instanceof AbstractFormGroupDirective) {
-            ReactiveErrors.ngModelGroupException();
-        }
-        else if (!(this._parent instanceof FormGroupName) && !(this._parent instanceof FormGroupDirective) &&
-            !(this._parent instanceof FormArrayName)) {
-            ReactiveErrors.controlParentException();
-        }
-    };
-    /**
-     * @return {?}
-     */
-    FormControlName.prototype._setUpControl = function () {
-        this._checkParentType();
-        this._control = this.formDirective.addControl(this);
-        if (this.control.disabled && ((this.valueAccessor)).setDisabledState) {
-            ((((this.valueAccessor)).setDisabledState))(true);
-        }
-        this._added = true;
-    };
-    return FormControlName;
-}(NgControl));
-FormControlName.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{ selector: '[formControlName]', providers: [controlNameBinding] },] },
-];
-/**
- * @nocollapse
- */
-FormControlName.ctorParameters = function () { return [
-    { type: ControlContainer, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["T" /* Host */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* SkipSelf */] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_ASYNC_VALIDATORS,] },] },
-    { type: Array, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_13" /* Self */] }, { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["g" /* Inject */], args: [NG_VALUE_ACCESSOR,] },] },
-]; };
-FormControlName.propDecorators = {
-    'name': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['formControlName',] },],
-    'model': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['ngModel',] },],
-    'update': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["_5" /* Output */], args: ['ngModelChange',] },],
-    'isDisabled': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */], args: ['disabled',] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var REQUIRED_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return RequiredValidator; }),
-    multi: true
-};
-var CHECKBOX_REQUIRED_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return CheckboxRequiredValidator; }),
-    multi: true
-};
-/**
- * A Directive that adds the `required` validator to any controls marked with the
- * `required` attribute, via the {\@link NG_VALIDATORS} binding.
- *
- * ### Example
- *
- * ```
- * <input name="fullName" ngModel required>
- * ```
- *
- * \@stable
- */
-var RequiredValidator = (function () {
-    function RequiredValidator() {
-    }
-    Object.defineProperty(RequiredValidator.prototype, "required", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._required; },
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            this._required = value != null && value !== false && "" + value !== 'false';
-            if (this._onChange)
-                this._onChange();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    RequiredValidator.prototype.validate = function (c) {
-        return this.required ? Validators.required(c) : null;
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    RequiredValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
-    return RequiredValidator;
-}());
-RequiredValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: ':not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel]',
-                providers: [REQUIRED_VALIDATOR],
-                host: { '[attr.required]': 'required ? "" : null' }
-            },] },
-];
-/**
- * @nocollapse
- */
-RequiredValidator.ctorParameters = function () { return []; };
-RequiredValidator.propDecorators = {
-    'required': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * A Directive that adds the `required` validator to checkbox controls marked with the
- * `required` attribute, via the {\@link NG_VALIDATORS} binding.
- *
- * ### Example
- *
- * ```
- * <input type="checkbox" name="active" ngModel required>
- * ```
- *
- * \@experimental
- */
-var CheckboxRequiredValidator = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](CheckboxRequiredValidator, _super);
-    function CheckboxRequiredValidator() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    CheckboxRequiredValidator.prototype.validate = function (c) {
-        return this.required ? Validators.requiredTrue(c) : null;
-    };
-    return CheckboxRequiredValidator;
-}(RequiredValidator));
-CheckboxRequiredValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'input[type=checkbox][required][formControlName],input[type=checkbox][required][formControl],input[type=checkbox][required][ngModel]',
-                providers: [CHECKBOX_REQUIRED_VALIDATOR],
-                host: { '[attr.required]': 'required ? "" : null' }
-            },] },
-];
-/**
- * @nocollapse
- */
-CheckboxRequiredValidator.ctorParameters = function () { return []; };
-/**
- * Provider which adds {\@link EmailValidator} to {\@link NG_VALIDATORS}.
- */
-var EMAIL_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return EmailValidator; }),
-    multi: true
-};
-/**
- * A Directive that adds the `email` validator to controls marked with the
- * `email` attribute, via the {\@link NG_VALIDATORS} binding.
- *
- * ### Example
- *
- * ```
- * <input type="email" name="email" ngModel email>
- * <input type="email" name="email" ngModel email="true">
- * <input type="email" name="email" ngModel [email]="true">
- * ```
- *
- * \@experimental
- */
-var EmailValidator = (function () {
-    function EmailValidator() {
-    }
-    Object.defineProperty(EmailValidator.prototype, "email", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            this._enabled = value === '' || value === true || value === 'true';
-            if (this._onChange)
-                this._onChange();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    EmailValidator.prototype.validate = function (c) {
-        return this._enabled ? Validators.email(c) : null;
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    EmailValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
-    return EmailValidator;
-}());
-EmailValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[email][formControlName],[email][formControl],[email][ngModel]',
-                providers: [EMAIL_VALIDATOR]
-            },] },
-];
-/**
- * @nocollapse
- */
-EmailValidator.ctorParameters = function () { return []; };
-EmailValidator.propDecorators = {
-    'email': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * Provider which adds {\@link MinLengthValidator} to {\@link NG_VALIDATORS}.
- *
- * ## Example:
- *
- * {\@example common/forms/ts/validators/validators.ts region='min'}
- */
-var MIN_LENGTH_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return MinLengthValidator; }),
-    multi: true
-};
-/**
- * A directive which installs the {\@link MinLengthValidator} for any `formControlName`,
- * `formControl`, or control with `ngModel` that also has a `minlength` attribute.
- *
- * \@stable
- */
-var MinLengthValidator = (function () {
-    function MinLengthValidator() {
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    MinLengthValidator.prototype.ngOnChanges = function (changes) {
-        if ('minlength' in changes) {
-            this._createValidator();
-            if (this._onChange)
-                this._onChange();
-        }
-    };
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    MinLengthValidator.prototype.validate = function (c) {
-        return this.minlength == null ? null : this._validator(c);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    MinLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
-    /**
-     * @return {?}
-     */
-    MinLengthValidator.prototype._createValidator = function () {
-        this._validator = Validators.minLength(parseInt(this.minlength, 10));
-    };
-    return MinLengthValidator;
-}());
-MinLengthValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[minlength][formControlName],[minlength][formControl],[minlength][ngModel]',
-                providers: [MIN_LENGTH_VALIDATOR],
-                host: { '[attr.minlength]': 'minlength ? minlength : null' }
-            },] },
-];
-/**
- * @nocollapse
- */
-MinLengthValidator.ctorParameters = function () { return []; };
-MinLengthValidator.propDecorators = {
-    'minlength': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * Provider which adds {\@link MaxLengthValidator} to {\@link NG_VALIDATORS}.
- *
- * ## Example:
- *
- * {\@example common/forms/ts/validators/validators.ts region='max'}
- */
-var MAX_LENGTH_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return MaxLengthValidator; }),
-    multi: true
-};
-/**
- * A directive which installs the {\@link MaxLengthValidator} for any `formControlName,
- * `formControl`,
- * or control with `ngModel` that also has a `maxlength` attribute.
- *
- * \@stable
- */
-var MaxLengthValidator = (function () {
-    function MaxLengthValidator() {
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    MaxLengthValidator.prototype.ngOnChanges = function (changes) {
-        if ('maxlength' in changes) {
-            this._createValidator();
-            if (this._onChange)
-                this._onChange();
-        }
-    };
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    MaxLengthValidator.prototype.validate = function (c) {
-        return this.maxlength != null ? this._validator(c) : null;
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    MaxLengthValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
-    /**
-     * @return {?}
-     */
-    MaxLengthValidator.prototype._createValidator = function () {
-        this._validator = Validators.maxLength(parseInt(this.maxlength, 10));
-    };
-    return MaxLengthValidator;
-}());
-MaxLengthValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel]',
-                providers: [MAX_LENGTH_VALIDATOR],
-                host: { '[attr.maxlength]': 'maxlength ? maxlength : null' }
-            },] },
-];
-/**
- * @nocollapse
- */
-MaxLengthValidator.ctorParameters = function () { return []; };
-MaxLengthValidator.propDecorators = {
-    'maxlength': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-var PATTERN_VALIDATOR = {
-    provide: NG_VALIDATORS,
-    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_11" /* forwardRef */])(function () { return PatternValidator; }),
-    multi: true
-};
-/**
- * A Directive that adds the `pattern` validator to any controls marked with the
- * `pattern` attribute, via the {\@link NG_VALIDATORS} binding. Uses attribute value
- * as the regex to validate Control value against.  Follows pattern attribute
- * semantics; i.e. regex must match entire Control value.
- *
- * ### Example
- *
- * ```
- * <input [name]="fullName" pattern="[a-zA-Z ]*" ngModel>
- * ```
- * \@stable
- */
-var PatternValidator = (function () {
-    function PatternValidator() {
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    PatternValidator.prototype.ngOnChanges = function (changes) {
-        if ('pattern' in changes) {
-            this._createValidator();
-            if (this._onChange)
-                this._onChange();
-        }
-    };
-    /**
-     * @param {?} c
-     * @return {?}
-     */
-    PatternValidator.prototype.validate = function (c) { return this._validator(c); };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    PatternValidator.prototype.registerOnValidatorChange = function (fn) { this._onChange = fn; };
-    /**
-     * @return {?}
-     */
-    PatternValidator.prototype._createValidator = function () { this._validator = Validators.pattern(this.pattern); };
-    return PatternValidator;
-}());
-PatternValidator.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: '[pattern][formControlName],[pattern][formControl],[pattern][ngModel]',
-                providers: [PATTERN_VALIDATOR],
-                host: { '[attr.pattern]': 'pattern ? pattern : null' }
-            },] },
-];
-/**
- * @nocollapse
- */
-PatternValidator.ctorParameters = function () { return []; };
-PatternValidator.propDecorators = {
-    'pattern': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* Input */] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Creates an {\@link AbstractControl} from a user-specified configuration.
- *
- * It is essentially syntactic sugar that shortens the `new FormGroup()`,
- * `new FormControl()`, and `new FormArray()` boilerplate that can build up in larger
- * forms.
- *
- * \@howToUse
- *
- * To use, inject `FormBuilder` into your component class. You can then call its methods
- * directly.
- *
- * {\@example forms/ts/formBuilder/form_builder_example.ts region='Component'}
- *
- *  * **npm package**: `\@angular/forms`
- *
- *  * **NgModule**: {\@link ReactiveFormsModule}
- *
- * \@stable
- */
-var FormBuilder = (function () {
-    function FormBuilder() {
-    }
-    /**
-     * Construct a new {\@link FormGroup} with the given map of configuration.
-     * Valid keys for the `extra` parameter map are `validator` and `asyncValidator`.
-     *
-     * See the {\@link FormGroup} constructor for more details.
-     * @param {?} controlsConfig
-     * @param {?=} extra
-     * @return {?}
-     */
-    FormBuilder.prototype.group = function (controlsConfig, extra) {
-        if (extra === void 0) { extra = null; }
-        var /** @type {?} */ controls = this._reduceControls(controlsConfig);
-        var /** @type {?} */ validator = extra != null ? extra['validator'] : null;
-        var /** @type {?} */ asyncValidator = extra != null ? extra['asyncValidator'] : null;
-        return new FormGroup(controls, validator, asyncValidator);
-    };
-    /**
-     * Construct a new {\@link FormControl} with the given `formState`,`validator`, and
-     * `asyncValidator`.
-     *
-     * `formState` can either be a standalone value for the form control or an object
-     * that contains both a value and a disabled status.
-     *
-     * @param {?} formState
-     * @param {?=} validator
-     * @param {?=} asyncValidator
-     * @return {?}
-     */
-    FormBuilder.prototype.control = function (formState, validator, asyncValidator) {
-        return new FormControl(formState, validator, asyncValidator);
-    };
-    /**
-     * Construct a {\@link FormArray} from the given `controlsConfig` array of
-     * configuration, with the given optional `validator` and `asyncValidator`.
-     * @param {?} controlsConfig
-     * @param {?=} validator
-     * @param {?=} asyncValidator
-     * @return {?}
-     */
-    FormBuilder.prototype.array = function (controlsConfig, validator, asyncValidator) {
-        var _this = this;
-        var /** @type {?} */ controls = controlsConfig.map(function (c) { return _this._createControl(c); });
-        return new FormArray(controls, validator, asyncValidator);
-    };
-    /**
-     * \@internal
-     * @param {?} controlsConfig
-     * @return {?}
-     */
-    FormBuilder.prototype._reduceControls = function (controlsConfig) {
-        var _this = this;
-        var /** @type {?} */ controls = {};
-        Object.keys(controlsConfig).forEach(function (controlName) {
-            controls[controlName] = _this._createControl(controlsConfig[controlName]);
-        });
-        return controls;
-    };
-    /**
-     * \@internal
-     * @param {?} controlConfig
-     * @return {?}
-     */
-    FormBuilder.prototype._createControl = function (controlConfig) {
-        if (controlConfig instanceof FormControl || controlConfig instanceof FormGroup ||
-            controlConfig instanceof FormArray) {
-            return controlConfig;
-        }
-        else if (Array.isArray(controlConfig)) {
-            var /** @type {?} */ value = controlConfig[0];
-            var /** @type {?} */ validator = controlConfig.length > 1 ? controlConfig[1] : null;
-            var /** @type {?} */ asyncValidator = controlConfig.length > 2 ? controlConfig[2] : null;
-            return this.control(value, validator, asyncValidator);
-        }
-        else {
-            return this.control(controlConfig);
-        }
-    };
-    return FormBuilder;
-}());
-FormBuilder.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["d" /* Injectable */] },
-];
-/**
- * @nocollapse
- */
-FormBuilder.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the common package.
- */
-/**
- * \@stable
- */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["e" /* Version */]('4.4.7');
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Adds `novalidate` attribute to all forms by default.
- *
- * `novalidate` is used to disable browser's native form validation.
- *
- * If you want to use native validation with Angular forms, just add `ngNativeValidate` attribute:
- *
- * ```
- * <form ngNativeValidate></form>
- * ```
- *
- * \@experimental
- */
-var NgNoValidate = (function () {
-    function NgNoValidate() {
-    }
-    return NgNoValidate;
-}());
-NgNoValidate.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["K" /* Directive */], args: [{
-                selector: 'form:not([ngNoForm]):not([ngNativeValidate])',
-                host: { 'novalidate': '' },
-            },] },
-];
-/**
- * @nocollapse
- */
-NgNoValidate.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var SHARED_FORM_DIRECTIVES = [
-    NgNoValidate,
-    NgSelectOption,
-    NgSelectMultipleOption,
-    DefaultValueAccessor,
-    NumberValueAccessor,
-    RangeValueAccessor,
-    CheckboxControlValueAccessor,
-    SelectControlValueAccessor,
-    SelectMultipleControlValueAccessor,
-    RadioControlValueAccessor,
-    NgControlStatus,
-    NgControlStatusGroup,
-    RequiredValidator,
-    MinLengthValidator,
-    MaxLengthValidator,
-    PatternValidator,
-    CheckboxRequiredValidator,
-    EmailValidator,
-];
-var TEMPLATE_DRIVEN_DIRECTIVES = [NgModel, NgModelGroup, NgForm];
-var REACTIVE_DRIVEN_DIRECTIVES = [FormControlDirective, FormGroupDirective, FormControlName, FormGroupName, FormArrayName];
-/**
- * Internal module used for sharing directives between FormsModule and ReactiveFormsModule
- */
-var InternalFormsSharedModule = (function () {
-    function InternalFormsSharedModule() {
-    }
-    return InternalFormsSharedModule;
-}());
-InternalFormsSharedModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
-                declarations: SHARED_FORM_DIRECTIVES,
-                exports: SHARED_FORM_DIRECTIVES,
-            },] },
-];
-/**
- * @nocollapse
- */
-InternalFormsSharedModule.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * The ng module for forms.
- * \@stable
- */
-var FormsModule = (function () {
-    function FormsModule() {
-    }
-    return FormsModule;
-}());
-FormsModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
-                declarations: TEMPLATE_DRIVEN_DIRECTIVES,
-                providers: [RadioControlRegistry],
-                exports: [InternalFormsSharedModule, TEMPLATE_DRIVEN_DIRECTIVES]
-            },] },
-];
-/**
- * @nocollapse
- */
-FormsModule.ctorParameters = function () { return []; };
-/**
- * The ng module for reactive forms.
- * \@stable
- */
-var ReactiveFormsModule = (function () {
-    function ReactiveFormsModule() {
-    }
-    return ReactiveFormsModule;
-}());
-ReactiveFormsModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["a" /* NgModule */], args: [{
-                declarations: [REACTIVE_DRIVEN_DIRECTIVES],
-                providers: [FormBuilder, RadioControlRegistry],
-                exports: [InternalFormsSharedModule, REACTIVE_DRIVEN_DIRECTIVES]
-            },] },
-];
-/**
- * @nocollapse
- */
-ReactiveFormsModule.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * This module is used for handling user input, by defining and building a {@link FormGroup} that
- * consists of {@link FormControl} objects, and mapping them onto the DOM. {@link FormControl}
- * objects can then be used to read information from the form DOM elements.
- *
- * Forms providers are not included in default providers; you must import these providers
- * explicitly.
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the forms package.
- */
-// This file only reexports content of the `src` folder. Keep it that way.
-/**
- * Generated bundle index. Do not edit.
- */
-
-
-
-/***/ }),
-/* 122 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_compiler__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__(17);
 /* unused harmony export RESOURCE_CACHE_PROVIDER */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return platformBrowserDynamic; });
 /* unused harmony export VERSION */
@@ -64782,6398 +71174,6 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__
 
 
 /***/ }),
-/* 123 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_tslib__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
-/* unused harmony export RouterLink */
-/* unused harmony export RouterLinkWithHref */
-/* unused harmony export RouterLinkActive */
-/* unused harmony export RouterOutlet */
-/* unused harmony export GuardsCheckEnd */
-/* unused harmony export GuardsCheckStart */
-/* unused harmony export NavigationCancel */
-/* unused harmony export NavigationEnd */
-/* unused harmony export NavigationError */
-/* unused harmony export NavigationStart */
-/* unused harmony export ResolveEnd */
-/* unused harmony export ResolveStart */
-/* unused harmony export RouteConfigLoadEnd */
-/* unused harmony export RouteConfigLoadStart */
-/* unused harmony export RoutesRecognized */
-/* unused harmony export RouteReuseStrategy */
-/* unused harmony export Router */
-/* unused harmony export ROUTES */
-/* unused harmony export ROUTER_CONFIGURATION */
-/* unused harmony export ROUTER_INITIALIZER */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RouterModule; });
-/* unused harmony export provideRoutes */
-/* unused harmony export ChildrenOutletContexts */
-/* unused harmony export OutletContext */
-/* unused harmony export NoPreloading */
-/* unused harmony export PreloadAllModules */
-/* unused harmony export PreloadingStrategy */
-/* unused harmony export RouterPreloader */
-/* unused harmony export ActivatedRoute */
-/* unused harmony export ActivatedRouteSnapshot */
-/* unused harmony export RouterState */
-/* unused harmony export RouterStateSnapshot */
-/* unused harmony export PRIMARY_OUTLET */
-/* unused harmony export convertToParamMap */
-/* unused harmony export UrlHandlingStrategy */
-/* unused harmony export DefaultUrlSerializer */
-/* unused harmony export UrlSegment */
-/* unused harmony export UrlSegmentGroup */
-/* unused harmony export UrlSerializer */
-/* unused harmony export UrlTree */
-/* unused harmony export VERSION */
-/* unused harmony export ɵROUTER_PROVIDERS */
-/* unused harmony export ɵflatten */
-/* unused harmony export ɵa */
-/* unused harmony export ɵg */
-/* unused harmony export ɵh */
-/* unused harmony export ɵi */
-/* unused harmony export ɵd */
-/* unused harmony export ɵc */
-/* unused harmony export ɵj */
-/* unused harmony export ɵf */
-/* unused harmony export ɵb */
-/* unused harmony export ɵe */
-/* unused harmony export ɵk */
-/* unused harmony export ɵl */
-
-/**
- * @license Angular v4.4.7
- * (c) 2010-2017 Google, Inc. https://angular.io/
- * License: MIT
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Represents an event triggered when a navigation starts.
- *
- * \@stable
- */
-var NavigationStart = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     */
-    function NavigationStart(id, url) {
-        this.id = id;
-        this.url = url;
-    }
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    NavigationStart.prototype.toString = function () { return "NavigationStart(id: " + this.id + ", url: '" + this.url + "')"; };
-    return NavigationStart;
-}());
-/**
- * \@whatItDoes Represents an event triggered when a navigation ends successfully.
- *
- * \@stable
- */
-var NavigationEnd = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     */
-    function NavigationEnd(id, url, urlAfterRedirects) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-    }
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    NavigationEnd.prototype.toString = function () {
-        return "NavigationEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "')";
-    };
-    return NavigationEnd;
-}());
-/**
- * \@whatItDoes Represents an event triggered when a navigation is canceled.
- *
- * \@stable
- */
-var NavigationCancel = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} reason
-     */
-    function NavigationCancel(id, url, reason) {
-        this.id = id;
-        this.url = url;
-        this.reason = reason;
-    }
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    NavigationCancel.prototype.toString = function () { return "NavigationCancel(id: " + this.id + ", url: '" + this.url + "')"; };
-    return NavigationCancel;
-}());
-/**
- * \@whatItDoes Represents an event triggered when a navigation fails due to an unexpected error.
- *
- * \@stable
- */
-var NavigationError = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} error
-     */
-    function NavigationError(id, url, error) {
-        this.id = id;
-        this.url = url;
-        this.error = error;
-    }
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    NavigationError.prototype.toString = function () {
-        return "NavigationError(id: " + this.id + ", url: '" + this.url + "', error: " + this.error + ")";
-    };
-    return NavigationError;
-}());
-/**
- * \@whatItDoes Represents an event triggered when routes are recognized.
- *
- * \@stable
- */
-var RoutesRecognized = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     * @param {?} state
-     */
-    function RoutesRecognized(id, url, urlAfterRedirects, state) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-        this.state = state;
-    }
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    RoutesRecognized.prototype.toString = function () {
-        return "RoutesRecognized(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
-    };
-    return RoutesRecognized;
-}());
-/**
- * \@whatItDoes Represents an event triggered before lazy loading a route config.
- *
- * \@experimental
- */
-var RouteConfigLoadStart = (function () {
-    /**
-     * @param {?} route
-     */
-    function RouteConfigLoadStart(route) {
-        this.route = route;
-    }
-    /**
-     * @return {?}
-     */
-    RouteConfigLoadStart.prototype.toString = function () { return "RouteConfigLoadStart(path: " + this.route.path + ")"; };
-    return RouteConfigLoadStart;
-}());
-/**
- * \@whatItDoes Represents an event triggered when a route has been lazy loaded.
- *
- * \@experimental
- */
-var RouteConfigLoadEnd = (function () {
-    /**
-     * @param {?} route
-     */
-    function RouteConfigLoadEnd(route) {
-        this.route = route;
-    }
-    /**
-     * @return {?}
-     */
-    RouteConfigLoadEnd.prototype.toString = function () { return "RouteConfigLoadEnd(path: " + this.route.path + ")"; };
-    return RouteConfigLoadEnd;
-}());
-/**
- * \@whatItDoes Represents the start of the Guard phase of routing.
- *
- * \@experimental
- */
-var GuardsCheckStart = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     * @param {?} state
-     */
-    function GuardsCheckStart(id, url, urlAfterRedirects, state) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-        this.state = state;
-    }
-    /**
-     * @return {?}
-     */
-    GuardsCheckStart.prototype.toString = function () {
-        return "GuardsCheckStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
-    };
-    return GuardsCheckStart;
-}());
-/**
- * \@whatItDoes Represents the end of the Guard phase of routing.
- *
- * \@experimental
- */
-var GuardsCheckEnd = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     * @param {?} state
-     * @param {?} shouldActivate
-     */
-    function GuardsCheckEnd(id, url, urlAfterRedirects, state, shouldActivate) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-        this.state = state;
-        this.shouldActivate = shouldActivate;
-    }
-    /**
-     * @return {?}
-     */
-    GuardsCheckEnd.prototype.toString = function () {
-        return "GuardsCheckEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ", shouldActivate: " + this.shouldActivate + ")";
-    };
-    return GuardsCheckEnd;
-}());
-/**
- * \@whatItDoes Represents the start of the Resolve phase of routing. The timing of this
- * event may change, thus it's experimental. In the current iteration it will run
- * in the "resolve" phase whether there's things to resolve or not. In the future this
- * behavior may change to only run when there are things to be resolved.
- *
- * \@experimental
- */
-var ResolveStart = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     * @param {?} state
-     */
-    function ResolveStart(id, url, urlAfterRedirects, state) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-        this.state = state;
-    }
-    /**
-     * @return {?}
-     */
-    ResolveStart.prototype.toString = function () {
-        return "ResolveStart(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
-    };
-    return ResolveStart;
-}());
-/**
- * \@whatItDoes Represents the end of the Resolve phase of routing. See note on
- * {\@link ResolveStart} for use of this experimental API.
- *
- * \@experimental
- */
-var ResolveEnd = (function () {
-    /**
-     * @param {?} id
-     * @param {?} url
-     * @param {?} urlAfterRedirects
-     * @param {?} state
-     */
-    function ResolveEnd(id, url, urlAfterRedirects, state) {
-        this.id = id;
-        this.url = url;
-        this.urlAfterRedirects = urlAfterRedirects;
-        this.state = state;
-    }
-    /**
-     * @return {?}
-     */
-    ResolveEnd.prototype.toString = function () {
-        return "ResolveEnd(id: " + this.id + ", url: '" + this.url + "', urlAfterRedirects: '" + this.urlAfterRedirects + "', state: " + this.state + ")";
-    };
-    return ResolveEnd;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Name of the primary outlet.
- *
- * \@stable
- */
-var PRIMARY_OUTLET = 'primary';
-var ParamsAsMap = (function () {
-    /**
-     * @param {?} params
-     */
-    function ParamsAsMap(params) {
-        this.params = params || {};
-    }
-    /**
-     * @param {?} name
-     * @return {?}
-     */
-    ParamsAsMap.prototype.has = function (name) { return this.params.hasOwnProperty(name); };
-    /**
-     * @param {?} name
-     * @return {?}
-     */
-    ParamsAsMap.prototype.get = function (name) {
-        if (this.has(name)) {
-            var /** @type {?} */ v = this.params[name];
-            return Array.isArray(v) ? v[0] : v;
-        }
-        return null;
-    };
-    /**
-     * @param {?} name
-     * @return {?}
-     */
-    ParamsAsMap.prototype.getAll = function (name) {
-        if (this.has(name)) {
-            var /** @type {?} */ v = this.params[name];
-            return Array.isArray(v) ? v : [v];
-        }
-        return [];
-    };
-    Object.defineProperty(ParamsAsMap.prototype, "keys", {
-        /**
-         * @return {?}
-         */
-        get: function () { return Object.keys(this.params); },
-        enumerable: true,
-        configurable: true
-    });
-    return ParamsAsMap;
-}());
-/**
- * Convert a {\@link Params} instance to a {\@link ParamMap}.
- *
- * \@stable
- * @param {?} params
- * @return {?}
- */
-function convertToParamMap(params) {
-    return new ParamsAsMap(params);
-}
-var NAVIGATION_CANCELING_ERROR = 'ngNavigationCancelingError';
-/**
- * @param {?} message
- * @return {?}
- */
-function navigationCancelingError(message) {
-    var /** @type {?} */ error = Error('NavigationCancelingError: ' + message);
-    ((error))[NAVIGATION_CANCELING_ERROR] = true;
-    return error;
-}
-/**
- * @param {?} error
- * @return {?}
- */
-function isNavigationCancelingError(error) {
-    return ((error))[NAVIGATION_CANCELING_ERROR];
-}
-/**
- * @param {?} segments
- * @param {?} segmentGroup
- * @param {?} route
- * @return {?}
- */
-function defaultUrlMatcher(segments, segmentGroup, route) {
-    var /** @type {?} */ parts = ((route.path)).split('/');
-    if (parts.length > segments.length) {
-        // The actual URL is shorter than the config, no match
-        return null;
-    }
-    if (route.pathMatch === 'full' &&
-        (segmentGroup.hasChildren() || parts.length < segments.length)) {
-        // The config is longer than the actual URL but we are looking for a full match, return null
-        return null;
-    }
-    var /** @type {?} */ posParams = {};
-    // Check each config part against the actual URL
-    for (var /** @type {?} */ index = 0; index < parts.length; index++) {
-        var /** @type {?} */ part = parts[index];
-        var /** @type {?} */ segment = segments[index];
-        var /** @type {?} */ isParameter = part.startsWith(':');
-        if (isParameter) {
-            posParams[part.substring(1)] = segment;
-        }
-        else if (part !== segment.path) {
-            // The actual URL part does not match the config, no match
-            return null;
-        }
-    }
-    return { consumed: segments.slice(0, parts.length), posParams: posParams };
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var LoadedRouterConfig = (function () {
-    /**
-     * @param {?} routes
-     * @param {?} module
-     */
-    function LoadedRouterConfig(routes, module) {
-        this.routes = routes;
-        this.module = module;
-    }
-    return LoadedRouterConfig;
-}());
-/**
- * @param {?} config
- * @param {?=} parentPath
- * @return {?}
- */
-function validateConfig(config, parentPath) {
-    if (parentPath === void 0) { parentPath = ''; }
-    // forEach doesn't iterate undefined values
-    for (var /** @type {?} */ i = 0; i < config.length; i++) {
-        var /** @type {?} */ route = config[i];
-        var /** @type {?} */ fullPath = getFullPath(parentPath, route);
-        validateNode(route, fullPath);
-    }
-}
-/**
- * @param {?} route
- * @param {?} fullPath
- * @return {?}
- */
-function validateNode(route, fullPath) {
-    if (!route) {
-        throw new Error("\n      Invalid configuration of route '" + fullPath + "': Encountered undefined route.\n      The reason might be an extra comma.\n\n      Example:\n      const routes: Routes = [\n        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },\n        { path: 'dashboard',  component: DashboardComponent },, << two commas\n        { path: 'detail/:id', component: HeroDetailComponent }\n      ];\n    ");
-    }
-    if (Array.isArray(route)) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': Array cannot be specified");
-    }
-    if (!route.component && (route.outlet && route.outlet !== PRIMARY_OUTLET)) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': a componentless route cannot have a named outlet set");
-    }
-    if (route.redirectTo && route.children) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and children cannot be used together");
-    }
-    if (route.redirectTo && route.loadChildren) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and loadChildren cannot be used together");
-    }
-    if (route.children && route.loadChildren) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': children and loadChildren cannot be used together");
-    }
-    if (route.redirectTo && route.component) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': redirectTo and component cannot be used together");
-    }
-    if (route.path && route.matcher) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': path and matcher cannot be used together");
-    }
-    if (route.redirectTo === void 0 && !route.component && !route.children && !route.loadChildren) {
-        throw new Error("Invalid configuration of route '" + fullPath + "'. One of the following must be provided: component, redirectTo, children or loadChildren");
-    }
-    if (route.path === void 0 && route.matcher === void 0) {
-        throw new Error("Invalid configuration of route '" + fullPath + "': routes must have either a path or a matcher specified");
-    }
-    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
-        throw new Error("Invalid configuration of route '" + fullPath + "': path cannot start with a slash");
-    }
-    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
-        var /** @type {?} */ exp = "The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.";
-        throw new Error("Invalid configuration of route '{path: \"" + fullPath + "\", redirectTo: \"" + route.redirectTo + "\"}': please provide 'pathMatch'. " + exp);
-    }
-    if (route.pathMatch !== void 0 && route.pathMatch !== 'full' && route.pathMatch !== 'prefix') {
-        throw new Error("Invalid configuration of route '" + fullPath + "': pathMatch can only be set to 'prefix' or 'full'");
-    }
-    if (route.children) {
-        validateConfig(route.children, fullPath);
-    }
-}
-/**
- * @param {?} parentPath
- * @param {?} currentRoute
- * @return {?}
- */
-function getFullPath(parentPath, currentRoute) {
-    if (!currentRoute) {
-        return parentPath;
-    }
-    if (!parentPath && !currentRoute.path) {
-        return '';
-    }
-    else if (parentPath && !currentRoute.path) {
-        return parentPath + "/";
-    }
-    else if (!parentPath && currentRoute.path) {
-        return currentRoute.path;
-    }
-    else {
-        return parentPath + "/" + currentRoute.path;
-    }
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function shallowEqualArrays(a, b) {
-    if (a.length !== b.length)
-        return false;
-    for (var /** @type {?} */ i = 0; i < a.length; ++i) {
-        if (!shallowEqual(a[i], b[i]))
-            return false;
-    }
-    return true;
-}
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function shallowEqual(a, b) {
-    var /** @type {?} */ k1 = Object.keys(a);
-    var /** @type {?} */ k2 = Object.keys(b);
-    if (k1.length != k2.length) {
-        return false;
-    }
-    var /** @type {?} */ key;
-    for (var /** @type {?} */ i = 0; i < k1.length; i++) {
-        key = k1[i];
-        if (a[key] !== b[key]) {
-            return false;
-        }
-    }
-    return true;
-}
-/**
- * @template T
- * @param {?} arr
- * @return {?}
- */
-function flatten(arr) {
-    return Array.prototype.concat.apply([], arr);
-}
-/**
- * @template T
- * @param {?} a
- * @return {?}
- */
-function last$1(a) {
-    return a.length > 0 ? a[a.length - 1] : null;
-}
-/**
- * @param {?} bools
- * @return {?}
- */
-/**
- * @template K, V
- * @param {?} map
- * @param {?} callback
- * @return {?}
- */
-function forEach(map$$1, callback) {
-    for (var /** @type {?} */ prop in map$$1) {
-        if (map$$1.hasOwnProperty(prop)) {
-            callback(map$$1[prop], prop);
-        }
-    }
-}
-/**
- * @template A, B
- * @param {?} obj
- * @param {?} fn
- * @return {?}
- */
-function waitForMap(obj, fn) {
-    if (Object.keys(obj).length === 0) {
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({});
-    }
-    var /** @type {?} */ waitHead = [];
-    var /** @type {?} */ waitTail = [];
-    var /** @type {?} */ res = {};
-    forEach(obj, function (a, k) {
-        var /** @type {?} */ mapped = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(fn(k, a), function (r) { return res[k] = r; });
-        if (k === PRIMARY_OUTLET) {
-            waitHead.push(mapped);
-        }
-        else {
-            waitTail.push(mapped);
-        }
-    });
-    var /** @type {?} */ concat$ = __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__["concatAll"].call(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"].apply(void 0, waitHead.concat(waitTail)));
-    var /** @type {?} */ last$ = __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__["last"].call(concat$);
-    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(last$, function () { return res; });
-}
-/**
- * @param {?} observables
- * @return {?}
- */
-function andObservables(observables) {
-    var /** @type {?} */ merged$ = __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__["mergeAll"].call(observables);
-    return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(merged$, function (result) { return result === true; });
-}
-/**
- * @template T
- * @param {?} value
- * @return {?}
- */
-function wrapIntoObservable(value) {
-    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["X" /* ɵisObservable */])(value)) {
-        return value;
-    }
-    if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["W" /* ɵisPromise */])(value)) {
-        // Use `Promise.resolve()` to wrap promise-like instances.
-        // Required ie when a Resolver returns a AngularJS `$q` promise to correctly trigger the
-        // change detection.
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(Promise.resolve(value));
-    }
-    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(/** @type {?} */ (value));
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @return {?}
- */
-function createEmptyUrlTree() {
-    return new UrlTree(new UrlSegmentGroup([], {}), {}, null);
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @param {?} exact
- * @return {?}
- */
-function containsTree(container, containee, exact) {
-    if (exact) {
-        return equalQueryParams(container.queryParams, containee.queryParams) &&
-            equalSegmentGroups(container.root, containee.root);
-    }
-    return containsQueryParams(container.queryParams, containee.queryParams) &&
-        containsSegmentGroup(container.root, containee.root);
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @return {?}
- */
-function equalQueryParams(container, containee) {
-    return shallowEqual(container, containee);
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @return {?}
- */
-function equalSegmentGroups(container, containee) {
-    if (!equalPath(container.segments, containee.segments))
-        return false;
-    if (container.numberOfChildren !== containee.numberOfChildren)
-        return false;
-    for (var /** @type {?} */ c in containee.children) {
-        if (!container.children[c])
-            return false;
-        if (!equalSegmentGroups(container.children[c], containee.children[c]))
-            return false;
-    }
-    return true;
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @return {?}
- */
-function containsQueryParams(container, containee) {
-    return Object.keys(containee).length <= Object.keys(container).length &&
-        Object.keys(containee).every(function (key) { return containee[key] === container[key]; });
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @return {?}
- */
-function containsSegmentGroup(container, containee) {
-    return containsSegmentGroupHelper(container, containee, containee.segments);
-}
-/**
- * @param {?} container
- * @param {?} containee
- * @param {?} containeePaths
- * @return {?}
- */
-function containsSegmentGroupHelper(container, containee, containeePaths) {
-    if (container.segments.length > containeePaths.length) {
-        var /** @type {?} */ current = container.segments.slice(0, containeePaths.length);
-        if (!equalPath(current, containeePaths))
-            return false;
-        if (containee.hasChildren())
-            return false;
-        return true;
-    }
-    else if (container.segments.length === containeePaths.length) {
-        if (!equalPath(container.segments, containeePaths))
-            return false;
-        for (var /** @type {?} */ c in containee.children) {
-            if (!container.children[c])
-                return false;
-            if (!containsSegmentGroup(container.children[c], containee.children[c]))
-                return false;
-        }
-        return true;
-    }
-    else {
-        var /** @type {?} */ current = containeePaths.slice(0, container.segments.length);
-        var /** @type {?} */ next = containeePaths.slice(container.segments.length);
-        if (!equalPath(container.segments, current))
-            return false;
-        if (!container.children[PRIMARY_OUTLET])
-            return false;
-        return containsSegmentGroupHelper(container.children[PRIMARY_OUTLET], containee, next);
-    }
-}
-/**
- * \@whatItDoes Represents the parsed URL.
- *
- * \@howToUse
- *
- * ```
- * \@Component({templateUrl:'template.html'})
- * class MyComponent {
- *   constructor(router: Router) {
- *     const tree: UrlTree =
- *       router.parseUrl('/team/33/(user/victor//support:help)?debug=true#fragment');
- *     const f = tree.fragment; // return 'fragment'
- *     const q = tree.queryParams; // returns {debug: 'true'}
- *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
- *     const s: UrlSegment[] = g.segments; // returns 2 segments 'team' and '33'
- *     g.children[PRIMARY_OUTLET].segments; // returns 2 segments 'user' and 'victor'
- *     g.children['support'].segments; // return 1 segment 'help'
- *   }
- * }
- * ```
- *
- * \@description
- *
- * Since a router state is a tree, and the URL is nothing but a serialized state, the URL is a
- * serialized tree.
- * UrlTree is a data structure that provides a lot of affordances in dealing with URLs
- *
- * \@stable
- */
-var UrlTree = (function () {
-    /**
-     * \@internal
-     * @param {?} root
-     * @param {?} queryParams
-     * @param {?} fragment
-     */
-    function UrlTree(root, queryParams, fragment) {
-        this.root = root;
-        this.queryParams = queryParams;
-        this.fragment = fragment;
-    }
-    Object.defineProperty(UrlTree.prototype, "queryParamMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._queryParamMap) {
-                this._queryParamMap = convertToParamMap(this.queryParams);
-            }
-            return this._queryParamMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    UrlTree.prototype.toString = function () { return DEFAULT_SERIALIZER.serialize(this); };
-    return UrlTree;
-}());
-/**
- * \@whatItDoes Represents the parsed URL segment group.
- *
- * See {\@link UrlTree} for more information.
- *
- * \@stable
- */
-var UrlSegmentGroup = (function () {
-    /**
-     * @param {?} segments
-     * @param {?} children
-     */
-    function UrlSegmentGroup(segments, children) {
-        var _this = this;
-        this.segments = segments;
-        this.children = children;
-        /**
-         * The parent node in the url tree
-         */
-        this.parent = null;
-        forEach(children, function (v, k) { return v.parent = _this; });
-    }
-    /**
-     * Whether the segment has child segments
-     * @return {?}
-     */
-    UrlSegmentGroup.prototype.hasChildren = function () { return this.numberOfChildren > 0; };
-    Object.defineProperty(UrlSegmentGroup.prototype, "numberOfChildren", {
-        /**
-         * Number of child segments
-         * @return {?}
-         */
-        get: function () { return Object.keys(this.children).length; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    UrlSegmentGroup.prototype.toString = function () { return serializePaths(this); };
-    return UrlSegmentGroup;
-}());
-/**
- * \@whatItDoes Represents a single URL segment.
- *
- * \@howToUse
- *
- * ```
- * \@Component({templateUrl:'template.html'})
- * class MyComponent {
- *   constructor(router: Router) {
- *     const tree: UrlTree = router.parseUrl('/team;id=33');
- *     const g: UrlSegmentGroup = tree.root.children[PRIMARY_OUTLET];
- *     const s: UrlSegment[] = g.segments;
- *     s[0].path; // returns 'team'
- *     s[0].parameters; // returns {id: 33}
- *   }
- * }
- * ```
- *
- * \@description
- *
- * A UrlSegment is a part of a URL between the two slashes. It contains a path and the matrix
- * parameters associated with the segment.
- *
- * \@stable
- */
-var UrlSegment = (function () {
-    /**
-     * @param {?} path
-     * @param {?} parameters
-     */
-    function UrlSegment(path, parameters) {
-        this.path = path;
-        this.parameters = parameters;
-    }
-    Object.defineProperty(UrlSegment.prototype, "parameterMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._parameterMap) {
-                this._parameterMap = convertToParamMap(this.parameters);
-            }
-            return this._parameterMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    UrlSegment.prototype.toString = function () { return serializePath(this); };
-    return UrlSegment;
-}());
-/**
- * @param {?} as
- * @param {?} bs
- * @return {?}
- */
-function equalSegments(as, bs) {
-    return equalPath(as, bs) && as.every(function (a, i) { return shallowEqual(a.parameters, bs[i].parameters); });
-}
-/**
- * @param {?} as
- * @param {?} bs
- * @return {?}
- */
-function equalPath(as, bs) {
-    if (as.length !== bs.length)
-        return false;
-    return as.every(function (a, i) { return a.path === bs[i].path; });
-}
-/**
- * @template T
- * @param {?} segment
- * @param {?} fn
- * @return {?}
- */
-function mapChildrenIntoArray(segment, fn) {
-    var /** @type {?} */ res = [];
-    forEach(segment.children, function (child, childOutlet) {
-        if (childOutlet === PRIMARY_OUTLET) {
-            res = res.concat(fn(child, childOutlet));
-        }
-    });
-    forEach(segment.children, function (child, childOutlet) {
-        if (childOutlet !== PRIMARY_OUTLET) {
-            res = res.concat(fn(child, childOutlet));
-        }
-    });
-    return res;
-}
-/**
- * \@whatItDoes Serializes and deserializes a URL string into a URL tree.
- *
- * \@description The url serialization strategy is customizable. You can
- * make all URLs case insensitive by providing a custom UrlSerializer.
- *
- * See {\@link DefaultUrlSerializer} for an example of a URL serializer.
- *
- * \@stable
- * @abstract
- */
-var UrlSerializer = (function () {
-    function UrlSerializer() {
-    }
-    /**
-     * Parse a url into a {\@link UrlTree}
-     * @abstract
-     * @param {?} url
-     * @return {?}
-     */
-    UrlSerializer.prototype.parse = function (url) { };
-    /**
-     * Converts a {\@link UrlTree} into a url
-     * @abstract
-     * @param {?} tree
-     * @return {?}
-     */
-    UrlSerializer.prototype.serialize = function (tree) { };
-    return UrlSerializer;
-}());
-/**
- * \@whatItDoes A default implementation of the {\@link UrlSerializer}.
- *
- * \@description
- *
- * Example URLs:
- *
- * ```
- * /inbox/33(popup:compose)
- * /inbox/33;open=true/messages/44
- * ```
- *
- * DefaultUrlSerializer uses parentheses to serialize secondary segments (e.g., popup:compose), the
- * colon syntax to specify the outlet, and the ';parameter=value' syntax (e.g., open=true) to
- * specify route specific parameters.
- *
- * \@stable
- */
-var DefaultUrlSerializer = (function () {
-    function DefaultUrlSerializer() {
-    }
-    /**
-     * Parses a url into a {\@link UrlTree}
-     * @param {?} url
-     * @return {?}
-     */
-    DefaultUrlSerializer.prototype.parse = function (url) {
-        var /** @type {?} */ p = new UrlParser(url);
-        return new UrlTree(p.parseRootSegment(), p.parseQueryParams(), p.parseFragment());
-    };
-    /**
-     * Converts a {\@link UrlTree} into a url
-     * @param {?} tree
-     * @return {?}
-     */
-    DefaultUrlSerializer.prototype.serialize = function (tree) {
-        var /** @type {?} */ segment = "/" + serializeSegment(tree.root, true);
-        var /** @type {?} */ query = serializeQueryParams(tree.queryParams);
-        var /** @type {?} */ fragment = typeof tree.fragment === "string" ? "#" + encodeURI(/** @type {?} */ ((tree.fragment))) : '';
-        return "" + segment + query + fragment;
-    };
-    return DefaultUrlSerializer;
-}());
-var DEFAULT_SERIALIZER = new DefaultUrlSerializer();
-/**
- * @param {?} segment
- * @return {?}
- */
-function serializePaths(segment) {
-    return segment.segments.map(function (p) { return serializePath(p); }).join('/');
-}
-/**
- * @param {?} segment
- * @param {?} root
- * @return {?}
- */
-function serializeSegment(segment, root) {
-    if (!segment.hasChildren()) {
-        return serializePaths(segment);
-    }
-    if (root) {
-        var /** @type {?} */ primary = segment.children[PRIMARY_OUTLET] ?
-            serializeSegment(segment.children[PRIMARY_OUTLET], false) :
-            '';
-        var /** @type {?} */ children_1 = [];
-        forEach(segment.children, function (v, k) {
-            if (k !== PRIMARY_OUTLET) {
-                children_1.push(k + ":" + serializeSegment(v, false));
-            }
-        });
-        return children_1.length > 0 ? primary + "(" + children_1.join('//') + ")" : primary;
-    }
-    else {
-        var /** @type {?} */ children = mapChildrenIntoArray(segment, function (v, k) {
-            if (k === PRIMARY_OUTLET) {
-                return [serializeSegment(segment.children[PRIMARY_OUTLET], false)];
-            }
-            return [k + ":" + serializeSegment(v, false)];
-        });
-        return serializePaths(segment) + "/(" + children.join('//') + ")";
-    }
-}
-/**
- * This method is intended for encoding *key* or *value* parts of query component. We need a custom
- * method because encodeURIComponent is too aggressive and encodes stuff that doesn't have to be
- * encoded per http://tools.ietf.org/html/rfc3986:
- *    query         = *( pchar / "/" / "?" )
- *    pchar         = unreserved / pct-encoded / sub-delims / ":" / "\@"
- *    unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
- *    pct-encoded   = "%" HEXDIG HEXDIG
- *    sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
- *                     / "*" / "+" / "," / ";" / "="
- * @param {?} s
- * @return {?}
- */
-function encode(s) {
-    return encodeURIComponent(s)
-        .replace(/%40/g, '@')
-        .replace(/%3A/gi, ':')
-        .replace(/%24/g, '$')
-        .replace(/%2C/gi, ',')
-        .replace(/%3B/gi, ';');
-}
-/**
- * @param {?} s
- * @return {?}
- */
-function decode(s) {
-    return decodeURIComponent(s);
-}
-/**
- * @param {?} path
- * @return {?}
- */
-function serializePath(path) {
-    return "" + encode(path.path) + serializeParams(path.parameters);
-}
-/**
- * @param {?} params
- * @return {?}
- */
-function serializeParams(params) {
-    return Object.keys(params).map(function (key) { return ";" + encode(key) + "=" + encode(params[key]); }).join('');
-}
-/**
- * @param {?} params
- * @return {?}
- */
-function serializeQueryParams(params) {
-    var /** @type {?} */ strParams = Object.keys(params).map(function (name) {
-        var /** @type {?} */ value = params[name];
-        return Array.isArray(value) ? value.map(function (v) { return encode(name) + "=" + encode(v); }).join('&') :
-            encode(name) + "=" + encode(value);
-    });
-    return strParams.length ? "?" + strParams.join("&") : '';
-}
-var SEGMENT_RE = /^[^\/()?;=&#]+/;
-/**
- * @param {?} str
- * @return {?}
- */
-function matchSegments(str) {
-    var /** @type {?} */ match = str.match(SEGMENT_RE);
-    return match ? match[0] : '';
-}
-var QUERY_PARAM_RE = /^[^=?&#]+/;
-/**
- * @param {?} str
- * @return {?}
- */
-function matchQueryParams(str) {
-    var /** @type {?} */ match = str.match(QUERY_PARAM_RE);
-    return match ? match[0] : '';
-}
-var QUERY_PARAM_VALUE_RE = /^[^?&#]+/;
-/**
- * @param {?} str
- * @return {?}
- */
-function matchUrlQueryParamValue(str) {
-    var /** @type {?} */ match = str.match(QUERY_PARAM_VALUE_RE);
-    return match ? match[0] : '';
-}
-var UrlParser = (function () {
-    /**
-     * @param {?} url
-     */
-    function UrlParser(url) {
-        this.url = url;
-        this.remaining = url;
-    }
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseRootSegment = function () {
-        this.consumeOptional('/');
-        if (this.remaining === '' || this.peekStartsWith('?') || this.peekStartsWith('#')) {
-            return new UrlSegmentGroup([], {});
-        }
-        // The root segment group never has segments
-        return new UrlSegmentGroup([], this.parseChildren());
-    };
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseQueryParams = function () {
-        var /** @type {?} */ params = {};
-        if (this.consumeOptional('?')) {
-            do {
-                this.parseQueryParam(params);
-            } while (this.consumeOptional('&'));
-        }
-        return params;
-    };
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseFragment = function () {
-        return this.consumeOptional('#') ? decodeURI(this.remaining) : null;
-    };
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseChildren = function () {
-        if (this.remaining === '') {
-            return {};
-        }
-        this.consumeOptional('/');
-        var /** @type {?} */ segments = [];
-        if (!this.peekStartsWith('(')) {
-            segments.push(this.parseSegment());
-        }
-        while (this.peekStartsWith('/') && !this.peekStartsWith('//') && !this.peekStartsWith('/(')) {
-            this.capture('/');
-            segments.push(this.parseSegment());
-        }
-        var /** @type {?} */ children = {};
-        if (this.peekStartsWith('/(')) {
-            this.capture('/');
-            children = this.parseParens(true);
-        }
-        var /** @type {?} */ res = {};
-        if (this.peekStartsWith('(')) {
-            res = this.parseParens(false);
-        }
-        if (segments.length > 0 || Object.keys(children).length > 0) {
-            res[PRIMARY_OUTLET] = new UrlSegmentGroup(segments, children);
-        }
-        return res;
-    };
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseSegment = function () {
-        var /** @type {?} */ path = matchSegments(this.remaining);
-        if (path === '' && this.peekStartsWith(';')) {
-            throw new Error("Empty path url segment cannot have parameters: '" + this.remaining + "'.");
-        }
-        this.capture(path);
-        return new UrlSegment(decode(path), this.parseMatrixParams());
-    };
-    /**
-     * @return {?}
-     */
-    UrlParser.prototype.parseMatrixParams = function () {
-        var /** @type {?} */ params = {};
-        while (this.consumeOptional(';')) {
-            this.parseParam(params);
-        }
-        return params;
-    };
-    /**
-     * @param {?} params
-     * @return {?}
-     */
-    UrlParser.prototype.parseParam = function (params) {
-        var /** @type {?} */ key = matchSegments(this.remaining);
-        if (!key) {
-            return;
-        }
-        this.capture(key);
-        var /** @type {?} */ value = '';
-        if (this.consumeOptional('=')) {
-            var /** @type {?} */ valueMatch = matchSegments(this.remaining);
-            if (valueMatch) {
-                value = valueMatch;
-                this.capture(value);
-            }
-        }
-        params[decode(key)] = decode(value);
-    };
-    /**
-     * @param {?} params
-     * @return {?}
-     */
-    UrlParser.prototype.parseQueryParam = function (params) {
-        var /** @type {?} */ key = matchQueryParams(this.remaining);
-        if (!key) {
-            return;
-        }
-        this.capture(key);
-        var /** @type {?} */ value = '';
-        if (this.consumeOptional('=')) {
-            var /** @type {?} */ valueMatch = matchUrlQueryParamValue(this.remaining);
-            if (valueMatch) {
-                value = valueMatch;
-                this.capture(value);
-            }
-        }
-        var /** @type {?} */ decodedKey = decode(key);
-        var /** @type {?} */ decodedVal = decode(value);
-        if (params.hasOwnProperty(decodedKey)) {
-            // Append to existing values
-            var /** @type {?} */ currentVal = params[decodedKey];
-            if (!Array.isArray(currentVal)) {
-                currentVal = [currentVal];
-                params[decodedKey] = currentVal;
-            }
-            currentVal.push(decodedVal);
-        }
-        else {
-            // Create a new value
-            params[decodedKey] = decodedVal;
-        }
-    };
-    /**
-     * @param {?} allowPrimary
-     * @return {?}
-     */
-    UrlParser.prototype.parseParens = function (allowPrimary) {
-        var /** @type {?} */ segments = {};
-        this.capture('(');
-        while (!this.consumeOptional(')') && this.remaining.length > 0) {
-            var /** @type {?} */ path = matchSegments(this.remaining);
-            var /** @type {?} */ next = this.remaining[path.length];
-            // if is is not one of these characters, then the segment was unescaped
-            // or the group was not closed
-            if (next !== '/' && next !== ')' && next !== ';') {
-                throw new Error("Cannot parse url '" + this.url + "'");
-            }
-            var /** @type {?} */ outletName = ((undefined));
-            if (path.indexOf(':') > -1) {
-                outletName = path.substr(0, path.indexOf(':'));
-                this.capture(outletName);
-                this.capture(':');
-            }
-            else if (allowPrimary) {
-                outletName = PRIMARY_OUTLET;
-            }
-            var /** @type {?} */ children = this.parseChildren();
-            segments[outletName] = Object.keys(children).length === 1 ? children[PRIMARY_OUTLET] :
-                new UrlSegmentGroup([], children);
-            this.consumeOptional('//');
-        }
-        return segments;
-    };
-    /**
-     * @param {?} str
-     * @return {?}
-     */
-    UrlParser.prototype.peekStartsWith = function (str) { return this.remaining.startsWith(str); };
-    /**
-     * @param {?} str
-     * @return {?}
-     */
-    UrlParser.prototype.consumeOptional = function (str) {
-        if (this.peekStartsWith(str)) {
-            this.remaining = this.remaining.substring(str.length);
-            return true;
-        }
-        return false;
-    };
-    /**
-     * @param {?} str
-     * @return {?}
-     */
-    UrlParser.prototype.capture = function (str) {
-        if (!this.consumeOptional(str)) {
-            throw new Error("Expected \"" + str + "\".");
-        }
-    };
-    return UrlParser;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var NoMatch = (function () {
-    /**
-     * @param {?=} segmentGroup
-     */
-    function NoMatch(segmentGroup) {
-        this.segmentGroup = segmentGroup || null;
-    }
-    return NoMatch;
-}());
-var AbsoluteRedirect = (function () {
-    /**
-     * @param {?} urlTree
-     */
-    function AbsoluteRedirect(urlTree) {
-        this.urlTree = urlTree;
-    }
-    return AbsoluteRedirect;
-}());
-/**
- * @param {?} segmentGroup
- * @return {?}
- */
-function noMatch(segmentGroup) {
-    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new NoMatch(segmentGroup)); });
-}
-/**
- * @param {?} newTree
- * @return {?}
- */
-function absoluteRedirect(newTree) {
-    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new AbsoluteRedirect(newTree)); });
-}
-/**
- * @param {?} redirectTo
- * @return {?}
- */
-function namedOutletsRedirect(redirectTo) {
-    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(new Error("Only absolute redirects can have named outlets. redirectTo: '" + redirectTo + "'")); });
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function canLoadFails(route) {
-    return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(navigationCancelingError("Cannot load children because the guard of the route \"path: '" + route.path + "'\" returned false")); });
-}
-/**
- * Returns the `UrlTree` with the redirection applied.
- *
- * Lazy modules are loaded along the way.
- * @param {?} moduleInjector
- * @param {?} configLoader
- * @param {?} urlSerializer
- * @param {?} urlTree
- * @param {?} config
- * @return {?}
- */
-function applyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
-    return new ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config).apply();
-}
-var ApplyRedirects = (function () {
-    /**
-     * @param {?} moduleInjector
-     * @param {?} configLoader
-     * @param {?} urlSerializer
-     * @param {?} urlTree
-     * @param {?} config
-     */
-    function ApplyRedirects(moduleInjector, configLoader, urlSerializer, urlTree, config) {
-        this.configLoader = configLoader;
-        this.urlSerializer = urlSerializer;
-        this.urlTree = urlTree;
-        this.config = config;
-        this.allowRedirects = true;
-        this.ngModule = moduleInjector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
-    }
-    /**
-     * @return {?}
-     */
-    ApplyRedirects.prototype.apply = function () {
-        var _this = this;
-        var /** @type {?} */ expanded$ = this.expandSegmentGroup(this.ngModule, this.config, this.urlTree.root, PRIMARY_OUTLET);
-        var /** @type {?} */ urlTrees$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (rootSegmentGroup) { return _this.createUrlTree(rootSegmentGroup, _this.urlTree.queryParams, /** @type {?} */ ((_this.urlTree.fragment))); });
-        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(urlTrees$, function (e) {
-            if (e instanceof AbsoluteRedirect) {
-                // after an absolute redirect we do not apply any more redirects!
-                _this.allowRedirects = false;
-                // we need to run matching, so we can fetch all lazy-loaded modules
-                return _this.match(e.urlTree);
-            }
-            if (e instanceof NoMatch) {
-                throw _this.noMatchError(e);
-            }
-            throw e;
-        });
-    };
-    /**
-     * @param {?} tree
-     * @return {?}
-     */
-    ApplyRedirects.prototype.match = function (tree) {
-        var _this = this;
-        var /** @type {?} */ expanded$ = this.expandSegmentGroup(this.ngModule, this.config, tree.root, PRIMARY_OUTLET);
-        var /** @type {?} */ mapped$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (rootSegmentGroup) { return _this.createUrlTree(rootSegmentGroup, tree.queryParams, /** @type {?} */ ((tree.fragment))); });
-        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(mapped$, function (e) {
-            if (e instanceof NoMatch) {
-                throw _this.noMatchError(e);
-            }
-            throw e;
-        });
-    };
-    /**
-     * @param {?} e
-     * @return {?}
-     */
-    ApplyRedirects.prototype.noMatchError = function (e) {
-        return new Error("Cannot match any routes. URL Segment: '" + e.segmentGroup + "'");
-    };
-    /**
-     * @param {?} rootCandidate
-     * @param {?} queryParams
-     * @param {?} fragment
-     * @return {?}
-     */
-    ApplyRedirects.prototype.createUrlTree = function (rootCandidate, queryParams, fragment) {
-        var /** @type {?} */ root = rootCandidate.segments.length > 0 ?
-            new UrlSegmentGroup([], (_a = {}, _a[PRIMARY_OUTLET] = rootCandidate, _a)) :
-            rootCandidate;
-        return new UrlTree(root, queryParams, fragment);
-        var _a;
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} routes
-     * @param {?} segmentGroup
-     * @param {?} outlet
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandSegmentGroup = function (ngModule, routes, segmentGroup, outlet) {
-        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
-            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.expandChildren(ngModule, routes, segmentGroup), function (children) { return new UrlSegmentGroup([], children); });
-        }
-        return this.expandSegment(ngModule, segmentGroup, routes, segmentGroup.segments, outlet, true);
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} routes
-     * @param {?} segmentGroup
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandChildren = function (ngModule, routes, segmentGroup) {
-        var _this = this;
-        return waitForMap(segmentGroup.children, function (childOutlet, child) { return _this.expandSegmentGroup(ngModule, routes, child, childOutlet); });
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} segmentGroup
-     * @param {?} routes
-     * @param {?} segments
-     * @param {?} outlet
-     * @param {?} allowRedirects
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandSegment = function (ngModule, segmentGroup, routes, segments, outlet, allowRedirects) {
-        var _this = this;
-        var /** @type {?} */ routes$ = __WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"].apply(void 0, routes);
-        var /** @type {?} */ processedRoutes$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(routes$, function (r) {
-            var /** @type {?} */ expanded$ = _this.expandSegmentAgainstRoute(ngModule, segmentGroup, routes, r, segments, outlet, allowRedirects);
-            return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(expanded$, function (e) {
-                if (e instanceof NoMatch) {
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null);
-                }
-                throw e;
-            });
-        });
-        var /** @type {?} */ concattedProcessedRoutes$ = __WEBPACK_IMPORTED_MODULE_16_rxjs_operator_concatAll__["concatAll"].call(processedRoutes$);
-        var /** @type {?} */ first$ = __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(concattedProcessedRoutes$, function (s) { return !!s; });
-        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(first$, function (e, _) {
-            if (e instanceof __WEBPACK_IMPORTED_MODULE_17_rxjs_util_EmptyError__["EmptyError"]) {
-                if (_this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup([], {}));
-                }
-                throw new NoMatch(segmentGroup);
-            }
-            throw e;
-        });
-    };
-    /**
-     * @param {?} segmentGroup
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    ApplyRedirects.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
-        return segments.length === 0 && !segmentGroup.children[outlet];
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} segmentGroup
-     * @param {?} routes
-     * @param {?} route
-     * @param {?} paths
-     * @param {?} outlet
-     * @param {?} allowRedirects
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandSegmentAgainstRoute = function (ngModule, segmentGroup, routes, route, paths, outlet, allowRedirects) {
-        if (getOutlet(route) !== outlet) {
-            return noMatch(segmentGroup);
-        }
-        if (route.redirectTo === undefined) {
-            return this.matchSegmentAgainstRoute(ngModule, segmentGroup, route, paths);
-        }
-        if (allowRedirects && this.allowRedirects) {
-            return this.expandSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, paths, outlet);
-        }
-        return noMatch(segmentGroup);
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} segmentGroup
-     * @param {?} routes
-     * @param {?} route
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
-        if (route.path === '**') {
-            return this.expandWildCardWithParamsAgainstRouteUsingRedirect(ngModule, routes, route, outlet);
-        }
-        return this.expandRegularSegmentAgainstRouteUsingRedirect(ngModule, segmentGroup, routes, route, segments, outlet);
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} routes
-     * @param {?} route
-     * @param {?} outlet
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandWildCardWithParamsAgainstRouteUsingRedirect = function (ngModule, routes, route, outlet) {
-        var _this = this;
-        var /** @type {?} */ newTree = this.applyRedirectCommands([], /** @type {?} */ ((route.redirectTo)), {});
-        if (((route.redirectTo)).startsWith('/')) {
-            return absoluteRedirect(newTree);
-        }
-        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(this.lineralizeSegments(route, newTree), function (newSegments) {
-            var /** @type {?} */ group = new UrlSegmentGroup(newSegments, {});
-            return _this.expandSegment(ngModule, group, routes, newSegments, outlet, false);
-        });
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} segmentGroup
-     * @param {?} routes
-     * @param {?} route
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    ApplyRedirects.prototype.expandRegularSegmentAgainstRouteUsingRedirect = function (ngModule, segmentGroup, routes, route, segments, outlet) {
-        var _this = this;
-        var _a = match(segmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild, positionalParamSegments = _a.positionalParamSegments;
-        if (!matched)
-            return noMatch(segmentGroup);
-        var /** @type {?} */ newTree = this.applyRedirectCommands(consumedSegments, /** @type {?} */ ((route.redirectTo)), /** @type {?} */ (positionalParamSegments));
-        if (((route.redirectTo)).startsWith('/')) {
-            return absoluteRedirect(newTree);
-        }
-        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(this.lineralizeSegments(route, newTree), function (newSegments) {
-            return _this.expandSegment(ngModule, segmentGroup, routes, newSegments.concat(segments.slice(lastChild)), outlet, false);
-        });
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} rawSegmentGroup
-     * @param {?} route
-     * @param {?} segments
-     * @return {?}
-     */
-    ApplyRedirects.prototype.matchSegmentAgainstRoute = function (ngModule, rawSegmentGroup, route, segments) {
-        var _this = this;
-        if (route.path === '**') {
-            if (route.loadChildren) {
-                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.configLoader.load(ngModule.injector, route), function (cfg) {
-                    route._loadedConfig = cfg;
-                    return new UrlSegmentGroup(segments, {});
-                });
-            }
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup(segments, {}));
-        }
-        var _a = match(rawSegmentGroup, route, segments), matched = _a.matched, consumedSegments = _a.consumedSegments, lastChild = _a.lastChild;
-        if (!matched)
-            return noMatch(rawSegmentGroup);
-        var /** @type {?} */ rawSlicedSegments = segments.slice(lastChild);
-        var /** @type {?} */ childConfig$ = this.getChildConfig(ngModule, route);
-        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(childConfig$, function (routerConfig) {
-            var /** @type {?} */ childModule = routerConfig.module;
-            var /** @type {?} */ childConfig = routerConfig.routes;
-            var _a = split(rawSegmentGroup, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _a.segmentGroup, slicedSegments = _a.slicedSegments;
-            if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
-                var /** @type {?} */ expanded$_1 = _this.expandChildren(childModule, childConfig, segmentGroup);
-                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$_1, function (children) { return new UrlSegmentGroup(consumedSegments, children); });
-            }
-            if (childConfig.length === 0 && slicedSegments.length === 0) {
-                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new UrlSegmentGroup(consumedSegments, {}));
-            }
-            var /** @type {?} */ expanded$ = _this.expandSegment(childModule, segmentGroup, childConfig, slicedSegments, PRIMARY_OUTLET, true);
-            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(expanded$, function (cs) { return new UrlSegmentGroup(consumedSegments.concat(cs.segments), cs.children); });
-        });
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} route
-     * @return {?}
-     */
-    ApplyRedirects.prototype.getChildConfig = function (ngModule, route) {
-        var _this = this;
-        if (route.children) {
-            // The children belong to the same module
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new LoadedRouterConfig(route.children, ngModule));
-        }
-        if (route.loadChildren) {
-            // lazy children belong to the loaded module
-            if (route._loadedConfig !== undefined) {
-                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(route._loadedConfig);
-            }
-            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(runCanLoadGuard(ngModule.injector, route), function (shouldLoad) {
-                if (shouldLoad) {
-                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.configLoader.load(ngModule.injector, route), function (cfg) {
-                        route._loadedConfig = cfg;
-                        return cfg;
-                    });
-                }
-                return canLoadFails(route);
-            });
-        }
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(new LoadedRouterConfig([], ngModule));
-    };
-    /**
-     * @param {?} route
-     * @param {?} urlTree
-     * @return {?}
-     */
-    ApplyRedirects.prototype.lineralizeSegments = function (route, urlTree) {
-        var /** @type {?} */ res = [];
-        var /** @type {?} */ c = urlTree.root;
-        while (true) {
-            res = res.concat(c.segments);
-            if (c.numberOfChildren === 0) {
-                return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(res);
-            }
-            if (c.numberOfChildren > 1 || !c.children[PRIMARY_OUTLET]) {
-                return namedOutletsRedirect(/** @type {?} */ ((route.redirectTo)));
-            }
-            c = c.children[PRIMARY_OUTLET];
-        }
-    };
-    /**
-     * @param {?} segments
-     * @param {?} redirectTo
-     * @param {?} posParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.applyRedirectCommands = function (segments, redirectTo, posParams) {
-        return this.applyRedirectCreatreUrlTree(redirectTo, this.urlSerializer.parse(redirectTo), segments, posParams);
-    };
-    /**
-     * @param {?} redirectTo
-     * @param {?} urlTree
-     * @param {?} segments
-     * @param {?} posParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.applyRedirectCreatreUrlTree = function (redirectTo, urlTree, segments, posParams) {
-        var /** @type {?} */ newRoot = this.createSegmentGroup(redirectTo, urlTree.root, segments, posParams);
-        return new UrlTree(newRoot, this.createQueryParams(urlTree.queryParams, this.urlTree.queryParams), urlTree.fragment);
-    };
-    /**
-     * @param {?} redirectToParams
-     * @param {?} actualParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.createQueryParams = function (redirectToParams, actualParams) {
-        var /** @type {?} */ res = {};
-        forEach(redirectToParams, function (v, k) {
-            var /** @type {?} */ copySourceValue = typeof v === 'string' && v.startsWith(':');
-            if (copySourceValue) {
-                var /** @type {?} */ sourceName = v.substring(1);
-                res[k] = actualParams[sourceName];
-            }
-            else {
-                res[k] = v;
-            }
-        });
-        return res;
-    };
-    /**
-     * @param {?} redirectTo
-     * @param {?} group
-     * @param {?} segments
-     * @param {?} posParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.createSegmentGroup = function (redirectTo, group, segments, posParams) {
-        var _this = this;
-        var /** @type {?} */ updatedSegments = this.createSegments(redirectTo, group.segments, segments, posParams);
-        var /** @type {?} */ children = {};
-        forEach(group.children, function (child, name) {
-            children[name] = _this.createSegmentGroup(redirectTo, child, segments, posParams);
-        });
-        return new UrlSegmentGroup(updatedSegments, children);
-    };
-    /**
-     * @param {?} redirectTo
-     * @param {?} redirectToSegments
-     * @param {?} actualSegments
-     * @param {?} posParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.createSegments = function (redirectTo, redirectToSegments, actualSegments, posParams) {
-        var _this = this;
-        return redirectToSegments.map(function (s) { return s.path.startsWith(':') ? _this.findPosParam(redirectTo, s, posParams) :
-            _this.findOrReturn(s, actualSegments); });
-    };
-    /**
-     * @param {?} redirectTo
-     * @param {?} redirectToUrlSegment
-     * @param {?} posParams
-     * @return {?}
-     */
-    ApplyRedirects.prototype.findPosParam = function (redirectTo, redirectToUrlSegment, posParams) {
-        var /** @type {?} */ pos = posParams[redirectToUrlSegment.path.substring(1)];
-        if (!pos)
-            throw new Error("Cannot redirect to '" + redirectTo + "'. Cannot find '" + redirectToUrlSegment.path + "'.");
-        return pos;
-    };
-    /**
-     * @param {?} redirectToUrlSegment
-     * @param {?} actualSegments
-     * @return {?}
-     */
-    ApplyRedirects.prototype.findOrReturn = function (redirectToUrlSegment, actualSegments) {
-        var /** @type {?} */ idx = 0;
-        for (var _i = 0, actualSegments_1 = actualSegments; _i < actualSegments_1.length; _i++) {
-            var s = actualSegments_1[_i];
-            if (s.path === redirectToUrlSegment.path) {
-                actualSegments.splice(idx);
-                return s;
-            }
-            idx++;
-        }
-        return redirectToUrlSegment;
-    };
-    return ApplyRedirects;
-}());
-/**
- * @param {?} moduleInjector
- * @param {?} route
- * @return {?}
- */
-function runCanLoadGuard(moduleInjector, route) {
-    var /** @type {?} */ canLoad = route.canLoad;
-    if (!canLoad || canLoad.length === 0)
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
-    var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canLoad), function (injectionToken) {
-        var /** @type {?} */ guard = moduleInjector.get(injectionToken);
-        return wrapIntoObservable(guard.canLoad ? guard.canLoad(route) : guard(route));
-    });
-    return andObservables(obs);
-}
-/**
- * @param {?} segmentGroup
- * @param {?} route
- * @param {?} segments
- * @return {?}
- */
-function match(segmentGroup, route, segments) {
-    if (route.path === '') {
-        if ((route.pathMatch === 'full') && (segmentGroup.hasChildren() || segments.length > 0)) {
-            return { matched: false, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
-        }
-        return { matched: true, consumedSegments: [], lastChild: 0, positionalParamSegments: {} };
-    }
-    var /** @type {?} */ matcher = route.matcher || defaultUrlMatcher;
-    var /** @type {?} */ res = matcher(segments, segmentGroup, route);
-    if (!res) {
-        return {
-            matched: false,
-            consumedSegments: /** @type {?} */ ([]),
-            lastChild: 0,
-            positionalParamSegments: {},
-        };
-    }
-    return {
-        matched: true,
-        consumedSegments: /** @type {?} */ ((res.consumed)),
-        lastChild: /** @type {?} */ ((res.consumed.length)),
-        positionalParamSegments: /** @type {?} */ ((res.posParams)),
-    };
-}
-/**
- * @param {?} segmentGroup
- * @param {?} consumedSegments
- * @param {?} slicedSegments
- * @param {?} config
- * @return {?}
- */
-function split(segmentGroup, consumedSegments, slicedSegments, config) {
-    if (slicedSegments.length > 0 &&
-        containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, slicedSegments, config)) {
-        var /** @type {?} */ s = new UrlSegmentGroup(consumedSegments, createChildrenForEmptySegments(config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
-        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: [] };
-    }
-    if (slicedSegments.length === 0 &&
-        containsEmptyPathRedirects(segmentGroup, slicedSegments, config)) {
-        var /** @type {?} */ s = new UrlSegmentGroup(segmentGroup.segments, addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
-        return { segmentGroup: mergeTrivialChildren(s), slicedSegments: slicedSegments };
-    }
-    return { segmentGroup: segmentGroup, slicedSegments: slicedSegments };
-}
-/**
- * @param {?} s
- * @return {?}
- */
-function mergeTrivialChildren(s) {
-    if (s.numberOfChildren === 1 && s.children[PRIMARY_OUTLET]) {
-        var /** @type {?} */ c = s.children[PRIMARY_OUTLET];
-        return new UrlSegmentGroup(s.segments.concat(c.segments), c.children);
-    }
-    return s;
-}
-/**
- * @param {?} segmentGroup
- * @param {?} slicedSegments
- * @param {?} routes
- * @param {?} children
- * @return {?}
- */
-function addEmptySegmentsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
-    var /** @type {?} */ res = {};
-    for (var _i = 0, routes_1 = routes; _i < routes_1.length; _i++) {
-        var r = routes_1[_i];
-        if (isEmptyPathRedirect(segmentGroup, slicedSegments, r) && !children[getOutlet(r)]) {
-            res[getOutlet(r)] = new UrlSegmentGroup([], {});
-        }
-    }
-    return Object.assign({}, children, res);
-}
-/**
- * @param {?} routes
- * @param {?} primarySegmentGroup
- * @return {?}
- */
-function createChildrenForEmptySegments(routes, primarySegmentGroup) {
-    var /** @type {?} */ res = {};
-    res[PRIMARY_OUTLET] = primarySegmentGroup;
-    for (var _i = 0, routes_2 = routes; _i < routes_2.length; _i++) {
-        var r = routes_2[_i];
-        if (r.path === '' && getOutlet(r) !== PRIMARY_OUTLET) {
-            res[getOutlet(r)] = new UrlSegmentGroup([], {});
-        }
-    }
-    return res;
-}
-/**
- * @param {?} segmentGroup
- * @param {?} segments
- * @param {?} routes
- * @return {?}
- */
-function containsEmptyPathRedirectsWithNamedOutlets(segmentGroup, segments, routes) {
-    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r) && getOutlet(r) !== PRIMARY_OUTLET; });
-}
-/**
- * @param {?} segmentGroup
- * @param {?} segments
- * @param {?} routes
- * @return {?}
- */
-function containsEmptyPathRedirects(segmentGroup, segments, routes) {
-    return routes.some(function (r) { return isEmptyPathRedirect(segmentGroup, segments, r); });
-}
-/**
- * @param {?} segmentGroup
- * @param {?} segments
- * @param {?} r
- * @return {?}
- */
-function isEmptyPathRedirect(segmentGroup, segments, r) {
-    if ((segmentGroup.hasChildren() || segments.length > 0) && r.pathMatch === 'full') {
-        return false;
-    }
-    return r.path === '' && r.redirectTo !== undefined;
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function getOutlet(route) {
-    return route.outlet || PRIMARY_OUTLET;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var Tree = (function () {
-    /**
-     * @param {?} root
-     */
-    function Tree(root) {
-        this._root = root;
-    }
-    Object.defineProperty(Tree.prototype, "root", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._root.value; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @param {?} t
-     * @return {?}
-     */
-    Tree.prototype.parent = function (t) {
-        var /** @type {?} */ p = this.pathFromRoot(t);
-        return p.length > 1 ? p[p.length - 2] : null;
-    };
-    /**
-     * \@internal
-     * @param {?} t
-     * @return {?}
-     */
-    Tree.prototype.children = function (t) {
-        var /** @type {?} */ n = findNode(t, this._root);
-        return n ? n.children.map(function (t) { return t.value; }) : [];
-    };
-    /**
-     * \@internal
-     * @param {?} t
-     * @return {?}
-     */
-    Tree.prototype.firstChild = function (t) {
-        var /** @type {?} */ n = findNode(t, this._root);
-        return n && n.children.length > 0 ? n.children[0].value : null;
-    };
-    /**
-     * \@internal
-     * @param {?} t
-     * @return {?}
-     */
-    Tree.prototype.siblings = function (t) {
-        var /** @type {?} */ p = findPath(t, this._root);
-        if (p.length < 2)
-            return [];
-        var /** @type {?} */ c = p[p.length - 2].children.map(function (c) { return c.value; });
-        return c.filter(function (cc) { return cc !== t; });
-    };
-    /**
-     * \@internal
-     * @param {?} t
-     * @return {?}
-     */
-    Tree.prototype.pathFromRoot = function (t) { return findPath(t, this._root).map(function (s) { return s.value; }); };
-    return Tree;
-}());
-/**
- * @template T
- * @param {?} value
- * @param {?} node
- * @return {?}
- */
-function findNode(value, node) {
-    if (value === node.value)
-        return node;
-    for (var _i = 0, _a = node.children; _i < _a.length; _i++) {
-        var child = _a[_i];
-        var /** @type {?} */ node_1 = findNode(value, child);
-        if (node_1)
-            return node_1;
-    }
-    return null;
-}
-/**
- * @template T
- * @param {?} value
- * @param {?} node
- * @return {?}
- */
-function findPath(value, node) {
-    if (value === node.value)
-        return [node];
-    for (var _i = 0, _a = node.children; _i < _a.length; _i++) {
-        var child = _a[_i];
-        var /** @type {?} */ path = findPath(value, child);
-        if (path.length) {
-            path.unshift(node);
-            return path;
-        }
-    }
-    return [];
-}
-var TreeNode = (function () {
-    /**
-     * @param {?} value
-     * @param {?} children
-     */
-    function TreeNode(value, children) {
-        this.value = value;
-        this.children = children;
-    }
-    /**
-     * @return {?}
-     */
-    TreeNode.prototype.toString = function () { return "TreeNode(" + this.value + ")"; };
-    return TreeNode;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Represents the state of the router.
- *
- * \@howToUse
- *
- * ```
- * \@Component({templateUrl:'template.html'})
- * class MyComponent {
- *   constructor(router: Router) {
- *     const state: RouterState = router.routerState;
- *     const root: ActivatedRoute = state.root;
- *     const child = root.firstChild;
- *     const id: Observable<string> = child.params.map(p => p.id);
- *     //...
- *   }
- * }
- * ```
- *
- * \@description
- * RouterState is a tree of activated routes. Every node in this tree knows about the "consumed" URL
- * segments, the extracted parameters, and the resolved data.
- *
- * See {\@link ActivatedRoute} for more information.
- *
- * \@stable
- */
-var RouterState = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](RouterState, _super);
-    /**
-     * \@internal
-     * @param {?} root
-     * @param {?} snapshot
-     */
-    function RouterState(root, snapshot) {
-        var _this = _super.call(this, root) || this;
-        _this.snapshot = snapshot;
-        setRouterState(_this, root);
-        return _this;
-    }
-    /**
-     * @return {?}
-     */
-    RouterState.prototype.toString = function () { return this.snapshot.toString(); };
-    return RouterState;
-}(Tree));
-/**
- * @param {?} urlTree
- * @param {?} rootComponent
- * @return {?}
- */
-function createEmptyState(urlTree, rootComponent) {
-    var /** @type {?} */ snapshot = createEmptyStateSnapshot(urlTree, rootComponent);
-    var /** @type {?} */ emptyUrl = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]([new UrlSegment('', {})]);
-    var /** @type {?} */ emptyParams = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-    var /** @type {?} */ emptyData = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-    var /** @type {?} */ emptyQueryParams = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]({});
-    var /** @type {?} */ fragment = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"]('');
-    var /** @type {?} */ activated = new ActivatedRoute(emptyUrl, emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, snapshot.root);
-    activated.snapshot = snapshot.root;
-    return new RouterState(new TreeNode(activated, []), snapshot);
-}
-/**
- * @param {?} urlTree
- * @param {?} rootComponent
- * @return {?}
- */
-function createEmptyStateSnapshot(urlTree, rootComponent) {
-    var /** @type {?} */ emptyParams = {};
-    var /** @type {?} */ emptyData = {};
-    var /** @type {?} */ emptyQueryParams = {};
-    var /** @type {?} */ fragment = '';
-    var /** @type {?} */ activated = new ActivatedRouteSnapshot([], emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, null, urlTree.root, -1, {});
-    return new RouterStateSnapshot('', new TreeNode(activated, []));
-}
-/**
- * \@whatItDoes Contains the information about a route associated with a component loaded in an
- * outlet.
- * An `ActivatedRoute` can also be used to traverse the router state tree.
- *
- * \@howToUse
- *
- * ```
- * \@Component({...})
- * class MyComponent {
- *   constructor(route: ActivatedRoute) {
- *     const id: Observable<string> = route.params.map(p => p.id);
- *     const url: Observable<string> = route.url.map(segments => segments.join(''));
- *     // route.data includes both `data` and `resolve`
- *     const user = route.data.map(d => d.user);
- *   }
- * }
- * ```
- *
- * \@stable
- */
-var ActivatedRoute = (function () {
-    /**
-     * \@internal
-     * @param {?} url
-     * @param {?} params
-     * @param {?} queryParams
-     * @param {?} fragment
-     * @param {?} data
-     * @param {?} outlet
-     * @param {?} component
-     * @param {?} futureSnapshot
-     */
-    function ActivatedRoute(url, params, queryParams, fragment, data, outlet, component, futureSnapshot) {
-        this.url = url;
-        this.params = params;
-        this.queryParams = queryParams;
-        this.fragment = fragment;
-        this.data = data;
-        this.outlet = outlet;
-        this.component = component;
-        this._futureSnapshot = futureSnapshot;
-    }
-    Object.defineProperty(ActivatedRoute.prototype, "routeConfig", {
-        /**
-         * The configuration used to match this route
-         * @return {?}
-         */
-        get: function () { return this._futureSnapshot.routeConfig; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "root", {
-        /**
-         * The root of the router state
-         * @return {?}
-         */
-        get: function () { return this._routerState.root; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "parent", {
-        /**
-         * The parent of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.parent(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "firstChild", {
-        /**
-         * The first child of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.firstChild(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "children", {
-        /**
-         * The children of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.children(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "pathFromRoot", {
-        /**
-         * The path from the root of the router state tree to this route
-         * @return {?}
-         */
-        get: function () { return this._routerState.pathFromRoot(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "paramMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._paramMap) {
-                this._paramMap = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.params, function (p) { return convertToParamMap(p); });
-            }
-            return this._paramMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRoute.prototype, "queryParamMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._queryParamMap) {
-                this._queryParamMap =
-                    __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.queryParams, function (p) { return convertToParamMap(p); });
-            }
-            return this._queryParamMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    ActivatedRoute.prototype.toString = function () {
-        return this.snapshot ? this.snapshot.toString() : "Future(" + this._futureSnapshot + ")";
-    };
-    return ActivatedRoute;
-}());
-/**
- * \@internal
- * @param {?} route
- * @return {?}
- */
-function inheritedParamsDataResolve(route) {
-    var /** @type {?} */ pathToRoot = route.pathFromRoot;
-    var /** @type {?} */ inhertingStartingFrom = pathToRoot.length - 1;
-    while (inhertingStartingFrom >= 1) {
-        var /** @type {?} */ current = pathToRoot[inhertingStartingFrom];
-        var /** @type {?} */ parent = pathToRoot[inhertingStartingFrom - 1];
-        // current route is an empty path => inherits its parent's params and data
-        if (current.routeConfig && current.routeConfig.path === '') {
-            inhertingStartingFrom--;
-            // parent is componentless => current route should inherit its params and data
-        }
-        else if (!parent.component) {
-            inhertingStartingFrom--;
-        }
-        else {
-            break;
-        }
-    }
-    return pathToRoot.slice(inhertingStartingFrom).reduce(function (res, curr) {
-        var /** @type {?} */ params = Object.assign({}, res.params, curr.params);
-        var /** @type {?} */ data = Object.assign({}, res.data, curr.data);
-        var /** @type {?} */ resolve = Object.assign({}, res.resolve, curr._resolvedData);
-        return { params: params, data: data, resolve: resolve };
-    }, /** @type {?} */ ({ params: {}, data: {}, resolve: {} }));
-}
-/**
- * \@whatItDoes Contains the information about a route associated with a component loaded in an
- * outlet
- * at a particular moment in time. ActivatedRouteSnapshot can also be used to traverse the router
- * state tree.
- *
- * \@howToUse
- *
- * ```
- * \@Component({templateUrl:'./my-component.html'})
- * class MyComponent {
- *   constructor(route: ActivatedRoute) {
- *     const id: string = route.snapshot.params.id;
- *     const url: string = route.snapshot.url.join('');
- *     const user = route.snapshot.data.user;
- *   }
- * }
- * ```
- *
- * \@stable
- */
-var ActivatedRouteSnapshot = (function () {
-    /**
-     * \@internal
-     * @param {?} url
-     * @param {?} params
-     * @param {?} queryParams
-     * @param {?} fragment
-     * @param {?} data
-     * @param {?} outlet
-     * @param {?} component
-     * @param {?} routeConfig
-     * @param {?} urlSegment
-     * @param {?} lastPathIndex
-     * @param {?} resolve
-     */
-    function ActivatedRouteSnapshot(url, params, queryParams, fragment, data, outlet, component, routeConfig, urlSegment, lastPathIndex, resolve) {
-        this.url = url;
-        this.params = params;
-        this.queryParams = queryParams;
-        this.fragment = fragment;
-        this.data = data;
-        this.outlet = outlet;
-        this.component = component;
-        this._routeConfig = routeConfig;
-        this._urlSegment = urlSegment;
-        this._lastPathIndex = lastPathIndex;
-        this._resolve = resolve;
-    }
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "routeConfig", {
-        /**
-         * The configuration used to match this route
-         * @return {?}
-         */
-        get: function () { return this._routeConfig; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "root", {
-        /**
-         * The root of the router state
-         * @return {?}
-         */
-        get: function () { return this._routerState.root; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "parent", {
-        /**
-         * The parent of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.parent(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "firstChild", {
-        /**
-         * The first child of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.firstChild(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "children", {
-        /**
-         * The children of this route in the router state tree
-         * @return {?}
-         */
-        get: function () { return this._routerState.children(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "pathFromRoot", {
-        /**
-         * The path from the root of the router state tree to this route
-         * @return {?}
-         */
-        get: function () { return this._routerState.pathFromRoot(this); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "paramMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._paramMap) {
-                this._paramMap = convertToParamMap(this.params);
-            }
-            return this._paramMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ActivatedRouteSnapshot.prototype, "queryParamMap", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this._queryParamMap) {
-                this._queryParamMap = convertToParamMap(this.queryParams);
-            }
-            return this._queryParamMap;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    ActivatedRouteSnapshot.prototype.toString = function () {
-        var /** @type {?} */ url = this.url.map(function (segment) { return segment.toString(); }).join('/');
-        var /** @type {?} */ matched = this._routeConfig ? this._routeConfig.path : '';
-        return "Route(url:'" + url + "', path:'" + matched + "')";
-    };
-    return ActivatedRouteSnapshot;
-}());
-/**
- * \@whatItDoes Represents the state of the router at a moment in time.
- *
- * \@howToUse
- *
- * ```
- * \@Component({templateUrl:'template.html'})
- * class MyComponent {
- *   constructor(router: Router) {
- *     const state: RouterState = router.routerState;
- *     const snapshot: RouterStateSnapshot = state.snapshot;
- *     const root: ActivatedRouteSnapshot = snapshot.root;
- *     const child = root.firstChild;
- *     const id: Observable<string> = child.params.map(p => p.id);
- *     //...
- *   }
- * }
- * ```
- *
- * \@description
- * RouterStateSnapshot is a tree of activated route snapshots. Every node in this tree knows about
- * the "consumed" URL segments, the extracted parameters, and the resolved data.
- *
- * \@stable
- */
-var RouterStateSnapshot = (function (_super) {
-    __WEBPACK_IMPORTED_MODULE_0_tslib__["a" /* __extends */](RouterStateSnapshot, _super);
-    /**
-     * \@internal
-     * @param {?} url
-     * @param {?} root
-     */
-    function RouterStateSnapshot(url, root) {
-        var _this = _super.call(this, root) || this;
-        _this.url = url;
-        setRouterState(_this, root);
-        return _this;
-    }
-    /**
-     * @return {?}
-     */
-    RouterStateSnapshot.prototype.toString = function () { return serializeNode(this._root); };
-    return RouterStateSnapshot;
-}(Tree));
-/**
- * @template U, T
- * @param {?} state
- * @param {?} node
- * @return {?}
- */
-function setRouterState(state, node) {
-    node.value._routerState = state;
-    node.children.forEach(function (c) { return setRouterState(state, c); });
-}
-/**
- * @param {?} node
- * @return {?}
- */
-function serializeNode(node) {
-    var /** @type {?} */ c = node.children.length > 0 ? " { " + node.children.map(serializeNode).join(", ") + " } " : '';
-    return "" + node.value + c;
-}
-/**
- * The expectation is that the activate route is created with the right set of parameters.
- * So we push new values into the observables only when they are not the initial values.
- * And we detect that by checking if the snapshot field is set.
- * @param {?} route
- * @return {?}
- */
-function advanceActivatedRoute(route) {
-    if (route.snapshot) {
-        var /** @type {?} */ currentSnapshot = route.snapshot;
-        var /** @type {?} */ nextSnapshot = route._futureSnapshot;
-        route.snapshot = nextSnapshot;
-        if (!shallowEqual(currentSnapshot.queryParams, nextSnapshot.queryParams)) {
-            ((route.queryParams)).next(nextSnapshot.queryParams);
-        }
-        if (currentSnapshot.fragment !== nextSnapshot.fragment) {
-            ((route.fragment)).next(nextSnapshot.fragment);
-        }
-        if (!shallowEqual(currentSnapshot.params, nextSnapshot.params)) {
-            ((route.params)).next(nextSnapshot.params);
-        }
-        if (!shallowEqualArrays(currentSnapshot.url, nextSnapshot.url)) {
-            ((route.url)).next(nextSnapshot.url);
-        }
-        if (!shallowEqual(currentSnapshot.data, nextSnapshot.data)) {
-            ((route.data)).next(nextSnapshot.data);
-        }
-    }
-    else {
-        route.snapshot = route._futureSnapshot;
-        // this is for resolved data
-        ((route.data)).next(route._futureSnapshot.data);
-    }
-}
-/**
- * @param {?} a
- * @param {?} b
- * @return {?}
- */
-function equalParamsAndUrlSegments(a, b) {
-    var /** @type {?} */ equalUrlParams = shallowEqual(a.params, b.params) && equalSegments(a.url, b.url);
-    var /** @type {?} */ parentsMismatch = !a.parent !== !b.parent;
-    return equalUrlParams && !parentsMismatch &&
-        (!a.parent || equalParamsAndUrlSegments(a.parent, /** @type {?} */ ((b.parent))));
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} routeReuseStrategy
- * @param {?} curr
- * @param {?} prevState
- * @return {?}
- */
-function createRouterState(routeReuseStrategy, curr, prevState) {
-    var /** @type {?} */ root = createNode(routeReuseStrategy, curr._root, prevState ? prevState._root : undefined);
-    return new RouterState(root, curr);
-}
-/**
- * @param {?} routeReuseStrategy
- * @param {?} curr
- * @param {?=} prevState
- * @return {?}
- */
-function createNode(routeReuseStrategy, curr, prevState) {
-    // reuse an activated route that is currently displayed on the screen
-    if (prevState && routeReuseStrategy.shouldReuseRoute(curr.value, prevState.value.snapshot)) {
-        var /** @type {?} */ value = prevState.value;
-        value._futureSnapshot = curr.value;
-        var /** @type {?} */ children = createOrReuseChildren(routeReuseStrategy, curr, prevState);
-        return new TreeNode(value, children);
-        // retrieve an activated route that is used to be displayed, but is not currently displayed
-    }
-    else if (routeReuseStrategy.retrieve(curr.value)) {
-        var /** @type {?} */ tree_1 = ((routeReuseStrategy.retrieve(curr.value))).route;
-        setFutureSnapshotsOfActivatedRoutes(curr, tree_1);
-        return tree_1;
-    }
-    else {
-        var /** @type {?} */ value = createActivatedRoute(curr.value);
-        var /** @type {?} */ children = curr.children.map(function (c) { return createNode(routeReuseStrategy, c); });
-        return new TreeNode(value, children);
-    }
-}
-/**
- * @param {?} curr
- * @param {?} result
- * @return {?}
- */
-function setFutureSnapshotsOfActivatedRoutes(curr, result) {
-    if (curr.value.routeConfig !== result.value.routeConfig) {
-        throw new Error('Cannot reattach ActivatedRouteSnapshot created from a different route');
-    }
-    if (curr.children.length !== result.children.length) {
-        throw new Error('Cannot reattach ActivatedRouteSnapshot with a different number of children');
-    }
-    result.value._futureSnapshot = curr.value;
-    for (var /** @type {?} */ i = 0; i < curr.children.length; ++i) {
-        setFutureSnapshotsOfActivatedRoutes(curr.children[i], result.children[i]);
-    }
-}
-/**
- * @param {?} routeReuseStrategy
- * @param {?} curr
- * @param {?} prevState
- * @return {?}
- */
-function createOrReuseChildren(routeReuseStrategy, curr, prevState) {
-    return curr.children.map(function (child) {
-        for (var _i = 0, _a = prevState.children; _i < _a.length; _i++) {
-            var p = _a[_i];
-            if (routeReuseStrategy.shouldReuseRoute(p.value.snapshot, child.value)) {
-                return createNode(routeReuseStrategy, child, p);
-            }
-        }
-        return createNode(routeReuseStrategy, child);
-    });
-}
-/**
- * @param {?} c
- * @return {?}
- */
-function createActivatedRoute(c) {
-    return new ActivatedRoute(new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.url), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.params), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.queryParams), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.fragment), new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](c.data), c.outlet, c.component, c);
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} route
- * @param {?} urlTree
- * @param {?} commands
- * @param {?} queryParams
- * @param {?} fragment
- * @return {?}
- */
-function createUrlTree(route, urlTree, commands, queryParams, fragment) {
-    if (commands.length === 0) {
-        return tree(urlTree.root, urlTree.root, urlTree, queryParams, fragment);
-    }
-    var /** @type {?} */ nav = computeNavigation(commands);
-    if (nav.toRoot()) {
-        return tree(urlTree.root, new UrlSegmentGroup([], {}), urlTree, queryParams, fragment);
-    }
-    var /** @type {?} */ startingPosition = findStartingPosition(nav, urlTree, route);
-    var /** @type {?} */ segmentGroup = startingPosition.processChildren ?
-        updateSegmentGroupChildren(startingPosition.segmentGroup, startingPosition.index, nav.commands) :
-        updateSegmentGroup(startingPosition.segmentGroup, startingPosition.index, nav.commands);
-    return tree(startingPosition.segmentGroup, segmentGroup, urlTree, queryParams, fragment);
-}
-/**
- * @param {?} command
- * @return {?}
- */
-function isMatrixParams(command) {
-    return typeof command === 'object' && command != null && !command.outlets && !command.segmentPath;
-}
-/**
- * @param {?} oldSegmentGroup
- * @param {?} newSegmentGroup
- * @param {?} urlTree
- * @param {?} queryParams
- * @param {?} fragment
- * @return {?}
- */
-function tree(oldSegmentGroup, newSegmentGroup, urlTree, queryParams, fragment) {
-    var /** @type {?} */ qp = {};
-    if (queryParams) {
-        forEach(queryParams, function (value, name) {
-            qp[name] = Array.isArray(value) ? value.map(function (v) { return "" + v; }) : "" + value;
-        });
-    }
-    if (urlTree.root === oldSegmentGroup) {
-        return new UrlTree(newSegmentGroup, qp, fragment);
-    }
-    return new UrlTree(replaceSegment(urlTree.root, oldSegmentGroup, newSegmentGroup), qp, fragment);
-}
-/**
- * @param {?} current
- * @param {?} oldSegment
- * @param {?} newSegment
- * @return {?}
- */
-function replaceSegment(current, oldSegment, newSegment) {
-    var /** @type {?} */ children = {};
-    forEach(current.children, function (c, outletName) {
-        if (c === oldSegment) {
-            children[outletName] = newSegment;
-        }
-        else {
-            children[outletName] = replaceSegment(c, oldSegment, newSegment);
-        }
-    });
-    return new UrlSegmentGroup(current.segments, children);
-}
-var Navigation = (function () {
-    /**
-     * @param {?} isAbsolute
-     * @param {?} numberOfDoubleDots
-     * @param {?} commands
-     */
-    function Navigation(isAbsolute, numberOfDoubleDots, commands) {
-        this.isAbsolute = isAbsolute;
-        this.numberOfDoubleDots = numberOfDoubleDots;
-        this.commands = commands;
-        if (isAbsolute && commands.length > 0 && isMatrixParams(commands[0])) {
-            throw new Error('Root segment cannot have matrix parameters');
-        }
-        var cmdWithOutlet = commands.find(function (c) { return typeof c === 'object' && c != null && c.outlets; });
-        if (cmdWithOutlet && cmdWithOutlet !== last$1(commands)) {
-            throw new Error('{outlets:{}} has to be the last command');
-        }
-    }
-    /**
-     * @return {?}
-     */
-    Navigation.prototype.toRoot = function () {
-        return this.isAbsolute && this.commands.length === 1 && this.commands[0] == '/';
-    };
-    return Navigation;
-}());
-/**
- * Transforms commands to a normalized `Navigation`
- * @param {?} commands
- * @return {?}
- */
-function computeNavigation(commands) {
-    if ((typeof commands[0] === 'string') && commands.length === 1 && commands[0] === '/') {
-        return new Navigation(true, 0, commands);
-    }
-    var /** @type {?} */ numberOfDoubleDots = 0;
-    var /** @type {?} */ isAbsolute = false;
-    var /** @type {?} */ res = commands.reduce(function (res, cmd, cmdIdx) {
-        if (typeof cmd === 'object' && cmd != null) {
-            if (cmd.outlets) {
-                var /** @type {?} */ outlets_1 = {};
-                forEach(cmd.outlets, function (commands, name) {
-                    outlets_1[name] = typeof commands === 'string' ? commands.split('/') : commands;
-                });
-                return res.concat([{ outlets: outlets_1 }]);
-            }
-            if (cmd.segmentPath) {
-                return res.concat([cmd.segmentPath]);
-            }
-        }
-        if (!(typeof cmd === 'string')) {
-            return res.concat([cmd]);
-        }
-        if (cmdIdx === 0) {
-            cmd.split('/').forEach(function (urlPart, partIndex) {
-                if (partIndex == 0 && urlPart === '.') {
-                    // skip './a'
-                }
-                else if (partIndex == 0 && urlPart === '') {
-                    isAbsolute = true;
-                }
-                else if (urlPart === '..') {
-                    numberOfDoubleDots++;
-                }
-                else if (urlPart != '') {
-                    res.push(urlPart);
-                }
-            });
-            return res;
-        }
-        return res.concat([cmd]);
-    }, []);
-    return new Navigation(isAbsolute, numberOfDoubleDots, res);
-}
-var Position = (function () {
-    /**
-     * @param {?} segmentGroup
-     * @param {?} processChildren
-     * @param {?} index
-     */
-    function Position(segmentGroup, processChildren, index) {
-        this.segmentGroup = segmentGroup;
-        this.processChildren = processChildren;
-        this.index = index;
-    }
-    return Position;
-}());
-/**
- * @param {?} nav
- * @param {?} tree
- * @param {?} route
- * @return {?}
- */
-function findStartingPosition(nav, tree, route) {
-    if (nav.isAbsolute) {
-        return new Position(tree.root, true, 0);
-    }
-    if (route.snapshot._lastPathIndex === -1) {
-        return new Position(route.snapshot._urlSegment, true, 0);
-    }
-    var /** @type {?} */ modifier = isMatrixParams(nav.commands[0]) ? 0 : 1;
-    var /** @type {?} */ index = route.snapshot._lastPathIndex + modifier;
-    return createPositionApplyingDoubleDots(route.snapshot._urlSegment, index, nav.numberOfDoubleDots);
-}
-/**
- * @param {?} group
- * @param {?} index
- * @param {?} numberOfDoubleDots
- * @return {?}
- */
-function createPositionApplyingDoubleDots(group, index, numberOfDoubleDots) {
-    var /** @type {?} */ g = group;
-    var /** @type {?} */ ci = index;
-    var /** @type {?} */ dd = numberOfDoubleDots;
-    while (dd > ci) {
-        dd -= ci;
-        g = ((g.parent));
-        if (!g) {
-            throw new Error('Invalid number of \'../\'');
-        }
-        ci = g.segments.length;
-    }
-    return new Position(g, false, ci - dd);
-}
-/**
- * @param {?} command
- * @return {?}
- */
-function getPath(command) {
-    if (typeof command === 'object' && command != null && command.outlets) {
-        return command.outlets[PRIMARY_OUTLET];
-    }
-    return "" + command;
-}
-/**
- * @param {?} commands
- * @return {?}
- */
-function getOutlets(commands) {
-    if (!(typeof commands[0] === 'object'))
-        return _a = {}, _a[PRIMARY_OUTLET] = commands, _a;
-    if (commands[0].outlets === undefined)
-        return _b = {}, _b[PRIMARY_OUTLET] = commands, _b;
-    return commands[0].outlets;
-    var _a, _b;
-}
-/**
- * @param {?} segmentGroup
- * @param {?} startIndex
- * @param {?} commands
- * @return {?}
- */
-function updateSegmentGroup(segmentGroup, startIndex, commands) {
-    if (!segmentGroup) {
-        segmentGroup = new UrlSegmentGroup([], {});
-    }
-    if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
-        return updateSegmentGroupChildren(segmentGroup, startIndex, commands);
-    }
-    var /** @type {?} */ m = prefixedWith(segmentGroup, startIndex, commands);
-    var /** @type {?} */ slicedCommands = commands.slice(m.commandIndex);
-    if (m.match && m.pathIndex < segmentGroup.segments.length) {
-        var /** @type {?} */ g = new UrlSegmentGroup(segmentGroup.segments.slice(0, m.pathIndex), {});
-        g.children[PRIMARY_OUTLET] =
-            new UrlSegmentGroup(segmentGroup.segments.slice(m.pathIndex), segmentGroup.children);
-        return updateSegmentGroupChildren(g, 0, slicedCommands);
-    }
-    else if (m.match && slicedCommands.length === 0) {
-        return new UrlSegmentGroup(segmentGroup.segments, {});
-    }
-    else if (m.match && !segmentGroup.hasChildren()) {
-        return createNewSegmentGroup(segmentGroup, startIndex, commands);
-    }
-    else if (m.match) {
-        return updateSegmentGroupChildren(segmentGroup, 0, slicedCommands);
-    }
-    else {
-        return createNewSegmentGroup(segmentGroup, startIndex, commands);
-    }
-}
-/**
- * @param {?} segmentGroup
- * @param {?} startIndex
- * @param {?} commands
- * @return {?}
- */
-function updateSegmentGroupChildren(segmentGroup, startIndex, commands) {
-    if (commands.length === 0) {
-        return new UrlSegmentGroup(segmentGroup.segments, {});
-    }
-    else {
-        var /** @type {?} */ outlets_2 = getOutlets(commands);
-        var /** @type {?} */ children_2 = {};
-        forEach(outlets_2, function (commands, outlet) {
-            if (commands !== null) {
-                children_2[outlet] = updateSegmentGroup(segmentGroup.children[outlet], startIndex, commands);
-            }
-        });
-        forEach(segmentGroup.children, function (child, childOutlet) {
-            if (outlets_2[childOutlet] === undefined) {
-                children_2[childOutlet] = child;
-            }
-        });
-        return new UrlSegmentGroup(segmentGroup.segments, children_2);
-    }
-}
-/**
- * @param {?} segmentGroup
- * @param {?} startIndex
- * @param {?} commands
- * @return {?}
- */
-function prefixedWith(segmentGroup, startIndex, commands) {
-    var /** @type {?} */ currentCommandIndex = 0;
-    var /** @type {?} */ currentPathIndex = startIndex;
-    var /** @type {?} */ noMatch = { match: false, pathIndex: 0, commandIndex: 0 };
-    while (currentPathIndex < segmentGroup.segments.length) {
-        if (currentCommandIndex >= commands.length)
-            return noMatch;
-        var /** @type {?} */ path = segmentGroup.segments[currentPathIndex];
-        var /** @type {?} */ curr = getPath(commands[currentCommandIndex]);
-        var /** @type {?} */ next = currentCommandIndex < commands.length - 1 ? commands[currentCommandIndex + 1] : null;
-        if (currentPathIndex > 0 && curr === undefined)
-            break;
-        if (curr && next && (typeof next === 'object') && next.outlets === undefined) {
-            if (!compare(curr, next, path))
-                return noMatch;
-            currentCommandIndex += 2;
-        }
-        else {
-            if (!compare(curr, {}, path))
-                return noMatch;
-            currentCommandIndex++;
-        }
-        currentPathIndex++;
-    }
-    return { match: true, pathIndex: currentPathIndex, commandIndex: currentCommandIndex };
-}
-/**
- * @param {?} segmentGroup
- * @param {?} startIndex
- * @param {?} commands
- * @return {?}
- */
-function createNewSegmentGroup(segmentGroup, startIndex, commands) {
-    var /** @type {?} */ paths = segmentGroup.segments.slice(0, startIndex);
-    var /** @type {?} */ i = 0;
-    while (i < commands.length) {
-        if (typeof commands[i] === 'object' && commands[i].outlets !== undefined) {
-            var /** @type {?} */ children = createNewSegmentChildren(commands[i].outlets);
-            return new UrlSegmentGroup(paths, children);
-        }
-        // if we start with an object literal, we need to reuse the path part from the segment
-        if (i === 0 && isMatrixParams(commands[0])) {
-            var /** @type {?} */ p = segmentGroup.segments[startIndex];
-            paths.push(new UrlSegment(p.path, commands[0]));
-            i++;
-            continue;
-        }
-        var /** @type {?} */ curr = getPath(commands[i]);
-        var /** @type {?} */ next = (i < commands.length - 1) ? commands[i + 1] : null;
-        if (curr && next && isMatrixParams(next)) {
-            paths.push(new UrlSegment(curr, stringify(next)));
-            i += 2;
-        }
-        else {
-            paths.push(new UrlSegment(curr, {}));
-            i++;
-        }
-    }
-    return new UrlSegmentGroup(paths, {});
-}
-/**
- * @param {?} outlets
- * @return {?}
- */
-function createNewSegmentChildren(outlets) {
-    var /** @type {?} */ children = {};
-    forEach(outlets, function (commands, outlet) {
-        if (commands !== null) {
-            children[outlet] = createNewSegmentGroup(new UrlSegmentGroup([], {}), 0, commands);
-        }
-    });
-    return children;
-}
-/**
- * @param {?} params
- * @return {?}
- */
-function stringify(params) {
-    var /** @type {?} */ res = {};
-    forEach(params, function (v, k) { return res[k] = "" + v; });
-    return res;
-}
-/**
- * @param {?} path
- * @param {?} params
- * @param {?} segment
- * @return {?}
- */
-function compare(path, params, segment) {
-    return path == segment.path && shallowEqual(params, segment.parameters);
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-var NoMatch$1 = (function () {
-    function NoMatch$1() {
-    }
-    return NoMatch$1;
-}());
-/**
- * @param {?} rootComponentType
- * @param {?} config
- * @param {?} urlTree
- * @param {?} url
- * @return {?}
- */
-function recognize(rootComponentType, config, urlTree, url) {
-    return new Recognizer(rootComponentType, config, urlTree, url).recognize();
-}
-var Recognizer = (function () {
-    /**
-     * @param {?} rootComponentType
-     * @param {?} config
-     * @param {?} urlTree
-     * @param {?} url
-     */
-    function Recognizer(rootComponentType, config, urlTree, url) {
-        this.rootComponentType = rootComponentType;
-        this.config = config;
-        this.urlTree = urlTree;
-        this.url = url;
-    }
-    /**
-     * @return {?}
-     */
-    Recognizer.prototype.recognize = function () {
-        try {
-            var /** @type {?} */ rootSegmentGroup = split$1(this.urlTree.root, [], [], this.config).segmentGroup;
-            var /** @type {?} */ children = this.processSegmentGroup(this.config, rootSegmentGroup, PRIMARY_OUTLET);
-            var /** @type {?} */ root = new ActivatedRouteSnapshot([], Object.freeze({}), Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), {}, PRIMARY_OUTLET, this.rootComponentType, null, this.urlTree.root, -1, {});
-            var /** @type {?} */ rootNode = new TreeNode(root, children);
-            var /** @type {?} */ routeState = new RouterStateSnapshot(this.url, rootNode);
-            this.inheritParamsAndData(routeState._root);
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(routeState);
-        }
-        catch (e) {
-            return new __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__["Observable"](function (obs) { return obs.error(e); });
-        }
-    };
-    /**
-     * @param {?} routeNode
-     * @return {?}
-     */
-    Recognizer.prototype.inheritParamsAndData = function (routeNode) {
-        var _this = this;
-        var /** @type {?} */ route = routeNode.value;
-        var /** @type {?} */ i = inheritedParamsDataResolve(route);
-        route.params = Object.freeze(i.params);
-        route.data = Object.freeze(i.data);
-        routeNode.children.forEach(function (n) { return _this.inheritParamsAndData(n); });
-    };
-    /**
-     * @param {?} config
-     * @param {?} segmentGroup
-     * @param {?} outlet
-     * @return {?}
-     */
-    Recognizer.prototype.processSegmentGroup = function (config, segmentGroup, outlet) {
-        if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
-            return this.processChildren(config, segmentGroup);
-        }
-        return this.processSegment(config, segmentGroup, segmentGroup.segments, outlet);
-    };
-    /**
-     * @param {?} config
-     * @param {?} segmentGroup
-     * @return {?}
-     */
-    Recognizer.prototype.processChildren = function (config, segmentGroup) {
-        var _this = this;
-        var /** @type {?} */ children = mapChildrenIntoArray(segmentGroup, function (child, childOutlet) { return _this.processSegmentGroup(config, child, childOutlet); });
-        checkOutletNameUniqueness(children);
-        sortActivatedRouteSnapshots(children);
-        return children;
-    };
-    /**
-     * @param {?} config
-     * @param {?} segmentGroup
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    Recognizer.prototype.processSegment = function (config, segmentGroup, segments, outlet) {
-        for (var _i = 0, config_1 = config; _i < config_1.length; _i++) {
-            var r = config_1[_i];
-            try {
-                return this.processSegmentAgainstRoute(r, segmentGroup, segments, outlet);
-            }
-            catch (e) {
-                if (!(e instanceof NoMatch$1))
-                    throw e;
-            }
-        }
-        if (this.noLeftoversInUrl(segmentGroup, segments, outlet)) {
-            return [];
-        }
-        throw new NoMatch$1();
-    };
-    /**
-     * @param {?} segmentGroup
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    Recognizer.prototype.noLeftoversInUrl = function (segmentGroup, segments, outlet) {
-        return segments.length === 0 && !segmentGroup.children[outlet];
-    };
-    /**
-     * @param {?} route
-     * @param {?} rawSegment
-     * @param {?} segments
-     * @param {?} outlet
-     * @return {?}
-     */
-    Recognizer.prototype.processSegmentAgainstRoute = function (route, rawSegment, segments, outlet) {
-        if (route.redirectTo)
-            throw new NoMatch$1();
-        if ((route.outlet || PRIMARY_OUTLET) !== outlet)
-            throw new NoMatch$1();
-        if (route.path === '**') {
-            var /** @type {?} */ params = segments.length > 0 ? ((last$1(segments))).parameters : {};
-            var /** @type {?} */ snapshot_1 = new ActivatedRouteSnapshot(segments, params, Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), getData(route), outlet, /** @type {?} */ ((route.component)), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + segments.length, getResolve(route));
-            return [new TreeNode(snapshot_1, [])];
-        }
-        var _a = match$1(rawSegment, route, segments), consumedSegments = _a.consumedSegments, parameters = _a.parameters, lastChild = _a.lastChild;
-        var /** @type {?} */ rawSlicedSegments = segments.slice(lastChild);
-        var /** @type {?} */ childConfig = getChildConfig(route);
-        var _b = split$1(rawSegment, consumedSegments, rawSlicedSegments, childConfig), segmentGroup = _b.segmentGroup, slicedSegments = _b.slicedSegments;
-        var /** @type {?} */ snapshot = new ActivatedRouteSnapshot(consumedSegments, parameters, Object.freeze(this.urlTree.queryParams), /** @type {?} */ ((this.urlTree.fragment)), getData(route), outlet, /** @type {?} */ ((route.component)), route, getSourceSegmentGroup(rawSegment), getPathIndexShift(rawSegment) + consumedSegments.length, getResolve(route));
-        if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
-            var /** @type {?} */ children_3 = this.processChildren(childConfig, segmentGroup);
-            return [new TreeNode(snapshot, children_3)];
-        }
-        if (childConfig.length === 0 && slicedSegments.length === 0) {
-            return [new TreeNode(snapshot, [])];
-        }
-        var /** @type {?} */ children = this.processSegment(childConfig, segmentGroup, slicedSegments, PRIMARY_OUTLET);
-        return [new TreeNode(snapshot, children)];
-    };
-    return Recognizer;
-}());
-/**
- * @param {?} nodes
- * @return {?}
- */
-function sortActivatedRouteSnapshots(nodes) {
-    nodes.sort(function (a, b) {
-        if (a.value.outlet === PRIMARY_OUTLET)
-            return -1;
-        if (b.value.outlet === PRIMARY_OUTLET)
-            return 1;
-        return a.value.outlet.localeCompare(b.value.outlet);
-    });
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function getChildConfig(route) {
-    if (route.children) {
-        return route.children;
-    }
-    if (route.loadChildren) {
-        return ((route._loadedConfig)).routes;
-    }
-    return [];
-}
-/**
- * @param {?} segmentGroup
- * @param {?} route
- * @param {?} segments
- * @return {?}
- */
-function match$1(segmentGroup, route, segments) {
-    if (route.path === '') {
-        if (route.pathMatch === 'full' && (segmentGroup.hasChildren() || segments.length > 0)) {
-            throw new NoMatch$1();
-        }
-        return { consumedSegments: [], lastChild: 0, parameters: {} };
-    }
-    var /** @type {?} */ matcher = route.matcher || defaultUrlMatcher;
-    var /** @type {?} */ res = matcher(segments, segmentGroup, route);
-    if (!res)
-        throw new NoMatch$1();
-    var /** @type {?} */ posParams = {};
-    forEach(/** @type {?} */ ((res.posParams)), function (v, k) { posParams[k] = v.path; });
-    var /** @type {?} */ parameters = res.consumed.length > 0 ? Object.assign({}, posParams, res.consumed[res.consumed.length - 1].parameters) :
-        posParams;
-    return { consumedSegments: res.consumed, lastChild: res.consumed.length, parameters: parameters };
-}
-/**
- * @param {?} nodes
- * @return {?}
- */
-function checkOutletNameUniqueness(nodes) {
-    var /** @type {?} */ names = {};
-    nodes.forEach(function (n) {
-        var /** @type {?} */ routeWithSameOutletName = names[n.value.outlet];
-        if (routeWithSameOutletName) {
-            var /** @type {?} */ p = routeWithSameOutletName.url.map(function (s) { return s.toString(); }).join('/');
-            var /** @type {?} */ c = n.value.url.map(function (s) { return s.toString(); }).join('/');
-            throw new Error("Two segments cannot have the same outlet name: '" + p + "' and '" + c + "'.");
-        }
-        names[n.value.outlet] = n.value;
-    });
-}
-/**
- * @param {?} segmentGroup
- * @return {?}
- */
-function getSourceSegmentGroup(segmentGroup) {
-    var /** @type {?} */ s = segmentGroup;
-    while (s._sourceSegment) {
-        s = s._sourceSegment;
-    }
-    return s;
-}
-/**
- * @param {?} segmentGroup
- * @return {?}
- */
-function getPathIndexShift(segmentGroup) {
-    var /** @type {?} */ s = segmentGroup;
-    var /** @type {?} */ res = (s._segmentIndexShift ? s._segmentIndexShift : 0);
-    while (s._sourceSegment) {
-        s = s._sourceSegment;
-        res += (s._segmentIndexShift ? s._segmentIndexShift : 0);
-    }
-    return res - 1;
-}
-/**
- * @param {?} segmentGroup
- * @param {?} consumedSegments
- * @param {?} slicedSegments
- * @param {?} config
- * @return {?}
- */
-function split$1(segmentGroup, consumedSegments, slicedSegments, config) {
-    if (slicedSegments.length > 0 &&
-        containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, config)) {
-        var /** @type {?} */ s_1 = new UrlSegmentGroup(consumedSegments, createChildrenForEmptyPaths(segmentGroup, consumedSegments, config, new UrlSegmentGroup(slicedSegments, segmentGroup.children)));
-        s_1._sourceSegment = segmentGroup;
-        s_1._segmentIndexShift = consumedSegments.length;
-        return { segmentGroup: s_1, slicedSegments: [] };
-    }
-    if (slicedSegments.length === 0 &&
-        containsEmptyPathMatches(segmentGroup, slicedSegments, config)) {
-        var /** @type {?} */ s_2 = new UrlSegmentGroup(segmentGroup.segments, addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, config, segmentGroup.children));
-        s_2._sourceSegment = segmentGroup;
-        s_2._segmentIndexShift = consumedSegments.length;
-        return { segmentGroup: s_2, slicedSegments: slicedSegments };
-    }
-    var /** @type {?} */ s = new UrlSegmentGroup(segmentGroup.segments, segmentGroup.children);
-    s._sourceSegment = segmentGroup;
-    s._segmentIndexShift = consumedSegments.length;
-    return { segmentGroup: s, slicedSegments: slicedSegments };
-}
-/**
- * @param {?} segmentGroup
- * @param {?} slicedSegments
- * @param {?} routes
- * @param {?} children
- * @return {?}
- */
-function addEmptyPathsToChildrenIfNeeded(segmentGroup, slicedSegments, routes, children) {
-    var /** @type {?} */ res = {};
-    for (var _i = 0, routes_3 = routes; _i < routes_3.length; _i++) {
-        var r = routes_3[_i];
-        if (emptyPathMatch(segmentGroup, slicedSegments, r) && !children[getOutlet$1(r)]) {
-            var /** @type {?} */ s = new UrlSegmentGroup([], {});
-            s._sourceSegment = segmentGroup;
-            s._segmentIndexShift = segmentGroup.segments.length;
-            res[getOutlet$1(r)] = s;
-        }
-    }
-    return Object.assign({}, children, res);
-}
-/**
- * @param {?} segmentGroup
- * @param {?} consumedSegments
- * @param {?} routes
- * @param {?} primarySegment
- * @return {?}
- */
-function createChildrenForEmptyPaths(segmentGroup, consumedSegments, routes, primarySegment) {
-    var /** @type {?} */ res = {};
-    res[PRIMARY_OUTLET] = primarySegment;
-    primarySegment._sourceSegment = segmentGroup;
-    primarySegment._segmentIndexShift = consumedSegments.length;
-    for (var _i = 0, routes_4 = routes; _i < routes_4.length; _i++) {
-        var r = routes_4[_i];
-        if (r.path === '' && getOutlet$1(r) !== PRIMARY_OUTLET) {
-            var /** @type {?} */ s = new UrlSegmentGroup([], {});
-            s._sourceSegment = segmentGroup;
-            s._segmentIndexShift = consumedSegments.length;
-            res[getOutlet$1(r)] = s;
-        }
-    }
-    return res;
-}
-/**
- * @param {?} segmentGroup
- * @param {?} slicedSegments
- * @param {?} routes
- * @return {?}
- */
-function containsEmptyPathMatchesWithNamedOutlets(segmentGroup, slicedSegments, routes) {
-    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r) && getOutlet$1(r) !== PRIMARY_OUTLET; });
-}
-/**
- * @param {?} segmentGroup
- * @param {?} slicedSegments
- * @param {?} routes
- * @return {?}
- */
-function containsEmptyPathMatches(segmentGroup, slicedSegments, routes) {
-    return routes.some(function (r) { return emptyPathMatch(segmentGroup, slicedSegments, r); });
-}
-/**
- * @param {?} segmentGroup
- * @param {?} slicedSegments
- * @param {?} r
- * @return {?}
- */
-function emptyPathMatch(segmentGroup, slicedSegments, r) {
-    if ((segmentGroup.hasChildren() || slicedSegments.length > 0) && r.pathMatch === 'full') {
-        return false;
-    }
-    return r.path === '' && r.redirectTo === undefined;
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function getOutlet$1(route) {
-    return route.outlet || PRIMARY_OUTLET;
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function getData(route) {
-    return route.data || {};
-}
-/**
- * @param {?} route
- * @return {?}
- */
-function getResolve(route) {
-    return route.resolve || {};
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Provides a way to customize when activated routes get reused.
- *
- * \@experimental
- * @abstract
- */
-var RouteReuseStrategy = (function () {
-    function RouteReuseStrategy() {
-    }
-    /**
-     * Determines if this route (and its subtree) should be detached to be reused later
-     * @abstract
-     * @param {?} route
-     * @return {?}
-     */
-    RouteReuseStrategy.prototype.shouldDetach = function (route) { };
-    /**
-     * Stores the detached route.
-     *
-     * Storing a `null` value should erase the previously stored value.
-     * @abstract
-     * @param {?} route
-     * @param {?} handle
-     * @return {?}
-     */
-    RouteReuseStrategy.prototype.store = function (route, handle) { };
-    /**
-     * Determines if this route (and its subtree) should be reattached
-     * @abstract
-     * @param {?} route
-     * @return {?}
-     */
-    RouteReuseStrategy.prototype.shouldAttach = function (route) { };
-    /**
-     * Retrieves the previously stored route
-     * @abstract
-     * @param {?} route
-     * @return {?}
-     */
-    RouteReuseStrategy.prototype.retrieve = function (route) { };
-    /**
-     * Determines if a route should be reused
-     * @abstract
-     * @param {?} future
-     * @param {?} curr
-     * @return {?}
-     */
-    RouteReuseStrategy.prototype.shouldReuseRoute = function (future, curr) { };
-    return RouteReuseStrategy;
-}());
-/**
- * Does not detach any subtrees. Reuses routes as long as their route config is the same.
- */
-var DefaultRouteReuseStrategy = (function () {
-    function DefaultRouteReuseStrategy() {
-    }
-    /**
-     * @param {?} route
-     * @return {?}
-     */
-    DefaultRouteReuseStrategy.prototype.shouldDetach = function (route) { return false; };
-    /**
-     * @param {?} route
-     * @param {?} detachedTree
-     * @return {?}
-     */
-    DefaultRouteReuseStrategy.prototype.store = function (route, detachedTree) { };
-    /**
-     * @param {?} route
-     * @return {?}
-     */
-    DefaultRouteReuseStrategy.prototype.shouldAttach = function (route) { return false; };
-    /**
-     * @param {?} route
-     * @return {?}
-     */
-    DefaultRouteReuseStrategy.prototype.retrieve = function (route) { return null; };
-    /**
-     * @param {?} future
-     * @param {?} curr
-     * @return {?}
-     */
-    DefaultRouteReuseStrategy.prototype.shouldReuseRoute = function (future, curr) {
-        return future.routeConfig === curr.routeConfig;
-    };
-    return DefaultRouteReuseStrategy;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@docsNotRequired
- * \@experimental
- */
-var ROUTES = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTES');
-var RouterConfigLoader = (function () {
-    /**
-     * @param {?} loader
-     * @param {?} compiler
-     * @param {?=} onLoadStartListener
-     * @param {?=} onLoadEndListener
-     */
-    function RouterConfigLoader(loader, compiler, onLoadStartListener, onLoadEndListener) {
-        this.loader = loader;
-        this.compiler = compiler;
-        this.onLoadStartListener = onLoadStartListener;
-        this.onLoadEndListener = onLoadEndListener;
-    }
-    /**
-     * @param {?} parentInjector
-     * @param {?} route
-     * @return {?}
-     */
-    RouterConfigLoader.prototype.load = function (parentInjector, route) {
-        var _this = this;
-        if (this.onLoadStartListener) {
-            this.onLoadStartListener(route);
-        }
-        var /** @type {?} */ moduleFactory$ = this.loadModuleFactory(/** @type {?} */ ((route.loadChildren)));
-        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(moduleFactory$, function (factory) {
-            if (_this.onLoadEndListener) {
-                _this.onLoadEndListener(route);
-            }
-            var /** @type {?} */ module = factory.create(parentInjector);
-            return new LoadedRouterConfig(flatten(module.injector.get(ROUTES)), module);
-        });
-    };
-    /**
-     * @param {?} loadChildren
-     * @return {?}
-     */
-    RouterConfigLoader.prototype.loadModuleFactory = function (loadChildren) {
-        var _this = this;
-        if (typeof loadChildren === 'string') {
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(this.loader.load(loadChildren));
-        }
-        else {
-            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(wrapIntoObservable(loadChildren()), function (t) {
-                if (t instanceof __WEBPACK_IMPORTED_MODULE_2__angular_core__["_0" /* NgModuleFactory */]) {
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(t);
-                }
-                else {
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_18_rxjs_observable_fromPromise__["fromPromise"])(_this.compiler.compileModuleAsync(t));
-                }
-            });
-        }
-    };
-    return RouterConfigLoader;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Provides a way to migrate AngularJS applications to Angular.
- *
- * \@experimental
- * @abstract
- */
-var UrlHandlingStrategy = (function () {
-    function UrlHandlingStrategy() {
-    }
-    /**
-     * Tells the router if this URL should be processed.
-     *
-     * When it returns true, the router will execute the regular navigation.
-     * When it returns false, the router will set the router state to an empty state.
-     * As a result, all the active components will be destroyed.
-     *
-     * @abstract
-     * @param {?} url
-     * @return {?}
-     */
-    UrlHandlingStrategy.prototype.shouldProcessUrl = function (url) { };
-    /**
-     * Extracts the part of the URL that should be handled by the router.
-     * The rest of the URL will remain untouched.
-     * @abstract
-     * @param {?} url
-     * @return {?}
-     */
-    UrlHandlingStrategy.prototype.extract = function (url) { };
-    /**
-     * Merges the URL fragment with the rest of the URL.
-     * @abstract
-     * @param {?} newUrlPart
-     * @param {?} rawUrl
-     * @return {?}
-     */
-    UrlHandlingStrategy.prototype.merge = function (newUrlPart, rawUrl) { };
-    return UrlHandlingStrategy;
-}());
-/**
- * \@experimental
- */
-var DefaultUrlHandlingStrategy = (function () {
-    function DefaultUrlHandlingStrategy() {
-    }
-    /**
-     * @param {?} url
-     * @return {?}
-     */
-    DefaultUrlHandlingStrategy.prototype.shouldProcessUrl = function (url) { return true; };
-    /**
-     * @param {?} url
-     * @return {?}
-     */
-    DefaultUrlHandlingStrategy.prototype.extract = function (url) { return url; };
-    /**
-     * @param {?} newUrlPart
-     * @param {?} wholeUrl
-     * @return {?}
-     */
-    DefaultUrlHandlingStrategy.prototype.merge = function (newUrlPart, wholeUrl) { return newUrlPart; };
-    return DefaultUrlHandlingStrategy;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @param {?} error
- * @return {?}
- */
-function defaultErrorHandler(error) {
-    throw error;
-}
-/**
- * \@internal
- * @param {?} snapshot
- * @return {?}
- */
-function defaultRouterHook(snapshot) {
-    return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
-}
-/**
- * \@whatItDoes Provides the navigation and url manipulation capabilities.
- *
- * See {\@link Routes} for more details and examples.
- *
- * \@ngModule RouterModule
- *
- * \@stable
- */
-var Router = (function () {
-    /**
-     * @param {?} rootComponentType
-     * @param {?} urlSerializer
-     * @param {?} rootContexts
-     * @param {?} location
-     * @param {?} injector
-     * @param {?} loader
-     * @param {?} compiler
-     * @param {?} config
-     */
-    function Router(rootComponentType, urlSerializer, rootContexts, location, injector, loader, compiler, config) {
-        var _this = this;
-        this.rootComponentType = rootComponentType;
-        this.urlSerializer = urlSerializer;
-        this.rootContexts = rootContexts;
-        this.location = location;
-        this.config = config;
-        this.navigations = new __WEBPACK_IMPORTED_MODULE_3_rxjs_BehaviorSubject__["BehaviorSubject"](/** @type {?} */ ((null)));
-        this.routerEvents = new __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__["Subject"]();
-        this.navigationId = 0;
-        /**
-         * Error handler that is invoked when a navigation errors.
-         *
-         * See {\@link ErrorHandler} for more information.
-         */
-        this.errorHandler = defaultErrorHandler;
-        /**
-         * Indicates if at least one navigation happened.
-         */
-        this.navigated = false;
-        /**
-         * Used by RouterModule. This allows us to
-         * pause the navigation either before preactivation or after it.
-         * \@internal
-         */
-        this.hooks = {
-            beforePreactivation: defaultRouterHook,
-            afterPreactivation: defaultRouterHook
-        };
-        /**
-         * Extracts and merges URLs. Used for AngularJS to Angular migrations.
-         */
-        this.urlHandlingStrategy = new DefaultUrlHandlingStrategy();
-        this.routeReuseStrategy = new DefaultRouteReuseStrategy();
-        var onLoadStart = function (r) { return _this.triggerEvent(new RouteConfigLoadStart(r)); };
-        var onLoadEnd = function (r) { return _this.triggerEvent(new RouteConfigLoadEnd(r)); };
-        this.ngModule = injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
-        this.resetConfig(config);
-        this.currentUrlTree = createEmptyUrlTree();
-        this.rawUrlTree = this.currentUrlTree;
-        this.configLoader = new RouterConfigLoader(loader, compiler, onLoadStart, onLoadEnd);
-        this.currentRouterState = createEmptyState(this.currentUrlTree, this.rootComponentType);
-        this.processNavigations();
-    }
-    /**
-     * \@internal
-     * TODO: this should be removed once the constructor of the router made internal
-     * @param {?} rootComponentType
-     * @return {?}
-     */
-    Router.prototype.resetRootComponentType = function (rootComponentType) {
-        this.rootComponentType = rootComponentType;
-        // TODO: vsavkin router 4.0 should make the root component set to null
-        // this will simplify the lifecycle of the router.
-        this.currentRouterState.root.component = this.rootComponentType;
-    };
-    /**
-     * Sets up the location change listener and performs the initial navigation.
-     * @return {?}
-     */
-    Router.prototype.initialNavigation = function () {
-        this.setUpLocationChangeListener();
-        if (this.navigationId === 0) {
-            this.navigateByUrl(this.location.path(true), { replaceUrl: true });
-        }
-    };
-    /**
-     * Sets up the location change listener.
-     * @return {?}
-     */
-    Router.prototype.setUpLocationChangeListener = function () {
-        var _this = this;
-        // Zone.current.wrap is needed because of the issue with RxJS scheduler,
-        // which does not work properly with zone.js in IE and Safari
-        if (!this.locationSubscription) {
-            this.locationSubscription = (this.location.subscribe(Zone.current.wrap(function (change) {
-                var /** @type {?} */ rawUrlTree = _this.urlSerializer.parse(change['url']);
-                var /** @type {?} */ source = change['type'] === 'popstate' ? 'popstate' : 'hashchange';
-                setTimeout(function () { _this.scheduleNavigation(rawUrlTree, source, { replaceUrl: true }); }, 0);
-            })));
-        }
-    };
-    Object.defineProperty(Router.prototype, "routerState", {
-        /**
-         * The current route state
-         * @return {?}
-         */
-        get: function () { return this.currentRouterState; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Router.prototype, "url", {
-        /**
-         * The current url
-         * @return {?}
-         */
-        get: function () { return this.serializeUrl(this.currentUrlTree); },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Router.prototype, "events", {
-        /**
-         * An observable of router events
-         * @return {?}
-         */
-        get: function () { return this.routerEvents; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @param {?} e
-     * @return {?}
-     */
-    Router.prototype.triggerEvent = function (e) { this.routerEvents.next(e); };
-    /**
-     * Resets the configuration used for navigation and generating links.
-     *
-     * ### Usage
-     *
-     * ```
-     * router.resetConfig([
-     *  { path: 'team/:id', component: TeamCmp, children: [
-     *    { path: 'simple', component: SimpleCmp },
-     *    { path: 'user/:name', component: UserCmp }
-     *  ]}
-     * ]);
-     * ```
-     * @param {?} config
-     * @return {?}
-     */
-    Router.prototype.resetConfig = function (config) {
-        validateConfig(config);
-        this.config = config;
-        this.navigated = false;
-    };
-    /**
-     * \@docsNotRequired
-     * @return {?}
-     */
-    Router.prototype.ngOnDestroy = function () { this.dispose(); };
-    /**
-     * Disposes of the router
-     * @return {?}
-     */
-    Router.prototype.dispose = function () {
-        if (this.locationSubscription) {
-            this.locationSubscription.unsubscribe();
-            this.locationSubscription = ((null));
-        }
-    };
-    /**
-     * Applies an array of commands to the current url tree and creates a new url tree.
-     *
-     * When given an activate route, applies the given commands starting from the route.
-     * When not given a route, applies the given command starting from the root.
-     *
-     * ### Usage
-     *
-     * ```
-     * // create /team/33/user/11
-     * router.createUrlTree(['/team', 33, 'user', 11]);
-     *
-     * // create /team/33;expand=true/user/11
-     * router.createUrlTree(['/team', 33, {expand: true}, 'user', 11]);
-     *
-     * // you can collapse static segments like this (this works only with the first passed-in value):
-     * router.createUrlTree(['/team/33/user', userId]);
-     *
-     * // If the first segment can contain slashes, and you do not want the router to split it, you
-     * // can do the following:
-     *
-     * router.createUrlTree([{segmentPath: '/one/two'}]);
-     *
-     * // create /team/33/(user/11//right:chat)
-     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: 'chat'}}]);
-     *
-     * // remove the right secondary node
-     * router.createUrlTree(['/team', 33, {outlets: {primary: 'user/11', right: null}}]);
-     *
-     * // assuming the current url is `/team/33/user/11` and the route points to `user/11`
-     *
-     * // navigate to /team/33/user/11/details
-     * router.createUrlTree(['details'], {relativeTo: route});
-     *
-     * // navigate to /team/33/user/22
-     * router.createUrlTree(['../22'], {relativeTo: route});
-     *
-     * // navigate to /team/44/user/22
-     * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
-     * ```
-     * @param {?} commands
-     * @param {?=} navigationExtras
-     * @return {?}
-     */
-    Router.prototype.createUrlTree = function (commands, navigationExtras) {
-        if (navigationExtras === void 0) { navigationExtras = {}; }
-        var relativeTo = navigationExtras.relativeTo, queryParams = navigationExtras.queryParams, fragment = navigationExtras.fragment, preserveQueryParams = navigationExtras.preserveQueryParams, queryParamsHandling = navigationExtras.queryParamsHandling, preserveFragment = navigationExtras.preserveFragment;
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && preserveQueryParams && (console) && (console.warn)) {
-            console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
-        }
-        var /** @type {?} */ a = relativeTo || this.routerState.root;
-        var /** @type {?} */ f = preserveFragment ? this.currentUrlTree.fragment : fragment;
-        var /** @type {?} */ q = null;
-        if (queryParamsHandling) {
-            switch (queryParamsHandling) {
-                case 'merge':
-                    q = Object.assign({}, this.currentUrlTree.queryParams, queryParams);
-                    break;
-                case 'preserve':
-                    q = this.currentUrlTree.queryParams;
-                    break;
-                default:
-                    q = queryParams || null;
-            }
-        }
-        else {
-            q = preserveQueryParams ? this.currentUrlTree.queryParams : queryParams || null;
-        }
-        return createUrlTree(a, this.currentUrlTree, commands, /** @type {?} */ ((q)), /** @type {?} */ ((f)));
-    };
-    /**
-     * Navigate based on the provided url. This navigation is always absolute.
-     *
-     * Returns a promise that:
-     * - resolves to 'true' when navigation succeeds,
-     * - resolves to 'false' when navigation fails,
-     * - is rejected when an error happens.
-     *
-     * ### Usage
-     *
-     * ```
-     * router.navigateByUrl("/team/33/user/11");
-     *
-     * // Navigate without updating the URL
-     * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
-     * ```
-     *
-     * In opposite to `navigate`, `navigateByUrl` takes a whole URL
-     * and does not apply any delta to the current one.
-     * @param {?} url
-     * @param {?=} extras
-     * @return {?}
-     */
-    Router.prototype.navigateByUrl = function (url, extras) {
-        if (extras === void 0) { extras = { skipLocationChange: false }; }
-        var /** @type {?} */ urlTree = url instanceof UrlTree ? url : this.parseUrl(url);
-        var /** @type {?} */ mergedTree = this.urlHandlingStrategy.merge(urlTree, this.rawUrlTree);
-        return this.scheduleNavigation(mergedTree, 'imperative', extras);
-    };
-    /**
-     * Navigate based on the provided array of commands and a starting point.
-     * If no starting route is provided, the navigation is absolute.
-     *
-     * Returns a promise that:
-     * - resolves to 'true' when navigation succeeds,
-     * - resolves to 'false' when navigation fails,
-     * - is rejected when an error happens.
-     *
-     * ### Usage
-     *
-     * ```
-     * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
-     *
-     * // Navigate without updating the URL
-     * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
-     * ```
-     *
-     * In opposite to `navigateByUrl`, `navigate` always takes a delta that is applied to the current
-     * URL.
-     * @param {?} commands
-     * @param {?=} extras
-     * @return {?}
-     */
-    Router.prototype.navigate = function (commands, extras) {
-        if (extras === void 0) { extras = { skipLocationChange: false }; }
-        validateCommands(commands);
-        if (typeof extras.queryParams === 'object' && extras.queryParams !== null) {
-            extras.queryParams = this.removeEmptyProps(extras.queryParams);
-        }
-        return this.navigateByUrl(this.createUrlTree(commands, extras), extras);
-    };
-    /**
-     * Serializes a {\@link UrlTree} into a string
-     * @param {?} url
-     * @return {?}
-     */
-    Router.prototype.serializeUrl = function (url) { return this.urlSerializer.serialize(url); };
-    /**
-     * Parses a string into a {\@link UrlTree}
-     * @param {?} url
-     * @return {?}
-     */
-    Router.prototype.parseUrl = function (url) { return this.urlSerializer.parse(url); };
-    /**
-     * Returns whether the url is activated
-     * @param {?} url
-     * @param {?} exact
-     * @return {?}
-     */
-    Router.prototype.isActive = function (url, exact) {
-        if (url instanceof UrlTree) {
-            return containsTree(this.currentUrlTree, url, exact);
-        }
-        var /** @type {?} */ urlTree = this.urlSerializer.parse(url);
-        return containsTree(this.currentUrlTree, urlTree, exact);
-    };
-    /**
-     * @param {?} params
-     * @return {?}
-     */
-    Router.prototype.removeEmptyProps = function (params) {
-        return Object.keys(params).reduce(function (result, key) {
-            var /** @type {?} */ value = params[key];
-            if (value !== null && value !== undefined) {
-                result[key] = value;
-            }
-            return result;
-        }, {});
-    };
-    /**
-     * @return {?}
-     */
-    Router.prototype.processNavigations = function () {
-        var _this = this;
-        __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"]
-            .call(this.navigations, function (nav) {
-            if (nav) {
-                _this.executeScheduledNavigation(nav);
-                // a failed navigation should not stop the router from processing
-                // further navigations => the catch
-                return nav.promise.catch(function () { });
-            }
-            else {
-                return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
-            }
-        })
-            .subscribe(function () { });
-    };
-    /**
-     * @param {?} rawUrl
-     * @param {?} source
-     * @param {?} extras
-     * @return {?}
-     */
-    Router.prototype.scheduleNavigation = function (rawUrl, source, extras) {
-        var /** @type {?} */ lastNavigation = this.navigations.value;
-        // If the user triggers a navigation imperatively (e.g., by using navigateByUrl),
-        // and that navigation results in 'replaceState' that leads to the same URL,
-        // we should skip those.
-        if (lastNavigation && source !== 'imperative' && lastNavigation.source === 'imperative' &&
-            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
-            return Promise.resolve(true); // return value is not used
-        }
-        // Because of a bug in IE and Edge, the location class fires two events (popstate and
-        // hashchange) every single time. The second one should be ignored. Otherwise, the URL will
-        // flicker.
-        if (lastNavigation && source == 'hashchange' && lastNavigation.source === 'popstate' &&
-            lastNavigation.rawUrl.toString() === rawUrl.toString()) {
-            return Promise.resolve(true); // return value is not used
-        }
-        var /** @type {?} */ resolve = null;
-        var /** @type {?} */ reject = null;
-        var /** @type {?} */ promise = new Promise(function (res, rej) {
-            resolve = res;
-            reject = rej;
-        });
-        var /** @type {?} */ id = ++this.navigationId;
-        this.navigations.next({ id: id, source: source, rawUrl: rawUrl, extras: extras, resolve: resolve, reject: reject, promise: promise });
-        // Make sure that the error is propagated even though `processNavigations` catch
-        // handler does not rethrow
-        return promise.catch(function (e) { return Promise.reject(e); });
-    };
-    /**
-     * @param {?} __0
-     * @return {?}
-     */
-    Router.prototype.executeScheduledNavigation = function (_a) {
-        var _this = this;
-        var id = _a.id, rawUrl = _a.rawUrl, extras = _a.extras, resolve = _a.resolve, reject = _a.reject;
-        var /** @type {?} */ url = this.urlHandlingStrategy.extract(rawUrl);
-        var /** @type {?} */ urlTransition = !this.navigated || url.toString() !== this.currentUrlTree.toString();
-        if (urlTransition && this.urlHandlingStrategy.shouldProcessUrl(rawUrl)) {
-            this.routerEvents.next(new NavigationStart(id, this.serializeUrl(url)));
-            Promise.resolve()
-                .then(function (_) { return _this.runNavigate(url, rawUrl, !!extras.skipLocationChange, !!extras.replaceUrl, id, null); })
-                .then(resolve, reject);
-            // we cannot process the current URL, but we could process the previous one =>
-            // we need to do some cleanup
-        }
-        else if (urlTransition && this.rawUrlTree &&
-            this.urlHandlingStrategy.shouldProcessUrl(this.rawUrlTree)) {
-            this.routerEvents.next(new NavigationStart(id, this.serializeUrl(url)));
-            Promise.resolve()
-                .then(function (_) { return _this.runNavigate(url, rawUrl, false, false, id, createEmptyState(url, _this.rootComponentType).snapshot); })
-                .then(resolve, reject);
-        }
-        else {
-            this.rawUrlTree = rawUrl;
-            resolve(null);
-        }
-    };
-    /**
-     * @param {?} url
-     * @param {?} rawUrl
-     * @param {?} shouldPreventPushState
-     * @param {?} shouldReplaceUrl
-     * @param {?} id
-     * @param {?} precreatedState
-     * @return {?}
-     */
-    Router.prototype.runNavigate = function (url, rawUrl, shouldPreventPushState, shouldReplaceUrl, id, precreatedState) {
-        var _this = this;
-        if (id !== this.navigationId) {
-            this.location.go(this.urlSerializer.serialize(this.currentUrlTree));
-            this.routerEvents.next(new NavigationCancel(id, this.serializeUrl(url), "Navigation ID " + id + " is not equal to the current navigation id " + this.navigationId));
-            return Promise.resolve(false);
-        }
-        return new Promise(function (resolvePromise, rejectPromise) {
-            // create an observable of the url and route state snapshot
-            // this operation do not result in any side effects
-            var /** @type {?} */ urlAndSnapshot$;
-            if (!precreatedState) {
-                var /** @type {?} */ moduleInjector = _this.ngModule.injector;
-                var /** @type {?} */ redirectsApplied$ = applyRedirects(moduleInjector, _this.configLoader, _this.urlSerializer, url, _this.config);
-                urlAndSnapshot$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(redirectsApplied$, function (appliedUrl) {
-                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(recognize(_this.rootComponentType, _this.config, appliedUrl, _this.serializeUrl(appliedUrl)), function (snapshot) {
-                        _this.routerEvents.next(new RoutesRecognized(id, _this.serializeUrl(url), _this.serializeUrl(appliedUrl), snapshot));
-                        return { appliedUrl: appliedUrl, snapshot: snapshot };
-                    });
-                });
-            }
-            else {
-                urlAndSnapshot$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({ appliedUrl: url, snapshot: precreatedState });
-            }
-            var /** @type {?} */ beforePreactivationDone$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(urlAndSnapshot$, function (p) {
-                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.hooks.beforePreactivation(p.snapshot), function () { return p; });
-            });
-            // run preactivation: guards and data resolvers
-            var /** @type {?} */ preActivation;
-            var /** @type {?} */ preactivationTraverse$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(beforePreactivationDone$, function (_a) {
-                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot;
-                var /** @type {?} */ moduleInjector = _this.ngModule.injector;
-                preActivation =
-                    new PreActivation(snapshot, _this.currentRouterState.snapshot, moduleInjector);
-                preActivation.traverse(_this.rootContexts);
-                return { appliedUrl: appliedUrl, snapshot: snapshot };
-            });
-            var /** @type {?} */ preactivationCheckGuards$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationTraverse$, function (_a) {
-                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot;
-                if (_this.navigationId !== id)
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false);
-                _this.triggerEvent(new GuardsCheckStart(id, _this.serializeUrl(url), appliedUrl, snapshot));
-                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preActivation.checkGuards(), function (shouldActivate) {
-                    _this.triggerEvent(new GuardsCheckEnd(id, _this.serializeUrl(url), appliedUrl, snapshot, shouldActivate));
-                    return { appliedUrl: appliedUrl, snapshot: snapshot, shouldActivate: shouldActivate };
-                });
-            });
-            var /** @type {?} */ preactivationResolveData$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationCheckGuards$, function (p) {
-                if (_this.navigationId !== id)
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false);
-                if (p.shouldActivate && preActivation.isActivating()) {
-                    _this.triggerEvent(new ResolveStart(id, _this.serializeUrl(url), p.appliedUrl, p.snapshot));
-                    return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preActivation.resolveData(), function () {
-                        _this.triggerEvent(new ResolveEnd(id, _this.serializeUrl(url), p.appliedUrl, p.snapshot));
-                        return p;
-                    });
-                }
-                else {
-                    return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(p);
-                }
-            });
-            var /** @type {?} */ preactivationDone$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(preactivationResolveData$, function (p) {
-                return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.hooks.afterPreactivation(p.snapshot), function () { return p; });
-            });
-            // create router state
-            // this operation has side effects => route state is being affected
-            var /** @type {?} */ routerState$ = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(preactivationDone$, function (_a) {
-                var appliedUrl = _a.appliedUrl, snapshot = _a.snapshot, shouldActivate = _a.shouldActivate;
-                if (shouldActivate) {
-                    var /** @type {?} */ state = createRouterState(_this.routeReuseStrategy, snapshot, _this.currentRouterState);
-                    return { appliedUrl: appliedUrl, state: state, shouldActivate: shouldActivate };
-                }
-                else {
-                    return { appliedUrl: appliedUrl, state: null, shouldActivate: shouldActivate };
-                }
-            });
-            // applied the new router state
-            // this operation has side effects
-            var /** @type {?} */ navigationIsSuccessful;
-            var /** @type {?} */ storedState = _this.currentRouterState;
-            var /** @type {?} */ storedUrl = _this.currentUrlTree;
-            routerState$
-                .forEach(function (_a) {
-                var appliedUrl = _a.appliedUrl, state = _a.state, shouldActivate = _a.shouldActivate;
-                if (!shouldActivate || id !== _this.navigationId) {
-                    navigationIsSuccessful = false;
-                    return;
-                }
-                _this.currentUrlTree = appliedUrl;
-                _this.rawUrlTree = _this.urlHandlingStrategy.merge(_this.currentUrlTree, rawUrl);
-                _this.currentRouterState = state;
-                if (!shouldPreventPushState) {
-                    var /** @type {?} */ path = _this.urlSerializer.serialize(_this.rawUrlTree);
-                    if (_this.location.isCurrentPathEqualTo(path) || shouldReplaceUrl) {
-                        _this.location.replaceState(path);
-                    }
-                    else {
-                        _this.location.go(path);
-                    }
-                }
-                new ActivateRoutes(_this.routeReuseStrategy, state, storedState)
-                    .activate(_this.rootContexts);
-                navigationIsSuccessful = true;
-            })
-                .then(function () {
-                if (navigationIsSuccessful) {
-                    _this.navigated = true;
-                    _this.routerEvents.next(new NavigationEnd(id, _this.serializeUrl(url), _this.serializeUrl(_this.currentUrlTree)));
-                    resolvePromise(true);
-                }
-                else {
-                    _this.resetUrlToCurrentUrlTree();
-                    _this.routerEvents.next(new NavigationCancel(id, _this.serializeUrl(url), ''));
-                    resolvePromise(false);
-                }
-            }, function (e) {
-                if (isNavigationCancelingError(e)) {
-                    _this.resetUrlToCurrentUrlTree();
-                    _this.navigated = true;
-                    _this.routerEvents.next(new NavigationCancel(id, _this.serializeUrl(url), e.message));
-                    resolvePromise(false);
-                }
-                else {
-                    _this.routerEvents.next(new NavigationError(id, _this.serializeUrl(url), e));
-                    try {
-                        resolvePromise(_this.errorHandler(e));
-                    }
-                    catch (ee) {
-                        rejectPromise(ee);
-                    }
-                }
-                _this.currentRouterState = storedState;
-                _this.currentUrlTree = storedUrl;
-                _this.rawUrlTree = _this.urlHandlingStrategy.merge(_this.currentUrlTree, rawUrl);
-                _this.location.replaceState(_this.serializeUrl(_this.rawUrlTree));
-            });
-        });
-    };
-    /**
-     * @return {?}
-     */
-    Router.prototype.resetUrlToCurrentUrlTree = function () {
-        var /** @type {?} */ path = this.urlSerializer.serialize(this.rawUrlTree);
-        this.location.replaceState(path);
-    };
-    return Router;
-}());
-var CanActivate = (function () {
-    /**
-     * @param {?} path
-     */
-    function CanActivate(path) {
-        this.path = path;
-    }
-    Object.defineProperty(CanActivate.prototype, "route", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.path[this.path.length - 1]; },
-        enumerable: true,
-        configurable: true
-    });
-    return CanActivate;
-}());
-var CanDeactivate = (function () {
-    /**
-     * @param {?} component
-     * @param {?} route
-     */
-    function CanDeactivate(component, route) {
-        this.component = component;
-        this.route = route;
-    }
-    return CanDeactivate;
-}());
-var PreActivation = (function () {
-    /**
-     * @param {?} future
-     * @param {?} curr
-     * @param {?} moduleInjector
-     */
-    function PreActivation(future, curr, moduleInjector) {
-        this.future = future;
-        this.curr = curr;
-        this.moduleInjector = moduleInjector;
-        this.canActivateChecks = [];
-        this.canDeactivateChecks = [];
-    }
-    /**
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    PreActivation.prototype.traverse = function (parentContexts) {
-        var /** @type {?} */ futureRoot = this.future._root;
-        var /** @type {?} */ currRoot = this.curr ? this.curr._root : null;
-        this.traverseChildRoutes(futureRoot, currRoot, parentContexts, [futureRoot.value]);
-    };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.checkGuards = function () {
-        var _this = this;
-        if (!this.isDeactivating() && !this.isActivating()) {
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
-        }
-        var /** @type {?} */ canDeactivate$ = this.runCanDeactivateChecks();
-        return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(canDeactivate$, function (canDeactivate) { return canDeactivate ? _this.runCanActivateChecks() : __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(false); });
-    };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.resolveData = function () {
-        var _this = this;
-        if (!this.isActivating())
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null);
-        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canActivateChecks);
-        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(checks$, function (check) { return _this.runResolve(check.route); });
-        return __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_reduce__["reduce"].call(runningChecks$, function (_, __) { return _; });
-    };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.isDeactivating = function () { return this.canDeactivateChecks.length !== 0; };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.isActivating = function () { return this.canActivateChecks.length !== 0; };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} contexts
-     * @param {?} futurePath
-     * @return {?}
-     */
-    PreActivation.prototype.traverseChildRoutes = function (futureNode, currNode, contexts, futurePath) {
-        var _this = this;
-        var /** @type {?} */ prevChildren = nodeChildrenAsMap(currNode);
-        // Process the children of the future route
-        futureNode.children.forEach(function (c) {
-            _this.traverseRoutes(c, prevChildren[c.value.outlet], contexts, futurePath.concat([c.value]));
-            delete prevChildren[c.value.outlet];
-        });
-        // Process any children left from the current route (not active for the future route)
-        forEach(prevChildren, function (v, k) { return _this.deactivateRouteAndItsChildren(v, /** @type {?} */ ((contexts)).getContext(k)); });
-    };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} parentContexts
-     * @param {?} futurePath
-     * @return {?}
-     */
-    PreActivation.prototype.traverseRoutes = function (futureNode, currNode, parentContexts, futurePath) {
-        var /** @type {?} */ future = futureNode.value;
-        var /** @type {?} */ curr = currNode ? currNode.value : null;
-        var /** @type {?} */ context = parentContexts ? parentContexts.getContext(futureNode.value.outlet) : null;
-        // reusing the node
-        if (curr && future._routeConfig === curr._routeConfig) {
-            var /** @type {?} */ shouldRunGuardsAndResolvers = this.shouldRunGuardsAndResolvers(curr, future, /** @type {?} */ ((future._routeConfig)).runGuardsAndResolvers);
-            if (shouldRunGuardsAndResolvers) {
-                this.canActivateChecks.push(new CanActivate(futurePath));
-            }
-            else {
-                // we need to set the data
-                future.data = curr.data;
-                future._resolvedData = curr._resolvedData;
-            }
-            // If we have a component, we need to go through an outlet.
-            if (future.component) {
-                this.traverseChildRoutes(futureNode, currNode, context ? context.children : null, futurePath);
-                // if we have a componentless route, we recurse but keep the same outlet map.
-            }
-            else {
-                this.traverseChildRoutes(futureNode, currNode, parentContexts, futurePath);
-            }
-            if (shouldRunGuardsAndResolvers) {
-                var /** @type {?} */ outlet = ((((context)).outlet));
-                this.canDeactivateChecks.push(new CanDeactivate(outlet.component, curr));
-            }
-        }
-        else {
-            if (curr) {
-                this.deactivateRouteAndItsChildren(currNode, context);
-            }
-            this.canActivateChecks.push(new CanActivate(futurePath));
-            // If we have a component, we need to go through an outlet.
-            if (future.component) {
-                this.traverseChildRoutes(futureNode, null, context ? context.children : null, futurePath);
-                // if we have a componentless route, we recurse but keep the same outlet map.
-            }
-            else {
-                this.traverseChildRoutes(futureNode, null, parentContexts, futurePath);
-            }
-        }
-    };
-    /**
-     * @param {?} curr
-     * @param {?} future
-     * @param {?} mode
-     * @return {?}
-     */
-    PreActivation.prototype.shouldRunGuardsAndResolvers = function (curr, future, mode) {
-        switch (mode) {
-            case 'always':
-                return true;
-            case 'paramsOrQueryParamsChange':
-                return !equalParamsAndUrlSegments(curr, future) ||
-                    !shallowEqual(curr.queryParams, future.queryParams);
-            case 'paramsChange':
-            default:
-                return !equalParamsAndUrlSegments(curr, future);
-        }
-    };
-    /**
-     * @param {?} route
-     * @param {?} context
-     * @return {?}
-     */
-    PreActivation.prototype.deactivateRouteAndItsChildren = function (route, context) {
-        var _this = this;
-        var /** @type {?} */ children = nodeChildrenAsMap(route);
-        var /** @type {?} */ r = route.value;
-        forEach(children, function (node, childName) {
-            if (!r.component) {
-                _this.deactivateRouteAndItsChildren(node, context);
-            }
-            else if (context) {
-                _this.deactivateRouteAndItsChildren(node, context.children.getContext(childName));
-            }
-            else {
-                _this.deactivateRouteAndItsChildren(node, null);
-            }
-        });
-        if (!r.component) {
-            this.canDeactivateChecks.push(new CanDeactivate(null, r));
-        }
-        else if (context && context.outlet && context.outlet.isActivated) {
-            this.canDeactivateChecks.push(new CanDeactivate(context.outlet.component, r));
-        }
-        else {
-            this.canDeactivateChecks.push(new CanDeactivate(null, r));
-        }
-    };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.runCanDeactivateChecks = function () {
-        var _this = this;
-        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canDeactivateChecks);
-        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(checks$, function (check) { return _this.runCanDeactivate(check.component, check.route); });
-        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(runningChecks$, function (result) { return result === true; });
-    };
-    /**
-     * @return {?}
-     */
-    PreActivation.prototype.runCanActivateChecks = function () {
-        var _this = this;
-        var /** @type {?} */ checks$ = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(this.canActivateChecks);
-        var /** @type {?} */ runningChecks$ = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(checks$, function (check) { return andObservables(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])([_this.runCanActivateChild(check.path), _this.runCanActivate(check.route)])); });
-        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(runningChecks$, function (result) { return result === true; });
-    };
-    /**
-     * @param {?} future
-     * @return {?}
-     */
-    PreActivation.prototype.runCanActivate = function (future) {
-        var _this = this;
-        var /** @type {?} */ canActivate = future._routeConfig ? future._routeConfig.canActivate : null;
-        if (!canActivate || canActivate.length === 0)
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
-        var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canActivate), function (c) {
-            var /** @type {?} */ guard = _this.getToken(c, future);
-            var /** @type {?} */ observable;
-            if (guard.canActivate) {
-                observable = wrapIntoObservable(guard.canActivate(future, _this.future));
-            }
-            else {
-                observable = wrapIntoObservable(guard(future, _this.future));
-            }
-            return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
-        });
-        return andObservables(obs);
-    };
-    /**
-     * @param {?} path
-     * @return {?}
-     */
-    PreActivation.prototype.runCanActivateChild = function (path) {
-        var _this = this;
-        var /** @type {?} */ future = path[path.length - 1];
-        var /** @type {?} */ canActivateChildGuards = path.slice(0, path.length - 1)
-            .reverse()
-            .map(function (p) { return _this.extractCanActivateChild(p); })
-            .filter(function (_) { return _ !== null; });
-        return andObservables(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canActivateChildGuards), function (d) {
-            var /** @type {?} */ obs = __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(d.guards), function (c) {
-                var /** @type {?} */ guard = _this.getToken(c, d.node);
-                var /** @type {?} */ observable;
-                if (guard.canActivateChild) {
-                    observable = wrapIntoObservable(guard.canActivateChild(future, _this.future));
-                }
-                else {
-                    observable = wrapIntoObservable(guard(future, _this.future));
-                }
-                return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
-            });
-            return andObservables(obs);
-        }));
-    };
-    /**
-     * @param {?} p
-     * @return {?}
-     */
-    PreActivation.prototype.extractCanActivateChild = function (p) {
-        var /** @type {?} */ canActivateChild = p._routeConfig ? p._routeConfig.canActivateChild : null;
-        if (!canActivateChild || canActivateChild.length === 0)
-            return null;
-        return { node: p, guards: canActivateChild };
-    };
-    /**
-     * @param {?} component
-     * @param {?} curr
-     * @return {?}
-     */
-    PreActivation.prototype.runCanDeactivate = function (component, curr) {
-        var _this = this;
-        var /** @type {?} */ canDeactivate = curr && curr._routeConfig ? curr._routeConfig.canDeactivate : null;
-        if (!canDeactivate || canDeactivate.length === 0)
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(true);
-        var /** @type {?} */ canDeactivate$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(canDeactivate), function (c) {
-            var /** @type {?} */ guard = _this.getToken(c, curr);
-            var /** @type {?} */ observable;
-            if (guard.canDeactivate) {
-                observable =
-                    wrapIntoObservable(guard.canDeactivate(component, curr, _this.curr, _this.future));
-            }
-            else {
-                observable = wrapIntoObservable(guard(component, curr, _this.curr, _this.future));
-            }
-            return __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_first__["first"].call(observable);
-        });
-        return __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_every__["every"].call(canDeactivate$, function (result) { return result === true; });
-    };
-    /**
-     * @param {?} future
-     * @return {?}
-     */
-    PreActivation.prototype.runResolve = function (future) {
-        var /** @type {?} */ resolve = future._resolve;
-        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.resolveNode(resolve, future), function (resolvedData) {
-            future._resolvedData = resolvedData;
-            future.data = Object.assign({}, future.data, inheritedParamsDataResolve(future).resolve);
-            return null;
-        });
-    };
-    /**
-     * @param {?} resolve
-     * @param {?} future
-     * @return {?}
-     */
-    PreActivation.prototype.resolveNode = function (resolve, future) {
-        var _this = this;
-        var /** @type {?} */ keys = Object.keys(resolve);
-        if (keys.length === 0) {
-            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])({});
-        }
-        if (keys.length === 1) {
-            var /** @type {?} */ key_1 = keys[0];
-            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(this.getResolver(resolve[key_1], future), function (value) {
-                return _a = {}, _a[key_1] = value, _a;
-                var _a;
-            });
-        }
-        var /** @type {?} */ data = {};
-        var /** @type {?} */ runningResolvers$ = __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(keys), function (key) {
-            return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(_this.getResolver(resolve[key], future), function (value) {
-                data[key] = value;
-                return value;
-            });
-        });
-        return __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_map__["map"].call(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_last__["last"].call(runningResolvers$), function () { return data; });
-    };
-    /**
-     * @param {?} injectionToken
-     * @param {?} future
-     * @return {?}
-     */
-    PreActivation.prototype.getResolver = function (injectionToken, future) {
-        var /** @type {?} */ resolver = this.getToken(injectionToken, future);
-        return resolver.resolve ? wrapIntoObservable(resolver.resolve(future, this.future)) :
-            wrapIntoObservable(resolver(future, this.future));
-    };
-    /**
-     * @param {?} token
-     * @param {?} snapshot
-     * @return {?}
-     */
-    PreActivation.prototype.getToken = function (token, snapshot) {
-        var /** @type {?} */ config = closestLoadedConfig(snapshot);
-        var /** @type {?} */ injector = config ? config.module.injector : this.moduleInjector;
-        return injector.get(token);
-    };
-    return PreActivation;
-}());
-var ActivateRoutes = (function () {
-    /**
-     * @param {?} routeReuseStrategy
-     * @param {?} futureState
-     * @param {?} currState
-     */
-    function ActivateRoutes(routeReuseStrategy, futureState, currState) {
-        this.routeReuseStrategy = routeReuseStrategy;
-        this.futureState = futureState;
-        this.currState = currState;
-    }
-    /**
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.activate = function (parentContexts) {
-        var /** @type {?} */ futureRoot = this.futureState._root;
-        var /** @type {?} */ currRoot = this.currState ? this.currState._root : null;
-        this.deactivateChildRoutes(futureRoot, currRoot, parentContexts);
-        advanceActivatedRoute(this.futureState.root);
-        this.activateChildRoutes(futureRoot, currRoot, parentContexts);
-    };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} contexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.deactivateChildRoutes = function (futureNode, currNode, contexts) {
-        var _this = this;
-        var /** @type {?} */ children = nodeChildrenAsMap(currNode);
-        // Recurse on the routes active in the future state to de-activate deeper children
-        futureNode.children.forEach(function (futureChild) {
-            var /** @type {?} */ childOutletName = futureChild.value.outlet;
-            _this.deactivateRoutes(futureChild, children[childOutletName], contexts);
-            delete children[childOutletName];
-        });
-        // De-activate the routes that will not be re-used
-        forEach(children, function (v, childName) {
-            _this.deactivateRouteAndItsChildren(v, contexts);
-        });
-    };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} parentContext
-     * @return {?}
-     */
-    ActivateRoutes.prototype.deactivateRoutes = function (futureNode, currNode, parentContext) {
-        var /** @type {?} */ future = futureNode.value;
-        var /** @type {?} */ curr = currNode ? currNode.value : null;
-        if (future === curr) {
-            // Reusing the node, check to see if the children need to be de-activated
-            if (future.component) {
-                // If we have a normal route, we need to go through an outlet.
-                var /** @type {?} */ context = parentContext.getContext(future.outlet);
-                if (context) {
-                    this.deactivateChildRoutes(futureNode, currNode, context.children);
-                }
-            }
-            else {
-                // if we have a componentless route, we recurse but keep the same outlet map.
-                this.deactivateChildRoutes(futureNode, currNode, parentContext);
-            }
-        }
-        else {
-            if (curr) {
-                // Deactivate the current route which will not be re-used
-                this.deactivateRouteAndItsChildren(currNode, parentContext);
-            }
-        }
-    };
-    /**
-     * @param {?} route
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.deactivateRouteAndItsChildren = function (route, parentContexts) {
-        if (this.routeReuseStrategy.shouldDetach(route.value.snapshot)) {
-            this.detachAndStoreRouteSubtree(route, parentContexts);
-        }
-        else {
-            this.deactivateRouteAndOutlet(route, parentContexts);
-        }
-    };
-    /**
-     * @param {?} route
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.detachAndStoreRouteSubtree = function (route, parentContexts) {
-        var /** @type {?} */ context = parentContexts.getContext(route.value.outlet);
-        if (context && context.outlet) {
-            var /** @type {?} */ componentRef = context.outlet.detach();
-            var /** @type {?} */ contexts = context.children.onOutletDeactivated();
-            this.routeReuseStrategy.store(route.value.snapshot, { componentRef: componentRef, route: route, contexts: contexts });
-        }
-    };
-    /**
-     * @param {?} route
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.deactivateRouteAndOutlet = function (route, parentContexts) {
-        var _this = this;
-        var /** @type {?} */ context = parentContexts.getContext(route.value.outlet);
-        if (context) {
-            var /** @type {?} */ children = nodeChildrenAsMap(route);
-            var /** @type {?} */ contexts_1 = route.value.component ? context.children : parentContexts;
-            forEach(children, function (v, k) { return _this.deactivateRouteAndItsChildren(v, contexts_1); });
-            if (context.outlet) {
-                // Destroy the component
-                context.outlet.deactivate();
-                // Destroy the contexts for all the outlets that were in the component
-                context.children.onOutletDeactivated();
-            }
-        }
-    };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} contexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.activateChildRoutes = function (futureNode, currNode, contexts) {
-        var _this = this;
-        var /** @type {?} */ children = nodeChildrenAsMap(currNode);
-        futureNode.children.forEach(function (c) { _this.activateRoutes(c, children[c.value.outlet], contexts); });
-    };
-    /**
-     * @param {?} futureNode
-     * @param {?} currNode
-     * @param {?} parentContexts
-     * @return {?}
-     */
-    ActivateRoutes.prototype.activateRoutes = function (futureNode, currNode, parentContexts) {
-        var /** @type {?} */ future = futureNode.value;
-        var /** @type {?} */ curr = currNode ? currNode.value : null;
-        advanceActivatedRoute(future);
-        // reusing the node
-        if (future === curr) {
-            if (future.component) {
-                // If we have a normal route, we need to go through an outlet.
-                var /** @type {?} */ context = parentContexts.getOrCreateContext(future.outlet);
-                this.activateChildRoutes(futureNode, currNode, context.children);
-            }
-            else {
-                // if we have a componentless route, we recurse but keep the same outlet map.
-                this.activateChildRoutes(futureNode, currNode, parentContexts);
-            }
-        }
-        else {
-            if (future.component) {
-                // if we have a normal route, we need to place the component into the outlet and recurse.
-                var /** @type {?} */ context = parentContexts.getOrCreateContext(future.outlet);
-                if (this.routeReuseStrategy.shouldAttach(future.snapshot)) {
-                    var /** @type {?} */ stored = ((this.routeReuseStrategy.retrieve(future.snapshot)));
-                    this.routeReuseStrategy.store(future.snapshot, null);
-                    context.children.onOutletReAttached(stored.contexts);
-                    context.attachRef = stored.componentRef;
-                    context.route = stored.route.value;
-                    if (context.outlet) {
-                        // Attach right away when the outlet has already been instantiated
-                        // Otherwise attach from `RouterOutlet.ngOnInit` when it is instantiated
-                        context.outlet.attach(stored.componentRef, stored.route.value);
-                    }
-                    advanceActivatedRouteNodeAndItsChildren(stored.route);
-                }
-                else {
-                    var /** @type {?} */ config = parentLoadedConfig(future.snapshot);
-                    var /** @type {?} */ cmpFactoryResolver = config ? config.module.componentFactoryResolver : null;
-                    context.route = future;
-                    context.resolver = cmpFactoryResolver;
-                    if (context.outlet) {
-                        // Activate the outlet when it has already been instantiated
-                        // Otherwise it will get activated from its `ngOnInit` when instantiated
-                        context.outlet.activateWith(future, cmpFactoryResolver);
-                    }
-                    this.activateChildRoutes(futureNode, null, context.children);
-                }
-            }
-            else {
-                // if we have a componentless route, we recurse but keep the same outlet map.
-                this.activateChildRoutes(futureNode, null, parentContexts);
-            }
-        }
-    };
-    return ActivateRoutes;
-}());
-/**
- * @param {?} node
- * @return {?}
- */
-function advanceActivatedRouteNodeAndItsChildren(node) {
-    advanceActivatedRoute(node.value);
-    node.children.forEach(advanceActivatedRouteNodeAndItsChildren);
-}
-/**
- * @param {?} snapshot
- * @return {?}
- */
-function parentLoadedConfig(snapshot) {
-    for (var /** @type {?} */ s = snapshot.parent; s; s = s.parent) {
-        var /** @type {?} */ route = s._routeConfig;
-        if (route && route._loadedConfig)
-            return route._loadedConfig;
-        if (route && route.component)
-            return null;
-    }
-    return null;
-}
-/**
- * @param {?} snapshot
- * @return {?}
- */
-function closestLoadedConfig(snapshot) {
-    if (!snapshot)
-        return null;
-    for (var /** @type {?} */ s = snapshot.parent; s; s = s.parent) {
-        var /** @type {?} */ route = s._routeConfig;
-        if (route && route._loadedConfig)
-            return route._loadedConfig;
-    }
-    return null;
-}
-/**
- * @template T
- * @param {?} node
- * @return {?}
- */
-function nodeChildrenAsMap(node) {
-    var /** @type {?} */ map$$1 = {};
-    if (node) {
-        node.children.forEach(function (child) { return map$$1[child.value.outlet] = child; });
-    }
-    return map$$1;
-}
-/**
- * @param {?} commands
- * @return {?}
- */
-function validateCommands(commands) {
-    for (var /** @type {?} */ i = 0; i < commands.length; i++) {
-        var /** @type {?} */ cmd = commands[i];
-        if (cmd == null) {
-            throw new Error("The requested path contains " + cmd + " segment at index " + i);
-        }
-    }
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Lets you link to specific parts of your app.
- *
- * \@howToUse
- *
- * Consider the following route configuration:
- * `[{ path: 'user/:name', component: UserCmp }]`
- *
- * When linking to this `user/:name` route, you can write:
- * `<a routerLink='/user/bob'>link to user component</a>`
- *
- * \@description
- *
- * The RouterLink directives let you link to specific parts of your app.
- *
- * When the link is static, you can use the directive as follows:
- * `<a routerLink="/user/bob">link to user component</a>`
- *
- * If you use dynamic values to generate the link, you can pass an array of path
- * segments, followed by the params for each segment.
- *
- * For instance `['/team', teamId, 'user', userName, {details: true}]`
- * means that we want to generate a link to `/team/11/user/bob;details=true`.
- *
- * Multiple static segments can be merged into one
- * (e.g., `['/team/11/user', userName, {details: true}]`).
- *
- * The first segment name can be prepended with `/`, `./`, or `../`:
- * * If the first segment begins with `/`, the router will look up the route from the root of the
- *   app.
- * * If the first segment begins with `./`, or doesn't begin with a slash, the router will
- *   instead look in the children of the current activated route.
- * * And if the first segment begins with `../`, the router will go up one level.
- *
- * You can set query params and fragment as follows:
- *
- * ```
- * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" fragment="education">
- *   link to user component
- * </a>
- * ```
- * RouterLink will use these to generate this link: `/user/bob#education?debug=true`.
- *
- * (Deprecated in v4.0.0 use `queryParamsHandling` instead) You can also tell the
- * directive to preserve the current query params and fragment:
- *
- * ```
- * <a [routerLink]="['/user/bob']" preserveQueryParams preserveFragment>
- *   link to user component
- * </a>
- * ```
- *
- * You can tell the directive to how to handle queryParams, available options are:
- *  - 'merge' merge the queryParams into the current queryParams
- *  - 'preserve' preserve the current queryParams
- *  - default / '' use the queryParams only
- *  same options for {\@link NavigationExtras#queryParamsHandling}
- *
- * ```
- * <a [routerLink]="['/user/bob']" [queryParams]="{debug: true}" queryParamsHandling="merge">
- *   link to user component
- * </a>
- * ```
- *
- * The router link directive always treats the provided input as a delta to the current url.
- *
- * For instance, if the current url is `/user/(box//aux:team)`.
- *
- * Then the following link `<a [routerLink]="['/user/jim']">Jim</a>` will generate the link
- * `/user/(jim//aux:team)`.
- *
- * \@ngModule RouterModule
- *
- * See {\@link Router#createUrlTree} for more information.
- *
- * \@stable
- */
-var RouterLink = (function () {
-    /**
-     * @param {?} router
-     * @param {?} route
-     * @param {?} tabIndex
-     * @param {?} renderer
-     * @param {?} el
-     */
-    function RouterLink(router, route, tabIndex, renderer, el) {
-        this.router = router;
-        this.route = route;
-        this.commands = [];
-        if (tabIndex == null) {
-            renderer.setAttribute(el.nativeElement, 'tabindex', '0');
-        }
-    }
-    Object.defineProperty(RouterLink.prototype, "routerLink", {
-        /**
-         * @param {?} commands
-         * @return {?}
-         */
-        set: function (commands) {
-            if (commands != null) {
-                this.commands = Array.isArray(commands) ? commands : [commands];
-            }
-            else {
-                this.commands = [];
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterLink.prototype, "preserveQueryParams", {
-        /**
-         * @deprecated 4.0.0 use `queryParamsHandling` instead.
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && (console) && (console.warn)) {
-                console.warn('preserveQueryParams is deprecated!, use queryParamsHandling instead.');
-            }
-            this.preserve = value;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    RouterLink.prototype.onClick = function () {
-        var /** @type {?} */ extras = {
-            skipLocationChange: attrBoolValue(this.skipLocationChange),
-            replaceUrl: attrBoolValue(this.replaceUrl),
-        };
-        this.router.navigateByUrl(this.urlTree, extras);
-        return true;
-    };
-    Object.defineProperty(RouterLink.prototype, "urlTree", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return this.router.createUrlTree(this.commands, {
-                relativeTo: this.route,
-                queryParams: this.queryParams,
-                fragment: this.fragment,
-                preserveQueryParams: attrBoolValue(this.preserve),
-                queryParamsHandling: this.queryParamsHandling,
-                preserveFragment: attrBoolValue(this.preserveFragment),
-            });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    return RouterLink;
-}());
-RouterLink.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: ':not(a)[routerLink]' },] },
-];
-/**
- * @nocollapse
- */
-RouterLink.ctorParameters = function () { return [
-    { type: Router, },
-    { type: ActivatedRoute, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["U" /* Attribute */], args: ['tabindex',] },] },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["N" /* ElementRef */], },
-]; };
-RouterLink.propDecorators = {
-    'queryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'fragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'queryParamsHandling': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'preserveFragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'skipLocationChange': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'replaceUrl': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'routerLink': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'preserveQueryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_2" /* HostListener */], args: ['click',] },],
-};
-/**
- * \@whatItDoes Lets you link to specific parts of your app.
- *
- * See {\@link RouterLink} for more information.
- *
- * \@ngModule RouterModule
- *
- * \@stable
- */
-var RouterLinkWithHref = (function () {
-    /**
-     * @param {?} router
-     * @param {?} route
-     * @param {?} locationStrategy
-     */
-    function RouterLinkWithHref(router, route, locationStrategy) {
-        var _this = this;
-        this.router = router;
-        this.route = route;
-        this.locationStrategy = locationStrategy;
-        this.commands = [];
-        this.subscription = router.events.subscribe(function (s) {
-            if (s instanceof NavigationEnd) {
-                _this.updateTargetUrlAndHref();
-            }
-        });
-    }
-    Object.defineProperty(RouterLinkWithHref.prototype, "routerLink", {
-        /**
-         * @param {?} commands
-         * @return {?}
-         */
-        set: function (commands) {
-            if (commands != null) {
-                this.commands = Array.isArray(commands) ? commands : [commands];
-            }
-            else {
-                this.commands = [];
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterLinkWithHref.prototype, "preserveQueryParams", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["t" /* isDevMode */])() && (console) && (console.warn)) {
-                console.warn('preserveQueryParams is deprecated, use queryParamsHandling instead.');
-            }
-            this.preserve = value;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    RouterLinkWithHref.prototype.ngOnChanges = function (changes) { this.updateTargetUrlAndHref(); };
-    /**
-     * @return {?}
-     */
-    RouterLinkWithHref.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
-    /**
-     * @param {?} button
-     * @param {?} ctrlKey
-     * @param {?} metaKey
-     * @param {?} shiftKey
-     * @return {?}
-     */
-    RouterLinkWithHref.prototype.onClick = function (button, ctrlKey, metaKey, shiftKey) {
-        if (button !== 0 || ctrlKey || metaKey || shiftKey) {
-            return true;
-        }
-        if (typeof this.target === 'string' && this.target != '_self') {
-            return true;
-        }
-        var /** @type {?} */ extras = {
-            skipLocationChange: attrBoolValue(this.skipLocationChange),
-            replaceUrl: attrBoolValue(this.replaceUrl),
-        };
-        this.router.navigateByUrl(this.urlTree, extras);
-        return false;
-    };
-    /**
-     * @return {?}
-     */
-    RouterLinkWithHref.prototype.updateTargetUrlAndHref = function () {
-        this.href = this.locationStrategy.prepareExternalUrl(this.router.serializeUrl(this.urlTree));
-    };
-    Object.defineProperty(RouterLinkWithHref.prototype, "urlTree", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            return this.router.createUrlTree(this.commands, {
-                relativeTo: this.route,
-                queryParams: this.queryParams,
-                fragment: this.fragment,
-                preserveQueryParams: attrBoolValue(this.preserve),
-                queryParamsHandling: this.queryParamsHandling,
-                preserveFragment: attrBoolValue(this.preserveFragment),
-            });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    return RouterLinkWithHref;
-}());
-RouterLinkWithHref.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: 'a[routerLink]' },] },
-];
-/**
- * @nocollapse
- */
-RouterLinkWithHref.ctorParameters = function () { return [
-    { type: Router, },
-    { type: ActivatedRoute, },
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* LocationStrategy */], },
-]; };
-RouterLinkWithHref.propDecorators = {
-    'target': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_3" /* HostBinding */], args: ['attr.target',] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'queryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'fragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'queryParamsHandling': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'preserveFragment': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'skipLocationChange': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'replaceUrl': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'href': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_3" /* HostBinding */] },],
-    'routerLink': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'preserveQueryParams': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_2" /* HostListener */], args: ['click', ['$event.button', '$event.ctrlKey', '$event.metaKey', '$event.shiftKey'],] },],
-};
-/**
- * @param {?} s
- * @return {?}
- */
-function attrBoolValue(s) {
-    return s === '' || !!s;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Lets you add a CSS class to an element when the link's route becomes active.
- *
- * \@howToUse
- *
- * ```
- * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
- * ```
- *
- * \@description
- *
- * The RouterLinkActive directive lets you add a CSS class to an element when the link's route
- * becomes active.
- *
- * Consider the following example:
- *
- * ```
- * <a routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
- * ```
- *
- * When the url is either '/user' or '/user/bob', the active-link class will
- * be added to the `a` tag. If the url changes, the class will be removed.
- *
- * You can set more than one class, as follows:
- *
- * ```
- * <a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
- * <a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
- * ```
- *
- * You can configure RouterLinkActive by passing `exact: true`. This will add the classes
- * only when the url matches the link exactly.
- *
- * ```
- * <a routerLink="/user/bob" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
- * true}">Bob</a>
- * ```
- *
- * You can assign the RouterLinkActive instance to a template variable and directly check
- * the `isActive` status.
- * ```
- * <a routerLink="/user/bob" routerLinkActive #rla="routerLinkActive">
- *   Bob {{ rla.isActive ? '(already open)' : ''}}
- * </a>
- * ```
- *
- * Finally, you can apply the RouterLinkActive directive to an ancestor of a RouterLink.
- *
- * ```
- * <div routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
- *   <a routerLink="/user/jim">Jim</a>
- *   <a routerLink="/user/bob">Bob</a>
- * </div>
- * ```
- *
- * This will set the active-link class on the div tag if the url is either '/user/jim' or
- * '/user/bob'.
- *
- * \@ngModule RouterModule
- *
- * \@stable
- */
-var RouterLinkActive = (function () {
-    /**
-     * @param {?} router
-     * @param {?} element
-     * @param {?} renderer
-     * @param {?} cdr
-     */
-    function RouterLinkActive(router, element, renderer, cdr) {
-        var _this = this;
-        this.router = router;
-        this.element = element;
-        this.renderer = renderer;
-        this.cdr = cdr;
-        this.classes = [];
-        this.active = false;
-        this.routerLinkActiveOptions = { exact: false };
-        this.subscription = router.events.subscribe(function (s) {
-            if (s instanceof NavigationEnd) {
-                _this.update();
-            }
-        });
-    }
-    Object.defineProperty(RouterLinkActive.prototype, "isActive", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.active; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    RouterLinkActive.prototype.ngAfterContentInit = function () {
-        var _this = this;
-        this.links.changes.subscribe(function (_) { return _this.update(); });
-        this.linksWithHrefs.changes.subscribe(function (_) { return _this.update(); });
-        this.update();
-    };
-    Object.defineProperty(RouterLinkActive.prototype, "routerLinkActive", {
-        /**
-         * @param {?} data
-         * @return {?}
-         */
-        set: function (data) {
-            var /** @type {?} */ classes = Array.isArray(data) ? data : data.split(' ');
-            this.classes = classes.filter(function (c) { return !!c; });
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    RouterLinkActive.prototype.ngOnChanges = function (changes) { this.update(); };
-    /**
-     * @return {?}
-     */
-    RouterLinkActive.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
-    /**
-     * @return {?}
-     */
-    RouterLinkActive.prototype.update = function () {
-        var _this = this;
-        if (!this.links || !this.linksWithHrefs || !this.router.navigated)
-            return;
-        Promise.resolve().then(function () {
-            var /** @type {?} */ hasActiveLinks = _this.hasActiveLinks();
-            if (_this.active !== hasActiveLinks) {
-                _this.active = hasActiveLinks;
-                _this.classes.forEach(function (c) {
-                    if (hasActiveLinks) {
-                        _this.renderer.addClass(_this.element.nativeElement, c);
-                    }
-                    else {
-                        _this.renderer.removeClass(_this.element.nativeElement, c);
-                    }
-                });
-            }
-        });
-    };
-    /**
-     * @param {?} router
-     * @return {?}
-     */
-    RouterLinkActive.prototype.isLinkActive = function (router) {
-        var _this = this;
-        return function (link) { return router.isActive(link.urlTree, _this.routerLinkActiveOptions.exact); };
-    };
-    /**
-     * @return {?}
-     */
-    RouterLinkActive.prototype.hasActiveLinks = function () {
-        return this.links.some(this.isLinkActive(this.router)) ||
-            this.linksWithHrefs.some(this.isLinkActive(this.router));
-    };
-    return RouterLinkActive;
-}());
-RouterLinkActive.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{
-                selector: '[routerLinkActive]',
-                exportAs: 'routerLinkActive',
-            },] },
-];
-/**
- * @nocollapse
- */
-RouterLinkActive.ctorParameters = function () { return [
-    { type: Router, },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["N" /* ElementRef */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_1" /* Renderer2 */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Z" /* ChangeDetectorRef */], },
-]; };
-RouterLinkActive.propDecorators = {
-    'links': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_4" /* ContentChildren */], args: [RouterLink, { descendants: true },] },],
-    'linksWithHrefs': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_4" /* ContentChildren */], args: [RouterLinkWithHref, { descendants: true },] },],
-    'routerLinkActiveOptions': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-    'routerLinkActive': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* Input */] },],
-};
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Store contextual information about a {\@link RouterOutlet}
- *
- * \@stable
- */
-var OutletContext = (function () {
-    function OutletContext() {
-        this.outlet = null;
-        this.route = null;
-        this.resolver = null;
-        this.children = new ChildrenOutletContexts();
-        this.attachRef = null;
-    }
-    return OutletContext;
-}());
-/**
- * Store contextual information about the children (= nested) {\@link RouterOutlet}
- *
- * \@stable
- */
-var ChildrenOutletContexts = (function () {
-    function ChildrenOutletContexts() {
-        this.contexts = new Map();
-    }
-    /**
-     * Called when a `RouterOutlet` directive is instantiated
-     * @param {?} childName
-     * @param {?} outlet
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.onChildOutletCreated = function (childName, outlet) {
-        var /** @type {?} */ context = this.getOrCreateContext(childName);
-        context.outlet = outlet;
-        this.contexts.set(childName, context);
-    };
-    /**
-     * Called when a `RouterOutlet` directive is destroyed.
-     * We need to keep the context as the outlet could be destroyed inside a NgIf and might be
-     * re-created later.
-     * @param {?} childName
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.onChildOutletDestroyed = function (childName) {
-        var /** @type {?} */ context = this.getContext(childName);
-        if (context) {
-            context.outlet = null;
-        }
-    };
-    /**
-     * Called when the corresponding route is deactivated during navigation.
-     * Because the component get destroyed, all children outlet are destroyed.
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.onOutletDeactivated = function () {
-        var /** @type {?} */ contexts = this.contexts;
-        this.contexts = new Map();
-        return contexts;
-    };
-    /**
-     * @param {?} contexts
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.onOutletReAttached = function (contexts) { this.contexts = contexts; };
-    /**
-     * @param {?} childName
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.getOrCreateContext = function (childName) {
-        var /** @type {?} */ context = this.getContext(childName);
-        if (!context) {
-            context = new OutletContext();
-            this.contexts.set(childName, context);
-        }
-        return context;
-    };
-    /**
-     * @param {?} childName
-     * @return {?}
-     */
-    ChildrenOutletContexts.prototype.getContext = function (childName) { return this.contexts.get(childName) || null; };
-    return ChildrenOutletContexts;
-}());
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Acts as a placeholder that Angular dynamically fills based on the current router
- * state.
- *
- * \@howToUse
- *
- * ```
- * <router-outlet></router-outlet>
- * <router-outlet name='left'></router-outlet>
- * <router-outlet name='right'></router-outlet>
- * ```
- *
- * A router outlet will emit an activate event any time a new component is being instantiated,
- * and a deactivate event when it is being destroyed.
- *
- * ```
- * <router-outlet
- *   (activate)='onActivate($event)'
- *   (deactivate)='onDeactivate($event)'></router-outlet>
- * ```
- * \@ngModule RouterModule
- *
- * \@stable
- */
-var RouterOutlet = (function () {
-    /**
-     * @param {?} parentContexts
-     * @param {?} location
-     * @param {?} resolver
-     * @param {?} name
-     * @param {?} changeDetector
-     */
-    function RouterOutlet(parentContexts, location, resolver, name, changeDetector) {
-        this.parentContexts = parentContexts;
-        this.location = location;
-        this.resolver = resolver;
-        this.changeDetector = changeDetector;
-        this.activated = null;
-        this._activatedRoute = null;
-        this.activateEvents = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["G" /* EventEmitter */]();
-        this.deactivateEvents = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["G" /* EventEmitter */]();
-        this.name = name || PRIMARY_OUTLET;
-        parentContexts.onChildOutletCreated(this.name, this);
-    }
-    /**
-     * @return {?}
-     */
-    RouterOutlet.prototype.ngOnDestroy = function () { this.parentContexts.onChildOutletDestroyed(this.name); };
-    /**
-     * @return {?}
-     */
-    RouterOutlet.prototype.ngOnInit = function () {
-        if (!this.activated) {
-            // If the outlet was not instantiated at the time the route got activated we need to populate
-            // the outlet when it is initialized (ie inside a NgIf)
-            var /** @type {?} */ context = this.parentContexts.getContext(this.name);
-            if (context && context.route) {
-                if (context.attachRef) {
-                    // `attachRef` is populated when there is an existing component to mount
-                    this.attach(context.attachRef, context.route);
-                }
-                else {
-                    // otherwise the component defined in the configuration is created
-                    this.activateWith(context.route, context.resolver || null);
-                }
-            }
-        }
-    };
-    Object.defineProperty(RouterOutlet.prototype, "locationInjector", {
-        /**
-         * @deprecated since v4 *
-         * @return {?}
-         */
-        get: function () { return this.location.injector; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterOutlet.prototype, "locationFactoryResolver", {
-        /**
-         * @deprecated since v4 *
-         * @return {?}
-         */
-        get: function () { return this.resolver; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterOutlet.prototype, "isActivated", {
-        /**
-         * @return {?}
-         */
-        get: function () { return !!this.activated; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterOutlet.prototype, "component", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this.activated)
-                throw new Error('Outlet is not activated');
-            return this.activated.instance;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterOutlet.prototype, "activatedRoute", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (!this.activated)
-                throw new Error('Outlet is not activated');
-            return (this._activatedRoute);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(RouterOutlet.prototype, "activatedRouteData", {
-        /**
-         * @return {?}
-         */
-        get: function () {
-            if (this._activatedRoute) {
-                return this._activatedRoute.snapshot.data;
-            }
-            return {};
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Called when the `RouteReuseStrategy` instructs to detach the subtree
-     * @return {?}
-     */
-    RouterOutlet.prototype.detach = function () {
-        if (!this.activated)
-            throw new Error('Outlet is not activated');
-        this.location.detach();
-        var /** @type {?} */ cmp = this.activated;
-        this.activated = null;
-        this._activatedRoute = null;
-        return cmp;
-    };
-    /**
-     * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
-     * @param {?} ref
-     * @param {?} activatedRoute
-     * @return {?}
-     */
-    RouterOutlet.prototype.attach = function (ref, activatedRoute) {
-        this.activated = ref;
-        this._activatedRoute = activatedRoute;
-        this.location.insert(ref.hostView);
-    };
-    /**
-     * @return {?}
-     */
-    RouterOutlet.prototype.deactivate = function () {
-        if (this.activated) {
-            var /** @type {?} */ c = this.component;
-            this.activated.destroy();
-            this.activated = null;
-            this._activatedRoute = null;
-            this.deactivateEvents.emit(c);
-        }
-    };
-    /**
-     * @param {?} activatedRoute
-     * @param {?} resolver
-     * @return {?}
-     */
-    RouterOutlet.prototype.activateWith = function (activatedRoute, resolver) {
-        if (this.isActivated) {
-            throw new Error('Cannot activate an already activated outlet');
-        }
-        this._activatedRoute = activatedRoute;
-        var /** @type {?} */ snapshot = activatedRoute._futureSnapshot;
-        var /** @type {?} */ component = (((snapshot._routeConfig)).component);
-        resolver = resolver || this.resolver;
-        var /** @type {?} */ factory = resolver.resolveComponentFactory(component);
-        var /** @type {?} */ childContexts = this.parentContexts.getOrCreateContext(this.name).children;
-        var /** @type {?} */ injector = new OutletInjector(activatedRoute, childContexts, this.location.injector);
-        this.activated = this.location.createComponent(factory, this.location.length, injector);
-        // Calling `markForCheck` to make sure we will run the change detection when the
-        // `RouterOutlet` is inside a `ChangeDetectionStrategy.OnPush` component.
-        this.changeDetector.markForCheck();
-        this.activateEvents.emit(this.activated.instance);
-    };
-    return RouterOutlet;
-}());
-RouterOutlet.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["K" /* Directive */], args: [{ selector: 'router-outlet', exportAs: 'outlet' },] },
-];
-/**
- * @nocollapse
- */
-RouterOutlet.ctorParameters = function () { return [
-    { type: ChildrenOutletContexts, },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["R" /* ViewContainerRef */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Q" /* ComponentFactoryResolver */], },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["U" /* Attribute */], args: ['name',] },] },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["Z" /* ChangeDetectorRef */], },
-]; };
-RouterOutlet.propDecorators = {
-    'activateEvents': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_5" /* Output */], args: ['activate',] },],
-    'deactivateEvents': [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_5" /* Output */], args: ['deactivate',] },],
-};
-var OutletInjector = (function () {
-    /**
-     * @param {?} route
-     * @param {?} childContexts
-     * @param {?} parent
-     */
-    function OutletInjector(route, childContexts, parent) {
-        this.route = route;
-        this.childContexts = childContexts;
-        this.parent = parent;
-    }
-    /**
-     * @param {?} token
-     * @param {?=} notFoundValue
-     * @return {?}
-     */
-    OutletInjector.prototype.get = function (token, notFoundValue) {
-        if (token === ActivatedRoute) {
-            return this.route;
-        }
-        if (token === ChildrenOutletContexts) {
-            return this.childContexts;
-        }
-        return this.parent.get(token, notFoundValue);
-    };
-    return OutletInjector;
-}());
-/**
-*@license
-*Copyright Google Inc. All Rights Reserved.
-*
-*Use of this source code is governed by an MIT-style license that can be
-*found in the LICENSE file at https://angular.io/license
-*/
-/**
- * \@whatItDoes Provides a preloading strategy.
- *
- * \@experimental
- * @abstract
- */
-var PreloadingStrategy = (function () {
-    function PreloadingStrategy() {
-    }
-    /**
-     * @abstract
-     * @param {?} route
-     * @param {?} fn
-     * @return {?}
-     */
-    PreloadingStrategy.prototype.preload = function (route, fn) { };
-    return PreloadingStrategy;
-}());
-/**
- * \@whatItDoes Provides a preloading strategy that preloads all modules as quickly as possible.
- *
- * \@howToUse
- *
- * ```
- * RouteModule.forRoot(ROUTES, {preloadingStrategy: PreloadAllModules})
- * ```
- *
- * \@experimental
- */
-var PreloadAllModules = (function () {
-    function PreloadAllModules() {
-    }
-    /**
-     * @param {?} route
-     * @param {?} fn
-     * @return {?}
-     */
-    PreloadAllModules.prototype.preload = function (route, fn) {
-        return __WEBPACK_IMPORTED_MODULE_15_rxjs_operator_catch__["_catch"].call(fn(), function () { return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null); });
-    };
-    return PreloadAllModules;
-}());
-/**
- * \@whatItDoes Provides a preloading strategy that does not preload any modules.
- *
- * \@description
- *
- * This strategy is enabled by default.
- *
- * \@experimental
- */
-var NoPreloading = (function () {
-    function NoPreloading() {
-    }
-    /**
-     * @param {?} route
-     * @param {?} fn
-     * @return {?}
-     */
-    NoPreloading.prototype.preload = function (route, fn) { return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null); };
-    return NoPreloading;
-}());
-/**
- * The preloader optimistically loads all router configurations to
- * make navigations into lazily-loaded sections of the application faster.
- *
- * The preloader runs in the background. When the router bootstraps, the preloader
- * starts listening to all navigation events. After every such event, the preloader
- * will check if any configurations can be loaded lazily.
- *
- * If a route is protected by `canLoad` guards, the preloaded will not load it.
- *
- * \@stable
- */
-var RouterPreloader = (function () {
-    /**
-     * @param {?} router
-     * @param {?} moduleLoader
-     * @param {?} compiler
-     * @param {?} injector
-     * @param {?} preloadingStrategy
-     */
-    function RouterPreloader(router, moduleLoader, compiler, injector, preloadingStrategy) {
-        this.router = router;
-        this.injector = injector;
-        this.preloadingStrategy = preloadingStrategy;
-        var onStartLoad = function (r) { return router.triggerEvent(new RouteConfigLoadStart(r)); };
-        var onEndLoad = function (r) { return router.triggerEvent(new RouteConfigLoadEnd(r)); };
-        this.loader = new RouterConfigLoader(moduleLoader, compiler, onStartLoad, onEndLoad);
-    }
-    /**
-     * @return {?}
-     */
-    RouterPreloader.prototype.setUpPreloading = function () {
-        var _this = this;
-        var /** @type {?} */ navigations$ = __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__["filter"].call(this.router.events, function (e) { return e instanceof NavigationEnd; });
-        this.subscription = __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_concatMap__["concatMap"].call(navigations$, function () { return _this.preload(); }).subscribe(function () { });
-    };
-    /**
-     * @return {?}
-     */
-    RouterPreloader.prototype.preload = function () {
-        var /** @type {?} */ ngModule = this.injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["P" /* NgModuleRef */]);
-        return this.processRoutes(ngModule, this.router.config);
-    };
-    /**
-     * @return {?}
-     */
-    RouterPreloader.prototype.ngOnDestroy = function () { this.subscription.unsubscribe(); };
-    /**
-     * @param {?} ngModule
-     * @param {?} routes
-     * @return {?}
-     */
-    RouterPreloader.prototype.processRoutes = function (ngModule, routes) {
-        var /** @type {?} */ res = [];
-        for (var _i = 0, routes_5 = routes; _i < routes_5.length; _i++) {
-            var route = routes_5[_i];
-            // we already have the config loaded, just recurse
-            if (route.loadChildren && !route.canLoad && route._loadedConfig) {
-                var /** @type {?} */ childConfig = route._loadedConfig;
-                res.push(this.processRoutes(childConfig.module, childConfig.routes));
-                // no config loaded, fetch the config
-            }
-            else if (route.loadChildren && !route.canLoad) {
-                res.push(this.preloadConfig(ngModule, route));
-                // recurse into children
-            }
-            else if (route.children) {
-                res.push(this.processRoutes(ngModule, route.children));
-            }
-        }
-        return __WEBPACK_IMPORTED_MODULE_19_rxjs_operator_mergeAll__["mergeAll"].call(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_from__["from"])(res));
-    };
-    /**
-     * @param {?} ngModule
-     * @param {?} route
-     * @return {?}
-     */
-    RouterPreloader.prototype.preloadConfig = function (ngModule, route) {
-        var _this = this;
-        return this.preloadingStrategy.preload(route, function () {
-            var /** @type {?} */ loaded$ = _this.loader.load(ngModule.injector, route);
-            return __WEBPACK_IMPORTED_MODULE_12_rxjs_operator_mergeMap__["mergeMap"].call(loaded$, function (config) {
-                route._loadedConfig = config;
-                return _this.processRoutes(config.module, config.routes);
-            });
-        });
-    };
-    return RouterPreloader;
-}());
-RouterPreloader.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Injectable */] },
-];
-/**
- * @nocollapse
- */
-RouterPreloader.ctorParameters = function () { return [
-    { type: Router, },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_7" /* Compiler */], },
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */], },
-    { type: PreloadingStrategy, },
-]; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * \@whatItDoes Contains a list of directives
- * \@stable
- */
-var ROUTER_DIRECTIVES = [RouterOutlet, RouterLink, RouterLinkWithHref, RouterLinkActive];
-/**
- * \@whatItDoes Is used in DI to configure the router.
- * \@stable
- */
-var ROUTER_CONFIGURATION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTER_CONFIGURATION');
-/**
- * \@docsNotRequired
- */
-var ROUTER_FORROOT_GUARD = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('ROUTER_FORROOT_GUARD');
-var ROUTER_PROVIDERS = [
-    __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */],
-    { provide: UrlSerializer, useClass: DefaultUrlSerializer },
-    {
-        provide: Router,
-        useFactory: setupRouter,
-        deps: [
-            __WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* ApplicationRef */], UrlSerializer, ChildrenOutletContexts, __WEBPACK_IMPORTED_MODULE_1__angular_common__["g" /* Location */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], __WEBPACK_IMPORTED_MODULE_2__angular_core__["_7" /* Compiler */], ROUTES, ROUTER_CONFIGURATION,
-            [UrlHandlingStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()], [RouteReuseStrategy, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()]
-        ]
-    },
-    ChildrenOutletContexts,
-    { provide: ActivatedRoute, useFactory: rootRoute, deps: [Router] },
-    { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_6" /* NgModuleFactoryLoader */], useClass: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_8" /* SystemJsNgModuleLoader */] },
-    RouterPreloader,
-    NoPreloading,
-    PreloadAllModules,
-    { provide: ROUTER_CONFIGURATION, useValue: { enableTracing: false } },
-];
-/**
- * @return {?}
- */
-function routerNgProbeToken() {
-    return new __WEBPACK_IMPORTED_MODULE_2__angular_core__["q" /* NgProbeToken */]('Router', Router);
-}
-/**
- * \@whatItDoes Adds router directives and providers.
- *
- * \@howToUse
- *
- * RouterModule can be imported multiple times: once per lazily-loaded bundle.
- * Since the router deals with a global shared resource--location, we cannot have
- * more than one router service active.
- *
- * That is why there are two ways to create the module: `RouterModule.forRoot` and
- * `RouterModule.forChild`.
- *
- * * `forRoot` creates a module that contains all the directives, the given routes, and the router
- *   service itself.
- * * `forChild` creates a module that contains all the directives and the given routes, but does not
- *   include the router service.
- *
- * When registered at the root, the module should be used as follows
- *
- * ```
- * \@NgModule({
- *   imports: [RouterModule.forRoot(ROUTES)]
- * })
- * class MyNgModule {}
- * ```
- *
- * For submodules and lazy loaded submodules the module should be used as follows:
- *
- * ```
- * \@NgModule({
- *   imports: [RouterModule.forChild(ROUTES)]
- * })
- * class MyNgModule {}
- * ```
- *
- * \@description
- *
- * Managing state transitions is one of the hardest parts of building applications. This is
- * especially true on the web, where you also need to ensure that the state is reflected in the URL.
- * In addition, we often want to split applications into multiple bundles and load them on demand.
- * Doing this transparently is not trivial.
- *
- * The Angular router solves these problems. Using the router, you can declaratively specify
- * application states, manage state transitions while taking care of the URL, and load bundles on
- * demand.
- *
- * [Read this developer guide](https://angular.io/docs/ts/latest/guide/router.html) to get an
- * overview of how the router should be used.
- *
- * \@stable
- */
-var RouterModule = (function () {
-    /**
-     * @param {?} guard
-     * @param {?} router
-     */
-    function RouterModule(guard, router) {
-    }
-    /**
-     * Creates a module with all the router providers and directives. It also optionally sets up an
-     * application listener to perform an initial navigation.
-     *
-     * Options:
-     * * `enableTracing` makes the router log all its internal events to the console.
-     * * `useHash` enables the location strategy that uses the URL fragment instead of the history
-     * API.
-     * * `initialNavigation` disables the initial navigation.
-     * * `errorHandler` provides a custom error handler.
-     * @param {?} routes
-     * @param {?=} config
-     * @return {?}
-     */
-    RouterModule.forRoot = function (routes, config) {
-        return {
-            ngModule: RouterModule,
-            providers: [
-                ROUTER_PROVIDERS,
-                provideRoutes(routes),
-                {
-                    provide: ROUTER_FORROOT_GUARD,
-                    useFactory: provideForRootGuard,
-                    deps: [[Router, new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */](), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["F" /* SkipSelf */]()]]
-                },
-                { provide: ROUTER_CONFIGURATION, useValue: config ? config : {} },
-                {
-                    provide: __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* LocationStrategy */],
-                    useFactory: provideLocationStrategy,
-                    deps: [
-                        __WEBPACK_IMPORTED_MODULE_1__angular_common__["c" /* PlatformLocation */], [new __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */](__WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* APP_BASE_HREF */]), new __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */]()], ROUTER_CONFIGURATION
-                    ]
-                },
-                {
-                    provide: PreloadingStrategy,
-                    useExisting: config && config.preloadingStrategy ? config.preloadingStrategy :
-                        NoPreloading
-                },
-                { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["q" /* NgProbeToken */], multi: true, useFactory: routerNgProbeToken },
-                provideRouterInitializer(),
-            ],
-        };
-    };
-    /**
-     * Creates a module with all the router directives and a provider registering routes.
-     * @param {?} routes
-     * @return {?}
-     */
-    RouterModule.forChild = function (routes) {
-        return { ngModule: RouterModule, providers: [provideRoutes(routes)] };
-    };
-    return RouterModule;
-}());
-RouterModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["a" /* NgModule */], args: [{ declarations: ROUTER_DIRECTIVES, exports: ROUTER_DIRECTIVES },] },
-];
-/**
- * @nocollapse
- */
-RouterModule.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */] }, { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["g" /* Inject */], args: [ROUTER_FORROOT_GUARD,] },] },
-    { type: Router, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["p" /* Optional */] },] },
-]; };
-/**
- * @param {?} platformLocationStrategy
- * @param {?} baseHref
- * @param {?=} options
- * @return {?}
- */
-function provideLocationStrategy(platformLocationStrategy, baseHref, options) {
-    if (options === void 0) { options = {}; }
-    return options.useHash ? new __WEBPACK_IMPORTED_MODULE_1__angular_common__["i" /* HashLocationStrategy */](platformLocationStrategy, baseHref) :
-        new __WEBPACK_IMPORTED_MODULE_1__angular_common__["j" /* PathLocationStrategy */](platformLocationStrategy, baseHref);
-}
-/**
- * @param {?} router
- * @return {?}
- */
-function provideForRootGuard(router) {
-    if (router) {
-        throw new Error("RouterModule.forRoot() called twice. Lazy loaded modules should use RouterModule.forChild() instead.");
-    }
-    return 'guarded';
-}
-/**
- * \@whatItDoes Registers routes.
- *
- * \@howToUse
- *
- * ```
- * \@NgModule({
- *   imports: [RouterModule.forChild(ROUTES)],
- *   providers: [provideRoutes(EXTRA_ROUTES)]
- * })
- * class MyNgModule {}
- * ```
- *
- * \@stable
- * @param {?} routes
- * @return {?}
- */
-function provideRoutes(routes) {
-    return [
-        { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_9" /* ANALYZE_FOR_ENTRY_COMPONENTS */], multi: true, useValue: routes },
-        { provide: ROUTES, multi: true, useValue: routes },
-    ];
-}
-/**
- * @param {?} ref
- * @param {?} urlSerializer
- * @param {?} contexts
- * @param {?} location
- * @param {?} injector
- * @param {?} loader
- * @param {?} compiler
- * @param {?} config
- * @param {?=} opts
- * @param {?=} urlHandlingStrategy
- * @param {?=} routeReuseStrategy
- * @return {?}
- */
-function setupRouter(ref, urlSerializer, contexts, location, injector, loader, compiler, config, opts, urlHandlingStrategy, routeReuseStrategy) {
-    if (opts === void 0) { opts = {}; }
-    var /** @type {?} */ router = new Router(null, urlSerializer, contexts, location, injector, loader, compiler, flatten(config));
-    if (urlHandlingStrategy) {
-        router.urlHandlingStrategy = urlHandlingStrategy;
-    }
-    if (routeReuseStrategy) {
-        router.routeReuseStrategy = routeReuseStrategy;
-    }
-    if (opts.errorHandler) {
-        router.errorHandler = opts.errorHandler;
-    }
-    if (opts.enableTracing) {
-        var /** @type {?} */ dom_1 = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_20__angular_platform_browser__["b" /* ɵgetDOM */])();
-        router.events.subscribe(function (e) {
-            dom_1.logGroup("Router Event: " + ((e.constructor)).name);
-            dom_1.log(e.toString());
-            dom_1.log(e);
-            dom_1.logGroupEnd();
-        });
-    }
-    return router;
-}
-/**
- * @param {?} router
- * @return {?}
- */
-function rootRoute(router) {
-    return router.routerState.root;
-}
-/**
- * To initialize the router properly we need to do in two steps:
- *
- * We need to start the navigation in a APP_INITIALIZER to block the bootstrap if
- * a resolver or a guards executes asynchronously. Second, we need to actually run
- * activation in a BOOTSTRAP_LISTENER. We utilize the afterPreactivation
- * hook provided by the router to do that.
- *
- * The router navigation starts, reaches the point when preactivation is done, and then
- * pauses. It waits for the hook to be resolved. We then resolve it only in a bootstrap listener.
- */
-var RouterInitializer = (function () {
-    /**
-     * @param {?} injector
-     */
-    function RouterInitializer(injector) {
-        this.injector = injector;
-        this.initNavigation = false;
-        this.resultOfPreactivationDone = new __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__["Subject"]();
-    }
-    /**
-     * @return {?}
-     */
-    RouterInitializer.prototype.appInitializer = function () {
-        var _this = this;
-        var /** @type {?} */ p = this.injector.get(__WEBPACK_IMPORTED_MODULE_1__angular_common__["k" /* LOCATION_INITIALIZED */], Promise.resolve(null));
-        return p.then(function () {
-            var /** @type {?} */ resolve = ((null));
-            var /** @type {?} */ res = new Promise(function (r) { return resolve = r; });
-            var /** @type {?} */ router = _this.injector.get(Router);
-            var /** @type {?} */ opts = _this.injector.get(ROUTER_CONFIGURATION);
-            if (_this.isLegacyDisabled(opts) || _this.isLegacyEnabled(opts)) {
-                resolve(true);
-            }
-            else if (opts.initialNavigation === 'disabled') {
-                router.setUpLocationChangeListener();
-                resolve(true);
-            }
-            else if (opts.initialNavigation === 'enabled') {
-                router.hooks.afterPreactivation = function () {
-                    // only the initial navigation should be delayed
-                    if (!_this.initNavigation) {
-                        _this.initNavigation = true;
-                        resolve(true);
-                        return _this.resultOfPreactivationDone;
-                        // subsequent navigations should not be delayed
-                    }
-                    else {
-                        return (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6_rxjs_observable_of__["of"])(null));
-                    }
-                };
-                router.initialNavigation();
-            }
-            else {
-                throw new Error("Invalid initialNavigation options: '" + opts.initialNavigation + "'");
-            }
-            return res;
-        });
-    };
-    /**
-     * @param {?} bootstrappedComponentRef
-     * @return {?}
-     */
-    RouterInitializer.prototype.bootstrapListener = function (bootstrappedComponentRef) {
-        var /** @type {?} */ opts = this.injector.get(ROUTER_CONFIGURATION);
-        var /** @type {?} */ preloader = this.injector.get(RouterPreloader);
-        var /** @type {?} */ router = this.injector.get(Router);
-        var /** @type {?} */ ref = this.injector.get(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* ApplicationRef */]);
-        if (bootstrappedComponentRef !== ref.components[0]) {
-            return;
-        }
-        if (this.isLegacyEnabled(opts)) {
-            router.initialNavigation();
-        }
-        else if (this.isLegacyDisabled(opts)) {
-            router.setUpLocationChangeListener();
-        }
-        preloader.setUpPreloading();
-        router.resetRootComponentType(ref.componentTypes[0]);
-        this.resultOfPreactivationDone.next(/** @type {?} */ ((null)));
-        this.resultOfPreactivationDone.complete();
-    };
-    /**
-     * @param {?} opts
-     * @return {?}
-     */
-    RouterInitializer.prototype.isLegacyEnabled = function (opts) {
-        return opts.initialNavigation === 'legacy_enabled' || opts.initialNavigation === true ||
-            opts.initialNavigation === undefined;
-    };
-    /**
-     * @param {?} opts
-     * @return {?}
-     */
-    RouterInitializer.prototype.isLegacyDisabled = function (opts) {
-        return opts.initialNavigation === 'legacy_disabled' || opts.initialNavigation === false;
-    };
-    return RouterInitializer;
-}());
-RouterInitializer.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["d" /* Injectable */] },
-];
-/**
- * @nocollapse
- */
-RouterInitializer.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["k" /* Injector */], },
-]; };
-/**
- * @param {?} r
- * @return {?}
- */
-function getAppInitializer(r) {
-    return r.appInitializer.bind(r);
-}
-/**
- * @param {?} r
- * @return {?}
- */
-function getBootstrapListener(r) {
-    return r.bootstrapListener.bind(r);
-}
-/**
- * A token for the router initializer that will be called after the app is bootstrapped.
- *
- * \@experimental
- */
-var ROUTER_INITIALIZER = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["h" /* InjectionToken */]('Router Initializer');
-/**
- * @return {?}
- */
-function provideRouterInitializer() {
-    return [
-        RouterInitializer,
-        {
-            provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["j" /* APP_INITIALIZER */],
-            multi: true,
-            useFactory: getAppInitializer,
-            deps: [RouterInitializer]
-        },
-        { provide: ROUTER_INITIALIZER, useFactory: getBootstrapListener, deps: [RouterInitializer] },
-        { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["_10" /* APP_BOOTSTRAP_LISTENER */], multi: true, useExisting: ROUTER_INITIALIZER },
-    ];
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the common package.
- */
-/**
- * \@stable
- */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["e" /* Version */]('4.4.7');
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the router package.
- */
-// This file only reexports content of the `src` folder. Keep it that way.
-/**
- * Generated bundle index. Do not edit.
- */
-
-
-
-/***/ }),
-/* 124 */,
-/* 125 */,
-/* 126 */,
 /* 127 */,
 /* 128 */,
 /* 129 */,
@@ -71230,7 +71230,10 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["e" /* Version */]
 /* 180 */,
 /* 181 */,
 /* 182 */,
-/* 183 */
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71241,7 +71244,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(25);
-var ObjectUnsubscribedError_1 = __webpack_require__(90);
+var ObjectUnsubscribedError_1 = __webpack_require__(94);
 /**
  * @class BehaviorSubject<T>
  */
@@ -71285,7 +71288,7 @@ exports.BehaviorSubject = BehaviorSubject;
 
 
 /***/ }),
-/* 184 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71327,7 +71330,7 @@ exports.InnerSubscriber = InnerSubscriber;
 
 
 /***/ }),
-/* 185 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71460,7 +71463,7 @@ exports.Notification = Notification;
 
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71470,7 +71473,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(32);
+var Subscription_1 = __webpack_require__(33);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -71506,18 +71509,18 @@ exports.SubjectSubscription = SubjectSubscription;
 
 
 /***/ }),
-/* 187 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(3);
-var map_1 = __webpack_require__(58);
+var map_1 = __webpack_require__(59);
 Observable_1.Observable.prototype.map = map_1.map;
 
 
 /***/ }),
-/* 188 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71528,8 +71531,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var ScalarObservable_1 = __webpack_require__(87);
-var EmptyObservable_1 = __webpack_require__(33);
+var ScalarObservable_1 = __webpack_require__(91);
+var EmptyObservable_1 = __webpack_require__(34);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -71593,7 +71596,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71606,8 +71609,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(25);
 var Observable_1 = __webpack_require__(3);
 var Subscriber_1 = __webpack_require__(5);
-var Subscription_1 = __webpack_require__(32);
-var refCount_1 = __webpack_require__(89);
+var Subscription_1 = __webpack_require__(33);
+var refCount_1 = __webpack_require__(93);
 /**
  * @class ConnectableObservable<T>
  */
@@ -71770,7 +71773,7 @@ var RefCountSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71781,10 +71784,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(3);
-var EmptyObservable_1 = __webpack_require__(33);
-var isArray_1 = __webpack_require__(65);
-var subscribeToResult_1 = __webpack_require__(66);
-var OuterSubscriber_1 = __webpack_require__(56);
+var EmptyObservable_1 = __webpack_require__(34);
+var isArray_1 = __webpack_require__(66);
+var subscribeToResult_1 = __webpack_require__(67);
+var OuterSubscriber_1 = __webpack_require__(57);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -71978,7 +71981,7 @@ var ForkJoinSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 191 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71988,17 +71991,17 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isArray_1 = __webpack_require__(65);
-var isArrayLike_1 = __webpack_require__(92);
-var isPromise_1 = __webpack_require__(95);
-var PromiseObservable_1 = __webpack_require__(86);
-var IteratorObservable_1 = __webpack_require__(192);
-var ArrayObservable_1 = __webpack_require__(57);
-var ArrayLikeObservable_1 = __webpack_require__(188);
-var iterator_1 = __webpack_require__(61);
+var isArray_1 = __webpack_require__(66);
+var isArrayLike_1 = __webpack_require__(96);
+var isPromise_1 = __webpack_require__(99);
+var PromiseObservable_1 = __webpack_require__(90);
+var IteratorObservable_1 = __webpack_require__(195);
+var ArrayObservable_1 = __webpack_require__(58);
+var ArrayLikeObservable_1 = __webpack_require__(191);
+var iterator_1 = __webpack_require__(62);
 var Observable_1 = __webpack_require__(3);
-var observeOn_1 = __webpack_require__(218);
-var observable_1 = __webpack_require__(62);
+var observeOn_1 = __webpack_require__(221);
+var observable_1 = __webpack_require__(63);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -72106,7 +72109,7 @@ exports.FromObservable = FromObservable;
 
 
 /***/ }),
-/* 192 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72118,7 +72121,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(15);
 var Observable_1 = __webpack_require__(3);
-var iterator_1 = __webpack_require__(61);
+var iterator_1 = __webpack_require__(62);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -72275,35 +72278,35 @@ function sign(value) {
 
 
 /***/ }),
-/* 193 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ForkJoinObservable_1 = __webpack_require__(190);
+var ForkJoinObservable_1 = __webpack_require__(193);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 
 
 /***/ }),
-/* 194 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromObservable_1 = __webpack_require__(191);
+var FromObservable_1 = __webpack_require__(194);
 exports.from = FromObservable_1.FromObservable.create;
 
 
 /***/ }),
-/* 195 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(3);
-var ArrayObservable_1 = __webpack_require__(57);
-var isScheduler_1 = __webpack_require__(96);
-var mergeAll_1 = __webpack_require__(59);
+var ArrayObservable_1 = __webpack_require__(58);
+var isScheduler_1 = __webpack_require__(100);
+var mergeAll_1 = __webpack_require__(60);
 /* tslint:enable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -72391,22 +72394,22 @@ exports.merge = merge;
 
 
 /***/ }),
-/* 196 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ArrayObservable_1 = __webpack_require__(57);
+var ArrayObservable_1 = __webpack_require__(58);
 exports.of = ArrayObservable_1.ArrayObservable.of;
 
 
 /***/ }),
-/* 197 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var catchError_1 = __webpack_require__(208);
+var catchError_1 = __webpack_require__(211);
 /**
  * Catches errors on the observable to be handled by returning a new observable or throwing an error.
  *
@@ -72473,12 +72476,12 @@ exports._catch = _catch;
 
 
 /***/ }),
-/* 198 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatAll_1 = __webpack_require__(209);
+var concatAll_1 = __webpack_require__(212);
 /* tslint:enable:max-line-length */
 /**
  * Converts a higher-order Observable into a first-order Observable by
@@ -72535,12 +72538,12 @@ exports.concatAll = concatAll;
 
 
 /***/ }),
-/* 199 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var concatMap_1 = __webpack_require__(210);
+var concatMap_1 = __webpack_require__(213);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -72608,12 +72611,12 @@ exports.concatMap = concatMap;
 
 
 /***/ }),
-/* 200 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var every_1 = __webpack_require__(212);
+var every_1 = __webpack_require__(215);
 /**
  * Returns an Observable that emits whether or not every item of the source satisfies the condition specified.
  *
@@ -72635,12 +72638,12 @@ exports.every = every;
 
 
 /***/ }),
-/* 201 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var filter_1 = __webpack_require__(213);
+var filter_1 = __webpack_require__(216);
 /* tslint:enable:max-line-length */
 /**
  * Filter items emitted by the source Observable by only emitting those that
@@ -72688,12 +72691,12 @@ exports.filter = filter;
 
 
 /***/ }),
-/* 202 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var first_1 = __webpack_require__(214);
+var first_1 = __webpack_require__(217);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -72750,12 +72753,12 @@ exports.first = first;
 
 
 /***/ }),
-/* 203 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var last_1 = __webpack_require__(215);
+var last_1 = __webpack_require__(218);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -72781,12 +72784,12 @@ exports.last = last;
 
 
 /***/ }),
-/* 204 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeAll_1 = __webpack_require__(59);
+var mergeAll_1 = __webpack_require__(60);
 /**
  * Converts a higher-order Observable into a first-order Observable which
  * concurrently delivers all values that are emitted on the inner Observables.
@@ -72839,12 +72842,12 @@ exports.mergeAll = mergeAll;
 
 
 /***/ }),
-/* 205 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(60);
+var mergeMap_1 = __webpack_require__(61);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -72912,12 +72915,12 @@ exports.mergeMap = mergeMap;
 
 
 /***/ }),
-/* 206 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var reduce_1 = __webpack_require__(219);
+var reduce_1 = __webpack_require__(222);
 /* tslint:enable:max-line-length */
 /**
  * Applies an accumulator function over the source Observable, and returns the
@@ -72978,12 +72981,12 @@ exports.reduce = reduce;
 
 
 /***/ }),
-/* 207 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var share_1 = __webpack_require__(221);
+var share_1 = __webpack_require__(224);
 /**
  * Returns a new Observable that multicasts (shares) the original Observable. As long as there is at least one
  * Subscriber this Observable will be subscribed and emitting data. When all subscribers have unsubscribed it will
@@ -73008,7 +73011,7 @@ exports.share = share;
 
 
 /***/ }),
-/* 208 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73018,8 +73021,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var OuterSubscriber_1 = __webpack_require__(56);
-var subscribeToResult_1 = __webpack_require__(66);
+var OuterSubscriber_1 = __webpack_require__(57);
+var subscribeToResult_1 = __webpack_require__(67);
 /**
  * Catches errors on the observable to be handled by returning a new observable or throwing an error.
  *
@@ -73130,12 +73133,12 @@ var CatchSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 209 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeAll_1 = __webpack_require__(59);
+var mergeAll_1 = __webpack_require__(60);
 /**
  * Converts a higher-order Observable into a first-order Observable by
  * concatenating the inner Observables in order.
@@ -73191,12 +73194,12 @@ exports.concatAll = concatAll;
 
 
 /***/ }),
-/* 210 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(60);
+var mergeMap_1 = __webpack_require__(61);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -73264,7 +73267,7 @@ exports.concatMap = concatMap;
 
 
 /***/ }),
-/* 211 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73347,7 +73350,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
 
 
 /***/ }),
-/* 212 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73427,7 +73430,7 @@ var EverySubscriber = (function (_super) {
 
 
 /***/ }),
-/* 213 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73527,7 +73530,7 @@ var FilterSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 214 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73538,7 +73541,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(5);
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(65);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -73685,7 +73688,7 @@ var FirstSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 215 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73696,7 +73699,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(5);
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(65);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -73810,7 +73813,7 @@ var LastSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 216 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73905,12 +73908,12 @@ var MapSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 217 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(189);
+var ConnectableObservable_1 = __webpack_require__(192);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -73970,7 +73973,7 @@ exports.MulticastOperator = MulticastOperator;
 
 
 /***/ }),
-/* 218 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73981,7 +73984,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(5);
-var Notification_1 = __webpack_require__(185);
+var Notification_1 = __webpack_require__(188);
 /**
  *
  * Re-emits all notifications from source Observable with specified scheduler.
@@ -74091,15 +74094,15 @@ exports.ObserveOnMessage = ObserveOnMessage;
 
 
 /***/ }),
-/* 219 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var scan_1 = __webpack_require__(220);
-var takeLast_1 = __webpack_require__(222);
-var defaultIfEmpty_1 = __webpack_require__(211);
-var pipe_1 = __webpack_require__(97);
+var scan_1 = __webpack_require__(223);
+var takeLast_1 = __webpack_require__(225);
+var defaultIfEmpty_1 = __webpack_require__(214);
+var pipe_1 = __webpack_require__(101);
 /* tslint:enable:max-line-length */
 /**
  * Applies an accumulator function over the source Observable, and returns the
@@ -74166,7 +74169,7 @@ exports.reduce = reduce;
 
 
 /***/ }),
-/* 220 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74293,13 +74296,13 @@ var ScanSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 221 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var multicast_1 = __webpack_require__(217);
-var refCount_1 = __webpack_require__(89);
+var multicast_1 = __webpack_require__(220);
+var refCount_1 = __webpack_require__(93);
 var Subject_1 = __webpack_require__(25);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
@@ -74324,7 +74327,7 @@ exports.share = share;
 
 
 /***/ }),
-/* 222 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74335,8 +74338,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(5);
-var ArgumentOutOfRangeError_1 = __webpack_require__(223);
-var EmptyObservable_1 = __webpack_require__(33);
+var ArgumentOutOfRangeError_1 = __webpack_require__(226);
+var EmptyObservable_1 = __webpack_require__(34);
 /**
  * Emits only the last `count` values emitted by the source Observable.
  *
@@ -74439,7 +74442,7 @@ var TakeLastSubscriber = (function (_super) {
 
 
 /***/ }),
-/* 223 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74473,7 +74476,7 @@ exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError;
 
 
 /***/ }),
-/* 224 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74504,7 +74507,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 
 
 /***/ }),
-/* 225 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74516,7 +74519,7 @@ exports.identity = identity;
 
 
 /***/ }),
-/* 226 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74527,14 +74530,14 @@ exports.noop = noop;
 
 
 /***/ }),
-/* 227 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(5);
-var rxSubscriber_1 = __webpack_require__(63);
-var Observer_1 = __webpack_require__(85);
+var rxSubscriber_1 = __webpack_require__(64);
+var Observer_1 = __webpack_require__(89);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -74553,12 +74556,12 @@ exports.toSubscriber = toSubscriber;
 
 
 /***/ }),
-/* 228 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var errorObject_1 = __webpack_require__(91);
+var errorObject_1 = __webpack_require__(95);
 var tryCatchTarget;
 function tryCatcher() {
     try {

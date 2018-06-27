@@ -1,6 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -33,7 +31,19 @@ namespace SportsStore
       services.AddMvc().AddJsonOptions(opts=> { opts.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Serialize;
           opts.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
       });
-    }
+            services.AddDistributedSqlServerCache(options => {
+                options.ConnectionString =
+                    Configuration["Data:Products:ConnectionString"];
+                options.SchemaName = "dbo";
+                options.TableName = "SessionData";
+            });
+
+            services.AddSession(options => {
+                options.CookieName = "SportsStore.Session";
+                options.IdleTimeout = System.TimeSpan.FromHours(48);
+                options.CookieHttpOnly = false;
+            });
+        }
 
     public void Configure(IApplicationBuilder app,
             IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -55,7 +65,7 @@ namespace SportsStore
       //}
 
       app.UseStaticFiles();
-
+            app.UseSession();
       app.UseMvc(routes => {
         routes.MapRoute(
             name: "default",

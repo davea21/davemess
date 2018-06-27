@@ -130,6 +130,15 @@ export class Repository {
             });
     }
 
+    storeSessionData(dataType: string, data: any) {
+        return this.sendRequest(RequestMethod.Post, "/api/session/" + dataType, data)
+            .subscribe(response => { });
+    }
+
+    getSessionData(dataType: string): Observable<any> {
+        return this.sendRequest(RequestMethod.Get, "/api/session/" + dataType);
+    }
+
     product: Product;
     products: Product[];
     suppliers: Supplier[] = [];

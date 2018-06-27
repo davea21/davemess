@@ -11,9 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var repository_1 = require("../models/repository");
+var cart_model_1 = require("../models/cart.model");
 var ProductListComponent = /** @class */ (function () {
-    function ProductListComponent(repo) {
+    function ProductListComponent(repo, cart) {
         this.repo = repo;
+        this.cart = cart;
     }
     Object.defineProperty(ProductListComponent.prototype, "products", {
         get: function () {
@@ -26,12 +28,15 @@ var ProductListComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    ProductListComponent.prototype.addToCart = function (product) {
+        this.cart.addProduct(product);
+    };
     ProductListComponent = __decorate([
         core_1.Component({
             selector: "store-product-list",
             templateUrl: "productList.component.html"
         }),
-        __metadata("design:paramtypes", [repository_1.Repository])
+        __metadata("design:paramtypes", [repository_1.Repository, cart_model_1.Cart])
     ], ProductListComponent);
     return ProductListComponent;
 }());

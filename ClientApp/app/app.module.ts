@@ -11,8 +11,11 @@ import { ModelModule } from "./models/model.module";
 import { RouterModule, Routes } from '@angular/router';
 import { StoreModule } from './store/store.module';
 import { ProductSelectionComponent } from './store/productSelection.component';
+import { CartDetailComponent } from "./store/cartDetail.component";
 //import { RoutingConfig  } from "./app.routing";
 const routes: Routes = [
+    { path: "cart", component: CartDetailComponent },
+
     { path: "store", component: ProductSelectionComponent },
    
     { path: "", component: ProductSelectionComponent }]

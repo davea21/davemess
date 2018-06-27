@@ -12,6 +12,8 @@ E:\dev\SportsStore\dist\out-tsc\app\models\repository.js
 E:\dev\SportsStore\dist\out-tsc\app\models\repository.js.map
 E:\dev\SportsStore\dist\out-tsc\app\app.component.js
 E:\dev\SportsStore\dist\out-tsc\app\app.component.js.map
+E:\dev\SportsStore\dist\out-tsc\app\models\cart.model.js
+E:\dev\SportsStore\dist\out-tsc\app\models\cart.model.js.map
 E:\dev\SportsStore\dist\out-tsc\app\models\model.module.js
 E:\dev\SportsStore\dist\out-tsc\app\models\model.module.js.map
 E:\dev\SportsStore\dist\out-tsc\app\store\cartSummary.component.js
@@ -26,6 +28,8 @@ E:\dev\SportsStore\dist\out-tsc\app\store\ratings.component.js
 E:\dev\SportsStore\dist\out-tsc\app\store\ratings.component.js.map
 E:\dev\SportsStore\dist\out-tsc\app\store\productSelection.component.js
 E:\dev\SportsStore\dist\out-tsc\app\store\productSelection.component.js.map
+E:\dev\SportsStore\dist\out-tsc\app\store\cartDetail.component.js
+E:\dev\SportsStore\dist\out-tsc\app\store\cartDetail.component.js.map
 E:\dev\SportsStore\dist\out-tsc\app\store\store.module.js
 E:\dev\SportsStore\dist\out-tsc\app\store\store.module.js.map
 E:\dev\SportsStore\dist\out-tsc\app\app.module.js
