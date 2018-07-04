@@ -70,7 +70,7 @@ namespace SportsStore
         routes.MapRoute(
             name: "default",
             template: "{controller=Home}/{action=Index}/{id?}");
-       //   routes.MapSpaFallbackRoute("angular-fallback", new { controller = "Home", action = "index" });
+     routes.MapSpaFallbackRoute("angular-fallback", new { controller = "Home", action = "index" });
       });
          
             SeedData.SeedDatabase(app.ApplicationServices.GetRequiredService<DataContext>());

@@ -24,7 +24,29 @@ var checkoutDetails_component_1 = require("./store/checkout/checkoutDetails.comp
 var checkoutPayment_component_1 = require("./store/checkout/checkoutPayment.component");
 var checkoutSummary_component_1 = require("./store/checkout/checkoutSummary.component");
 var checkoutConfirmation_component_1 = require("./store/checkout/checkoutConfirmation.component");
+var admin_module_1 = require("./admin/admin.module");
+var admin_component_1 = require("./admin/admin.component");
+var overview_component_1 = require("./admin/overview.component");
+var productAdmin_component_1 = require("./admin/productAdmin.component");
+var orderAdmin_component_1 = require("./admin/orderAdmin.component");
 var routes = [
+    {
+        path: "admin", component: admin_component_1.AdminComponent,
+        children: [
+            {
+                path: "products", component: productAdmin_component_1.ProductAdminComponent
+            },
+            {
+                path: "orders", component: orderAdmin_component_1.OrderAdminComponent
+            },
+            {
+                path: "overview", component: overview_component_1.OverviewComponent
+            },
+            {
+                path: "", component: overview_component_1.OverviewComponent
+            }
+        ]
+    },
     {
         path: "checkout/step1", component: checkoutDetails_component_1.CheckoutDetailsComponent
     },
@@ -61,7 +83,7 @@ var AppModule = /** @class */ (function () {
                 model_module_1.ModelModule,
                 router_1.RouterModule.forRoot(routes, { enableTracing: true } // <-- debugging purposes only
                 ),
-                store_module_1.StoreModule
+                store_module_1.StoreModule, admin_module_1.AdminModule
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

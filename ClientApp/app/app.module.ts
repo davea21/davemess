@@ -17,7 +17,30 @@ import { CheckoutDetailsComponent } from "./store/checkout/checkoutDetails.compo
 import { CheckoutPaymentComponent } from "./store/checkout/checkoutPayment.component";
 import { CheckoutSummaryComponent } from "./store/checkout/checkoutSummary.component";
 import { CheckoutConfirmationComponent } from "./store/checkout/checkoutConfirmation.component";
+import { AdminModule } from "./admin/admin.module";
+import { AdminComponent } from "./admin/admin.component";
+import { OverviewComponent } from "./admin/overview.component";
+import { ProductAdminComponent } from "./admin/productAdmin.component";
+import { OrderAdminComponent } from "./admin/orderAdmin.component";
 const routes: Routes = [
+    {
+        path: "admin", component: AdminComponent,
+        children: [
+            {
+                path: "products", component : ProductAdminComponent
+            },
+            {
+                path: "orders" , component : OrderAdminComponent
+            },
+            {
+                path : "overview", component : OverviewComponent
+            },
+            {
+
+                path: "", component: OverviewComponent
+            }
+        ]
+    },
     {
         path: "checkout/step1", component: CheckoutDetailsComponent
     },
@@ -56,7 +79,7 @@ const routes: Routes = [
           { enableTracing: true } // <-- debugging purposes only
           
       )
-      , StoreModule
+      , StoreModule, AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
