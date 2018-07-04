@@ -6,8 +6,12 @@
     <None Remove="ClientApp\app.routing.ts" />
     <None Remove="ClientApp\app\models\cartDetail.component.ts" />
     <None Remove="ClientApp\app\models\configClasses.repository.ts" />
+    <None Remove="ClientApp\app\models\order.model.ts" />
     <None Remove="ClientApp\app\store\cartSummary.component.ts" />
     <None Remove="ClientApp\app\store\categoryFilter.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutConfirmation.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
     <None Remove="ClientApp\app\store\pagination.component.ts" />
     <None Remove="ClientApp\app\store\ProductList.component.ts" />
     <None Remove="ClientApp\app\store\productSelection.component.ts" />
@@ -33,8 +37,12 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\order.model.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\cartDetail.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\configClasses.repository.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutConfirmation.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\productSelection.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\ratings.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\cartSummary.component.ts" />

@@ -20,8 +20,29 @@ var store_module_1 = require("./store/store.module");
 var productSelection_component_1 = require("./store/productSelection.component");
 var cartDetail_component_1 = require("./store/cartDetail.component");
 //import { RoutingConfig  } from "./app.routing";
+var checkoutDetails_component_1 = require("./store/checkout/checkoutDetails.component");
+var checkoutPayment_component_1 = require("./store/checkout/checkoutPayment.component");
+var checkoutSummary_component_1 = require("./store/checkout/checkoutSummary.component");
+var checkoutConfirmation_component_1 = require("./store/checkout/checkoutConfirmation.component");
 var routes = [
-    { path: "cart", component: cartDetail_component_1.CartDetailComponent },
+    {
+        path: "checkout/step1", component: checkoutDetails_component_1.CheckoutDetailsComponent
+    },
+    {
+        path: "checkout/step2", component: checkoutPayment_component_1.CheckoutPaymentComponent
+    },
+    {
+        path: "checkout/step3", component: checkoutSummary_component_1.CheckoutSummaryComponent
+    },
+    {
+        path: "checkout/confirmation", component: checkoutConfirmation_component_1.CheckoutConfirmationComponent
+    },
+    {
+        path: "checkout", component: checkoutDetails_component_1.CheckoutDetailsComponent
+    },
+    {
+        path: "cart", component: cartDetail_component_1.CartDetailComponent
+    },
     { path: "store", component: productSelection_component_1.ProductSelectionComponent },
     { path: "", component: productSelection_component_1.ProductSelectionComponent }
 ];
