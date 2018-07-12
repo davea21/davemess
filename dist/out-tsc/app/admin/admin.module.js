@@ -14,7 +14,7 @@ var admin_component_1 = require("./admin.component");
 var overview_component_1 = require("./overview.component");
 var productAdmin_component_1 = require("./productAdmin.component");
 var orderAdmin_component_1 = require("./orderAdmin.component");
-//import { ProductEditorComponent } from "./productEditor.component";
+var productEditor_component_1 = require("./productEditor.component");
 var AdminModule = /** @class */ (function () {
     function AdminModule() {
     }
@@ -22,7 +22,7 @@ var AdminModule = /** @class */ (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule, forms_1.FormsModule],
             declarations: [admin_component_1.AdminComponent, overview_component_1.OverviewComponent,
-                productAdmin_component_1.ProductAdminComponent, orderAdmin_component_1.OrderAdminComponent //, ProductEditorComponent
+                productAdmin_component_1.ProductAdminComponent, orderAdmin_component_1.OrderAdminComponent, productEditor_component_1.ProductEditorComponent
             ]
         })
     ], AdminModule);

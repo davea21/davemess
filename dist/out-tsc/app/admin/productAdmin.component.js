@@ -10,14 +10,52 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var repository_1 = require("../models/repository");
+var product_model_1 = require("../models/product.model");
 var ProductAdminComponent = /** @class */ (function () {
-    function ProductAdminComponent() {
+    function ProductAdminComponent(repo) {
+        this.repo = repo;
+        this.tableMode = true;
     }
+    Object.defineProperty(ProductAdminComponent.prototype, "product", {
+        get: function () {
+            return this.repo.product;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ProductAdminComponent.prototype.selectProduct = function (id) {
+        this.repo.getProduct(id);
+    };
+    ProductAdminComponent.prototype.saveProduct = function () {
+        if (this.repo.product.productId == null) {
+            this.repo.createProduct(this.repo.product);
+        }
+        else {
+            this.repo.replaceProduct(this.repo.product);
+        }
+        this.clearProduct();
+        this.tableMode = true;
+    };
+    ProductAdminComponent.prototype.deleteProduct = function (id) {
+        this.repo.deleteProduct(id);
+    };
+    ProductAdminComponent.prototype.clearProduct = function () {
+        this.repo.product = new product_model_1.Product();
+        this.tableMode = true;
+    };
+    Object.defineProperty(ProductAdminComponent.prototype, "products", {
+        get: function () {
+            return this.repo.products;
+        },
+        enumerable: true,
+        configurable: true
+    });
     ProductAdminComponent = __decorate([
         core_1.Component({
             templateUrl: "productAdmin.component.html"
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [repository_1.Repository])
     ], ProductAdminComponent);
     return ProductAdminComponent;
 }());

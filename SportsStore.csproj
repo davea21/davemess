@@ -9,6 +9,7 @@
     <None Remove="ClientApp\app\admin\orderAdmin.component.ts" />
     <None Remove="ClientApp\app\admin\overview.component.ts" />
     <None Remove="ClientApp\app\admin\productAdmin.component.ts" />
+    <None Remove="ClientApp\app\admin\productEditor.component.ts" />
     <None Remove="ClientApp\app\models\cartDetail.component.ts" />
     <None Remove="ClientApp\app\models\configClasses.repository.ts" />
     <None Remove="ClientApp\app\models\order.model.ts" />
@@ -47,6 +48,7 @@
     <TypeScriptCompile Include="ClientApp\app\admin\orderAdmin.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\admin\overview.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\admin\productAdmin.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\admin\productEditor.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\order.model.ts" />
     <TypeScriptCompile Include="ClientApp\app\store\cartDetail.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\models\configClasses.repository.ts" />

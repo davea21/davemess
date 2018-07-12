@@ -6,17 +6,17 @@ webpackJsonp([2],{
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(37);
+var content = __webpack_require__(38);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(252)(content, {});
+var update = __webpack_require__(254)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(true) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept(37, function() {
-			var newContent = __webpack_require__(37);
+		module.hot.accept(38, function() {
+			var newContent = __webpack_require__(38);
 			if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
 			update(newContent);
 		});
@@ -27,7 +27,7 @@ if(true) {
 
 /***/ }),
 
-/***/ 252:
+/***/ 254:
 /***/ (function(module, exports) {
 
 /*
@@ -280,7 +280,7 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 259:
+/***/ 261:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(20);
@@ -289,10 +289,10 @@ module.exports = __webpack_require__(114);
 
 /***/ }),
 
-/***/ 37:
+/***/ 38:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(57)(false);
+exports = module.exports = __webpack_require__(58)(false);
 // imports
 
 
@@ -304,7 +304,7 @@ exports.push([module.i, "/* You can add global styles to this file, and also imp
 
 /***/ }),
 
-/***/ 40:
+/***/ 41:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -463,7 +463,7 @@ function fromByteArray (uint8) {
 
 /***/ }),
 
-/***/ 41:
+/***/ 42:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -477,9 +477,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(40)
-var ieee754 = __webpack_require__(58)
-var isArray = __webpack_require__(59)
+var base64 = __webpack_require__(41)
+var ieee754 = __webpack_require__(59)
+var isArray = __webpack_require__(60)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -2261,7 +2261,7 @@ function isnan (val) {
 
 /***/ }),
 
-/***/ 57:
+/***/ 58:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {/*
@@ -2340,11 +2340,11 @@ function toComment(sourceMap) {
   return '/*# ' + data + ' */';
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(41).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(42).Buffer))
 
 /***/ }),
 
-/***/ 58:
+/***/ 59:
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -2435,7 +2435,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 /***/ }),
 
-/***/ 59:
+/***/ 60:
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -2447,5 +2447,5 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ })
 
-},[259]);
+},[261]);
 //# sourceMappingURL=styles.bundle.js.map
